@@ -1,328 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/util.css" />
-    <link rel="stylesheet" href="assets/styles/font.css" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link rel="stylesheet" href="assets/styles/util.css" />
+  <link rel="stylesheet" href="assets/styles/font.css" />
+  <link rel="stylesheet" href="assets/styles/normalize.css" />
+</head>
 
-    <header>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner" role="listbox">
-          <div
-            class="carousel-item active"
-            style="background-image: url(assets/images/1.jpg)"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">First Slide</h2>
-              <p class="lead">This is a description for the first slide.</p>
-            </div>
-          </div>
-          <div
-            class="carousel-item"
-            style="background-image: url('assets/images/2.jpg')"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Second Slide</h2>
-              <p class="lead">This is a description for the second slide.</p>
-            </div>
-          </div>
-          <div
-            class="carousel-item"
-            style="background-image: url('assets/images/3.jpg')"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Third Slide</h2>
-              <p class="lead">This is a description for the third slide.</p>
-            </div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url(assets/images/1.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">First Slide</h2>
+            <p class="lead">This is a description for the first slide.</p>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="carousel-indicators arrow bounce">
-        <a href="#new_two" class=""
-          ><i class="fa fa-arrow-down fa-2x arrow-icon"></i
-        ></a>
-      </div>
-    </header>
-    <div class="course__wrapper pd-100">
-      <div class="container">
-        <div class="course__wrapper--header">
-          <h1 class="course__wrapper-headerOne">
-            Live Coaching Courses XI/XII
-          </h1>
-          <h1 class="course__wrapper-headerTwo">
-            My Course Selection <span> No. Of Course :- 0</span
-            ><span> Amount :- Rs. 0</span>
-            <span><a href="#">Edit</a> / <a href="#">Reset</a></span>
-          </h1>
+        <div class="carousel-item" style="background-image: url('assets/images/2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Second Slide</h2>
+            <p class="lead">This is a description for the second slide.</p>
+          </div>
         </div>
-        <div class="course__wrapper--grid">
-          <div class="course__inner">
-            <h1>1</h1>
+        <div class="carousel-item" style="background-image: url('assets/images/3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Third Slide</h2>
+            <p class="lead">This is a description for the third slide.</p>
           </div>
-          <div class="course__inner">
-            <h1>2</h1>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="carousel-indicators arrow bounce">
+      <a href="#new_two" class=""><i class="fa fa-arrow-down fa-2x arrow-icon"></i></a>
+    </div>
+  </header>
+
+
+  <div class="course__wrapper pd-100">
+    <div class="container">
+      <div class="course__wrapper--header">
+        <h1 class="course__wrapper-headerOne">
+          Live Coaching Courses XI/XII
+        </h1>
+        <h1 class="course__wrapper-headerTwo">
+          My Course Selection <span> No. Of Course :- 0</span><span> Amount :- Rs. 0</span>
+          <span><a href="#">Edit</a> / <a href="#">Reset</a></span>
+        </h1>
+      </div>
+      <div class="course__wrapper--grid">
+        <div class="course__inner--card card__effect">
+          <h1 class="course__inner--cardHeader">CBSE Physics XI/XII</h1>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1 class="course__tooltip">Class XI
+              <!--  <span class="tooltiptext">
+
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </span> -->
+            </h1>
+
+            <div class="md-checkbox">
+              <input id="i1" type="checkbox" checked>
+              <label for="i1"></label>
+            </div>
           </div>
-          <div class="course__inner">
-            <h1>3</h1>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Mechanics - I</h1>
+            <div class="md-checkbox">
+              <input id="i2" type="checkbox" checked>
+              <label for="i2"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Mechanics - II</h1>
+            <div class="md-checkbox">
+              <input id="i3" type="checkbox" checked>
+              <label for="i3"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Heat</h1>
+            <div class="md-checkbox">
+              <input id="i4" type="checkbox" checked>
+              <label for="i4"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Waves</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <hr>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XII</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Electrostatics</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Electrodynamics</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Optics</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Modern Physics</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
+            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
+        </div>
+
+        <div class="course__inner--card card__effect">
+          <h1 class="course__inner--cardHeader">CBSE Chemistry XI/XII</h1>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XI</h1>
+            <div class="md-checkbox">
+              <input id="i1" type="checkbox" checked>
+              <label for="i1"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>General Chemistry</h1>
+            <div class="md-checkbox">
+              <input id="i2" type="checkbox" checked>
+              <label for="i2"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Physical Chemistry I</h1>
+            <div class="md-checkbox">
+              <input id="i3" type="checkbox" checked>
+              <label for="i3"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Inorganic Chemistry I</h1>
+            <div class="md-checkbox">
+              <input id="i4" type="checkbox" checked>
+              <label for="i4"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Organic Chemistry I</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <hr>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XII</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Physical Chemistry II</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Inorganic Chemistry II</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Organic Chemistry II</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Applied Chemistry</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
+            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
+        </div>
+        <div class="course__inner--card card__effect">
+          <h1 class="course__inner--cardHeader">CBSE Mathematics XI/XII</h1>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XI</h1>
+            <div class="md-checkbox">
+              <input id="i1" type="checkbox" checked>
+              <label for="i1"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Sets & Functions</h1>
+            <div class="md-checkbox">
+              <input id="i2" type="checkbox" checked>
+              <label for="i2"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Algebra</h1>
+            <div class="md-checkbox">
+              <input id="i3" type="checkbox" checked>
+              <label for="i3"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Coordinate Geometry</h1>
+            <div class="md-checkbox">
+              <input id="i4" type="checkbox" checked>
+              <label for="i4"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Miscellaneous</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <hr>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XII</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Calculus I</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Calculus II</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Analytical geometry,Vectors and ITF</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Miscellaneous</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
+            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
+        </div>
+
+        <div class="course__inner--card card__effect">
+          <h1 class="course__inner--cardHeader">CBSE Biology XI/XII</h1>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XI</h1>
+            <div class="md-checkbox">
+              <input id="i1" type="checkbox" checked>
+              <label for="i1"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1> Diversity in living World</h1>
+            <div class="md-checkbox">
+              <input id="i2" type="checkbox" checked>
+              <label for="i2"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Structural Organisation</h1>
+            <div class="md-checkbox">
+              <input id="i3" type="checkbox" checked>
+              <label for="i3"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1> Plant Physiology</h1>
+            <div class="md-checkbox">
+              <input id="i4" type="checkbox" checked>
+              <label for="i4"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1> Human Physiology</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <hr>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XII</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1>Reproduction</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1> Genetics and Evolution</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1> Biotechnology</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1> Ecology</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
+            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
+        </div>
+        <div class="course__inner--card card__effect">
+          <h1 class="course__inner--cardHeader">CBSE English Core XI/XII</h1>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XI</h1>
+            <div class="md-checkbox">
+              <input id="i1" type="checkbox" checked>
+              <label for="i1"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1> Hornbill</h1>
+            <div class="md-checkbox">
+              <input id="i2" type="checkbox" checked>
+              <label for="i2"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1> Snapshots</h1>
+            <div class="md-checkbox">
+              <input id="i3" type="checkbox" checked>
+              <label for="i3"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1> Reading comprehension+Writing skills+Grammar</h1>
+            <div class="md-checkbox">
+              <input id="i4" type="checkbox" checked>
+              <label for="i4"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1>Novel</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <hr>
+          <div class="course__inner-list">
+            <h1 class="course__inner-listFirst">Full Course</h1>
+            <h1> Class XII</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 1</h1>
+            <h1> Flamingo</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 2</h1>
+            <h1>Vistas</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 3</h1>
+            <h1>Reading comprehension + Writing Skills</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <div class="course__inner-list">
+            <h1>Mod 4</h1>
+            <h1> Novel</h1>
+            <div class="md-checkbox">
+              <input id="i5" type="checkbox" checked>
+              <label for="i5"></label>
+            </div>
+          </div>
+          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
+            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features__wrapper pd-100">
+    <div class="container">
+      <h1>Live CBSE - Exclusive Benefits of Online Coaching</h1>
+      <div class="features__grid">
+        <div class="features__gridInner">
+          <img src="assets/images/1.png" alt="">
+          <h1>Live & Interactive Classes</h1>
+          <p>A real-time, live and interactive online tuitions with 2 way communication</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/2.png" alt="">
+          <h1>Periodic Tests</h1>
+          <p>The tests are conducted to check the Topic Understanding and rankings.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/3.png" alt="">
+          <h1>Doubt solving</h1>
+          <p>Student can ask their doubts just like they do in physical classroom.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/4.png" alt="">
+          <h1>Personal Attention and Focus</h1>
+          <p>The maximum teacher to student ratio would be 1:20.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/5.png" alt="">
+          <h1>Safety of Homes</h1>
+          <p>Avoiding Exhausting Traffic</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/6.png" alt="">
+          <h1>Monitoring and Feedback</h1>
+          <p>Parents can monitor their child's study ways at home itself.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/7.png" alt="">
+          <h1>Time Saving and Economical</h1>
+          <p>Saves lot of traveling time, city migration, and mental strain of students.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/8.png" alt="">
+          <h1>Recorded Lectures</h1>
+          <p>Student can access recording of lectures in case of missed lectures.</p>
+        </div>
+        <div class="features__gridInner">
+          <img src="assets/images/9.png" alt="">
+          <h1>Course Material</h1>
+          <p>NCERT simplified and organized for easier understanding of concepts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo__wrapper">
+    <div class="container">
+      <div class="demo__wrapper--btn">
+        <a class="demo__wrapper--link" data-toggle="modal" data-target="#info" style="cursor:pointer">SEE DEMO</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="contact__wrapper pd-100">
+    <div class="container">
+      <div class="container-contact100">
+        <div class="wrap-contact100">
+          <form class="contact100-form validate-form" action="#" method="POST">
+            <span class="contact100-form-title">
+              Send Us A Message
+            </span>
+
+            <label class="label-input100" for="first-name">Tell us your name *</label>
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+              <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name" />
+              <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+              <input class="input100" type="text" name="last-name" placeholder="Last name" />
+              <span class="focus-input100"></span>
+            </div>
+
+            <label class="label-input100" for="email">Enter your email *</label>
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+              <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com" />
+              <span class="focus-input100"></span>
+            </div>
+
+            <label class="label-input100" for="phone">Enter phone number</label>
+            <div class="wrap-input100">
+              <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000" />
+              <span class="focus-input100"></span>
+            </div>
+
+            <label class="label-input100" for="message">Message *</label>
+            <div class="wrap-input100 validate-input" data-validate="Message is required">
+              <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+              <button type="submit" name="submit" class="contact100-form-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <div class="contact100-more flex-col-c-m" style="background-image: url('assets/images/bg-01.jpg');">
+            <div class="flex-w size1 p-b-47">
+              <div class="txt1 p-r-25">
+                <span class="lnr lnr-map-marker"></span>
+              </div>
+
+              <div class="flex-col size2">
+                <span class="txt1 p-b-20">
+                  Address
+                </span>
+
+                <span class="txt2">
+                  Aston Building, 10th, Lokhandwala Complex, Andheri West,
+                  Mumbai, Maharashtra 400053
+                </span>
+              </div>
+            </div>
+
+            <div class="dis-flex size1 p-b-47">
+              <div class="txt1 p-r-25">
+                <span class="lnr lnr-phone-handset"></span>
+              </div>
+
+              <div class="flex-col size2">
+                <span class="txt1 p-b-20">
+                  Lets Talk
+                </span>
+
+                <span class="txt3">
+                  +91 9649964912
+                </span>
+              </div>
+            </div>
+
+            <div class="dis-flex size1 p-b-47">
+              <div class="txt1 p-r-25">
+                <span class="lnr lnr-envelope"></span>
+              </div>
+
+              <div class="flex-col size2">
+                <span class="txt1 p-b-20">
+                  General Support
+                </span>
+
+                <span class="txt3">
+                  contact@livecbse.com
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="demo__wrapper">
-      <div class="container">
-        <div class="demo__wrapper--btn">
-          <a
-            class="demo__wrapper--link"
-            data-toggle="modal"
-            data-target="#info"
-            style="cursor:pointer"
-            >SEE DEMO</a
-          >
-        </div>
-      </div>
-    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="assets/script/script.js"></script>
+</body>
 
-    <div class="featured__wrapper pd-100">
-      <div class="container">
-        <div class="container-contact100">
-          <div class="wrap-contact100">
-            <form
-              class="contact100-form validate-form"
-              action="#"
-              method="POST"
-            >
-              <span class="contact100-form-title">
-                Send Us A Message
-              </span>
-
-              <label class="label-input100" for="first-name"
-                >Tell us your name *</label
-              >
-              <div
-                class="wrap-input100 rs1-wrap-input100 validate-input"
-                data-validate="Type first name"
-              >
-                <input
-                  id="first-name"
-                  class="input100"
-                  type="text"
-                  name="first-name"
-                  placeholder="First name"
-                />
-                <span class="focus-input100"></span>
-              </div>
-              <div
-                class="wrap-input100 rs2-wrap-input100 validate-input"
-                data-validate="Type last name"
-              >
-                <input
-                  class="input100"
-                  type="text"
-                  name="last-name"
-                  placeholder="Last name"
-                />
-                <span class="focus-input100"></span>
-              </div>
-
-              <label class="label-input100" for="email"
-                >Enter your email *</label
-              >
-              <div
-                class="wrap-input100 validate-input"
-                data-validate="Valid email is required: ex@abc.xyz"
-              >
-                <input
-                  id="email"
-                  class="input100"
-                  type="text"
-                  name="email"
-                  placeholder="Eg. example@email.com"
-                />
-                <span class="focus-input100"></span>
-              </div>
-
-              <label class="label-input100" for="phone"
-                >Enter phone number</label
-              >
-              <div class="wrap-input100">
-                <input
-                  id="phone"
-                  class="input100"
-                  type="text"
-                  name="phone"
-                  placeholder="Eg. +1 800 000000"
-                />
-                <span class="focus-input100"></span>
-              </div>
-
-              <label class="label-input100" for="message">Message *</label>
-              <div
-                class="wrap-input100 validate-input"
-                data-validate="Message is required"
-              >
-                <textarea
-                  id="message"
-                  class="input100"
-                  name="message"
-                  placeholder="Write us a message"
-                ></textarea>
-                <span class="focus-input100"></span>
-              </div>
-
-              <div class="container-contact100-form-btn">
-                <button type="submit" name="submit" class="contact100-form-btn">
-                  Send Message
-                </button>
-              </div>
-            </form>
-
-            <div
-              class="contact100-more flex-col-c-m"
-              style="background-image: url('assets/images/bg-01.jpg');"
-            >
-              <div class="flex-w size1 p-b-47">
-                <div class="txt1 p-r-25">
-                  <span class="lnr lnr-map-marker"></span>
-                </div>
-
-                <div class="flex-col size2">
-                  <span class="txt1 p-b-20">
-                    Address
-                  </span>
-
-                  <span class="txt2">
-                    Aston Building, 10th, Lokhandwala Complex, Andheri West,
-                    Mumbai, Maharashtra 400053
-                  </span>
-                </div>
-              </div>
-
-              <div class="dis-flex size1 p-b-47">
-                <div class="txt1 p-r-25">
-                  <span class="lnr lnr-phone-handset"></span>
-                </div>
-
-                <div class="flex-col size2">
-                  <span class="txt1 p-b-20">
-                    Lets Talk
-                  </span>
-
-                  <span class="txt3">
-                    +91 9649964912
-                  </span>
-                </div>
-              </div>
-
-              <div class="dis-flex size1 p-b-47">
-                <div class="txt1 p-r-25">
-                  <span class="lnr lnr-envelope"></span>
-                </div>
-
-                <div class="flex-col size2">
-                  <span class="txt1 p-b-20">
-                    General Support
-                  </span>
-
-                  <span class="txt3">
-                    contact@livecbse.com
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/script/script.js"></script>
-  </body>
 </html>

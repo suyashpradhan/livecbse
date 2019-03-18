@@ -1,9 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-$font: "Noto Sans",
+$font: 'Ubuntu',
 sans-serif;
 $colors_map: (color-primary: #990000,
-color-accent: #a80000);
+color-accent: #a80000,
+color-white:#fff);
+
+
+$md-checkbox-checked-color: rgb(51, 122, 183);
+$md-checkbox-border-color: rgba(0, 0, 0, 0.54);
+$md-checkbox-border-color-disabled: rgba(0, 0, 0, 0.26);
+$md-checkbox-checked-color-disabled: rgba(0, 0, 0, 0.26);
+
+$md-checkbox-margin: 1em 0;
+$md-checkbox-size: 1.25em;
+$md-checkbox-padding: .25em;
+$md-checkbox-border-width: 2px;
+$md-checkbox-border-radius: 0.125em;
+$md-checkmark-width: 0.125em;
+$md-checkmark-color: #fff;
+$md-checkbox-label-padding: .75em;
 
 @function color($color-name) {
     @return map-get($colors_map, $color-name);
@@ -122,7 +138,7 @@ body {
     }
 }
 
-.featured__wrapper {
+.contact__wrapper {
     background-color: #dddddd;
 }
 
@@ -423,7 +439,6 @@ textarea.input100 {
                 color: color(color-primary);
             }
         }
-
     }
 
     .course__wrapper--grid {
@@ -432,5 +447,238 @@ textarea.input100 {
         grid-gap: 2rem;
         align-items: center;
         justify-items: center;
+        margin: 2rem 0 5rem 0;
+        cursor: default;
+
+        .course__inner--card {
+            background: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            height: 595px;
+            position: relative;
+            width: 100% !important;
+            margin: 1rem 0;
+        }
+
+        .card__effect {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+
+    .course__inner--cardHeader {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        background-color: color(color-primary);
+        color: color(color-white);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: .5rem;
+    }
+
+    .course__inner-list {
+        /*  display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .5rem;
+        align-items: center;
+        justify-items: baseline; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 3rem;
+        padding: 0 1rem;
+
+        .course__inner-listFirst {
+            background-color: #000;
+            padding: .3rem;
+            border-radius: 3px;
+            text-align: center;
+            color: #fff;
+            margin-right: .8rem;
+        }
+
+        h1 {
+            font-size: .9rem;
+            font-weight: 900;
+            color: #696969;
+            flex: 1;
+        }
+    }
+
+    .course__inner--cardFooter {
+        background-color: color(color-primary);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: .5rem;
+        padding: 0 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        a {
+            padding: .4rem !important;
+            font-size: 1rem !important;
+            color: color(color-white);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+.md-checkbox {
+    position: relative;
+    margin-left: 5rem;
+
+    &.md-checkbox-inline {
+        display: inline-block;
+    }
+
+    label {
+        cursor: pointer;
+        display: inline;
+        line-height: $md-checkbox-size;
+        vertical-align: top;
+        clear: both;
+        padding-left: 1px;
+
+        &:not(:empty) {
+            padding-left: $md-checkbox-label-padding;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &:before {
+            // box
+            width: $md-checkbox-size;
+            height: $md-checkbox-size;
+            background: #fff;
+            border: 1px solid color(color-primary);
+            border-radius: $md-checkbox-border-radius;
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        &:after {
+            // checkmark
+        }
+    }
+
+    input[type="checkbox"] {
+        outline: 0;
+        visibility: hidden;
+        width: $md-checkbox-size;
+        margin: 0;
+        display: block;
+        float: left;
+        font-size: inherit;
+
+        &:checked {
+            +label:before {
+                background: color(color-primary);
+                border: none;
+            }
+
+            +label:after {
+
+                $md-checkmark-size: $md-checkbox-size - 2 * $md-checkbox-padding;
+
+                transform: translate($md-checkbox-padding, ($md-checkbox-size / 2) - ($md-checkmark-size / 2.6)) rotate(-45deg);
+                width: $md-checkmark-size;
+                height: $md-checkmark-size / 2;
+
+                border: $md-checkmark-width solid $md-checkmark-color;
+                border-top-style: none;
+                border-right-style: none;
+            }
+        }
+
+        &:disabled {
+            +label:before {
+                border-color: $md-checkbox-border-color-disabled;
+            }
+
+            &:checked {
+                +label:before {
+                    background: $md-checkbox-checked-color-disabled;
+                }
+            }
+        }
+    }
+
+}
+
+.course__tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #696969;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 65%;
+}
+
+.course__tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.features__wrapper {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .features__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        margin: 3rem 0;
+
+        .features__gridInner {
+            height: 11rem;
+
+            img {
+                height: 4rem;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+                font-weight: 900;
+                letter-spacing: 1px;
+                margin: .5rem 0;
+                padding: 0;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
     }
 }
