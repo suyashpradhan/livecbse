@@ -1026,5 +1026,282 @@ textarea.input100 {
             box-shadow: 0px 0px 0px $md-radio-ripple-size rgba(0, 0, 0, 0);
         }
     }
+}
 
+//Test Series Panel
+.tab__main {
+    max-width: 1200px;
+    border-radius: .25rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+
+    section {
+        height: 300px;
+        overflow: auto;
+        display: none;
+        padding: 10px;
+        border-top: 1px solid #abc;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 15px 25px;
+        font-weight: 600;
+        text-align: center;
+        color: #696969;
+        border: 1px solid transparent;
+    }
+
+    label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+    label:hover {
+        color: #789;
+        cursor: pointer;
+    }
+
+    input:checked+label {
+        color: color(color-primary);
+        border: 1px solid color(color-primary);
+        border-top: 2px solid color(color-primary);
+        border-bottom: 1px solid #fff;
+    }
+
+    #tab1:checked~#content1,
+    #tab2:checked~#content2,
+    #tab3:checked~#content3,
+    #tab4:checked~#content4,
+    #tab5:checked~#content5 {
+        display: block;
+    }
+
+    #content1 {
+        .content_description {
+            font-size: 1rem !important;
+            line-height: 1.7 !important;
+            font-weight: 700;
+            margin: 1rem 2rem;
+            color: #696969;
+        }
+
+        .content_header {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: color(color-accent);
+            margin: 1rem 2rem;
+        }
+
+        .content_ul {
+            margin: 0 0 1rem 5rem;
+
+            li {
+                font-size: 1rem;
+                color: #696969;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #content2 {
+
+        .content__div {
+            margin: 2rem 0;
+        }
+
+        .content_description {
+            font-size: 1rem !important;
+            line-height: 1.7 !important;
+            font-weight: 700;
+            margin: 1rem 2rem;
+            color: #696969;
+        }
+
+        .content_header {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: color(color-accent);
+            margin: 1rem 2rem;
+        }
+
+        .content_ul {
+            margin: 0 0 1rem 5rem;
+
+            li {
+                font-size: 1rem;
+                color: #696969;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #content3 {
+
+        .content__div {
+            margin: 2rem 0;
+        }
+
+        .content_header {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: color(color-accent);
+            margin: 1rem 2rem;
+        }
+
+        .content_ul {
+            margin: 0 0 1rem 5rem;
+
+            li {
+                font-size: 1rem;
+                color: #696969;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #content4 {
+
+        .content__div {
+            margin: 2rem 0;
+        }
+
+        .content_description {
+            font-size: 1rem !important;
+            line-height: 1.7 !important;
+            font-weight: 700;
+            margin: 1rem 2rem;
+            color: #696969;
+        }
+    }
+
+    #content5 {
+
+        .content__div {
+            margin: 2rem 0;
+        }
+
+        .content_header {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: color(color-accent);
+            margin: 1rem 2rem;
+        }
+
+        .content_ul {
+            margin: 0 0 1rem 5rem;
+
+            li {
+                font-size: 1rem;
+                color: #696969;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.card-deck {
+    margin: 2rem 0;
+
+    .card-bodyHeight {
+        height: 23.5rem;
+    }
+
+    .card-body--header {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        background-color: color(color-primary);
+        color: color(color-white);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: .5rem;
+    }
+
+    .card-text--middle {
+        text-align: center;
+        font-size: .9rem;
+        font-weight: 700;
+        padding: .5rem 0;
+        border-bottom: 1px solid #777;
+    }
+
+    .card-body--head {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: .5rem 0;
+        color: color(color-accent);
+        margin: 0;
+    }
+
+    .card-body--list {
+        margin: 0 0 .3rem 3rem;
+        padding: 0;
+        color: #696969;
+        font-weight: 700;
+    }
+
+    .card-body--span {
+        color: color(color-accent);
+        font-size: .9rem;
+        padding: 1rem 0;
+        font-weight: 700;
+
+    }
+
+    .card-body--priceDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: .8rem 0 0 0;
+        margin: .5rem 0;
+        border: 2px solid #ccc;
+
+        .card-body--price {
+            font-size: 1.5rem;
+            color: #696969;
+            font-weight: 700;
+        }
+
+        .card-body--priceLink {
+            background-color: #696969;
+            color: #fff;
+            text-decoration: none;
+            padding: .3rem .5rem;
+            border-radius: 3px;
+            margin-top: -15px;
+        }
+    }
+
+    .card-footer {
+        background-color: #ccc;
+
+        .text-muted {
+            font-size: 1rem;
+            text-align: center;
+            display: block;
+
+            span {
+                margin-left: .5rem;
+                font-size: .9rem;
+            }
+        }
+    }
 }
