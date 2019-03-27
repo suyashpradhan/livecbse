@@ -51,14 +51,6 @@ body {
     background-size: cover;
 }
 
-.navbar-brand img {
-    height: 40px;
-}
-
-.fixed-top {
-    height: 60px;
-}
-
 .arrow-icon {
     color: color(color-accent) !important;
     font-size: 1rem;
@@ -1032,10 +1024,20 @@ textarea.input100 {
 .tab__main {
     max-width: 1200px;
     border-radius: .25rem;
+    margin: 1rem 0;
     padding: 1.2rem;
     border: 1px solid rgba(0, 0, 0, .2);
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+
+    .tab__main--header {
+        font-size: 2rem;
+        color: color(color-primary);
+        font-weight: 900;
+        text-align: center;
+        display: block;
+        padding: 0 0 .2rem 0;
+    }
 
     section {
         height: 300px;
@@ -1187,6 +1189,26 @@ textarea.input100 {
             margin: 1rem 2rem;
             color: #696969;
         }
+
+
+        .content_header {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: color(color-accent);
+            margin: 1rem 2rem;
+        }
+
+        .content_ul {
+            margin: 0 0 1rem 5rem;
+
+            li {
+                font-size: 1rem;
+                color: #696969;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
     }
 
     #content5 {
@@ -1220,11 +1242,12 @@ textarea.input100 {
     margin: 2rem 0;
 
     .card-bodyHeight {
-        height: 23.5rem;
+        height: 18rem;
+        overflow: auto;
     }
 
     .card-body--header {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         margin: 0;
         background-color: color(color-primary);
@@ -1238,20 +1261,20 @@ textarea.input100 {
         text-align: center;
         font-size: .9rem;
         font-weight: 700;
-        padding: .5rem 0;
+        padding: .3rem 0;
         border-bottom: 1px solid #777;
     }
 
     .card-body--head {
         font-size: 1rem;
         font-weight: 700;
-        padding: .5rem 0;
+        padding: .1rem 0;
         color: color(color-accent);
         margin: 0;
     }
 
     .card-body--list {
-        margin: 0 0 .3rem 3rem;
+        margin: .3rem 0 .3rem 3rem;
         padding: 0;
         color: #696969;
         font-weight: 700;
@@ -1262,7 +1285,6 @@ textarea.input100 {
         font-size: .9rem;
         padding: 1rem 0;
         font-weight: 700;
-
     }
 
     .card-body--priceDiv {
@@ -1287,6 +1309,11 @@ textarea.input100 {
             padding: .3rem .5rem;
             border-radius: 3px;
             margin-top: -15px;
+            transition: all .5s ease;
+
+            &:hover {
+                background-color: #504f4f;
+            }
         }
     }
 
@@ -1297,6 +1324,8 @@ textarea.input100 {
             font-size: 1rem;
             text-align: center;
             display: block;
+            color: #696969 !important;
+            font-weight: 700;
 
             span {
                 margin-left: .5rem;
