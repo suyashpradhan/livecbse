@@ -161,11 +161,13 @@
                     </div>
                     <div class="card-body--priceDiv">
                         <h1 class="card-body--price">Rs. 3500</h1>
-                        <a href="#" class="card-body--priceLink">PAY NOW</a>
+                        <a href="#" class="card-body--priceLink" data-toggle="modal"
+                            data-target="#exampleModalCenter">PAY NOW</a>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
+                    <small class="text-muted">For individual subject<span><a href="#" data-toggle="modal"
+                                data-target="#modal_footer">Click Here</a></span></small>
                 </div>
             </div>
             <div class="card">
@@ -302,7 +304,114 @@
                 </div>
             </div>
             <div class="card" style="border:none">
-                
+
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Single Subject-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="modal-body--header">Please select Mathematics or Biology</h1>
+                    <div class="modal-body--subjects">
+                        <div class="md-checkbox">
+                            <input id="phy_1" type="checkbox" checked>
+                            <label for="phy_1">Phy</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="chem_1" type="checkbox">
+                            <label for="chem_1">Chem</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="eng_1" type="checkbox" checked>
+                            <label for="eng_1">Eng</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="math_1" type="radio" name="g" checked>
+                            <label for="math_1">Mathematics</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="bio_1" type="radio" name="g">
+                            <label for="bio_1">Biology</label>
+                        </div>
+                    </div>
+                    <div class="price__wrapper">
+                        <h1 class="modal-body--header">Price Details</h1>
+                        <div class="inner_priceWrapper">
+                            <h1>Net Amount</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 2609</h1>
+                            <h1>GST</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 391</h1>
+                            <h1>Courier Charges</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 300</h1>
+                            <h1>Amount Payable</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 3300</h1>
+                        </div>
+                        <a href="#" class="price__wrapper--link">Pay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal All Subject-->
+    <div class="modal fade" id="modal_footer" tabindex="-1" role="dialog" aria-labelledby="modal_footer"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="modal-body--header">Please select the subject for following course: TestQ CBSE (Prime)
+                    </h1>
+                    <div class="modal-body--subjects">
+                        <div class="md-checkbox">
+                            <input id="phy" type="checkbox" checked>
+                            <label for="phy">Phy</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="chem" type="checkbox" checked>
+                            <label for="chem">Chem</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="eng" type="checkbox" checked>
+                            <label for="eng">Eng</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="math" type="radio" name="g" checked>
+                            <label for="math">Mathematics</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="bio" type="radio" name="g">
+                            <label for="bio">Biology</label>
+                        </div>
+                    </div>
+                    <div class="price__wrapper">
+                        <h1 class="modal-body--header">Price Details</h1>
+                        <div class="inner_priceWrapper">
+                            <h1>Net Amount</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
+                            <h1>GST</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 620</h1>
+                            <h1>Amount Payable</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
+                        </div>
+                        <a href="#" class="price__wrapper--link">Pay</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -310,13 +419,13 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="assets/script/script.js"></script>
 </body>
 

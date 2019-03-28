@@ -1241,9 +1241,14 @@ textarea.input100 {
 .card-deck {
     margin: 2rem 0;
 
+    .card-body {
+        padding: 0;
+    }
+
     .card-bodyHeight {
         height: 18rem;
         overflow: auto;
+        padding: 0 1rem;
     }
 
     .card-body--header {
@@ -1293,8 +1298,9 @@ textarea.input100 {
         justify-items: center;
         align-items: center;
         padding: .8rem 0 0 0;
-        margin: .5rem 0;
+        margin: 1rem 0 0 0;
         border: 2px solid #ccc;
+        border-bottom: none !important;
 
         .card-body--price {
             font-size: 1.5rem;
@@ -1334,3 +1340,291 @@ textarea.input100 {
         }
     }
 }
+
+//Modal Css
+.modal-body {
+
+    .modal-body--header {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        margin: .3rem 0 .5rem 0;
+        padding: 0;
+        text-align: left;
+        color: #696969;
+        font-weight: 900;
+    }
+
+    .modal-body--subjects {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: .5rem;
+        justify-items: center;
+        align-items: center;
+
+
+        .md-radio {
+
+            &.md-radio-inline {
+                display: inline-block;
+            }
+
+            input[type="radio"] {
+                display: none;
+
+
+                &:checked+label:before {
+                    border-color: color(color-accent);
+                    animation: ripple 0.2s linear forwards;
+                }
+
+                &:checked+label:after {
+                    transform: scale(1);
+                }
+            }
+
+            label {
+                display: inline-block;
+                height: $md-radio-size;
+                position: relative;
+                padding: 0 0 0 1.5rem;
+                cursor: pointer;
+                font-size: 1rem;
+                color: #363636;
+                font-weight: 700;
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: '';
+                    border-radius: 50%;
+                    transition: all .3s ease;
+                    transition-property: transform, border-color;
+                }
+
+                &:before {
+                    left: 0;
+                    top: 0;
+                    width: $md-radio-size;
+                    height: $md-radio-size;
+                    border: 2px solid color(color-accent);
+                }
+
+                &:after {
+                    top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+                    left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+                    width: $md-radio-checked-size;
+                    height: $md-radio-checked-size;
+                    transform: scale(0);
+                    background: color(color-accent);
+                }
+            }
+        }
+
+        .md-checkbox {
+            position: relative;
+            margin-left: .5rem !important;
+
+            &.md-checkbox-inline {
+                display: inline-block;
+            }
+
+            label {
+                cursor: pointer;
+                display: inline;
+                line-height: $md-checkbox-size;
+                vertical-align: top;
+                clear: both;
+                padding-left: 1px;
+                font-weight: 700;
+
+                &:not(:empty) {
+                    padding-left: $md-checkbox-label-padding;
+                }
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                &:before {
+                    // box
+                    width: $md-checkbox-size;
+                    height: $md-checkbox-size;
+                    background: #fff;
+                    border: 1px solid color(color-primary);
+                    border-radius: $md-checkbox-border-radius;
+                    cursor: pointer;
+                    transition: background .3s;
+                }
+            }
+
+            input[type="checkbox"] {
+                outline: 0;
+                visibility: hidden;
+                width: $md-checkbox-size;
+                margin: 0;
+                display: block;
+                float: left;
+                font-size: inherit;
+
+                &:checked {
+                    +label:before {
+                        background: color(color-primary);
+                        border: none;
+                    }
+
+                    +label:after {
+                        $md-checkmark-size: $md-checkbox-size - 2 * $md-checkbox-padding;
+
+                        transform: translate($md-checkbox-padding, $md-checkbox-size / 2 - $md-checkmark-size / 2.6) rotate(-45deg);
+                        width: $md-checkmark-size;
+                        height: $md-checkmark-size / 2;
+                        border: $md-checkmark-width solid $md-checkmark-color;
+                        border-top-style: none;
+                        border-right-style: none;
+                    }
+                }
+
+                &:disabled {
+                    +label:before {
+                        border-color: $md-checkbox-border-color-disabled;
+                    }
+
+                    &:checked {
+                        +label:before {
+                            background: $md-checkbox-checked-color-disabled;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .price__wrapper {
+        margin: 2rem 0;
+
+        .price__wrapper--link {
+            background-color: #696969;
+            color: #fff;
+            text-decoration: none;
+            padding: .3rem .5rem;
+            border-radius: 3px;
+            transition: all .5s ease;
+            margin: 1rem auto 0 auto;
+            display: block;
+            width: 7rem;
+            font-size: 1rem;
+            text-align: center;
+
+            &:hover {
+                background-color: #504f4f;
+            }
+        }
+
+        .inner_priceWrapper {
+            display: grid;
+            grid-template-columns: 1fr 5rem;
+            align-items: center;
+            justify-items: flex-start;
+
+            h1 {
+                font-size: 1rem;
+                margin: .3rem 0 !important;
+                padding: 0 !important;
+                border: none;
+                font-weight: 700;
+                color: #696969;
+            }
+        }
+    }
+}
+
+//FAQ
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .accordion a:hover,
+  .accordion a:hover::after {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  
+  .accordion a:hover::after {
+    border: 1px solid #03b5d2;
+  }
+  
+  .accordion a.active {
+    color: #03b5d2;
+    border-bottom: 1px solid #03b5d2;
+  }
+  
+  .accordion a::after {
+    font-family: 'Ionicons';
+    content: '\f218';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+  }
+  
+  .accordion a.active::after {
+    font-family: 'Ionicons';
+    content: '\f209';
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+  }
+  
+  .accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+  
+  .accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+  }
