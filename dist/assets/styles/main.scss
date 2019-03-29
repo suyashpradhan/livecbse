@@ -1543,17 +1543,30 @@ textarea.input100 {
 }
 
 //FAQ
-
-.accordion a {
+.faq-header {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 30px 0 10px 0;
+    letter-spacing: 1px;
+    color: #696969;
+  }
+  
+  .faq-header-sub {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    color: #777;
+  }
+  
+  .faq-div {
+    margin: 50px 0;
+    color: #4d5974;
+  }
+  
+  .faq-div a {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     padding: 1rem 3rem 1rem 1rem;
@@ -1563,30 +1576,27 @@ textarea.input100 {
     border-bottom: 1px solid #e5e5e5;
   }
   
-  .accordion a:hover,
-  .accordion a:hover::after {
+  .faq-div a:hover,
+  .faq-div a:hover::after {
     cursor: pointer;
     color: #03b5d2;
   }
   
-  .accordion a:hover::after {
+  .faq-div a:hover::after {
     border: 1px solid #03b5d2;
   }
   
-  .accordion a.active {
+  .faq-div a.active {
     color: #03b5d2;
     border-bottom: 1px solid #03b5d2;
   }
   
-  .accordion a::after {
-    font-family: 'Ionicons';
-    content: '\f218';
+  .down-icon {
     position: absolute;
-    float: right;
     right: 1rem;
     font-size: 1rem;
     color: #7288a2;
-    padding: 5px;
+    padding: 6px 0;
     width: 30px;
     height: 30px;
     -webkit-border-radius: 50%;
@@ -1596,14 +1606,12 @@ textarea.input100 {
     text-align: center;
   }
   
-  .accordion a.active::after {
-    font-family: 'Ionicons';
-    content: '\f209';
+  .down-icon.active {
     color: #03b5d2;
     border: 1px solid #03b5d2;
   }
   
-  .accordion .content {
+  .faq-div .content {
     opacity: 0;
     padding: 0 1rem;
     max-height: 0;
@@ -1615,12 +1623,13 @@ textarea.input100 {
     transition: all 0.2s ease 0.15s;
   }
   
-  .accordion .content p {
-    font-size: 1rem;
+  .faq-div .content p {
     font-weight: 300;
+    line-height: 1.7;
+    font-size: 18px;
   }
   
-  .accordion .content.active {
+  .faq-div .content.active {
     opacity: 1;
     padding: 1rem;
     max-height: 100%;
