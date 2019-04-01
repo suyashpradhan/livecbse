@@ -3719,9 +3719,14 @@ textarea.input100 {
     margin: 2rem 0;
 }
 
+.card-deck .card-body {
+    padding: 0;
+}
+
 .card-deck .card-bodyHeight {
     height: 18rem;
     overflow: auto;
+    padding: 0 1rem;
 }
 
 .card-deck .card-body--header {
@@ -3775,8 +3780,9 @@ textarea.input100 {
     -ms-flex-align: center;
     align-items: center;
     padding: .8rem 0 0 0;
-    margin: .5rem 0;
+    margin: 1rem 0 0 0;
     border: 2px solid #ccc;
+    border-bottom: none !important;
 }
 
 .card-deck .card-body--priceDiv .card-body--price {
@@ -3816,5 +3822,303 @@ textarea.input100 {
     margin-left: .5rem;
     font-size: .9rem;
 }
+
+.modal-body .modal-body--header {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    margin: .3rem 0 .5rem 0;
+    padding: 0;
+    text-align: left;
+    color: #696969;
+    font-weight: 900;
+}
+
+.modal-body .modal-body--subjects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .5rem;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.modal-body .modal-body--subjects .md-radio.md-radio-inline {
+    display: inline-block;
+}
+
+.modal-body .modal-body--subjects .md-radio input[type="radio"] {
+    display: none;
+}
+
+.modal-body .modal-body--subjects .md-radio input[type="radio"]:checked+label:before {
+    border-color: #a80000;
+    -webkit-animation: ripple 0.2s linear forwards;
+    animation: ripple 0.2s linear forwards;
+}
+
+.modal-body .modal-body--subjects .md-radio input[type="radio"]:checked+label:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.modal-body .modal-body--subjects .md-radio label {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    padding: 0 0 0 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #363636;
+    font-weight: 700;
+}
+
+.modal-body .modal-body--subjects .md-radio label:before,
+.modal-body .modal-body--subjects .md-radio label:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transition-property: border-color, -webkit-transform;
+    transition-property: border-color, -webkit-transform;
+    transition-property: transform, border-color;
+    transition-property: transform, border-color, -webkit-transform;
+}
+
+.modal-body .modal-body--subjects .md-radio label:before {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a80000;
+}
+
+.modal-body .modal-body--subjects .md-radio label:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background: #a80000;
+}
+
+.modal-body .modal-body--subjects .md-checkbox {
+    position: relative;
+    margin-left: .5rem !important;
+}
+
+.modal-body .modal-body--subjects .md-checkbox.md-checkbox-inline {
+    display: inline-block;
+}
+
+.modal-body .modal-body--subjects .md-checkbox label {
+    cursor: pointer;
+    display: inline;
+    line-height: 1.25em;
+    vertical-align: top;
+    clear: both;
+    padding-left: 1px;
+    font-weight: 700;
+}
+
+.modal-body .modal-body--subjects .md-checkbox label:not(:empty) {
+    padding-left: 0.75em;
+}
+
+.modal-body .modal-body--subjects .md-checkbox label:before,
+.modal-body .modal-body--subjects .md-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.modal-body .modal-body--subjects .md-checkbox label:before {
+    width: 1.25em;
+    height: 1.25em;
+    background: #fff;
+    border: 1px solid #990000;
+    border-radius: 0.125em;
+    cursor: pointer;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+.modal-body .modal-body--subjects .md-checkbox input[type="checkbox"] {
+    outline: 0;
+    visibility: hidden;
+    width: 1.25em;
+    margin: 0;
+    display: block;
+    float: left;
+    font-size: inherit;
+}
+
+.modal-body .modal-body--subjects .md-checkbox input[type="checkbox"]:checked+label:before {
+    background: #990000;
+    border: none;
+}
+
+.modal-body .modal-body--subjects .md-checkbox input[type="checkbox"]:checked+label:after {
+    -webkit-transform: translate(0.25em, 0.33654em) rotate(-45deg);
+    transform: translate(0.25em, 0.33654em) rotate(-45deg);
+    width: 0.75em;
+    height: 0.375em;
+    border: 0.125em solid #fff;
+    border-top-style: none;
+    border-right-style: none;
+}
+
+.modal-body .modal-body--subjects .md-checkbox input[type="checkbox"]:disabled+label:before {
+    border-color: rgba(0, 0, 0, 0.26);
+}
+
+.modal-body .modal-body--subjects .md-checkbox input[type="checkbox"]:disabled:checked+label:before {
+    background: rgba(0, 0, 0, 0.26);
+}
+
+.modal-body .price__wrapper {
+    margin: 2rem 0;
+}
+
+.modal-body .price__wrapper .price__wrapper--link {
+    background-color: #696969;
+    color: #fff;
+    text-decoration: none;
+    padding: .3rem .5rem;
+    border-radius: 3px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin: 1rem auto 0 auto;
+    display: block;
+    width: 7rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal-body .price__wrapper .price__wrapper--link:hover {
+    background-color: #504f4f;
+}
+
+.modal-body .price__wrapper .inner_priceWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5rem;
+    grid-template-columns: 1fr 5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.modal-body .price__wrapper .inner_priceWrapper h1 {
+    font-size: 1rem;
+    margin: .3rem 0 !important;
+    padding: 0 !important;
+    border: none;
+    font-weight: 700;
+    color: #696969;
+}
+
+.faq-header {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 30px 0 10px 0;
+    letter-spacing: 1px;
+    color: #696969;
+}
+
+.faq-header-sub {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.faq-div {
+    margin: 50px 0;
+    color: #4d5974;
+}
+
+.faq-div a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.faq-div a:hover,
+.faq-div a:hover::after {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.faq-div a:hover::after {
+    border: 1px solid #03b5d2;
+}
+
+.faq-div a.active {
+    color: #03b5d2;
+    border-bottom: 1px solid #03b5d2;
+}
+
+.down-icon {
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 6px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+}
+
+.down-icon.active {
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.faq-div .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.faq-div .content p {
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.faq-div .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
 
 /*# sourceMappingURL=main.css.map */
