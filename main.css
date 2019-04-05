@@ -1694,7 +1694,6 @@ h3 {
 }
 
 .pageWrapper {
-    background-color: #cccdcb;
     overflow: hidden;
     width: 100%
 }
@@ -1735,7 +1734,7 @@ h3 {
 
 .sectionPara {
     font-size: 16px;
-    color: #fff
+    color: #424747
 }
 
 .section-first-half {
@@ -4120,5 +4119,24 @@ textarea.input100 {
     transition: all 0.35s ease 0.15s;
 }
 
+.svg-inline--fa.fa-w-10 {
+    width: .625em;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.middle-header h1 {
+    font-size: 60px;
+    margin: 50px 0 10px;
+    color: #3c57a7;
+    text-align: center;
+    font-weight: 900;
+}
+
+.middle-header span {
+    color: #4fb748 !important;
+}
 
 /*# sourceMappingURL=main.css.map */

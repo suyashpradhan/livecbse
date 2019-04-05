@@ -7,161 +7,282 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="assets/styles/util.css" />
   <link rel="stylesheet" href="assets/styles/font.css" />
   <link rel="stylesheet" href="assets/styles/normalize.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
-          </li>
-        </ul>
+  <div id="header" style="padding-bottom:40px;">
+    <div class="navBar">
+      <div class="navBar-logo">
+        <a href="index.php"> <img src="http://www.livecbse.com/images/livecbse_logo.png" alt="JEE"
+            class="navBar-logo-image"></a>
+      </div>
+      <div class="navbar-form">
+        <form action="" method="post" class="navbar-form-section">
+          <input type="text" placeholder="Username" id="user" name="user" class="nav-login-field" required="">
+          <input type="password" placeholder="Password" id="pass" name="pass" class="nav-login-field" required="">
+          <button class="nav-login-btn" id="btnLogin" type="submit" name="Submit"> Login </button>
+        </form>
       </div>
     </div>
-  </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.php">Online Coaching</a>
 
-
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url(assets/images/1.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">First Slide</h2>
-            <p class="lead">This is a description for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('assets/images/2.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Second Slide</h2>
-            <p class="lead">This is a description for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('assets/images/3.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Third Slide</h2>
-            <p class="lead">This is a description for the third slide.</p>
-          </div>
+      <div class="dropdown1">
+        <button class="dropbtn">Test Series
+          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+            </path>
+          </svg><!-- <i class="fa fa-caret-down"></i> -->
+        </button>
+        <div class="dropdown-content">
+          <a href="test_series_xii.php">TestQ CBSE XII</a>
+          <a href="test_series_xi.php">TestQ CBSE XI</a>
+          <a href="test_series_x.php">TestQ CBSE X</a>
+          <a href="test_series_ix.php">TestQ CBSE IX</a>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+      <div class="dropdown1">
+        <button class="dropbtn">Study Material
+          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+            </path>
+          </svg><!-- <i class="fa fa-caret-down"></i> -->
+        </button>
+        <div class="dropdown-content">
+          <a href="study_material_xii.php">Study Material XII</a>
+          <a href="study_material_xi.php">Study Material XI</a>
+        </div>
+      </div>
+
+      <div class="dropdown1">
+        <button class="dropbtn">Doubt Removal
+          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+            </path>
+          </svg><!-- <i class="fa fa-caret-down"></i> -->
+        </button>
+        <div class="dropdown-content">
+          <a href="doubt_removal_xii.php">Doubt Removal XII</a>
+          <a href="doubt_removal_xi.php">Doubt Removal XI</a>
+          <a href="doubt_removal_x.php">Doubt Removal X</a>
+          <a href="doubt_removal_ix.php">Doubt Removal IX</a>
+        </div>
+      </div>
+
+
+      <a href="#schedule_demo12" data-toggle="modal">Schedule Demo</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
     </div>
-    <div class="carousel-indicators arrow bounce">
-      <a href="#new_two" class=""><i class="fa fa-arrow-down fa-2x arrow-icon"></i></a>
-    </div>
-  </header>
+  </div>
 
 
   <div class="container">
     <div class="row justify-content-center main__banner">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-            <img src="assets/images/jee-online-coaching.png" alt="jee-online-coaching" class="bannerImage">
-            <div class="row justify-content-center">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
-                    <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> Classroom Experience</h1>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
-                    <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> Real Time Interaction</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
-                    <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> One on One Doubt Removal</h1>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
-                    <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> See Teacher</h1>
-                </div>
-            </div>
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <img src="assets/images/jee-online-coaching.png" alt="jee-online-coaching" class="bannerImage">
+        <div class="row justify-content-center">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
+            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                </path>
+              </svg><!-- <i class="fas fa-check"></i> --> Classroom Experience</h1>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
+            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                </path>
+              </svg><!-- <i class="fas fa-check"></i> --> Real Time Interaction</h1>
+          </div>
         </div>
-        <div class="col-xs-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 prerequisiteCol">
-            <div class="prerequisiteSection">
-                <h1>Interested In...</h1>
-                <div class="class__section">
-                  <h2>Class: </h2>
-                  <div class="md-radio">
-                    <input id="ix" type="radio" name="g" checked>
-                    <label for="ix">IX</label>
-                  </div>
-                  <div class="md-radio">
-                    <input id="x" type="radio" name="g">
-                    <label for="x">X</label>
-                  </div>
-                  <div class="md-radio">
-                    <input id="xi" type="radio" name="g">
-                    <label for="xi">XI</label>
-                  </div>
-                  <div class="md-radio">
-                    <input id="xii" type="radio" name="g">
-                    <label for="xii">XII</label>
-                  </div>
-                </div>
-                <form action="" class="banner__form">
-                  <div class="select">
-                    <select name="slct" id="slct">
-                      <option>Course</option>
-                      <option value="1">Online Coaching</option>
-                      <option value="2">Study Material</option>
-                      <option value="3">Doubt Removal</option>
-                      <option value="4">Test Series</option>
-                    </select>
-                  </div>
-                  <div class="select">
-                    <select name="slct" id="slct">
-                      <option>Subjects</option>
-                      <option value="1">Select Class</option>                
-                    </select>
-                  </div>
-                  <input type="text" name="" id="" placeholder="Student Name" class="banner__form--fields">
-                  <input type="text" name="" id="" placeholder="Phone Number" class="banner__form--fields">
-                  <a href="#" class="banner__form--btn">Submit</a>
-                </form>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
+            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                </path>
+              </svg><!-- <i class="fas fa-check"></i> --> One on One Doubt Removal</h1>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
+            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                </path>
+              </svg><!-- <i class="fas fa-check"></i> --> See Teacher</h1>
+          </div>
         </div>
+      </div>
+      <div class="col-xs-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 prerequisiteCol">
+        <div class="prerequisiteSection">
+          <h1>Interested In...</h1>
+          <div class="class__section">
+            <h2>Class: </h2>
+            <div class="md-radio">
+              <input id="ix" type="radio" name="g" checked>
+              <label for="ix">IX</label>
+            </div>
+            <div class="md-radio">
+              <input id="x" type="radio" name="g">
+              <label for="x">X</label>
+            </div>
+            <div class="md-radio">
+              <input id="xi" type="radio" name="g">
+              <label for="xi">XI</label>
+            </div>
+            <div class="md-radio">
+              <input id="xii" type="radio" name="g">
+              <label for="xii">XII</label>
+            </div>
+          </div>
+          <form action="" class="banner__form">
+            <div class="select">
+              <select name="slct" id="slct">
+                <option>Course</option>
+                <option value="1">Online Coaching</option>
+                <option value="2">Study Material</option>
+                <option value="3">Doubt Removal</option>
+                <option value="4">Test Series</option>
+              </select>
+            </div>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option>Subjects</option>
+                <option value="1">Select Class</option>
+              </select>
+            </div>
+            <input type="text" name="" id="" placeholder="Student Name" class="banner__form--fields">
+            <input type="text" name="" id="" placeholder="Phone Number" class="banner__form--fields">
+            <a href="#" class="banner__form--btn">Submit</a>
+          </form>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
+
+  <div class="middle-header">
+    <h1>CBSE Expert Teaching <span>Live</span> From Kota</h1>
+  </div>
+
+  <!---Features Section-->
+  <div class="middle-wrapper-main">
+    <div class="middle-wrapper-main-subpart">
+      <h1>Live CBSE - Exclusive Benefits of Online Coaching</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon1M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Live &amp; Interactive Classes
+            <span>A real-time, live and interactive online tuitions with 2 way communication</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon2M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Periodic Tests
+            <span>The tests are conducted to check the Topic Understanding and rankings.</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon3M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Doubt solving
+            <span>Student can ask their doubts just like they do in physical classroom.</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon4M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Personal Attention and Focus
+            <span>The maximum teacher to student ratio would be 1:20.</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon5M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Safety of Homes<br>
+            <span>Avoiding Exhausting Traffic</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon6.png" alt="icon1" height="62px">
+          </div>
+          <h1>Monitoring and Feedback
+            <span>Parents can monitor their child's study ways at home itself.</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon7M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Time Saving and Economical
+            <span>Saves lot of traveling time, city migration, and mental strain of students.</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon8.png" alt="icon1" class="icon" style="height: 55px;width: auto">
+          </div>
+          <h1>Recorded Lectures
+            <span>Student can access recording of lectures in case of missed lectures.</span>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+          <div class="img">
+            <img src="img/icon9M.png" alt="icon1" class="icon">
+          </div>
+          <h1>Course Material
+            <span>NCERT simplified and organized for easier understanding of concepts.</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="course__wrapper pd-100">
     <div class="container">
-        <div class="course__box course__boxEffect">
-            <div class="info__wrapperGrid">
-              <h1>Select Courses
-                <br><span>IIT-JEE Expert Teaching Live From Kota</span>
-              </h1>
-              <div class="md-radio">
-                <input id="1" type="radio" name="g" checked>
-                <label for="1">Class IX / Class X</label>
-              </div>
-              <div class="md-radio">
-                <input id="2" type="radio" name="g">
-                <label for="2">Class XI / Class XII</label>
-              </div>
-            </div>
+      <div class="course__box course__boxEffect">
+        <div class="info__wrapperGrid">
+          <h1>Select Courses
+            <br><span>IIT-JEE Expert Teaching Live From Kota</span>
+          </h1>
+          <div class="md-radio">
+            <input id="1" type="radio" name="g" checked>
+            <label for="1">Class IX / Class X</label>
+          </div>
+          <div class="md-radio">
+            <input id="2" type="radio" name="g">
+            <label for="2">Class XI / Class XII</label>
+          </div>
         </div>
+      </div>
       <div class="course__wrapper--header">
         <h1 class="course__wrapper-headerOne">
           Live Coaching Courses XI/XII
@@ -263,164 +384,78 @@
     </div>
   </div>
 
-
-  <!---Features Section-->
-  <div class="features__wrapper pd-100">
+  <div class="pageWrapper pd-100">
     <div class="container">
-      <h1>Live CBSE - Exclusive Benefits of Online Coaching</h1>
-      <div class="features__grid">
-        <div class="features__gridInner">
-          <img src="assets/images/1.png" alt="">
-          <h1>Live & Interactive Classes</h1>
-          <p>A real-time, live and interactive online tuitions with 2 way communication</p>
+      <h1 class="sectionHeader">
+        <span class="sectionHeader-main">The STUDY MATERIAL </span>
+        <span class="sectionHeader-sub">CONQUER CBSE 3D</span>
+      </h1>
+      <div class="sectionWrapper-main">
+        <div class="sections">
+          <h2 class="sectionHead">About Conquer CBSE 3D</h2>
+          <p class="sectionPara" style="text-align:justify">The NCERT Textbooks are the most authentic source for
+            conceptual
+            understanding and focussed coverage of syllabi of Class XI/XII. Though the Textbooks are one of the most
+            prolific works by
+            experts, but in many cases, some students find the book content
+            tough to comprehend. In Conquer Series the endeavour is to restructure
+            the content in such a way that understanding of concepts and
+            memorization, wherever required, becomes easier for the students,
+            without compromising on the authenticity of the Content.</p>
         </div>
-        <div class="features__gridInner">
-          <img src="assets/images/2.png" alt="">
-          <h1>Periodic Tests</h1>
-          <p>The tests are conducted to check the Topic Understanding and rankings.</p>
+        <div class="sections">
+          <h2 class="sectionHead">Digital Content</h2>
+          <p class="sectionPara" style="text-align:justify">On top of it Conquer Series have added Video Lectures of
+            selected
+            topics, Animations &amp; Digital 3D Models to enhance the learning Experience
+            using a Mobile App. The topics for the same have been carefully
+            selected to overcome the limitation of learning through books, in cases, where
+            the comprehension of complex concepts, visualization of processes &amp; 3D structures are required for a
+            better understanding.</p>
         </div>
-        <div class="features__gridInner">
-          <img src="assets/images/3.png" alt="">
-          <h1>Doubt solving</h1>
-          <p>Student can ask their doubts just like they do in physical classroom.</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/4.png" alt="">
-          <h1>Personal Attention and Focus</h1>
-          <p>The maximum teacher to student ratio would be 1:20.</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/5.png" alt="">
-          <h1>Safety of Homes</h1>
-          <p>Avoiding Exhausting Traffic</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/6.png" alt="">
-          <h1>Monitoring and Feedback</h1>
-          <p>Parents can monitor their child's study ways at home itself.</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/7.png" alt="">
-          <h1>Time Saving and Economical</h1>
-          <p>Saves lot of traveling time, city migration, and mental strain of students.</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/8.png" alt="">
-          <h1>Recorded Lectures</h1>
-          <p>Student can access recording of lectures in case of missed lectures.</p>
-        </div>
-        <div class="features__gridInner">
-          <img src="assets/images/9.png" alt="">
-          <h1>Course Material</h1>
-          <p>NCERT simplified and organized for easier understanding of concepts.</p>
+        <div class="sections">
+          <h2 class="sectionHead">Lessons with Solved Examples</h2>
+          <p class="sectionPara" style="text-align:justify; margin-bottom:0px;">The most comprehensive notes for all the
+            topics. All Proofs and Derivations are given separately. Lots of solved examples. <br>
+            <b><u>Problem Sets:</u></b>
+          </p>
+          <ol style="color:#424747; padding-left:15px;">
+            <li> Exercise I - NCERT Exercise</li>
+            <li>Exercise II - Board/Scholl Exam Oriented</li>
+            <li>Flashback I - Topic wise segregation of last 10 years CBSE Exam Problems.</li>
+            <p></p>
+
+          </ol>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="demo__wrapper">
-    <div class="container">
-      <div class="demo__wrapper--btn">
-        <a class="demo__wrapper--link" data-toggle="modal" data-target="#info" style="cursor:pointer">SEE DEMO</a>
-      </div>
-    </div>
-  </div>
 
-  <!---Contact Form Section-->
-  <div class="contact__wrapper pd-100">
-    <div class="container">
-      <div class="container-contact100">
-        <div class="wrap-contact100">
-          <form class="contact100-form validate-form" action="#" method="POST">
-            <span class="contact100-form-title">
-              Send Us A Message
-            </span>
-
-            <label class="label-input100" for="first-name">Tell us your name *</label>
-            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-              <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name" />
-              <span class="focus-input100"></span>
-            </div>
-            <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-              <input class="input100" type="text" name="last-name" placeholder="Last name" />
-              <span class="focus-input100"></span>
-            </div>
-
-            <label class="label-input100" for="email">Enter your email *</label>
-            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com" />
-              <span class="focus-input100"></span>
-            </div>
-
-            <label class="label-input100" for="phone">Enter phone number</label>
-            <div class="wrap-input100">
-              <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000" />
-              <span class="focus-input100"></span>
-            </div>
-
-            <label class="label-input100" for="message">Message *</label>
-            <div class="wrap-input100 validate-input" data-validate="Message is required">
-              <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
-              <span class="focus-input100"></span>
-            </div>
-
-            <div class="container-contact100-form-btn">
-              <button type="submit" name="submit" class="contact100-form-btn">
-                Send Message
-              </button>
-            </div>
-          </form>
-
-          <div class="contact100-more flex-col-c-m" style="background-image: url('assets/images/bg-01.jpg');">
-            <div class="flex-w size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-map-marker"></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Address
-                </span>
-
-                <span class="txt2">
-                  Aston Building, 10th, Lokhandwala Complex, Andheri West,
-                  Mumbai, Maharashtra 400053
-                </span>
-              </div>
-            </div>
-
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-phone-handset"></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Lets Talk
-                </span>
-
-                <span class="txt3">
-                  +91 9649964912
-                </span>
-              </div>
-            </div>
-
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-envelope"></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  General Support
-                </span>
-
-                <span class="txt3">
-                  contact@livecbse.com
-                </span>
-              </div>
-            </div>
+      <div class="row justify-content-center no-gutters">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <div class="imageWrapper">
+            <img src="assets/images/android.PNG" alt="" class="banner-image">
           </div>
         </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+          <h1 class="appHeader">App Powered Booklets <img src="img/an.png" alt="" height="60px" class="android"></h1>
+          <ul class="inner-wrapper-list">
+            <li><img src="assets/images/video.png" alt="video" height="80px"><br><br>
+              <h4 style="text-align: center;font-size: 16px;color: #777">Lectures</h4>
+            </li>
+            <li><img src="assets/images/animated.png" alt="" height="80px"><br><br>
+              <h4 style="text-align: center;font-size: 16px;color: #777">Animations</h4>
+            </li>
+            <li><img src="assets/images/3D.png" alt="" height="80px"><br><br>
+              <h4 style="text-align: center;font-size: 16px;color: #777">3-D Models</h4>
+            </li>
+            <li><img src="assets/images/QR.PNG" alt="" height="80px"><br><br>
+              <h4 style="text-align: center;font-size: 16px;color: #777">QR Code</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sampleContentSection">
+        <a href="http://www.domain-education.com/flip_book/index.php?id=sample_live" target="_blank"> <button
+            type="submit" class="sampleBtn" id="sampleBtn">CLICK TO SEE SAMPLE</button></a>
       </div>
     </div>
   </div>
