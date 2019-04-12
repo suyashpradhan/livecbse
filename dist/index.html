@@ -2,475 +2,1147 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../main.css" />
-  <link rel="stylesheet" href="assets/styles/util.css" />
-  <link rel="stylesheet" href="assets/styles/font.css" />
-  <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet" />
+    <link href="../main.css" rel="stylesheet" />
+    <link href="assets/styles/util.css" rel="stylesheet" />
+    <link href="assets/styles/font.css" rel="stylesheet" />
+    <link href="assets/styles/normalize.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div id="header" style="padding-bottom:40px;">
-    <div class="navBar">
-      <div class="navBar-logo">
-        <a href="index.php"> <img src="http://www.livecbse.com/images/livecbse_logo.png" alt="JEE"
-            class="navBar-logo-image"></a>
-      </div>
-      <div class="navbar-form">
-        <form action="" method="post" class="navbar-form-section">
-          <input type="text" placeholder="Username" id="user" name="user" class="nav-login-field" required="">
-          <input type="password" placeholder="Password" id="pass" name="pass" class="nav-login-field" required="">
-          <button class="nav-login-btn" id="btnLogin" type="submit" name="Submit"> Login </button>
-        </form>
-      </div>
+    <div id="header" style="padding-bottom:40px;">
+        <div class="navBar">
+            <div class="navBar-logo">
+                <a href="index.php"> <img alt="JEE" class="navBar-logo-image"
+                        src="http://www.livecbse.com/images/livecbse_logo.png"></a>
+            </div>
+            <div class="navbar-form">
+                <form action="" class="navbar-form-section" method="post">
+                    <input class="nav-login-field" id="user" name="user" placeholder="Username" required="" type="text">
+                    <input class="nav-login-field" id="pass" name="pass" placeholder="Password" required=""
+                        type="password">
+                    <button class="nav-login-btn" id="btnLogin" name="Submit" type="submit"> Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.php">Online Coaching</a>
+
+            <div class="dropdown1">
+                <button class="dropbtn">Test Series
+                    <svg aria-hidden="true" class="svg-inline--fa fa-caret-down fa-w-10" data-fa-i2svg=""
+                        data-icon="caret-down" data-prefix="fa" role="img" viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                            fill="currentColor">
+                        </path>
+                    </svg><!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="test_series_xii.php">TestQ CBSE XII</a>
+                    <a href="test_series_xi.php">TestQ CBSE XI</a>
+                    <a href="test_series_x.php">TestQ CBSE X</a>
+                    <a href="test_series_ix.php">TestQ CBSE IX</a>
+                </div>
+            </div>
+
+            <div class="dropdown1">
+                <button class="dropbtn">Study Material
+                    <svg aria-hidden="true" class="svg-inline--fa fa-caret-down fa-w-10" data-fa-i2svg=""
+                        data-icon="caret-down" data-prefix="fa" role="img" viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                            fill="currentColor">
+                        </path>
+                    </svg><!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="study_material_xii.php">Study Material XII</a>
+                    <a href="study_material_xi.php">Study Material XI</a>
+                </div>
+            </div>
+
+            <div class="dropdown1">
+                <button class="dropbtn">Doubt Removal
+                    <svg aria-hidden="true" class="svg-inline--fa fa-caret-down fa-w-10" data-fa-i2svg=""
+                        data-icon="caret-down" data-prefix="fa" role="img" viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                            fill="currentColor">
+                        </path>
+                    </svg><!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="doubt_removal_xii.php">Doubt Removal XII</a>
+                    <a href="doubt_removal_xi.php">Doubt Removal XI</a>
+                    <a href="doubt_removal_x.php">Doubt Removal X</a>
+                    <a href="doubt_removal_ix.php">Doubt Removal IX</a>
+                </div>
+            </div>
+
+
+            <a data-toggle="modal" href="#schedule_demo12">Schedule Demo</a>
+            <a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">☰</a>
+        </div>
     </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.php">Online Coaching</a>
-
-      <div class="dropdown1">
-        <button class="dropbtn">Test Series
-          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
-            <path fill="currentColor"
-              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
-            </path>
-          </svg><!-- <i class="fa fa-caret-down"></i> -->
-        </button>
-        <div class="dropdown-content">
-          <a href="test_series_xii.php">TestQ CBSE XII</a>
-          <a href="test_series_xi.php">TestQ CBSE XI</a>
-          <a href="test_series_x.php">TestQ CBSE X</a>
-          <a href="test_series_ix.php">TestQ CBSE IX</a>
-        </div>
-      </div>
-
-      <div class="dropdown1">
-        <button class="dropbtn">Study Material
-          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
-            <path fill="currentColor"
-              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
-            </path>
-          </svg><!-- <i class="fa fa-caret-down"></i> -->
-        </button>
-        <div class="dropdown-content">
-          <a href="study_material_xii.php">Study Material XII</a>
-          <a href="study_material_xi.php">Study Material XI</a>
-        </div>
-      </div>
-
-      <div class="dropdown1">
-        <button class="dropbtn">Doubt Removal
-          <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fa" data-icon="caret-down"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
-            <path fill="currentColor"
-              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
-            </path>
-          </svg><!-- <i class="fa fa-caret-down"></i> -->
-        </button>
-        <div class="dropdown-content">
-          <a href="doubt_removal_xii.php">Doubt Removal XII</a>
-          <a href="doubt_removal_xi.php">Doubt Removal XI</a>
-          <a href="doubt_removal_x.php">Doubt Removal X</a>
-          <a href="doubt_removal_ix.php">Doubt Removal IX</a>
-        </div>
-      </div>
 
 
-      <a href="#schedule_demo12" data-toggle="modal">Schedule Demo</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="row justify-content-center main__banner">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-        <img src="assets/images/jee-online-coaching.png" alt="jee-online-coaching" class="bannerImage">
-        <div class="row justify-content-center">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
-            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
-                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                </path>
-              </svg><!-- <i class="fas fa-check"></i> --> Classroom Experience</h1>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
-            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
-                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                </path>
-              </svg><!-- <i class="fas fa-check"></i> --> Real Time Interaction</h1>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
-            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
-                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                </path>
-              </svg><!-- <i class="fas fa-check"></i> --> One on One Doubt Removal</h1>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
-            <h1><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="check"
-                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                </path>
-              </svg><!-- <i class="fas fa-check"></i> --> See Teacher</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 prerequisiteCol">
-        <div class="prerequisiteSection">
-          <h1>Interested In...</h1>
-          <div class="class__section">
-            <h2>Class: </h2>
-            <div class="md-radio">
-              <input id="ix" type="radio" name="g" checked>
-              <label for="ix">IX</label>
-            </div>
-            <div class="md-radio">
-              <input id="x" type="radio" name="g">
-              <label for="x">X</label>
-            </div>
-            <div class="md-radio">
-              <input id="xi" type="radio" name="g">
-              <label for="xi">XI</label>
-            </div>
-            <div class="md-radio">
-              <input id="xii" type="radio" name="g">
-              <label for="xii">XII</label>
-            </div>
-          </div>
-          <form action="" class="banner__form">
-            <div class="select">
-              <select name="slct" id="slct">
-                <option>Course</option>
-                <option value="1">Online Coaching</option>
-                <option value="2">Study Material</option>
-                <option value="3">Doubt Removal</option>
-                <option value="4">Test Series</option>
-              </select>
-            </div>
-            <div class="select">
-              <select name="slct" id="slct">
-                <option>Subjects</option>
-                <option value="1">Select Class</option>
-              </select>
-            </div>
-            <input type="text" name="" id="" placeholder="Student Name" class="banner__form--fields">
-            <input type="text" name="" id="" placeholder="Phone Number" class="banner__form--fields">
-            <a href="#" class="banner__form--btn">Submit</a>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="middle-header">
-    <h1>CBSE Expert Teaching <span>Live</span> From Kota</h1>
-  </div>
-
-  <!---Features Section-->
-  <div class="middle-wrapper-main">
-    <div class="middle-wrapper-main-subpart">
-      <h1>Live CBSE - Exclusive Benefits of Online Coaching</h1>
-    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon1M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Live &amp; Interactive Classes
-            <span>A real-time, live and interactive online tuitions with 2 way communication</span>
-          </h1>
+        <div class="row justify-content-center main__banner">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <img alt="jee-online-coaching" class="bannerImage" src="assets/images/jee-online-coaching.png">
+                <div class="row justify-content-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
+                        <h1>
+                            <svg aria-hidden="true" class="svg-inline--fa fa-check fa-w-16" data-fa-i2svg=""
+                                data-icon="check" data-prefix="fas" role="img" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                                    fill="currentColor">
+                                </path>
+                            </svg><!-- <i class="fas fa-check"></i> --> Classroom Experience
+                        </h1>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColMain">
+                        <h1>
+                            <svg aria-hidden="true" class="svg-inline--fa fa-check fa-w-16" data-fa-i2svg=""
+                                data-icon="check" data-prefix="fas" role="img" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                                    fill="currentColor">
+                                </path>
+                            </svg><!-- <i class="fas fa-check"></i> --> Real Time Interaction
+                        </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
+                        <h1>
+                            <svg aria-hidden="true" class="svg-inline--fa fa-check fa-w-16" data-fa-i2svg=""
+                                data-icon="check" data-prefix="fas" role="img" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                                    fill="currentColor">
+                                </path>
+                            </svg><!-- <i class="fas fa-check"></i> --> One on One Doubt Removal
+                        </h1>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 innerColSub">
+                        <h1>
+                            <svg aria-hidden="true" class="svg-inline--fa fa-check fa-w-16" data-fa-i2svg=""
+                                data-icon="check" data-prefix="fas" role="img" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                                    fill="currentColor">
+                                </path>
+                            </svg><!-- <i class="fas fa-check"></i> --> See Teacher
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 prerequisiteCol">
+                <div class="prerequisiteSection">
+                    <h1>Interested In...</h1>
+                    <div class="class__section">
+                        <h2>Class: </h2>
+                        <div class="md-radio">
+                            <input checked id="ix" name="g" type="radio">
+                            <label for="ix">IX</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="x" name="g" type="radio">
+                            <label for="x">X</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="xi" name="g" type="radio">
+                            <label for="xi">XI</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="xii" name="g" type="radio">
+                            <label for="xii">XII</label>
+                        </div>
+                    </div>
+                    <form action="" class="banner__form">
+                        <div class="select">
+                            <select id="slct" name="slct">
+                                <option>Course</option>
+                                <option value="1">Online Coaching</option>
+                                <option value="2">Study Material</option>
+                                <option value="3">Doubt Removal</option>
+                                <option value="4">Test Series</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select id="slct" name="slct">
+                                <option>Subjects</option>
+                                <option value="1">Select Class</option>
+                            </select>
+                        </div>
+                        <input class="banner__form--fields" id="" name="" placeholder="Student Name" type="text">
+                        <input class="banner__form--fields" id="" name="" placeholder="Phone Number" type="text">
+                        <a class="banner__form--btn" href="#">Submit</a>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon2M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Periodic Tests
-            <span>The tests are conducted to check the Topic Understanding and rankings.</span>
-          </h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon3M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Doubt solving
-            <span>Student can ask their doubts just like they do in physical classroom.</span>
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon4M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Personal Attention and Focus
-            <span>The maximum teacher to student ratio would be 1:20.</span>
-          </h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon5M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Safety of Homes<br>
-            <span>Avoiding Exhausting Traffic</span>
-          </h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon6.png" alt="icon1" height="62px">
-          </div>
-          <h1>Monitoring and Feedback
-            <span>Parents can monitor their child's study ways at home itself.</span>
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon7M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Time Saving and Economical
-            <span>Saves lot of traveling time, city migration, and mental strain of students.</span>
-          </h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon8.png" alt="icon1" class="icon" style="height: 55px;width: auto">
-          </div>
-          <h1>Recorded Lectures
-            <span>Student can access recording of lectures in case of missed lectures.</span>
-          </h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
-          <div class="img">
-            <img src="img/icon9M.png" alt="icon1" class="icon">
-          </div>
-          <h1>Course Material
-            <span>NCERT simplified and organized for easier understanding of concepts.</span>
-          </h1>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="course__wrapper pd-100">
-    <div class="container">
-      <div class="course__box course__boxEffect">
-        <div class="info__wrapperGrid">
-          <h1>Select Courses
-            <br><span>IIT-JEE Expert Teaching Live From Kota</span>
-          </h1>
-          <div class="md-radio">
-            <input id="1" type="radio" name="g" checked>
-            <label for="1">Class IX / Class X</label>
-          </div>
-          <div class="md-radio">
-            <input id="2" type="radio" name="g">
-            <label for="2">Class XI / Class XII</label>
-          </div>
-        </div>
-      </div>
-      <div class="course__wrapper--header">
-        <h1 class="course__wrapper-headerOne">
-          Live Coaching Courses XI/XII
-        </h1>
-        <h1 class="course__wrapper-headerTwo">
-          My Course Selection <span> No. Of Course :- 0</span><span> Amount :- Rs. 0</span>
-          <span><a href="#">Edit</a> / <a href="#">Reset</a></span>
-        </h1>
-      </div>
-      <div class="course__wrapper--grid">
-        <div class="course__inner--card card__effect">
-          <h1 class="course__inner--cardHeader">CBSE Physics XI/XII</h1>
-          <div class="course__inner-list">
-            <h1 class="course__inner-listFirst">Full Course</h1>
-            <h1 class="course__tooltip">Class XI</h1>
 
-            <div class="md-checkbox">
-              <input id="i1" type="checkbox" checked>
-              <label for="i1"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 1</h1>
-            <h1>Mechanics - I</h1>
-            <div class="md-checkbox">
-              <input id="i2" type="checkbox" checked>
-              <label for="i2"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 2</h1>
-            <h1>Mechanics - II</h1>
-            <div class="md-checkbox">
-              <input id="i3" type="checkbox" checked>
-              <label for="i3"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 3</h1>
-            <h1>Heat</h1>
-            <div class="md-checkbox">
-              <input id="i4" type="checkbox" checked>
-              <label for="i4"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 4</h1>
-            <h1>Waves</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <hr>
-          <div class="course__inner-list">
-            <h1 class="course__inner-listFirst">Full Course</h1>
-            <h1> Class XII</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 1</h1>
-            <h1>Electrostatics</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 2</h1>
-            <h1>Electrodynamics</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 3</h1>
-            <h1>Optics</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <div class="course__inner-list">
-            <h1>Mod 4</h1>
-            <h1>Modern Physics</h1>
-            <div class="md-checkbox">
-              <input id="i5" type="checkbox" checked>
-              <label for="i5"></label>
-            </div>
-          </div>
-          <h1 class="course__inner--cardFooter"><a href="">Fee Structure</a>
-            <a href="">Refund Policy</a><a href="">Terms & Conditions</a></h1>
-        </div>
-      </div>
+
+    <div class="middle-header">
+        <h1>CBSE Expert Teaching <span>Live</span> From Kota</h1>
     </div>
-  </div>
 
-  <div class="pageWrapper pd-100">
-    <div class="container">
-      <h1 class="sectionHeader">
-        <span class="sectionHeader-main">The STUDY MATERIAL </span>
-        <span class="sectionHeader-sub">CONQUER CBSE 3D</span>
-      </h1>
-      <div class="sectionWrapper-main">
-        <div class="sections">
-          <h2 class="sectionHead">About Conquer CBSE 3D</h2>
-          <p class="sectionPara" style="text-align:justify">The NCERT Textbooks are the most authentic source for
-            conceptual
-            understanding and focussed coverage of syllabi of Class XI/XII. Though the Textbooks are one of the most
-            prolific works by
-            experts, but in many cases, some students find the book content
-            tough to comprehend. In Conquer Series the endeavour is to restructure
-            the content in such a way that understanding of concepts and
-            memorization, wherever required, becomes easier for the students,
-            without compromising on the authenticity of the Content.</p>
+    <!---Features Section-->
+    <div class="middle-wrapper-main">
+        <div class="middle-wrapper-main-subpart">
+            <h1>Live CBSE - Exclusive Benefits of Online Coaching</h1>
         </div>
-        <div class="sections">
-          <h2 class="sectionHead">Digital Content</h2>
-          <p class="sectionPara" style="text-align:justify">On top of it Conquer Series have added Video Lectures of
-            selected
-            topics, Animations &amp; Digital 3D Models to enhance the learning Experience
-            using a Mobile App. The topics for the same have been carefully
-            selected to overcome the limitation of learning through books, in cases, where
-            the comprehension of complex concepts, visualization of processes &amp; 3D structures are required for a
-            better understanding.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/1.png">
+                    </div>
+                    <h1>Live &amp; Interactive Classes
+                        <span>A real-time, live and interactive online tuitions with 2 way communication</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Periodic Tests
+                        <span>The tests are conducted to check the Topic Understanding and rankings.</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Doubt solving
+                        <span>Student can ask their doubts just like they do in physical classroom.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Personal Attention and Focus
+                        <span>The maximum teacher to student ratio would be 1:20.</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Safety of Homes<br>
+                        <span>Avoiding Exhausting Traffic</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" height="62px" src="assets/images/2.png">
+                    </div>
+                    <h1>Monitoring and Feedback
+                        <span>Parents can monitor their child's study ways at home itself.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Time Saving and Economical
+                        <span>Saves lot of traveling time, city migration, and mental strain of students.</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png" style="height: 55px;width: auto">
+                    </div>
+                    <h1>Recorded Lectures
+                        <span>Student can access recording of lectures in case of missed lectures.</span>
+                    </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 myCol">
+                    <div class="img">
+                        <img alt="icon1" class="icon" src="assets/images/2.png">
+                    </div>
+                    <h1>Course Material
+                        <span>NCERT simplified and organized for easier understanding of concepts.</span>
+                    </h1>
+                </div>
+            </div>
         </div>
-        <div class="sections">
-          <h2 class="sectionHead">Lessons with Solved Examples</h2>
-          <p class="sectionPara" style="text-align:justify; margin-bottom:0px;">The most comprehensive notes for all the
-            topics. All Proofs and Derivations are given separately. Lots of solved examples. <br>
-            <b><u>Problem Sets:</u></b>
-          </p>
-          <ol style="color:#424747; padding-left:15px;">
-            <li> Exercise I - NCERT Exercise</li>
-            <li>Exercise II - Board/Scholl Exam Oriented</li>
-            <li>Flashback I - Topic wise segregation of last 10 years CBSE Exam Problems.</li>
-            <p></p>
-
-          </ol>
-        </div>
-      </div>
-
-      <div class="row justify-content-center no-gutters">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-          <div class="imageWrapper">
-            <img src="assets/images/android.PNG" alt="" class="banner-image">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-          <h1 class="appHeader">App Powered Booklets <img src="img/an.png" alt="" height="60px" class="android"></h1>
-          <ul class="inner-wrapper-list">
-            <li><img src="assets/images/video.png" alt="video" height="80px"><br><br>
-              <h4 style="text-align: center;font-size: 16px;color: #777">Lectures</h4>
-            </li>
-            <li><img src="assets/images/animated.png" alt="" height="80px"><br><br>
-              <h4 style="text-align: center;font-size: 16px;color: #777">Animations</h4>
-            </li>
-            <li><img src="assets/images/3D.png" alt="" height="80px"><br><br>
-              <h4 style="text-align: center;font-size: 16px;color: #777">3-D Models</h4>
-            </li>
-            <li><img src="assets/images/QR.PNG" alt="" height="80px"><br><br>
-              <h4 style="text-align: center;font-size: 16px;color: #777">QR Code</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="sampleContentSection">
-        <a href="http://www.domain-education.com/flip_book/index.php?id=sample_live" target="_blank"> <button
-            type="submit" class="sampleBtn" id="sampleBtn">CLICK TO SEE SAMPLE</button></a>
-      </div>
     </div>
-  </div>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-  <script src="assets/script/script.js"></script>
+    <div class="course__wrapper pd-sub">
+        <div class="container">
+            <div class="course__box course__boxEffect">
+                <div class="info__wrapperGrid">
+                    <h1>Select Courses
+                        <br><span>IIT-JEE Expert Teaching Live From Kota</span>
+                    </h1>
+                    <div class="md-radio">
+                        <input id="1" type="radio" name="section" value="senior_secondary" checked=""
+                            onclick="change_section()">
+                        <label for="1">Class IX / Class X</label>
+                    </div>
+                    <div class="md-radio">
+                        <input id="2" type="radio" name="section" value="secondary" onclick="change_section()">
+                        <label for="2">Class XI / Class XII</label>
+                    </div>
+                </div>
+            </div>
+            <div class="course__wrapper--header">
+                <h1 class="course__wrapper-headerOne">
+                    Live Coaching Courses XI/XII
+                </h1>
+                <h1 class="course__wrapper-headerTwo">
+                    My Course Selection <span> No. Of Course :- 0</span><span> Amount :- Rs. 0</span>
+                    <span><a href="#">Edit</a> / <a href="#">Reset</a></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="course__wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 firstRow">
+                    <div class="section-1-of-3">
+                        <h1>CBSE Physics XI/XII</h1>
+                    </div>
+
+                    <div class="blockWrapper" style="background-color:#efefef">
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm11" name="pm11" onclick="fullcourse21('p','11','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 1</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Physical World</li>
+            <li>
+    		Units and Measurement</li>
+    	<li>
+    		Motion In A Straight Line</li>
+    	<li>
+    		Motion In A Plane</li>
+    	<li>
+    		Laws Of Motion</li>
+    </ul>
+    " data-original-title="Mechanics- I" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Mechanics- I</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm1" name="pm1"
+                                        onclick="phy_course('1');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 2</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Work, Energy And Power</li>
+    	<li>
+    		System Of Particles And Rotational Motion</li>
+    	<li>
+    		Gravitation</li>
+    </ul>
+    " data-original-title="Mechanics- II" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Mechanics- II</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm2" name="pm2"
+                                        onclick="phy_course('2');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 3</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Thermal Properties Of Matter</li>
+    	<li>
+    		Thermodynamics</li>
+    	<li>
+    		Kinetic Theory</li>
+    </ul>
+    " data-original-title="Heat" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Heat</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm3" name="pm3"
+                                        onclick="phy_course('3');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 4</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Oscillations</li>
+    	<li>
+    		Waves</li>
+    	<li>
+    		Mechanical Properties Of Solids</li>
+    	<li>
+    		Mechanical Properties Of Fluids</li>
+    </ul>
+    " data-original-title="Waves" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Waves</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm4" name="pm4"
+                                        onclick="phy_course('4');" type="checkbox"></span></p>
+                        </div>
+
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm12" name="pm12" onclick="fullcourse21('p','12','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -1</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Electric Charges and Fields</li>
+    	<li>
+    		Electrostatic Potential and Capacitance</li>
+    	<li>
+    		Current Electricity</li>
+    </ul>
+    " data-original-title="Electrostatics" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Electrostatics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm5" name="pm5"
+                                        onclick="phy_course('5');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -2</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Magnetism and Matter</li>
+    	<li>
+    		Moving Charges and Magnetism</li>
+    	<li>
+    		Electromagnetic Induction</li>
+    	<li>
+    		Alternating Current</li>
+    </ul>
+    " data-original-title="Electrodynamics" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Electrodynamics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm6" name="pm6"
+                                        onclick="phy_course('6');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -3</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Electromagnetic Waves</li>
+    	<li>
+    		Ray Optics and Optical Instruments</li>
+    	<li>
+    		Wave Optics</li>
+    </ul>
+    " data-original-title="Optics" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Optics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm7" name="pm7"
+                                        onclick="phy_course('7');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -4</span> <span class="topic"><a data-content="<ul>
+    	<li>
+    		Dual Nature of Radiation and Matter</li>
+    	<li>
+    		Atoms</li>
+    	<li>
+    		Nuclei</li>
+    	<li>
+    		Semiconductor Electronics : Materials, Devices</li>
+    	<li>
+    		Communication Systems</li>
+    </ul>
+    " data-original-title="Modern Physics" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Modern Physics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm8" name="pm8"
+                                        onclick="phy_course('8');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="section-1-of-3-footer" style="text-align:center">
+                            <a class="fees-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+                            text-decoration: none;
+                            color: #fff;
+                            padding-right: 5px;">Fees Structure</a>
+                            <a class="refund-link" data-backdrop="static" data-keyboard="false"
+                                data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+                            text-decoration: none;
+                            color: #fff;
+                            padding-right: 5px;">Refund Policy</a>
+                            <a data-backdrop="static" data-keyboard="false" data-target="#exampleModalT"
+                                data-toggle="modal" href="#" style="text-transform: none;
+                            text-decoration: none;
+                            color: #fff;
+                            padding-right: 5px;">Terms &amp; Condition</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 firstRow">
+                    <div class="section-1-of-3">
+                        <h1>CBSE Physics XI/XII</h1>
+                    </div>
+
+                    <div class="blockWrapper" style="background-color:#efefef">
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm11" name="pm11" onclick="fullcourse21('p','11','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 1</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Physical World</li>
+                        <li>
+                		Units and Measurement</li>
+                	<li>
+                		Motion In A Straight Line</li>
+                	<li>
+                		Motion In A Plane</li>
+                	<li>
+                		Laws Of Motion</li>
+                </ul>
+                " data-original-title="Mechanics- I" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        I</a></span> <span style="float: right; margin-right:10px;"><input id="pm1"
+                                        name="pm1" onclick="phy_course('1');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 2</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Work, Energy And Power</li>
+                	<li>
+                		System Of Particles And Rotational Motion</li>
+                	<li>
+                		Gravitation</li>
+                </ul>
+                " data-original-title="Mechanics- II" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        II</a></span> <span style="float: right; margin-right:10px;"><input id="pm2"
+                                        name="pm2" onclick="phy_course('2');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 3</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Thermal Properties Of Matter</li>
+                	<li>
+                		Thermodynamics</li>
+                	<li>
+                		Kinetic Theory</li>
+                </ul>
+                " data-original-title="Heat" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Heat</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm3" name="pm3"
+                                        onclick="phy_course('3');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 4</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Oscillations</li>
+                	<li>
+                		Waves</li>
+                	<li>
+                		Mechanical Properties Of Solids</li>
+                	<li>
+                		Mechanical Properties Of Fluids</li>
+                </ul>
+                " data-original-title="Waves" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Waves</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm4" name="pm4"
+                                        onclick="phy_course('4');" type="checkbox"></span></p>
+                        </div>
+
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm12" name="pm12" onclick="fullcourse21('p','12','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -1</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Electric Charges and Fields</li>
+                	<li>
+                		Electrostatic Potential and Capacitance</li>
+                	<li>
+                		Current Electricity</li>
+                </ul>
+                " data-original-title="Electrostatics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrostatics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm5" name="pm5"
+                                        onclick="phy_course('5');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -2</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Magnetism and Matter</li>
+                	<li>
+                		Moving Charges and Magnetism</li>
+                	<li>
+                		Electromagnetic Induction</li>
+                	<li>
+                		Alternating Current</li>
+                </ul>
+                " data-original-title="Electrodynamics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrodynamics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm6" name="pm6"
+                                        onclick="phy_course('6');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -3</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Electromagnetic Waves</li>
+                	<li>
+                		Ray Optics and Optical Instruments</li>
+                	<li>
+                		Wave Optics</li>
+                </ul>
+                " data-original-title="Optics" data-toggle="popover" data-trigger="hover" href="javascript:void(0);"
+                                        style="color:#006666; " title="">Optics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm7" name="pm7"
+                                        onclick="phy_course('7');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -4</span> <span class="topic"><a data-content="<ul>
+                	<li>
+                		Dual Nature of Radiation and Matter</li>
+                	<li>
+                		Atoms</li>
+                	<li>
+                		Nuclei</li>
+                	<li>
+                		Semiconductor Electronics : Materials, Devices</li>
+                	<li>
+                		Communication Systems</li>
+                </ul>
+                " data-original-title="Modern Physics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Modern
+                                        Physics</a></span> <span style="float: right; margin-right:10px;"><input
+                                        id="pm8" name="pm8" onclick="phy_course('8');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="section-1-of-3-footer" style="text-align:center">
+                            <a class="fees-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+                                        text-decoration: none;
+                                        color: #fff;
+                                        padding-right: 5px;">Fees Structure</a>
+                            <a class="refund-link" data-backdrop="static" data-keyboard="false"
+                                data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+                                        text-decoration: none;
+                                        color: #fff;
+                                        padding-right: 5px;">Refund Policy</a>
+                            <a data-backdrop="static" data-keyboard="false" data-target="#exampleModalT"
+                                data-toggle="modal" href="#" style="text-transform: none;
+                                        text-decoration: none;
+                                        color: #fff;
+                                        padding-right: 5px;">Terms &amp; Condition</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 firstRow">
+                    <div class="section-1-of-3">
+                        <h1>CBSE Physics XI/XII</h1>
+                    </div>
+
+                    <div class="blockWrapper" style="background-color:#efefef">
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm11" name="pm11" onclick="fullcourse21('p','11','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 1</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Physical World</li>
+                                    <li>
+                            		Units and Measurement</li>
+                            	<li>
+                            		Motion In A Straight Line</li>
+                            	<li>
+                            		Motion In A Plane</li>
+                            	<li>
+                            		Laws Of Motion</li>
+                            </ul>
+                            " data-original-title="Mechanics- I" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        I</a></span> <span style="float: right; margin-right:10px;"><input id="pm1"
+                                        name="pm1" onclick="phy_course('1');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 2</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Work, Energy And Power</li>
+                            	<li>
+                            		System Of Particles And Rotational Motion</li>
+                            	<li>
+                            		Gravitation</li>
+                            </ul>
+                            " data-original-title="Mechanics- II" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        II</a></span> <span style="float: right; margin-right:10px;"><input id="pm2"
+                                        name="pm2" onclick="phy_course('2');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 3</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Thermal Properties Of Matter</li>
+                            	<li>
+                            		Thermodynamics</li>
+                            	<li>
+                            		Kinetic Theory</li>
+                            </ul>
+                            " data-original-title="Heat" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Heat</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm3" name="pm3"
+                                        onclick="phy_course('3');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 4</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Oscillations</li>
+                            	<li>
+                            		Waves</li>
+                            	<li>
+                            		Mechanical Properties Of Solids</li>
+                            	<li>
+                            		Mechanical Properties Of Fluids</li>
+                            </ul>
+                            " data-original-title="Waves" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Waves</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm4" name="pm4"
+                                        onclick="phy_course('4');" type="checkbox"></span></p>
+                        </div>
+
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm12" name="pm12" onclick="fullcourse21('p','12','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -1</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Electric Charges and Fields</li>
+                            	<li>
+                            		Electrostatic Potential and Capacitance</li>
+                            	<li>
+                            		Current Electricity</li>
+                            </ul>
+                            " data-original-title="Electrostatics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrostatics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm5" name="pm5"
+                                        onclick="phy_course('5');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -2</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Magnetism and Matter</li>
+                            	<li>
+                            		Moving Charges and Magnetism</li>
+                            	<li>
+                            		Electromagnetic Induction</li>
+                            	<li>
+                            		Alternating Current</li>
+                            </ul>
+                            " data-original-title="Electrodynamics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrodynamics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm6" name="pm6"
+                                        onclick="phy_course('6');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -3</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Electromagnetic Waves</li>
+                            	<li>
+                            		Ray Optics and Optical Instruments</li>
+                            	<li>
+                            		Wave Optics</li>
+                            </ul>
+                            " data-original-title="Optics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Optics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm7" name="pm7"
+                                        onclick="phy_course('7');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -4</span> <span class="topic"><a data-content="<ul>
+                            	<li>
+                            		Dual Nature of Radiation and Matter</li>
+                            	<li>
+                            		Atoms</li>
+                            	<li>
+                            		Nuclei</li>
+                            	<li>
+                            		Semiconductor Electronics : Materials, Devices</li>
+                            	<li>
+                            		Communication Systems</li>
+                            </ul>
+                            " data-original-title="Modern Physics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Modern
+                                        Physics</a></span> <span style="float: right; margin-right:10px;"><input
+                                        id="pm8" name="pm8" onclick="phy_course('8');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="section-1-of-3-footer" style="text-align:center">
+                            <a class="fees-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                    padding-right: 5px;">Fees Structure</a>
+                            <a class="refund-link" data-backdrop="static" data-keyboard="false"
+                                data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                    padding-right: 5px;">Refund Policy</a>
+                            <a data-backdrop="static" data-keyboard="false" data-target="#exampleModalT"
+                                data-toggle="modal" href="#" style="text-transform: none;
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                    padding-right: 5px;">Terms &amp; Condition</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 firstRow">
+                    <div class="section-1-of-3">
+                        <h1>CBSE Physics XI/XII</h1>
+                    </div>
+
+                    <div class="blockWrapper" style="background-color:#efefef">
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm11" name="pm11" onclick="fullcourse21('p','11','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 1</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Physical World</li>
+                                        <li>
+                                		Units and Measurement</li>
+                                	<li>
+                                		Motion In A Straight Line</li>
+                                	<li>
+                                		Motion In A Plane</li>
+                                	<li>
+                                		Laws Of Motion</li>
+                                </ul>
+                                " data-original-title="Mechanics- I" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        I</a></span> <span style="float: right; margin-right:10px;"><input id="pm1"
+                                        name="pm1" onclick="phy_course('1');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 2</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Work, Energy And Power</li>
+                                	<li>
+                                		System Of Particles And Rotational Motion</li>
+                                	<li>
+                                		Gravitation</li>
+                                </ul>
+                                " data-original-title="Mechanics- II" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Mechanics-
+                                        II</a></span> <span style="float: right; margin-right:10px;"><input id="pm2"
+                                        name="pm2" onclick="phy_course('2');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 3</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Thermal Properties Of Matter</li>
+                                	<li>
+                                		Thermodynamics</li>
+                                	<li>
+                                		Kinetic Theory</li>
+                                </ul>
+                                " data-original-title="Heat" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Heat</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm3" name="pm3"
+                                        onclick="phy_course('3');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod 4</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Oscillations</li>
+                                	<li>
+                                		Waves</li>
+                                	<li>
+                                		Mechanical Properties Of Solids</li>
+                                	<li>
+                                		Mechanical Properties Of Fluids</li>
+                                </ul>
+                                " data-original-title="Waves" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Waves</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm4" name="pm4"
+                                        onclick="phy_course('4');" type="checkbox"></span></p>
+                        </div>
+
+                        <div class="sectionInnerFirstList" style="background-color:#999">
+                            <p><a href="#">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span
+                                    style="float: right; margin-right:10px;">
+                                    <input id="pm12" name="pm12" onclick="fullcourse21('p','12','pm');"
+                                        type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -1</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Electric Charges and Fields</li>
+                                	<li>
+                                		Electrostatic Potential and Capacitance</li>
+                                	<li>
+                                		Current Electricity</li>
+                                </ul>
+                                " data-original-title="Electrostatics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrostatics</a></span> <span
+                                    style="float: right; margin-right:10px;"><input id="pm5" name="pm5"
+                                        onclick="phy_course('5');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -2</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Magnetism and Matter</li>
+                                	<li>
+                                		Moving Charges and Magnetism</li>
+                                	<li>
+                                		Electromagnetic Induction</li>
+                                	<li>
+                                		Alternating Current</li>
+                                </ul>
+                                " data-original-title="Electrodynamics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; "
+                                        title="">Electrodynamics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm6" name="pm6"
+                                        onclick="phy_course('6');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -3</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Electromagnetic Waves</li>
+                                	<li>
+                                		Ray Optics and Optical Instruments</li>
+                                	<li>
+                                		Wave Optics</li>
+                                </ul>
+                                " data-original-title="Optics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Optics</a></span>
+                                <span style="float: right; margin-right:10px;"><input id="pm7" name="pm7"
+                                        onclick="phy_course('7');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="sectionInnerFirstList">
+                            <p><span class="mod">Mod -4</span> <span class="topic"><a data-content="<ul>
+                                	<li>
+                                		Dual Nature of Radiation and Matter</li>
+                                	<li>
+                                		Atoms</li>
+                                	<li>
+                                		Nuclei</li>
+                                	<li>
+                                		Semiconductor Electronics : Materials, Devices</li>
+                                	<li>
+                                		Communication Systems</li>
+                                </ul>
+                                " data-original-title="Modern Physics" data-toggle="popover" data-trigger="hover"
+                                        href="javascript:void(0);" style="color:#006666; " title="">Modern
+                                        Physics</a></span> <span style="float: right; margin-right:10px;"><input
+                                        id="pm8" name="pm8" onclick="phy_course('8');" type="checkbox"></span></p>
+                        </div>
+
+
+                        <div class="section-1-of-3-footer" style="text-align:center">
+                            <a class="fees-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+                                                        text-decoration: none;
+                                                        color: #fff;
+                                                        padding-right: 5px;">Fees Structure</a>
+                            <a class="refund-link" data-backdrop="static" data-keyboard="false"
+                                data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+                                                        text-decoration: none;
+                                                        color: #fff;
+                                                        padding-right: 5px;">Refund Policy</a>
+                            <a data-backdrop="static" data-keyboard="false" data-target="#exampleModalT"
+                                data-toggle="modal" href="#" style="text-transform: none;
+                                                        text-decoration: none;
+                                                        color: #fff;
+                                                        padding-right: 5px;">Terms &amp; Condition</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pageWrapper pd-sub">
+        <div class="container">
+            <h1 class="sectionHeader">
+                <span class="sectionHeader-main">The STUDY MATERIAL </span>
+                <span class="sectionHeader-sub">CONQUER CBSE 3D</span>
+            </h1>
+            <div class="sectionWrapper-main">
+                <div class="sections">
+                    <h2 class="sectionHead">About Conquer CBSE 3D</h2>
+                    <p class="sectionPara" style="text-align:justify">The NCERT Textbooks are the most authentic source
+                        for
+                        conceptual
+                        understanding and focussed coverage of syllabi of Class XI/XII. Though the Textbooks are one of
+                        the most
+                        prolific works by
+                        experts, but in many cases, some students find the book content
+                        tough to comprehend. In Conquer Series the endeavour is to restructure
+                        the content in such a way that understanding of concepts and
+                        memorization, wherever required, becomes easier for the students,
+                        without compromising on the authenticity of the Content.</p>
+                </div>
+                <div class="sections">
+                    <h2 class="sectionHead">Digital Content</h2>
+                    <p class="sectionPara" style="text-align:justify">On top of it Conquer Series have added Video
+                        Lectures of
+                        selected
+                        topics, Animations &amp; Digital 3D Models to enhance the learning Experience
+                        using a Mobile App. The topics for the same have been carefully
+                        selected to overcome the limitation of learning through books, in cases, where
+                        the comprehension of complex concepts, visualization of processes &amp; 3D structures are
+                        required for a
+                        better understanding.</p>
+                </div>
+                <div class="sections">
+                    <h2 class="sectionHead">Lessons with Solved Examples</h2>
+                    <p class="sectionPara" style="text-align:justify; margin-bottom:0px;">The most comprehensive notes
+                        for all
+                        the
+                        topics. All Proofs and Derivations are given separately. Lots of solved examples. <br>
+                        <b><u>Problem Sets:</u></b>
+                    </p>
+                    <ol style="color:#424747; padding-left:15px;">
+                        <li> Exercise I - NCERT Exercise</li>
+                        <li>Exercise II - Board/Scholl Exam Oriented</li>
+                        <li>Flashback I - Topic wise segregation of last 10 years CBSE Exam Problems.</li>
+                        <p></p>
+
+                    </ol>
+                </div>
+            </div>
+            <div class="row justify-content-center no-gutters">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="imageWrapper">
+                        <img alt="" class="banner-image" src="assets/images/android.PNG">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <h1 class="appHeader">App Powered Booklets <img alt="" class="android" height="60px"
+                            src="img/an.png"></h1>
+                    <ul class="inner-wrapper-list">
+                        <li><img alt="video" height="80px" src="assets/images/play-button.png"><br><br>
+                            <h4 style="text-align: center;font-size: 16px;color: #777">Lectures</h4>
+                        </li>
+                        <li><img alt="" height="80px" src="assets/images/layers.png"><br><br>
+                            <h4 style="text-align: center;font-size: 16px;color: #777">Animations</h4>
+                        </li>
+                        <li><img alt="" height="80px" src="assets/images/presentation.png"><br><br>
+                            <h4 style="text-align: center;font-size: 16px;color: #777">3-D Models</h4>
+                        </li>
+                        <li><img alt="" height="80px" src="assets/images/QR.PNG"><br><br>
+                            <h4 style="text-align: center;font-size: 16px;color: #777">QR Code</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sampleContentSection">
+                <a href="http://www.domain-education.com/flip_book/index.php?id=sample_live" target="_blank">
+                    <button class="sampleBtn" id="sampleBtn" type="submit">CLICK TO SEE SAMPLE
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet" />
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+        </script>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

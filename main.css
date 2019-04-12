@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html,
@@ -11,7 +11,7 @@ body {
     font-size: 16px !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .navBar {
@@ -137,8 +137,9 @@ body {
 
 .middle-wrapper-main-subpart h1 {
     font-size: 45px;
-    margin: 40px 0 30px 10px;
-    padding-top: 20px;
+    /*     margin: 40px 0 30px 10px;
+ */
+    padding: 20px 0 30px 0;
     color: #fff;
     text-align: center
 }
@@ -150,7 +151,7 @@ body {
 }
 
 .icon {
-    width: 60px
+    height: 60px;
 }
 
 .myCol {
@@ -752,6 +753,20 @@ body {
     .sectionHeader-sub {
         font-size: 28px
     }
+
+    .info__wrapperGrid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .course__wrapper--header {
+        grid-template-columns: 1fr !important;
+    }
+
+    .course__wrapper-headerOne {
+        font-size: 24px !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
 }
 
 .class-option {
@@ -1112,7 +1127,7 @@ h3 {
     }
 
     .middle-header h1 {
-        font-size: 25px;
+        font-size: 25px !important;
         text-align: center
     }
 
@@ -1695,7 +1710,8 @@ h3 {
 
 .pageWrapper {
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    background-color: #e9e9e9;
 }
 
 .sectionHeader {
@@ -1811,11 +1827,10 @@ h3 {
 .sampleBtn {
     padding: 10px;
     width: auto;
-    background-color: #fdcd2f;
-    border: 1px solid #fdcd2f;
+    background-color: #990000;
+    border: 1px solid #990000;
     font-size: 18px;
-    font-weight: 900;
-    color: #777;
+    color: #fff;
     cursor: pointer
 }
 
@@ -2049,7 +2064,7 @@ h3 {
 }
 
 .section-1-of-3 h1 {
-    background-color: #033;
+    background-color: #990000;
     color: #fff;
     font-size: 18px;
     text-align: center;
@@ -2066,7 +2081,7 @@ h3 {
 }
 
 .section-2-of-3 h1 {
-    background-color: #033;
+    background-color: #990000;
     color: #fff;
     margin: 0;
     font-size: 18px;
@@ -2077,7 +2092,7 @@ h3 {
 }
 
 .section-3-of-3 h1 {
-    background-color: #033;
+    background-color: #990000;
     color: #fff;
     margin: 0;
     font-size: 18px;
@@ -2091,14 +2106,18 @@ h3 {
     background-color: #cccdcb
 }
 
+.sectionInnerFirstList {
+    padding: 0 5px !important;
+}
+
 .sectionInnerFirstList a {
     color: #fff;
-    padding: 3px;
-    cursor: pointer
+    cursor: pointer;
+    font-weight: 900;
 }
 
 .section-1-of-3-footer p {
-    background-color: #033;
+    background-color: #990000;
     color: #fff;
     font-size: 15px;
     border-bottom-left-radius: 3px;
@@ -2113,8 +2132,8 @@ h3 {
 }
 
 .firstRow {
-    height: 350px;
-    margin-bottom: 60px
+    height: 100%;
+    margin: 25px 0;
 }
 
 .class {
@@ -2123,7 +2142,8 @@ h3 {
 
 .mod {
     font-size: 16px;
-    padding: 0 0 0 5px
+    padding: 0 0 0 5px;
+    font-weight: 900;
 }
 
 .check-box {
@@ -2132,7 +2152,8 @@ h3 {
 
 .topic {
     font-size: 16px;
-    padding-left: 20px
+    padding-left: 20px;
+    color: #990000 !important;
 }
 
 .sectionInnerFirstList p {
@@ -2375,12 +2396,12 @@ input[type="radio"] {
 }
 
 .section-1-of-3-footer {
-    background-color: #033;
+    background-color: #990000;
     color: #fff;
     font-size: 14px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    padding: 5px 0 5px 8px;
+    padding: 5px 0 5px 0px;
     margin: 0;
     width: 100%
 }
@@ -2390,7 +2411,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #fff;
     padding-right: 5px;
-    border-right: 2px solid #777
+    border-right: 2px solid #fff
 }
 
 .fees-table {
@@ -2420,7 +2441,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #fff;
     padding-right: 5px;
-    border-right: 2px solid #777
+    border-right: 2px solid #fff
 }
 
 .fees-structure-title {
@@ -2578,6 +2599,10 @@ input[type="radio"] {
 
 .pd-100 {
     padding: 100px 0;
+}
+
+.pd-sub {
+    padding: 50px 0 15px 0;
 }
 
 .container-contact100 {
@@ -2844,7 +2869,7 @@ textarea.input100 {
 }
 
 .course__wrapper {
-    background-color: #ccc;
+    background-color: #ddd;
 }
 
 .course__wrapper .course__wrapper--header {
@@ -2855,7 +2880,7 @@ textarea.input100 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .course__wrapper .course__wrapper-headerOne {
@@ -2863,6 +2888,7 @@ textarea.input100 {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    color: #5c5b5b;
 }
 
 .course__wrapper .course__wrapper-headerTwo {
@@ -4129,7 +4155,7 @@ svg:not(:root).svg-inline--fa {
 
 .middle-header h1 {
     font-size: 60px;
-    margin: 50px 0 10px;
+    margin: 30px 0;
     color: #3c57a7;
     text-align: center;
     font-weight: 900;
@@ -4138,5 +4164,3 @@ svg:not(:root).svg-inline--fa {
 .middle-header span {
     color: #4fb748 !important;
 }
-
-/*# sourceMappingURL=main.css.map */
