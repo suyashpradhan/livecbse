@@ -432,6 +432,11 @@ body {
     color: #000
 }
 
+#footer {
+    margin-bottom: 3.7rem;
+    background-color: #363636 !important;
+}
+
 .footer-main {
     height: auto
 }
@@ -1509,19 +1514,6 @@ h3 {
     text-decoration: none
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, .4);
-    padding-top: 60px
-}
 
 .myModal {
     background-color: #fefefe;
@@ -1532,19 +1524,7 @@ h3 {
 }
 
 @media screen and (min-width:100px) and (max-width:400px) {
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: auto;
-        height: auto;
-        overflow: auto;
-        background-color: #000;
-        background-color: rgba(0, 0, 0, .4);
-        padding-top: 60px
-    }
+
 
     .cancelBtn {
         width: 50%;
@@ -4163,4 +4143,233 @@ svg:not(:root).svg-inline--fa {
 
 .middle-header span {
     color: #4fb748 !important;
+}
+
+@media screen and (max-width:526px) and (min-width:100px) {
+    .sticky__nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sticky__nav--header {
+        font-size: 14px !important;
+    }
+
+    .sticky__nav--headerSub {
+        font-size: 14px !important;
+        padding: 3px 10px 3px 10px !important;
+    }
+}
+
+
+@media screen and (max-width:700px) and (min-width:527px) {
+    .sticky__nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sticky__nav--header {
+        font-size: 18px !important;
+    }
+
+    .sticky__nav--headerSub {
+        font-size: 18px !important;
+
+    }
+}
+
+.sticky__nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 0 0 18px 0;
+}
+
+.sticky__nav--header {
+    font-size: 28px;
+    margin: 10px 10px 0 0;
+    color: #5c5b5b;
+    font-weight: 900
+}
+
+.sticky__nav--headerSub {
+    font-size: 28px;
+    margin: 10px 0 0 10px;
+    color: #5c5b5b;
+    font-weight: 900
+}
+
+.sticky__navInner {
+    text-decoration: none;
+    text-align: center;
+    color: #Fff;
+    padding: 3px 0;
+}
+
+.sticky__icons {
+    font-size: 24px;
+    padding: 15px 15px 0 15px;
+}
+
+.sticky__navInnerOne {
+    background-color: #00e676 !important;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerTwo {
+    background-color: #d32e2a;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerThree {
+    background-color: #5c5b5b;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerFour {
+    background-color: #17a2b8;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__nav--headerSub {
+    background-color: #990000;
+    color: #fff;
+    padding: 6px 15px 6px 15px;
+    margin-top: 12px;
+    font-size: 22px;
+    position: relative;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+    animation-name: shakeAnim;
+}
+
+.sticky__nav--headerSub a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes shakeAnim {
+    0% {
+        left: 0
+    }
+
+    1% {
+        left: -3px
+    }
+
+    2% {
+        left: 5px
+    }
+
+    3% {
+        left: -8px
+    }
+
+    4% {
+        left: 8px
+    }
+
+    5% {
+        left: -5px
+    }
+
+    6% {
+        left: 3px
+    }
+
+    7% {
+        left: 0
+    }
+}
+
+@keyframes shake {
+    0% {
+        left: 0
+    }
+
+    1% {
+        left: -3px
+    }
+
+    2% {
+        left: 5px
+    }
+
+    3% {
+        left: -8px
+    }
+
+    4% {
+        left: 8px
+    }
+
+    5% {
+        left: -5px
+    }
+
+    6% {
+        left: 3px
+    }
+
+    7% {
+        left: 0
+    }
+}
+
+.demo_new-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 100%;
+}
+
+.form-name {
+    grid-column: 1/-1;
+}
+
+.form_textarea {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+@media screen and (max-width: 600px) and (min-width: 100px) {
+    .demo_new-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .form_textarea {
+        grid-column: 1/-1;
+        grid-row: 4;
+    }
+}
+
+.submit-modal-btn {
+    background-color: #990000;
+    border: 1px solid #990000;
+    color: #fff;
+    padding: 10px 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mod-title {
+    font-size: 24px;
+    color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-top: 15px;
 }
