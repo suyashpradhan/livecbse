@@ -3277,30 +3277,12 @@ textarea.input100 {
     color: #2ecc71;
 }
 
-.main__banner svg:not(:root).svg-inline--fa {
-    overflow: visible;
-}
-
-.main__banner .svg-inline--fa.fa-w-16 {
-    width: 1em;
-}
-
-.main__banner svg:not(:root) {
-    overflow: hidden;
-}
 
 .main__banner .fa-check {
     font-size: 12px;
     color: #2ecc71;
 }
 
-.main__banner .svg-inline--fa {
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -.125em;
-}
 
 .main__banner .prerequisiteSection {
     height: auto;
@@ -4123,14 +4105,6 @@ textarea.input100 {
     max-height: 100%;
     -webkit-transition: all 0.35s ease 0.15s;
     transition: all 0.35s ease 0.15s;
-}
-
-.svg-inline--fa.fa-w-10 {
-    width: .625em;
-}
-
-svg:not(:root).svg-inline--fa {
-    overflow: visible;
 }
 
 .middle-header h1 {
