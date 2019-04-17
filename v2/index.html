@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="main.css" rel="stylesheet" />
     <link href="../dist/assets/styles/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.carousel.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.carousel.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <nav class="animenu" role="navigation" aria-label="Menu">
-        <button class="animenu__toggle">
-            <span class="animenu__toggle__bar"></span>
-            <span class="animenu__toggle__bar"></span>
-            <span class="animenu__toggle__bar"></span>
-        </button>
+      <button class="animenu__toggle">
+        <span class="animenu__toggle__bar"></span>
+        <span class="animenu__toggle__bar"></span>
+        <span class="animenu__toggle__bar"></span>
+      </button>
 
-        <ul class="animenu__nav">
-            <li><a href="#"> <img src="../dist/assets/images/logo.png" alt=""> </a></li>
-            <li>
-                <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Change Subject</a>
-                <ul class="animenu__nav__dropdown" aria-label="submenu">
-                    <li><a href="#" role="menuitem">Chemistry</a></li>
-                    <li><a href="#" role="menuitem">Physics</a></li>
-                    <li><a href="#" role="menuitem">Mathematics</a></li>
-                    <li><a href="#" role="menuitem">English</a></li>
-                    <li><a href="#" role="menuitem">Biology</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Student Login</a></li>
-        </ul>
+      <ul class="animenu__nav">
+        <li>
+          <a href="#"> <img src="../dist/assets/images/logo.png" alt="" /> </a>
+        </li>
+        <li>
+          <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true"
+            >Change Subject</a
+          >
+          <ul class="animenu__nav__dropdown" aria-label="submenu">
+            <li><a href="#" role="menuitem">Chemistry</a></li>
+            <li><a href="#" role="menuitem">Physics</a></li>
+            <li><a href="#" role="menuitem">Mathematics</a></li>
+            <li><a href="#" role="menuitem">English</a></li>
+            <li><a href="#" role="menuitem">Biology</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Student Login</a></li>
+      </ul>
     </nav>
     <!--  <div class="owl-carousel">
         <div> <img src="../dist/assets/images/1.jpg" alt="" style="height: 400px;"> </div>
@@ -44,62 +51,82 @@
 
     </div> -->
 
-
-    <script src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+          <div class="owl-carousel owl-theme">
+            <div class="item-video" data-merge="1">
+              <a
+                class="owl-video"
+                href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"
+              ></a>
+            </div>
+            <!-- <div class="item-video" data-merge="2">
+              <a
+                class="owl-video"
+                href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"
+              ></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a
+                class="owl-video"
+                href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"
+              ></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
     <script src="owl.carousel.js"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
+     $('.owl-carousel').owlCarousel({
             center: true,
             items: 1,
             items: 1,
-            slideSpeed: 500,
+            slideSpeed: 3000,
             touchDrag: true,
             mouseDrag: true,
             dots: true,
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            stagePadding: 40,
-            responsive: {
-                600: {
-                    items: 1
-                }
-            }
         });
     </script>
 
     <script>
-        (function () {
-            var animenuToggle = document.querySelector('.animenu__toggle'),
-                animenuNav = document.querySelector('.animenu__nav'),
-                hasClass = function (elem, className) {
-                    return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-                },
-                toggleClass = function (elem, className) {
-                    var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
-                    if (hasClass(elem, className)) {
-                        while (newClass.indexOf(' ' + className + ' ') >= 0) {
-                            newClass = newClass.replace(' ' + className + ' ', ' ');
-                        }
-                        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-                    } else {
-                        elem.className += ' ' + className;
-                    }
-                },
-                animenuToggleNav = function () {
-                    toggleClass(animenuToggle, "animenu__toggle--active");
-                    toggleClass(animenuNav, "animenu__nav--open");
-                }
-
-            if (!animenuToggle.addEventListener) {
-                animenuToggle.attachEvent("onclick", animenuToggleNav);
+      (function() {
+        var animenuToggle = document.querySelector(".animenu__toggle"),
+          animenuNav = document.querySelector(".animenu__nav"),
+          hasClass = function(elem, className) {
+            return new RegExp(" " + className + " ").test(
+              " " + elem.className + " "
+            );
+          },
+          toggleClass = function(elem, className) {
+            var newClass = " " + elem.className.replace(/[\t\r\n]/g, " ") + " ";
+            if (hasClass(elem, className)) {
+              while (newClass.indexOf(" " + className + " ") >= 0) {
+                newClass = newClass.replace(" " + className + " ", " ");
+              }
+              elem.className = newClass.replace(/^\s+|\s+$/g, "");
             } else {
-                animenuToggle.addEventListener('click', animenuToggleNav);
+              elem.className += " " + className;
             }
-        })()
-    </script>
-</body>
+          },
+          animenuToggleNav = function() {
+            toggleClass(animenuToggle, "animenu__toggle--active");
+            toggleClass(animenuNav, "animenu__nav--open");
+          };
 
+        if (!animenuToggle.addEventListener) {
+          animenuToggle.attachEvent("onclick", animenuToggleNav);
+        } else {
+          animenuToggle.addEventListener("click", animenuToggleNav);
+        }
+      })();
+    </script>
+  </body>
 </html>
