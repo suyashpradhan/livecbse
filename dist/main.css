@@ -1295,6 +1295,10 @@ h3 {
     .loginModal {
         display: none !important
     }
+
+    .middle-wrapper-main{
+        display: none !important;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -3016,8 +3020,8 @@ textarea.input100 {
 }
 
 .course__wrapper .course__wrapper--grid .card__effect {
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ /*    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
 }
 
 .course__wrapper .course__inner--cardHeader {
@@ -3025,9 +3029,9 @@ textarea.input100 {
     text-align: center;
     margin: 0;
     background-color: #990000;
-    color: #fff;
+   /*  color: #fff;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 5px; */
     padding: .5rem;
 }
 
@@ -3232,9 +3236,9 @@ textarea.input100 {
 
 .course__wrapper .course__box {
     width: 100%;
-    background: #FFF;
+   /*  background: #FFF;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 5px; */
 }
 
 .course__wrapper .course__box .info__wrapperGrid {
@@ -3252,8 +3256,8 @@ textarea.input100 {
 }
 
 .course__wrapper .course__boxEffect {
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
+  /*   -webkit-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; */
 }
 
 .course__wrapper h1 {
