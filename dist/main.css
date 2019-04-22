@@ -3395,22 +3395,20 @@ textarea.input100 {
 .main__banner .prerequisiteSection {
     height: 475px;
     width: 100%;
-    background: #ccc;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#E9E4F0), to(#D3CCE3));
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #f5f6c4;
     margin: 50px 0;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px #000;
 }
 
 .main__banner .prerequisiteSection h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
     text-align: center;
     margin: 0;
-    background-color: #990000;
-    color: #fff;
+    background-color: #ffff;
+    border-bottom: 2px solid #696969;
+    color: #696969;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: .5rem;
@@ -3510,7 +3508,7 @@ textarea.input100 {
     top: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid #a80000;
+    border: 1px solid #a80000;
 }
 
 .main__banner .class__section .md-radio label:after {

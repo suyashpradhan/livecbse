@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.carousel.default.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <style>
+        html,
+        body {
+            background-color: #696969
+        }
+
+        .wrapper {
+            margin: auto;
+        }
+
+        .owl-carousel .item-video {
+            height: 400px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="owl-carousel owl-theme">
+            <div class="item-video" data-merge="1"><a class="owl-video"
+                    href="https://www.youtube.com/watch?v=FMhVXOA54x8"></a></div>
+            <div class="item-video" data-merge="2"><a class="owl-video"
+                    href="https://www.youtube.com/watch?v=LdF2RcelRg0"></a></div>
+            <div class="item-video" data-merge="3"><a class="owl-video"
+                    href="https://www.youtube.com/watch?v=VLm3Y7Odb74"></a></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="owl.carousel.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            stagePadding: 100,
+            items: 1,
+            merge: true,
+            loop: true,
+            margin: 10,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            video: true,
+            autoplay: true,
+            responsive: {
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
