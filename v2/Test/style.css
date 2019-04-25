@@ -13,11 +13,19 @@ body {
     font-weight: 400 !important;
     line-height: 1.5 !important;
     background: #f5f6f7 !important;
+    position: relative;
+    min-height: 100vh;
     font-family: 'Nunito', sans-serif;
 }
 
 img {
     vertical-align: middle;
+}
+
+.wrapper {
+    /*  margin: auto;
+    max-width: 1000px; */
+    margin: 0 30px;
 }
 
 .navigation {
@@ -38,8 +46,7 @@ img {
 }
 
 .nav-container {
-    max-width: 1170px;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
 nav {
@@ -82,7 +89,8 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-    min-width: 190px;
+    min-width: 170px;
+    margin-left: -50px;
 }
 
 nav ul li ul li a {
@@ -198,48 +206,103 @@ nav ul li ul li a {
     transform: rotate(-45deg);
 }
 
+.sections {
+    padding: 5px 0;
+}
+
 .section__header {
     color: #212121;
     font-weight: 900;
     font-size: 26px;
     margin: 0;
-    text-transform: uppercase;
     padding: 10px 0 5px 10px;
     letter-spacing: 1px;
 }
 
-
 .product-carousel {
     box-sizing: border-box;
-    padding: 10px 20px;
-    width: 100%;
+    padding: 10px;
+    width: 300px;
 }
 
 .product-carousel .product {
     box-sizing: border-box;
     margin: 0 10px;
     text-align: center;
-    display: flex;
-    flex-flow: column;
-    align-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%);
 }
 
 .product-carousel .product-top {
     width: 100%;
+    position: relative;
 }
 
-.product-carousel p,
-.product-carousel .product-image,
-.product-carousel img.review-stars {
-    margin: 0 0 10px 0;
+.inner_product {
+    position: absolute;
+    z-index: 999;
+    top: 55%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
 }
 
-.product-carousel .product-image {
-    align-self: flex-start;
-    width: 100%;
+.inner_productQuiz {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
     height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+}
+
+.inner_productTitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #990000;
+    text-shadow: 0 2px 4px #00000033;
+    padding: 3px;
+    color: #f5f6f7;
+    cursor: pointer;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.inner_productTitleLink {
+    font-size: 18px;
+    background-color: #990000;
+    padding: 5px;
+    color: #f5f6f7;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    text-shadow: 0 2px 4px #00000033;
+}
+
+.inner_productTitleLink:focus {
+    outline: none;
+}
+
+.inner_productTitleLink:hover {
+    background-color: #750404;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.inner_productDescription {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    padding: 3px 0;
+    margin: 0;
+}
+
+.product-image {
+    align-self: flex-start;
     position: relative;
 }
 
@@ -253,16 +316,19 @@ nav ul li ul li a {
     position: absolute;
     top: calc(50% - 12px/2);
     cursor: pointer;
+    text-shadow: 0 2px 4px #00000033 !important;
 }
 
 .right {
-    right: -5px;
+    right: -3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
+
+
 .left {
-    left: -5px;
+    left: -3px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
@@ -338,67 +404,12 @@ nav ul li ul li a {
     display: none;
 }
 
-.block {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    cursor: pointer;
-}
-
-.block:hover .block__body {
-    position: absolute;
-    top: 0;
-    background: #696969;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    transition: top .5s;
-}
-
 .block__bodyFlex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px !important;
     flex-flow: column wrap;
-}
-
-.block:hover .block__body h1 {
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    margin: 0;
-    padding: 5px 0;
-}
-
-.block__body p {
-    margin: 10px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.block__body {
-    padding: 1em;
-    top: 100%;
-    border-radius: 8px;
-}
-
-.block__link {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    font-size: 16px;
-    color: #363636;
-    background-color: #fff !important;
-    padding: 10px 20px;
-    border-radius: 100px;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0 !important;
-}
-
-.block__link:hover {
-    text-decoration: none;
-    color: #363636;
 }
 
 .box {
@@ -413,24 +424,23 @@ nav ul li ul li a {
 }
 
 .tags__div {
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 8px;
     align-items: center;
-    justify-items: center;
 }
 
 .tags__divInner {
-    border: 2px solid #ccc;
     background-color: #ccc;
     color: #181818;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 5px;
     cursor: default;
 }
 
 .tags__divInner h1 {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 700;
     display: inline-block;
     margin: 0 auto;
     padding: 0;
@@ -517,9 +527,8 @@ nav ul li ul li a {
 
 .yt_image {
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 .yt_carousel {
@@ -530,10 +539,10 @@ nav ul li ul li a {
     position: absolute;
     top: 80%;
     cursor: pointer;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .09) -35%, rgba(0, 0, 0, .32) 48%, rgba(0, 0, 0, .7));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%);
     width: 100%;
     bottom: 0;
-    padding-left: 80px;
+    padding-left: 40px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -541,26 +550,30 @@ nav ul li ul li a {
 .yt-playIcon {
     color: #fff;
     display: inline;
-    font-size: 22px;
+    font-size: 26px;
+    text-shadow: 0 2px 4px #00000033;
 }
 
 .yt-header {
     color: #fff;
     display: inline-block;
-    font-size: 24px;
+    text-shadow: 0 2px 4px #00000033;
+    font-size: 22px;
     padding: 5px 0 5px 15px;
 }
 
 .yt-playIconSub {
     color: #fff;
     display: inline;
-    font-size: 22px;
+    font-size: 26px;
+    text-shadow: 0 2px 4px #00000033;
 }
 
 .yt-headerSub {
     color: #fff;
     display: inline;
     font-size: 24px;
+    text-shadow: 0 2px 4px #00000033;
     padding-left: 10px;
     margin: 5px 0;
 }
@@ -801,4 +814,42 @@ nav ul li ul li a {
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+}
+
+#footer {
+    background-color: #363636 !important;
+}
+
+.footer-main {
+    height: auto;
+    margin-top: 35px;
+}
+
+.footer-main-list {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 0
+}
+
+.footer-main-list a {
+    text-decoration: none !important
+}
+
+.footer-main-list li {
+    margin: 20px 20px 5px 30px
+}
+
+.footer-main-list li:hover {
+    color: #c59f2e
+}
+
+.owl-dot:focus {
+    outline: none;
 }
