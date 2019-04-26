@@ -50,7 +50,7 @@
     </div>
   </section>
   <div class="wrapper">
-    <div class="owl-carousel owl-theme yt_carousel">
+    <!-- <div class="owl-carousel owl-theme yt_carousel">
       <div class="yt_carouselInner">
         <img src="yt--1_M.jpg" class="yt_image" />
         <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal">
@@ -78,6 +78,20 @@
           <i class="far fa-clock fa-fw yt-playIconSub"></i>
           <h1 class="yt-headerSub">15 Min</h1>
         </div>
+      </div>
+    </div> -->
+
+    <div class="owl-carousel owl-theme yt_carousel">
+      <div><iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+        </iframe>
+      </div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/EFafSYg-PkI">
+        </iframe>
+      </div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/5WohQijapeU">
+        </iframe>
       </div>
     </div>
     <section class="sections">
@@ -341,29 +355,21 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <script>
     $(".owl-carousel").owlCarousel({
-      items: 2,
-      merge: true,
+      center: true,
       loop: true,
-      margin: 10,
-      lazyLoad: true,
-      stagePadding: 100,
+      margin: 30,
       responsive: {
         1200: {
           items: 2,
-          stagePadding: 30,
-
         },
         800: {
-          items: 2,
-          stagePadding: 0,
+          items: 1,
         },
         600: {
           items: 1,
-          stagePadding: 0,
         },
         300: {
           items: 1,
-          stagePadding: 0,
         }
       }
     });
@@ -401,6 +407,7 @@
       });
     })(jQuery);
   </script>
+
 
   <script>
     $(".product-carousel").slick({
@@ -473,6 +480,8 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="slick/slick.min.js"></script>
+
+
 </body>
 
 </html>
