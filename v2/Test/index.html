@@ -50,9 +50,9 @@
     </div>
   </section>
   <div class="wrapper">
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme yt_carousel">
       <div class="yt_carouselInner">
-        <img src="https://img.youtube.com/vi/9ylj9NR0Lcg/maxresdefault.jpg " class="yt_image" />
+        <img src="yt--1_M.jpg" class="yt_image" />
         <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal">
           <i class="fas fa-play  fa-fw yt-playIcon"></i>
           <h1 class="yt-header">Mysql Crash
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="yt_carouselInner">
-        <img src="https://img.youtube.com/vi/EFafSYg-PkI/maxresdefault.jpg " class="yt_image" />
+        <img src="yt--2M.jpg" class="yt_image" />
         <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal_2">
           <i class="fas fa-play  fa-fw yt-playIcon"></i>
           <h1 class="yt-header">CSS Grid Crash Course </h1><br>
@@ -71,10 +71,10 @@
         </div>
       </div>
       <div class="yt_carouselInner">
-        <img src="  https://img.youtube.com/vi/5WohQijapeU/maxresdefault.jpg" class="yt_image" />
+        <img src="yt--3M.jpg" class="yt_image" />
         <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal_3">
           <i class="fas fa-play  fa-fw yt-playIcon"></i>
-          <h1 class="yt-header">Javascript Frameworks, PHP In 2019 , Web Development Q&A</h1><br>
+          <h1 class="yt-header">Javascript Frameworks, PHP In 2019...</h1><br>
           <i class="far fa-clock fa-fw yt-playIconSub"></i>
           <h1 class="yt-headerSub">15 Min</h1>
         </div>
@@ -341,18 +341,29 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <script>
     $(".owl-carousel").owlCarousel({
-      items: 1,
+      items: 2,
       merge: true,
       loop: true,
       margin: 10,
       lazyLoad: true,
       stagePadding: 100,
       responsive: {
-        480: {
-          items: 1
+        1200: {
+          items: 2,
+          stagePadding: 30,
+
+        },
+        800: {
+          items: 2,
+          stagePadding: 0,
         },
         600: {
-          items: 1
+          items: 1,
+          stagePadding: 0,
+        },
+        300: {
+          items: 1,
+          stagePadding: 0,
         }
       }
     });
@@ -428,14 +439,21 @@
           }
         },
         {
-          breakpoint: 768,
+          breakpoint: 1000,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 500,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

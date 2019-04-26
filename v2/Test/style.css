@@ -15,6 +15,7 @@ body {
     background: #f5f6f7 !important;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -23,12 +24,11 @@ img {
 }
 
 .wrapper {
-    /*  margin: auto;
-    max-width: 1000px; */
     margin: 0 30px;
 }
 
 .navigation {
+
     height: 70px;
     background: #fff;
 }
@@ -46,7 +46,8 @@ img {
 }
 
 .nav-container {
-    margin: 0 30px;
+    max-width: 1170px !important;
+    margin: 0 15px;
 }
 
 nav {
@@ -89,8 +90,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-    min-width: 170px;
-    margin-left: -50px;
+    min-width: 200px;
 }
 
 nav ul li ul li a {
@@ -110,7 +110,7 @@ nav ul li ul li a {
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 30px;
     background: #262626;
     height: 70px;
     width: 70px;
@@ -123,7 +123,7 @@ nav ul li ul li a {
 
     nav {
         width: 100%;
-        height: 100%;
+        height: auto;
         position: absolute;
         z-index: 999;
         padding: 70px 0 15px;
@@ -521,14 +521,13 @@ nav ul li ul li a {
 }
 
 .yt_carousel {
-    margin: auto;
+    margin: 15px auto !important;
     max-width: 100%;
 }
 
 .yt_image {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+    width: 1170px;
+    height: 362px;
 }
 
 .yt_carousel {
@@ -537,7 +536,7 @@ nav ul li ul li a {
 
 .yt_carouselInnerInfo {
     position: absolute;
-    top: 80%;
+    top: 75%;
     cursor: pointer;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%);
     width: 100%;
@@ -550,7 +549,7 @@ nav ul li ul li a {
 .yt-playIcon {
     color: #fff;
     display: inline;
-    font-size: 26px;
+    font-size: 18px;
     text-shadow: 0 2px 4px #00000033;
 }
 
@@ -558,21 +557,21 @@ nav ul li ul li a {
     color: #fff;
     display: inline-block;
     text-shadow: 0 2px 4px #00000033;
-    font-size: 22px;
-    padding: 5px 0 5px 15px;
+    font-size: 16px;
+    padding: 5px 0 5px 10px;
 }
 
 .yt-playIconSub {
     color: #fff;
     display: inline;
-    font-size: 26px;
+    font-size: 18px;
     text-shadow: 0 2px 4px #00000033;
 }
 
 .yt-headerSub {
     color: #fff;
     display: inline;
-    font-size: 24px;
+    font-size: 16px;
     text-shadow: 0 2px 4px #00000033;
     padding-left: 10px;
     margin: 5px 0;
@@ -852,4 +851,45 @@ nav ul li ul li a {
 
 .owl-dot:focus {
     outline: none;
+}
+
+@media screen and (max-width:600px) and (min-width:100px) {
+    .yt_image {
+        width: 100% !important;
+        height: 300px;
+    }
+
+    .tags__div {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .footer-main-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .yt_carouselInnerInfo {
+        padding-left: 10px !important;
+    }
+
+    .yt-header {
+        font-size: 16px !important;
+    }
+
+    .wrapper {
+        margin: 0 15px !important;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:601px) {
+    .yt_image {
+        width: 100% !important;
+        height: 300px;
+    }
+
+    .tags__div {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
 }
