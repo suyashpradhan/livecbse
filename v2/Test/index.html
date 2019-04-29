@@ -13,6 +13,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="carousel.css" />
+  <link rel="stylesheet" href="awselect.min.css">
 </head>
 
 <body>
@@ -29,19 +30,25 @@
         </div>
         <ul class="nav-list">
           <li>
-            <a href="#!">Physics</a>
+            <a href="#!"> <i class="fas fa-home nav-listIcons"></i> Home</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fas fa-download nav-listIcons"></i> Downloads</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fas fa-question nav-listIcons"></i> Ask Experts</a>
+          </li>
+          <li>
+            <a href="#!"> <i class="fas fa-heart nav-listIcons"></i> Favourites</a>
+          </li>
+          <li>
+            <a href="#!">Select Club</a>
             <ul class="nav-dropdown">
               <li>
-                <a href="#!">Chemistry</a>
+                <a href="#!">CBSE PHYSICS XII</a>
               </li>
               <li>
-                <a href="#!">Mathematics</a>
-              </li>
-              <li>
-                <a href="#!">Biology</a>
-              </li>
-              <li>
-                <a href="#!">English</a>
+                <a href="#!">CBSE PHYSICS XI</a>
               </li>
             </ul>
           </li>
@@ -50,37 +57,16 @@
     </div>
   </section>
   <div class="wrapper">
-    <!-- <div class="owl-carousel owl-theme yt_carousel">
-      <div class="yt_carouselInner">
-        <img src="yt--1_M.jpg" class="yt_image" />
-        <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal">
-          <i class="fas fa-play  fa-fw yt-playIcon"></i>
-          <h1 class="yt-header">Mysql Crash
-            Course</h1><br>
-          <i class="far fa-clock fa-fw yt-playIconSub"></i>
-          <h1 class="yt-headerSub">1 Hour</h1>
-        </div>
-      </div>
-      <div class="yt_carouselInner">
-        <img src="yt--2M.jpg" class="yt_image" />
-        <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal_2">
-          <i class="fas fa-play  fa-fw yt-playIcon"></i>
-          <h1 class="yt-header">CSS Grid Crash Course </h1><br>
-          <i class="far fa-clock fa-fw yt-playIconSub"></i>
-          <h1 class="yt-headerSub">15 Min</h1>
-        </div>
-      </div>
-      <div class="yt_carouselInner">
-        <img src="yt--3M.jpg" class="yt_image" />
-        <div class="yt_carouselInnerInfo" data-toggle="modal" data-target="#yt-modal_3">
-          <i class="fas fa-play  fa-fw yt-playIcon"></i>
-          <h1 class="yt-header">Javascript Frameworks, PHP In 2019...</h1><br>
-          <i class="far fa-clock fa-fw yt-playIconSub"></i>
-          <h1 class="yt-headerSub">15 Min</h1>
-        </div>
-      </div>
-    </div> -->
-
+    <div class="sel sel--sub">
+      <select>
+        <option value="" disabled>Select A Topic</option>
+        <option value="1">Light</option>
+        <option value="2">Gravity</option>
+        <option value="3">Aerodynamics</option>
+      </select>
+    </div>
+  </div>
+  <div class="wrapper">
     <div class="owl-carousel owl-theme yt_carousel">
       <div><iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
         </iframe>
@@ -284,15 +270,34 @@
   </div>
   <div id="footer">
     <div class="footer-main">
-      <ul class="footer-main-list" style="background-color:#363636;">
-        <li><a href="about-us.php" style="color:#fff">About Us</a></li>
-        <li><a href="join-us.php" style="color:#fff">Join Us</a></li>
-        <li><a href="privacy-policy.php" style="color:#fff">Privacy Policy</a></li>
-        <li><a href="contact-us.php" style="color:#fff">Contact Us</a></li>
-        <li><a href="disclaimer.php" style="color:#fff">Disclaimer</a></li>
-        <li><a href="faq.php" style="color:#fff">FAQ</a></li>
-      </ul>
+      <div class="footer_col">
+        <i class="fas fa-map-marker footerIcons"></i>
+        <h1 class="footerHeader">Address</h1>
+        <p class="footerDescription">472-A, Talwandi, Near Modern School,<br>Kota, Rajasthan.<br>Pin code - 324005</p>
+      </div>
+      <div class="footer_col">
+        <i class="fas fa-phone footerIcons"></i>
+        <h1 class="footerHeader">Let's Call</h1>
+        <p class="footerDescription">0744-2407128<br>+91 9571010999</p>
+      </div>
+      <div class="footer_col">
+        <i class="far fa-envelope footerIcons"></i>
+        <h1 class="footerHeader">Support</h1>
+        <p class="footerDescription">contact@livecbse.com</p>
+      </div>
     </div>
+  </div>
+  <div id="footer_sub">
+    <ul class="footer_sub-list">
+      <li> <a href="">About Us </a> </li>
+      <li> <a href=""> Franchise </a></li>
+      <li> <a href=""> Join Us</a></li>
+      <li> <a href="">© 2015 All Rights Reserved with domain Edutech Pvt. Ltd.<br> <img src="livecbse_logo.png" alt=""
+            height="30"></a>
+      </li>
+      <li> <a href=""> Privacy Policy</a></li>
+      <li> <a href="">Disclaimer</a></li>
+    </ul>
   </div>
   <div class="modal fade" id="yt-modal" tabindex="-1" role="dialog" aria-labelledby="yt-modal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -480,8 +485,54 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="slick/slick.min.js"></script>
+  <script src="awselect.min.js"></script>
 
+  <script>
+    /* ===== Logic for creating fake Select Boxes ===== */
+    $('.sel').each(function () {
+      $(this).children('select').css('display', 'none');
 
+      var $current = $(this);
+
+      $(this).find('option').each(function (i) {
+        if (i == 0) {
+          $current.prepend($('<div>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__box')
+          }));
+
+          var placeholder = $(this).text();
+          $current.prepend($('<span>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
+            text: placeholder,
+            'data-placeholder': placeholder
+          }));
+
+          return;
+        }
+
+        $current.children('div').append($('<span>', {
+          class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
+          text: $(this).text()
+        }));
+      });
+    });
+
+    $('.sel').click(function () {
+      $(this).toggleClass('active');
+    });
+
+    $('.sel__box__options').click(function () {
+      var txt = $(this).text();
+      var index = $(this).index();
+
+      $(this).siblings('.sel__box__options').removeClass('selected');
+      $(this).addClass('selected');
+
+      var $currentSel = $(this).closest('.sel');
+      $currentSel.children('.sel__placeholder').text(txt);
+      $currentSel.children('select').prop('selectedIndex', index + 1);
+    });
+  </script>
 </body>
 
 </html>
