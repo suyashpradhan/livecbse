@@ -12,8 +12,9 @@ body {
     font-size: 16px !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
-    background: #f5f6f7 !important;
+    background: #f1f1f1 !important;
     font-family: 'Nunito', sans-serif;
+    min-height: 100%;
 }
 
 img {
@@ -224,8 +225,8 @@ nav ul li ul li a {
 .sel {
     font-size: 1rem;
     display: inline-block;
-    margin: 1rem 2rem;
-    width: 250px;
+    margin: 1rem 0;
+    width: 300px;
     background-color: transparent;
     position: relative;
     cursor: pointer;
@@ -237,8 +238,8 @@ nav ul li ul li a {
     content: "\f078";
     font-family: 'Font Awesome 5 Free';
     font-size: 1em;
-    color: #5c5b5b;
-    right: 20px;
+    color: #181818;
+    right: 0px;
     top: calc(50% - 0.5em);
 }
 
@@ -249,8 +250,8 @@ nav ul li ul li a {
 .sel__placeholder {
     display: block;
     font-size: 1.5rem;
-    color: #5c5b5b;
-    padding: 0.2em 0.5em;
+    color: #181818;
+    padding: 0.2em 0;
     text-align: left;
     pointer-events: none;
     user-select: none;
@@ -297,7 +298,7 @@ nav ul li ul li a {
 .sel__box__options {
     display: list-item;
     font-size: 1rem;
-    color: #5c5b5b;
+    color: #181818;
     padding: 0.5em 1em;
     user-select: none;
 }
@@ -424,7 +425,20 @@ nav ul li ul li a {
 .product-image {
     align-self: flex-start;
     position: relative;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    cursor: pointer;
 }
+
+.product-image:focus {
+    outline: none;
+}
+
+.product-image:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 
 /** ARROWS **/
 .arrow {
@@ -543,17 +557,25 @@ nav ul li ul li a {
     font-size: 1rem;
 }
 
+.tags__header {
+    font-size: 20px;
+    padding: 0px 0 10px 0;
+    font-weight: 700;
+}
+
 .tags__div {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 8px;
+    grid-gap: 10px;
     align-items: center;
 }
 
 .tags__divInner {
-    background-color: #ccc;
+    background-color: #e8e8e8;
+    border: 1px solid #e8e8e8;
     color: #181818;
+    margin-bottom: 16px;
     padding: 5px;
     cursor: default;
 }
