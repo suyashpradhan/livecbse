@@ -29,6 +29,14 @@
                 <ul class="nav-list">
                     <li>
                         <a href="#!">Online Coaching</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="#!">Classic CBSE XI (Science)</a>
+                            </li>
+                            <li>
+                                <a href="#!">Classic CBSE XII (Science)</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!">Test Series</a>
@@ -76,7 +84,7 @@
                 </ul>
                 </li>
                 <li>
-                    <a href="#!">Schdule Demo</a>
+                    <a href="#!" data-toggle="modal" data-target="#scheduleModal">Schedule Demo</a>
                 </li>
                 <li>
                     <a href="#" id="login-button">Student Login</a>
@@ -4075,6 +4083,55 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Schedule A Demo Here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body main__banner" style="padding: 0">
+                    <form action="" class="banner__form" style="padding: 0;">
+                        <input class="banner__form--fields" id="" name="" placeholder="Student Name" type="text">
+                        <input class="banner__form--fields" id="" name="" placeholder="Phone Number" type="text">
+                        <div class="select">
+                            <select id="slct" name="slct">
+                                <option>Subjects</option>
+                                <option value="1">Select Class</option>
+                            </select>
+                        </div>
+                        <div class="class__section">
+                            <h2>Class: </h2>
+                            <div class="md-radio">
+                                <input checked="" id="ix" name="g" type="radio">
+                                <label for="ix">IX</label>
+                            </div>
+                            <div class="md-radio">
+                                <input id="x" name="g" type="radio">
+                                <label for="x">X</label>
+                            </div>
+                            <div class="md-radio">
+                                <input id="xi" name="g" type="radio">
+                                <label for="xi">XI</label>
+                            </div>
+                            <div class="md-radio">
+                                <input id="xii" name="g" type="radio">
+                                <label for="xii">XII</label>
+                            </div>
+                        </div>
+                        <a class="banner__form--btn" href="#">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="footer">
         <div class="footer-main">
             <ul class="footer-main-list" style="background-color:#000;">

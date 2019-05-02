@@ -11,6 +11,7 @@ body {
     font-size: 16px !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
+    background-color: #f8f8f8;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -3657,6 +3658,38 @@ textarea.input100 {
     font-weight: 700;
     color: #a80000;
     margin: 1rem 2rem;
+}
+
+.content_description {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    font-weight: 700;
+    margin: 1rem 2rem;
+    color: #696969;
+}
+
+.content_header {
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    color: #a80000;
+    margin: .5rem 2rem;
+}
+
+
+.content_ul {
+    margin: 0 0 1rem 5rem;
+}
+
+.content_ul li {
+    font-size: 1rem;
+    color: #696969;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.content__div {
+    margin: 2rem 0;
 }
 
 .tab__main #content1 .content_ul {
