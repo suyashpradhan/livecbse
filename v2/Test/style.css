@@ -1068,3 +1068,56 @@ nav ul li ul li a {
         grid-template-columns: repeat(4, 1fr) !important;
     }
 }
+
+/* 
+@media screen and (max-width:650px) and (min-width:100px) {
+    .overlay-container {
+        width: 100%;
+    }
+
+    .sign-up-container {
+        width: 100%;
+    }
+
+    .sign-in-container {
+        width: 100%;
+    }
+} */
+
+.otp__field {
+    padding: 3px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.otp__field:focus {
+    border: 1px solid #990000;
+    outline: none !important;
+}
+
+.otp__label {
+    font-size: 18px !important;
+    margin: 0;
+    padding: 3px 0;
+    font-weight: 900 !important;
+}
+
+.otp__btn {
+    background-color: #990000;
+    border: 1px solid #990000;
+    color: #fff;
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 10px 20px;
+    transition: all .5s ease-in;
+    border-radius: 3px;
+}
+
+.otp__btn:hover {
+    background-color: #770303;
+    border: 1px solid #770303;
+
+}
