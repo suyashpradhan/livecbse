@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
 html,
@@ -13,7 +15,8 @@ body {
     font-weight: 400 !important;
     line-height: 1.5 !important;
     background: #f1f1f1 !important;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     position: relative;
     min-height: 100vh;
     padding-bottom: 2.5rem;
@@ -27,9 +30,13 @@ ul {
     margin: 0 !important;
 }
 
+li {
+    list-style: none;
+}
+
 iframe {
     width: 100%;
-    height: 400px;
+    height: 354px;
     border: none;
 }
 
@@ -47,7 +54,7 @@ iframe {
 
 .navigation {
     height: 70px;
-    background: #fff;
+    background: #990000;
 }
 
 .brand {
@@ -65,11 +72,6 @@ iframe {
 .ask__icon {
     font-size: 32px;
     color: #5c5b5b;
-}
-
-.nav-container {
-    max-width: 1170px !important;
-    margin: auto;
 }
 
 nav {
@@ -91,23 +93,21 @@ nav ul li a,
 nav ul li a:visited {
     display: block;
     padding: 0 10px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 70px;
-    background: #fff;
-    color: #363636;
+    background: #990000;
+    color: #fff;
     text-decoration: none;
+    transition: all .5s ease;
 
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
     text-decoration: none;
-    border-bottom: 2px solid #990000;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    background-color: #222
 }
-
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -116,7 +116,9 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-    min-width: 200px;
+    min-width: 180px;
+    position: relative;
+    margin-left: -30px;
 }
 
 nav ul li ul li a {
@@ -136,8 +138,7 @@ nav ul li ul li a {
     display: none;
     position: absolute;
     top: 0;
-    right: 30px;
-    background: #262626;
+    right: 15px;
     height: 70px;
     width: 70px;
 }
@@ -169,11 +170,22 @@ nav ul li ul li a {
     }
 
     nav ul li ul li a {
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     .nav-dropdown {
         position: static;
+    }
+
+    nav ul li ul li {
+        min-width: 165px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .nav-list {
+        margin-left: -15px !important;
+        width: 100% !important;
     }
 }
 
@@ -242,9 +254,8 @@ nav ul li ul li a {
 }
 
 .sel {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 1rem 0;
+    display: block;
+    margin: 1.5rem auto;
     width: 300px;
     background-color: transparent;
     position: relative;
@@ -257,9 +268,9 @@ nav ul li ul li a {
     content: "\f078";
     font-family: 'Font Awesome 5 Free';
     font-size: 1em;
-    color: #181818;
+    color: #4b4b4b;
     right: 0px;
-    top: calc(50% - 0.5em);
+    top: calc(50% - 0.8em);
 }
 
 .sel.active::before {
@@ -268,10 +279,10 @@ nav ul li ul li a {
 
 .sel__placeholder {
     display: block;
-    font-size: 1.5rem;
-    color: #181818;
+    font-size: 1.2rem;
+    color: #4b4b4b;
     padding: 0.2em 0;
-    text-align: left;
+    text-align: center;
     pointer-events: none;
     user-select: none;
     visibility: visible;
@@ -317,7 +328,7 @@ nav ul li ul li a {
 .sel__box__options {
     display: list-item;
     font-size: 1rem;
-    color: #181818;
+    color: #4b4b4b;
     padding: 0.5em 1em;
     user-select: none;
 }
@@ -338,10 +349,6 @@ nav ul li ul li a {
     background-color: #ebedef;
 }
 
-.sel {
-    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
-}
-
 .sel--sub {
     z-index: 3;
 }
@@ -351,7 +358,7 @@ nav ul li ul li a {
 }
 
 .section__header {
-    color: #212121;
+    color: #555555;
     font-weight: 900;
     font-size: 26px;
     margin: 0;
@@ -375,6 +382,7 @@ nav ul li ul li a {
 .product-carousel .product-top {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .inner_product {
@@ -432,7 +440,6 @@ nav ul li ul li a {
     color: #fff;
 }
 
-
 .inner_productDescription {
     font-size: 16px;
     color: #fff;
@@ -443,17 +450,27 @@ nav ul li ul li a {
 
 .product-image {
     align-self: flex-start;
-    position: relative;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
     cursor: pointer;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .product-image:focus {
     outline: none;
 }
 
-.product-image:hover {
+.product-top:focus {
+    outline: none;
+}
+
+/* .product-image:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+} */
+
+.product-top:hover .product-image {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -477,8 +494,6 @@ nav ul li ul li a {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-
-
 
 .left {
     left: -3px;
@@ -580,6 +595,7 @@ nav ul li ul li a {
     font-size: 20px;
     padding: 0px 0 10px 0;
     font-weight: 700;
+    color: #555555;
 }
 
 .tags__div {
@@ -593,7 +609,7 @@ nav ul li ul li a {
 .tags__divInner {
     background-color: #e8e8e8;
     border: 1px solid #e8e8e8;
-    color: #181818;
+    color: #555;
     margin-bottom: 16px;
     padding: 5px;
     cursor: default;
@@ -681,17 +697,11 @@ nav ul li ul li a {
 }
 
 .yt_carousel {
-    margin: 15px auto !important;
-    max-width: 100%;
-}
-
-.yt_image {
-    width: 100%;
-    height: 362px;
-}
-
-.yt_carousel {
     position: relative;
+}
+
+.yt_carousel div {
+    margin: 0 15px;
 }
 
 .yt_carouselInnerInfo {
@@ -800,12 +810,20 @@ nav ul li ul li a {
     text-align: center;
 }
 
+.__form h1 {
+    font-size: 28px;
+}
+
 .form-inputs {
     background-color: #eee;
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+}
+
+.form-inputs:focus {
+    outline: none;
 }
 
 .div-container {
@@ -919,6 +937,14 @@ nav ul li ul li a {
     transition: transform 0.6s ease-in-out;
 }
 
+.overlay-panel h1 {
+    font-size: 28px;
+}
+
+.overlay-panel p {
+    padding: 0 10px;
+}
+
 .overlay-left {
     transform: translateX(-20%);
 }
@@ -971,6 +997,11 @@ nav ul li ul li a {
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+}
+
+.form-select:focus {
+    outline: none;
+    border: none;
 }
 
 footer {
@@ -1066,7 +1097,7 @@ footer {
     }
 
     .wrapper {
-        margin: 0 15px !important;
+        margin: 0 5px !important;
     }
 
     .footer-main {

@@ -310,7 +310,7 @@ body {
 }
 
 .middle-sub-header {
-    font-size: 45px;
+    font-size: 28px;
     text-align: center;
     color: #fff;
     padding: 15px 0;
@@ -854,6 +854,24 @@ body {
     }
 }
 
+@media screen and (max-width:800px) and (min-width:10px) {
+
+    .middle-sub {
+        display: none;
+    }
+
+    .middle-sub-header {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:10000000000px) and (min-width:801px) {
+    .middle-sub-second {
+        display: none !important;
+
+    }
+}
+
 @media screen and (max-width:600px) and (min-width:10px) {
     .main__banner .bannerImage {
         margin: 40px 0 10px 0 !important;
@@ -925,7 +943,6 @@ body {
         margin: 0 auto;
         display: block;
     }
-
 }
 
 .class-option {
@@ -2117,6 +2134,10 @@ h3 {
     }
 }
 
+.comparison:hover {
+    text-decoration: none;
+}
+
 .section-1-of-3 h1 {
     background-color: #990000;
     color: #fff;
@@ -2157,8 +2178,10 @@ h3 {
 }
 
 .blockWrapper {
-    background-color: #f5f6f7 !important;
+    background-color: #fff !important;
 }
+
+
 
 .sectionInnerFirstList {
     padding: 0 5px !important;
