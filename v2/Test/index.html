@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="owl.carousel.min.css" />
   <link rel="stylesheet" href="owl.carousel.default.min.css" />
-  <link rel="stylesheet" href="slick/slick.css" />
+  <link rel="stylesheet" href="slick.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="slick/slick-theme.css" />
-  <link rel="stylesheet" href="carousel.css" />
+  <link rel="stylesheet" href="slick-theme.css" />
 </head>
 
 <body>
@@ -67,32 +66,20 @@
       </select>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="owl-carousel owl-theme">
-      <div><iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
-        </iframe>
-      </div>
-      <div>
-        <iframe src="https://www.youtube.com/embed/EFafSYg-PkI">
-        </iframe>
-      </div>
-      <div>
-        <iframe src="https://www.youtube.com/embed/5WohQijapeU">
-        </iframe>
-      </div>
+  <div class="owl-carousel owl-theme">
+    <div><iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+      </iframe>
     </div>
-    <!-- <div class="yt_carousel">
-      <div style="background-image: url('v_1.jpg');background-size: auto;height: 360px;width: 100%;background-repeat: no-repeat
-       ">
-
-      </div>
-      <div style="background-image: url('v_2.jpg');height: 360px;background-size: contain">
-
-      </div>
-      <div style="background-image: url('v_3.jpg');height: 360px;background-size: contain">
-
-      </div>
-    </div> -->
+    <div>
+      <iframe src="https://www.youtube.com/embed/EFafSYg-PkI">
+      </iframe>
+    </div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/5WohQijapeU">
+      </iframe>
+    </div>
+  </div>
+  <div class="wrapper">
     <section class="sections">
       <h1 class="section__header">Articles</h1>
       <div class="product-carousel">
@@ -135,7 +122,8 @@
         style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url('c.jpg');background-size: cover;height: 200px;width: 100%" />
       <div class="inner_product">
         <h1 class="inner_productTitle">Article</h1>
-        <p class="inner_productDescription">Biology is the natural science that studies life and living organisms...</p>
+        <p class="inner_productDescription">Biology is the natural science that studies life and living organisms...
+        </p>
       </div>
     </div>
   </div>
@@ -146,7 +134,8 @@
         style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url('d.png');background-size: cover;height: 200px;width: 100%" />
       <div class="inner_product">
         <h1 class="inner_productTitle">Article</h1>
-        <p class="inner_productDescription">Mathematics includes the study of such topics as quantity, structure....</p>
+        <p class="inner_productDescription">Mathematics includes the study of such topics as quantity, structure....
+        </p>
       </div>
     </div>
   </div>
@@ -378,10 +367,15 @@
   <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
     crossorigin="anonymous"></script>
   <script src="owl.carousel.js"></script>
-  <script src="image_scale.min.js"></script>
-  <script src="slick/slick.min.js"></script>
+  <script src="slick.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <script>
     $(".owl-carousel").owlCarousel({
       center: true,
@@ -436,7 +430,6 @@
       });
     })(jQuery);
   </script>
-
 
   <script>
     $(".product-carousel").slick({
@@ -497,80 +490,11 @@
         }
       ]
     });
-
-    $(".yt_carousel").slick({
-      lazyLoad: "ondemand",
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: '<i class="arrow right">',
-      prevArrow: '<i class="arrow left">',
-      infinite: true,
-      centerMode: true,
-      centerPadding: '60px',
-      responsive: [{
-          breakpoint: 3000,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 2500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 2000,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+
+
   <script src="slick/slick.min.js"></script>
-  <script src="awselect.min.js"></script>
 
   <script>
     /* ===== Logic for creating fake Select Boxes ===== */
