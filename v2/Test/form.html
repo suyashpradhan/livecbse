@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="wrapper">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#">
+                        <img alt="" height="35px" src="livecbse_logo.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper">
+        <div class="page_div __card">
+            <p class="page_header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit sit
+                optio
+                impedit voluptatem
+                maxime commodi, autem odit, fugit libero quasi eius soluta reprehenderit praesentium quis mollitia
+                inventore
+                adipisci. Ad!</p>
+        </div>
+        <div class="main_form">
+            <ul class="tab-group">
+                <li class="tab active"><a href="#student_login">Student Login</a></li>
+                <li class="tab"><a href="#school_login">School Login</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="student_login">
+                    <h1>Login As A Student!</h1>
+                    <form action="/" method="post">
+                        <div class="field-wrap">
+                            <label>
+                                School ID
+                            </label>
+                            <input type="type" required autocomplete="off" />
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Email Address
+                            </label>
+                            <input type="email" required autocomplete="off" />
+                        </div>
+                        <div class="field-wrap">
+                            <label>
+                                Set A Password
+                            </label>
+                            <input type="password" required autocomplete="off" />
+                        </div>
+
+                        <button type="submit" class="button button-block" />Login</button>
+
+                    </form>
+
+                </div>
+
+                <div id="school_login">
+                    <h1>Login As A School!</h1>
+
+                    <form action="/" method="post">
+
+                        <div class="field-wrap">
+                            <label>
+                                School ID
+                            </label>
+                            <input type="type" required autocomplete="off" />
+                        </div>
+                        <div class="field-wrap">
+                            <label>
+                                Set A Password
+                            </label>
+                            <input type="password" required autocomplete="off" />
+                        </div>
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                        <button class="button button-block" />Log In</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="footer-main">
+                <div class="footer_col">
+                    <i class="fas fa-map-marker footerIcons"></i>
+                    <h1 class="footerHeader">Address</h1>
+                    <p class="footerDescription">472-A, Talwandi, Near Modern School,<br>Kota, Rajasthan.<br>Pin code -
+                        324005</p>
+                </div>
+                <div class="footer_col">
+                    <i class="fas fa-phone footerIcons"></i>
+                    <h1 class="footerHeader">Let's Call</h1>
+                    <p class="footerDescription">0744-2407128<br>+91 9571010999</p>
+                </div>
+                <div class="footer_col">
+                    <i class="far fa-envelope footerIcons"></i>
+                    <h1 class="footerHeader">Support</h1>
+                    <p class="footerDescription">contact@livecbse.com</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer_sub">
+            <ul class="footer_sub-list">
+                <li> <a href="">About Us </a> </li>
+                <li> <a href=""> Franchise </a></li>
+                <li> <a href=""> Join Us</a></li>
+                <li> <a href="">© 2015 All Rights Reserved with domain Edutech Pvt. Ltd.<br> <img
+                            src="livecbse_logo.png" alt="" height="30"></a>
+                </li>
+                <li> <a href=""> Privacy Policy</a></li>
+                <li> <a href="">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script>
+        (function ($) {
+            $(function () {
+                $("nav ul li > a:not(:only-child)").click(function (e) {
+                    $(this)
+                        .siblings(".nav-dropdown")
+                        .toggle();
+                    $(".nav-dropdown")
+                        .not($(this).siblings())
+                        .hide();
+                    e.stopPropagation();
+                });
+                $("html").click(function () {
+                    $(".nav-dropdown").hide();
+                });
+            });
+            document
+                .querySelector("#nav-toggle")
+                .addEventListener("click", function () {
+                    this.classList.toggle("active");
+                });
+            $("#nav-toggle").click(function () {
+                $("nav ul").toggle();
+            });
+        })(jQuery);
+
+
+        $('.main_form').find('input, textarea').on('keyup blur focus', function (e) {
+
+            var $this = $(this),
+                label = $this.prev('label');
+
+            if (e.type === 'keyup') {
+                if ($this.val() === '') {
+                    label.removeClass('active highlight');
+                } else {
+                    label.addClass('active highlight');
+                }
+            } else if (e.type === 'blur') {
+                if ($this.val() === '') {
+                    label.removeClass('active highlight');
+                } else {
+                    label.removeClass('highlight');
+                }
+            } else if (e.type === 'focus') {
+
+                if ($this.val() === '') {
+                    label.removeClass('highlight');
+                } else if ($this.val() !== '') {
+                    label.addClass('highlight');
+                }
+            }
+
+        });
+
+        $('.tab a').on('click', function (e) {
+
+            e.preventDefault();
+
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+
+            target = $(this).attr('href');
+
+            $('.tab-content > div').not(target).hide();
+
+            $(target).fadeIn(600);
+
+        });
+    </script>
+</body>
+
+</html>

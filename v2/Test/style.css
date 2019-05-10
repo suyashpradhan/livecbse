@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
   font-weight: 400 !important;
   line-height: 1.5 !important;
   background: #f1f1f1 !important;
-
+  font-family: 'Quicksand', sans-serif;
   position: relative;
   min-height: 100vh;
   padding-bottom: 2.5rem;
@@ -138,7 +138,7 @@ nav ul li ul li a {
   display: none;
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 30px;
   height: 70px;
   width: 70px;
 }
@@ -369,19 +369,20 @@ nav ul li ul li a {
 .product-carousel {
   box-sizing: border-box;
   padding: 10px;
-  width: 300px;
+  width: 200px;
 }
 
 .product-carousel .product {
   box-sizing: border-box;
-  margin: 0 10px;
   text-align: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0,
-    #181818 100%
-  );
-  border-radius: 8px;
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0,
+      #181818 100%);
+  border-radius: 5px;
+}
+
+.product-carousel .product_quiz {
+  background-image: none !important;
 }
 
 .product-carousel .product-top {
@@ -472,111 +473,48 @@ nav ul li ul li a {
   outline: none;
 }
 
-/* .product-image:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-} */
-
 .product-top:hover .product-image {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
-/** ARROWS **/
-.arrow {
-  border: solid #000000;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 5px;
-  font-weight: 900;
+.product_info {
   position: absolute;
-  top: calc(50% - 12px / 2);
-  cursor: pointer;
-  text-shadow: 0 2px 4px #00000033 !important;
+  width: 100%;
 }
 
-.right {
-  right: -3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.product_info h1 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
 }
 
-.left {
-  left: -3px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.slick-slider {
-  position: relative;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
+.div_start {
   display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
 }
 
-.slick-loading .slick-track {
-  visibility: hidden;
+.div_start a {
+  border: 2px solid #990000;
+  display: inline;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #181818;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all .5s ease;
 }
 
-[dir="rtl"] .slick-slide {
-  float: right;
+.div_start a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #990000;
+
 }
 
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
 
 .block__bodyFlex {
   display: flex;
@@ -718,18 +656,22 @@ nav ul li ul li a {
 }
 
 .sign_up {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 1px solid #990000;
   background-color: #990000;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   margin: 10px 0;
   font-weight: bold;
-  padding: 12px 45px;
+  padding: 8px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: transform 80ms ease-in;
+  transition: all 80ms ease-in;
+}
+
+.sign_up:hover {
+  background-color: #7a0303;
 }
 
 .sign_up:active {
@@ -741,17 +683,24 @@ nav ul li ul li a {
 }
 
 .ghost {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 2px solid #696969;
   background-color: #fff;
   color: #363636;
   font-size: 12px;
   font-weight: bold;
-  padding: 12px 45px;
+  padding: 8px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: transform 80ms ease-in;
+  margin-top: 5px;
+  transition: all 80ms ease-in;
+}
+
+.ghost:hover {
+  background-color: #5c5b5b;
+  border: 2px solid #5c5b5b;
+  color: #fff;
 }
 
 .ghost:focus {
@@ -769,6 +718,11 @@ nav ul li ul li a {
   text-align: center;
 }
 
+.__form_2 {
+  width: 100% !important;
+  background: none !important;
+}
+
 .__form h1 {
   font-size: 28px;
 }
@@ -776,9 +730,14 @@ nav ul li ul li a {
 .form-inputs {
   background-color: #eee;
   border: none;
-  padding: 12px 15px;
+  padding: 6px 15px;
   margin: 8px 0;
   width: 100%;
+  border-radius: 5px;
+}
+
+.form-inputs ::placeholder {
+  font-size: 12px;
 }
 
 .form-inputs:focus {
@@ -793,7 +752,7 @@ nav ul li ul li a {
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 450px;
 }
 
 .form-container {
@@ -828,6 +787,7 @@ nav ul li ul li a {
 }
 
 @keyframes show {
+
   0%,
   49.99% {
     opacity: 0;
@@ -904,6 +864,7 @@ nav ul li ul li a {
 
 .overlay-left {
   transform: translateX(-20%);
+  padding: 20px;
 }
 
 .overlay-left h1 {
@@ -938,6 +899,7 @@ nav ul li ul li a {
 
 .overlay-right {
   right: 0;
+  padding: 20px;
   transform: translateX(0);
 }
 
@@ -956,6 +918,27 @@ nav ul li ul li a {
 .form-select:focus {
   outline: none;
   border: none;
+}
+
+.or {
+  margin: 30px 0 0 0;
+}
+
+._bar {
+  flex: auto;
+  border: none;
+  height: 5px;
+  margin: 0;
+  visibility: visible;
+  z-index: 9999;
+  background-color: #696969;
+}
+
+.or span {
+  color: #181818;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 0 0.5rem;
 }
 
 footer {
@@ -1390,4 +1373,52 @@ input.input100 {
 .inner___downloadIcon {
   margin-left: 2px;
   font-size: 18px;
+}
+
+
+.click {
+  font-size: 20px;
+  color: #f5f6f7;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  right: 10px;
+  text-align: right;
+}
+
+.click span {
+  z-index: 999;
+}
+
+.click span:hover {
+  opacity: 0.8;
+}
+
+.click span:active {
+  transform: scale(0.93, 0.93) translateY(2px);
+  color: #990000;
+}
+
+.click__second {
+  color: #990000;
+}
+
+.click__second span {
+  transform: scale(0.93, 0.93) translateY(2px);
+  color: #990000;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: 600;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.info-tog {
+  color: #ffff;
+  top: 5px;
+  opacity: 1;
 }

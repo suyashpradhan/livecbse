@@ -20,6 +20,80 @@ else{
   <link rel="stylesheet" href="owl.carousel.default.min.css" />
   <link rel="stylesheet" href="slick.css" />
   <link rel="stylesheet" href="slick-theme.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <script>
+    //if performance drops $.holdReady( true );
+    //replace getJSON with post and student_panel_mobile.json with .php when live
+    $.holdReady( true );
+    $.post("../app_livecbse/student_panel_mobile.php", {
+      user: '<?php echo $_SESSION['username'];?>',
+      club: '<?php if(isset($club)){echo $club;}else{echo 'club_18';}?>'
+    }).done(
+      function (post_data) {
+        console.log(post_data);
+        var clubs = []; //Clubs  
+        var topics = []; //Topics 
+        var videos = []; //Videos
+        var articles = []; //Articles
+        var tags = []; //Tags
+        var quiz = []; //Quiz   
+        var data = JSON.parse(post_data)
+        //console.log(data.clubs);
+        //Insert Clubs
+        $.each(data.clubs, function (key, data) {
+          clubs.push("<li><a href='?club=" + data.id + "'>" + data.name + "</a></li>");
+        });
+        $('#clubNav').append(clubs);
+        //Insert Topics
+        $.each(data.topics, function (key, data) {
+          topics.push(`<option value='${data.topic_id}'>${data.topic_name}</option>`);
+        });
+        $('#topics').append(topics);
+        //Insert Videos
+        $.each(data.videos, function (key, data) {
+          videos.push(`<div><iframe src='https://www.youtube.com/embed/${data.video_key}'></iframe></div>`);
+        });
+        $('#videoCarousel').append(videos);
+        //Insert Articles
+        $.each(data.articles, function (key, data) {
+          articles.push(`
+        <div class='product'>
+          <div class='product-top'>
+            <div class='product-image'
+              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
+            <div class='inner_product'>
+              <h1 class='inner_productTitle'>Article</h1>
+              <p class='inner_productDescription'>${data.name}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        `);
+        article_slider();
+        });
+        $('#articleCarousel').append(articles);
+        //Insert Tags
+        $.each(data.tags, function (key, data) {
+          tags.push(`
+        <div class="tags__divInner" id="${data.tag_id}">
+        <h1>${data.tag_name}</h1>
+        <h1><i class="fas fa-times-circle close__icon"></i></h1>
+      </div>      
+        `);
+        });
+        $('#tags').append(tags);
+        //Insert Quiz
+        $.each(data.quiz, function (key, data) {
+          quiz.push(`              
+          ${data.quiz_link}      
+        `);
+        });
+        $('#quizCarousel').append(quiz);
+      });
+      $.holdReady( true );
+    // if performance drops $.holdReady( false );
+  </script>
 </head>
 
 <body>
@@ -82,61 +156,7 @@ else{
   <section class="sections">
     <h1 class="section__header">Quiz</h1>
     <div class="product-carousel" id="quizCarousel">
-    <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </div>
   </section>
   </div>
@@ -226,7 +246,6 @@ else{
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
   <script src="owl.carousel.js"></script>
   <script src="slick.min.js"></script>
@@ -238,75 +257,7 @@ else{
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script>
-    //if performance drops $.holdReady( true );
-    //replace getJSON with post and student_panel_mobile.json with .php when live
-    $.post("../app_livecbse/student_panel_mobile.php", {
-      user: '<?php echo $_SESSION['username'];?>',
-      club: '<?php if(isset($club)){echo $club;}else{echo 'club_18';}?>'
-    }).done(
-      function (post_data) {
-        console.log(post_data);
-        var clubs = []; //Clubs  
-        var topics = []; //Topics 
-        var videos = []; //Videos
-        var articles = []; //Articles
-        var tags = []; //Tags
-        var quiz = []; //Quiz   
-        var data = JSON.parse(post_data)
-        //console.log(data.clubs);
-        //Insert Clubs
-        $.each(data.clubs, function (key, data) {
-          clubs.push("<li><a href='?club=" + data.id + "'>" + data.name + "</a></li>");
-        });
-        $('#clubNav').append(clubs);
-        //Insert Topics
-        $.each(data.topics, function (key, data) {
-          topics.push(`<option value='${data.topic_id}'>${data.topic_name}</option>`);
-        });
-        $('#topics').append(topics);
-        //Insert Videos
-        $.each(data.videos, function (key, data) {
-          videos.push(`<div><iframe src='https://www.youtube.com/embed/${data.video_key}'></iframe></div>`);
-        });
-        $('#videoCarousel').append(videos);
-        //Insert Articles
-        $.each(data.articles, function (key, data) {
-          articles.push(`
-        <div class='product'>
-          <div class='product-top'>
-            <div class='product-image'
-              style='background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(${data.icon});background-size: contain;height: 200px;width: auto' />
-            <div class='inner_product'>
-              <h1 class='inner_productTitle'>Article</h1>
-              <p class='inner_productDescription'>${data.name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-        `);
-        });
-        $('#articleCarousel').append(articles);
-        //Insert Tags
-        $.each(data.tags, function (key, data) {
-          tags.push(`
-        <div class="tags__divInner" id="${data.tag_id}">
-        <h1>${data.tag_name}</h1>
-        <h1><i class="fas fa-times-circle close__icon"></i></h1>
-      </div>      
-        `);
-        });
-        $('#tags').append(tags);
-        //Insert Quiz
-        $.each(data.quiz, function (key, data) {
-          quiz.push(`              
-          ${data.quiz_link}      
-        `);
-        });
-        $('#quizCarousel').append(quiz);
-      });
-    // if performance drops $.holdReady( false );
-  </script>
+  
   <script>
     (function ($) {
       $(function () {
@@ -333,6 +284,52 @@ else{
       });
     })(jQuery);
   </script>
+
+<script>
+    $('.sel').each(function () {
+      $(this).children('select').css('display', 'none');
+
+      var $current = $(this);
+
+      $(this).find('option').each(function (i) {
+        if (i == 0) {
+          $current.prepend($('<div>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__box')
+          }));
+
+          var placeholder = $(this).text();
+          $current.prepend($('<span>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
+            text: placeholder,
+            'data-placeholder': placeholder
+          }));
+
+          return;
+        }
+
+        $current.children('div').append($('<span>', {
+          class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
+          text: $(this).text()
+        }));
+      });
+    });
+
+    $('.sel').click(function () {
+      $(this).toggleClass('active');
+    });
+
+    $('.sel__box__options').click(function () {
+      var txt = $(this).text();
+      var index = $(this).index();
+
+      $(this).siblings('.sel__box__options').removeClass('selected');
+      $(this).addClass('selected');
+
+      var $currentSel = $(this).closest('.sel');
+      $currentSel.children('.sel__placeholder').text(txt);
+      $currentSel.children('select').prop('selectedIndex', index + 1);
+    });
+  </script>
   <script>
     $("#videoCarousel").owlCarousel({
       center: true,
@@ -356,7 +353,7 @@ else{
   </script>
 
   <script>
-    $('.product-carousel').slick("unslick");
+    function article_slider() {
     $(".product-carousel").slick({
       lazyLoad: "ondemand",
       slidesToShow: 4,
@@ -415,52 +412,7 @@ else{
         }
       ]
     });
-  </script>
-
-  <script>
-    $('.sel').each(function () {
-      $(this).children('select').css('display', 'none');
-
-      var $current = $(this);
-
-      $(this).find('option').each(function (i) {
-        if (i == 0) {
-          $current.prepend($('<div>', {
-            class: $current.attr('class').replace(/sel/g, 'sel__box')
-          }));
-
-          var placeholder = $(this).text();
-          $current.prepend($('<span>', {
-            class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
-            text: placeholder,
-            'data-placeholder': placeholder
-          }));
-
-          return;
-        }
-
-        $current.children('div').append($('<span>', {
-          class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
-          text: $(this).text()
-        }));
-      });
-    });
-
-    $('.sel').click(function () {
-      $(this).toggleClass('active');
-    });
-
-    $('.sel__box__options').click(function () {
-      var txt = $(this).text();
-      var index = $(this).index();
-
-      $(this).siblings('.sel__box__options').removeClass('selected');
-      $(this).addClass('selected');
-
-      var $currentSel = $(this).closest('.sel');
-      $currentSel.children('.sel__placeholder').text(txt);
-      $currentSel.children('select').prop('selectedIndex', index + 1);
-    });
+    }
   </script>
 
 </body>
