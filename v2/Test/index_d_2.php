@@ -46,6 +46,12 @@ if (isset($_GET['club'])) {
           <li>
             <a href="#!">Select Club</a>
             <ul class="nav-dropdown" id="clubNav">
+              <li>
+                <a href="#!">CBSE PHYSICS XII</a>
+              </li>
+              <li>
+                <a href="#!">CBSE PHYSICS XI</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -53,9 +59,10 @@ if (isset($_GET['club'])) {
     </div>
   </section>
   <div class="wrapper">
-    <div class="sel sel--sub">
+    <div class="select_wrap">
       <select id="topics">
-        <option value="" disabled>Select Topic</option>
+        <option value="">Select Topic</option>
+        <option value="">Select Topic</option>
       </select>
     </div>
   </div>
@@ -215,133 +222,203 @@ if (isset($_GET['club'])) {
 
   <script>
     $(document).ready(function() {
-          var video_carousel = $("#videoCarousel").owlCarousel({
-            center: true,
-            loop: true,
-            margin: 10,
-            responsive: {
-              1200: {
-                items: 2,
-              },
-              800: {
-                items: 1,
-              },
-              600: {
-                items: 1,
-              },
-              300: {
-                items: 1,
-              }
-            }
-          });
+      var video_carousel = $("#videoCarousel").owlCarousel({
+        center: true,
+        loop: true,
+        margin: 10,
+        responsive: {
+          1200: {
+            items: 2,
+          },
+          800: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          300: {
+            items: 1,
+          }
+        }
+      });
 
-          var article_carousel = $("#articleCarousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            responsive: {
-              1600: {
-                items: 5,
-              },
-              1200: {
-                items: 4,
-              },
-              800: {
-                items: 3,
-              },
-              600: {
-                items: 2,
-              },
-              300: {
-                items: 1,
-              }
-            }
-          });
+      var article_carousel = $("#articleCarousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+          1600: {
+            items: 5,
+          },
+          1200: {
+            items: 4,
+          },
+          800: {
+            items: 3,
+          },
+          600: {
+            items: 2,
+          },
+          300: {
+            items: 1,
+          }
+        }
+      });
 
-          var quiz_carousel = $("#quizCarousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: true,
-            responsive: {
-              1600: {
-                items: 5,
-              },
-              1200: {
-                items: 4,
-              },
-              800: {
-                items: 3,
-              },
-              600: {
-                items: 2,
-              },
-              300: {
-                items: 1,
-              }
-            }
-          });
-        };
+      var quiz_carousel = $("#quizCarousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: true,
+        responsive: {
+          1600: {
+            items: 5,
+          },
+          1200: {
+            items: 4,
+          },
+          800: {
+            items: 3,
+          },
+          600: {
+            items: 2,
+          },
+          300: {
+            items: 1,
+          }
+        }
+      });
+    };
 
-        $.post("../app_livecbse/student_panel_mobile.php", {
-          user: '<?php echo $_SESSION['username']; ?>',
-          club: '<?php if (isset($club)) {
-                    echo $club;
-                  } else {
-                    echo 'club_18';
-                  } ?> '
-        }).done(
-          function(post_data) {
-            console.log(post_data);
-            var clubs = []; //Clubs  
-            var topics = []; //Topics 
-            var videos = []; //Videos
-            var articles = []; //Articles
-            var tags = []; //Tags
-            var quiz = []; //Quiz   
-            var data = JSON.parse(post_data);
+    $('.sel').each(function() {
+      $(this).children('select').css('display', 'none');
 
-            $.each(data.clubs, function(key, data) {
-              clubs.push("<li><a href='?club=" + data.id + "'>" + data.name + "</a></li>");
-            });
-            $('#clubNav').append(clubs);
+      var $current = $(this);
 
-            //Insert Topics
-            $.each(data.topics, function(key, data) {
-              topics.push(`<option value='${data.topic_id}'>${data.topic_name}</option>`);
-            });
-            $('#topics').append(topics);
+      $(this).find('option').each(function(i) {
+        if (i == 0) {
+          $current.prepend($('<div>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__box')
+          }));
 
-            //Insert Videos
-            $.each(data.videos, function(key, data) {
-              var video_link = "https://www.youtube.com/embed/" + data.video_key;
-              video_carousel.trigger('add.owl.carousel', [jQuery('<div><iframe src="' + video_link + '"></iframe></div>')]);
-            });
+          var placeholder = $(this).text();
+          $current.prepend($('<span>', {
+            class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
+            text: placeholder,
+            'data-placeholder': placeholder
+          }));
 
-            //Insert Articles
-            $.each(data.articles, function(key, data) {
-              var icon = data.icon;
-              var title = data.name;
-              article_carousel.trigger('add.owl.carousel', [jQuery('<div class=\'product\'><div class=\'product-top\'><div class=\'product-image\' style=\'background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url("' + data.icon + '");background-size: contain;height: 200px;width: auto\' /><div class=\'click\'><span class=\'far fa-heart\' onclick=\'set_fav("' + data.article_id + '","' + data.status + '")\'></span></div><div class=\'inner_product\'><h1 class=\'inner_productTitle\'>Article</h1><p class=\'inner_productDescription\'>"' + data.name + '"</p></div></div></div></div>')]);
-            });
+          return;
+        }
 
-            //Insert Quiz
-            $.each(data.quiz, function(key, data) {
-              quiz_carousel.trigger('add.owl.carousel', [jQuery('<div class=\'product\'><div class=\'product-top\'><div class=\'product-image\' style=\'background-color:#f7f5c4fa ;height: 200px;width: auto\'><div class=\'product_info\'><h1>Digital Design Quiz</h1><div class=\'div_start\'><a href=\'#\'>Start Quiz</a></div></div></div></div></div>')]);
-            });
+        $current.children('div').append($('<span>', {
+          class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
+          text: $(this).text()
+        }));
+      });
+    });
 
-            //Insert Tags
-            $.each(data.tags, function(key, data) {
-              tags.push(`
+    $('.sel').click(function() {
+      $(this).toggleClass('active');
+    });
+
+    $('.sel__box__options').click(function() {
+      var txt = $(this).text();
+      var index = $(this).index();
+
+      $(this).siblings('.sel__box__options').removeClass('selected');
+      $(this).addClass('selected');
+
+      var $currentSel = $(this).closest('.sel');
+      $currentSel.children('.sel__placeholder').text(txt);
+      $currentSel.children('select').prop('selectedIndex', index + 1);
+    });
+
+    (function($) {
+      $(function() {
+        $("nav ul li > a:not(:only-child)").click(function(e) {
+          $(this)
+            .siblings("#clubNav")
+            .toggle();
+          $("#clubNav")
+            .not($(this).siblings())
+            .hide();
+          e.stopPropagation();
+        });
+        $("html").click(function() {
+          $("#clubNav").hide();
+        });
+      });
+      document
+        .querySelector("#nav-toggle")
+        .addEventListener("click", function() {
+          this.classList.toggle("active");
+        });
+      $("#nav-toggle").click(function() {
+        $("nav ul").toggle();
+      });
+    })(jQuery);
+
+    $.post("../app_livecbse/student_panel_mobile.php", {
+      user: '<?php echo $_SESSION['username']; ?>',
+      club: '<?php if (isset($club)) {
+                echo $club;
+              } else {
+                echo 'club_18';
+              } ?> '
+    }).done(
+      function(post_data) {
+        console.log(post_data);
+        var clubs = []; //Clubs  
+        var topics = []; //Topics 
+        var videos = []; //Videos
+        var articles = []; //Articles
+        var tags = []; //Tags
+        var quiz = []; //Quiz   
+        var data = JSON.parse(post_data);
+
+        $.each(data.clubs, function(key, data) {
+          clubs.push("<li><a href='?club=" + data.id + "'>" + data.name + "</a></li>");
+        });
+        $('#clubNav').append(clubs);
+
+        //Insert Topics
+        $.each(data.topics, function(key, data) {
+          topics.push(`<option value='${data.topic_id}'>${data.topic_name}</option>`);
+        });
+        $('#topics').append(topics);
+
+        //Insert Videos
+        $.each(data.videos, function(key, data) {
+          var video_link = "https://www.youtube.com/embed/" + data.video_key;
+          video_carousel.trigger('add.owl.carousel', [jQuery('<div><iframe src="' + video_link + '"></iframe></div>')]);
+        });
+
+        //Insert Articles
+        $.each(data.articles, function(key, data) {
+          var icon = data.icon;
+          var title = data.name;
+          article_carousel.trigger('add.owl.carousel', [jQuery('<div class=\'product\'><div class=\'product-top\'><div class=\'product-image\' style=\'background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url("' + data.icon + '");background-size: contain;height: 200px;width: auto\' /><div class=\'click\'><span class=\'far fa-heart\' onclick=\'set_fav("' + data.article_id + '","' + data.status + '")\'></span></div><div class=\'inner_product\'><h1 class=\'inner_productTitle\'>Article</h1><p class=\'inner_productDescription\'>"' + data.name + '"</p></div></div></div></div>')]);
+        });
+
+        //Insert Quiz
+        $.each(data.quiz, function(key, data) {
+          quiz_carousel.trigger('add.owl.carousel', [jQuery('<div class=\'product\'><div class=\'product-top\'><div class=\'product-image\' style=\'background-color:#f7f5c4fa ;height: 200px;width: auto\'><div class=\'product_info\'><h1>Digital Design Quiz</h1><div class=\'div_start\'><a href=\'#\'>Start Quiz</a></div></div></div></div></div>')]);
+        });
+
+        //Insert Tags
+        $.each(data.tags, function(key, data) {
+          tags.push(`
         <div class="tags__divInner" id="${data.tag_id}">
         <h1>${data.tag_name}</h1>
         <h1><i class="fas fa-times-circle close__icon"></i></h1>
       </div>      
         `);
-            });
-            $('#tags').append(tags);
-            video_carousel.trigger('refresh.owl.carousel');
-            article_carousel.trigger('refresh.owl.carousel');
-            quiz_carousel.trigger('refresh.owl.carousel');
-          });
+        });
+        $('#tags').append(tags);
+        video_carousel.trigger('refresh.owl.carousel');
+        article_carousel.trigger('refresh.owl.carousel');
+        quiz_carousel.trigger('refresh.owl.carousel');
+      });
+    });
   </script>
 
   <script>

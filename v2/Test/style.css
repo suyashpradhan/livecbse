@@ -248,113 +248,46 @@ nav ul li ul li a {
     transform: rotate(-45deg);
 }
 
-/* ===== Select Box ===== */
-
-.rule {
-    margin: 10px 0;
-    border: none;
-    height: 1px;
-    background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
+select:active,
+select:hover {
+    outline: none
 }
 
-.sel {
-    display: block;
+.select_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
     margin: 1.5rem auto;
-    width: 300px;
-    background-color: transparent;
-    position: relative;
-    cursor: pointer;
 }
 
-.sel::before {
-    position: absolute;
+.select_topic {
+    width: auto;
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #5c5b5b;
+    font-weight: 700;
+}
+
+.select_topic:focus {
+    outline: none;
+}
+
+.select_topic option {
+    color: #5c5b5b !important;
     font-weight: 900;
-    content: "\f078";
-    font-family: "Font Awesome 5 Free";
-    font-size: 1em;
-    color: #4b4b4b;
-    right: 0px;
-    top: calc(50% - 0.8em);
+    font-size: 15px;
 }
 
-.sel.active::before {
-    transform: rotateX(-180deg);
+.select_topic option:hover {
+    background: none !important;
+
 }
 
-.sel__placeholder {
-    display: block;
-    font-size: 1.2rem;
-    color: #4b4b4b;
-    padding: 0.2em 0;
-    text-align: center;
-    pointer-events: none;
-    user-select: none;
-    visibility: visible;
-}
-
-.sel.active .sel__placeholder {
-    visibility: hidden;
-}
-
-.sel__placeholder::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.2em 0.5em;
-    content: attr(data-placeholder);
-    visibility: hidden;
-}
-
-.sel.active .sel__placeholder::before {
-    visibility: visible;
-}
-
-.sel__box {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: -4px;
-    display: none;
-    list-style-type: none;
-    text-align: left;
-    font-size: 1rem;
-    background-color: #fff;
-    width: calc(100% + 8px);
-    box-sizing: border-box;
-}
-
-.sel.active .sel__box {
-    display: block;
-    animation: fadeInUp 500ms;
-}
-
-.sel__box__options {
-    display: list-item;
-    font-size: 1rem;
-    color: #4b4b4b;
-    padding: 0.5em 1em;
-    user-select: none;
-}
-
-.sel__box__options::after {
-    content: "\f00c";
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.5em;
-    margin-left: 5px;
-    display: none;
-}
-
-.sel__box__options.selected::after {
-    display: inline;
-}
-
-.sel__box__options:hover {
-    background-color: #ebedef;
-}
-
-.sel--sub {
-    z-index: 3;
+option:focus {
+    outline: none;
 }
 
 .sections {
@@ -1515,4 +1448,34 @@ input.input100 {
     color: #ffff;
     top: 5px;
     opacity: 1;
+}
+
+.response_wrap {
+    padding: 0 15px;
+}
+
+.response_wrap h1 {
+    font-size: 24px;
+    color: #5c5b5b;
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.response_wrap p {
+    font-size: 17px;
+    color: #777;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.response_wrap h2 {
+    font-size: 20px;
+    color: #5c5b5b;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.response_wrap span {
+    color: #990000;
+    font-size: 18px;
 }

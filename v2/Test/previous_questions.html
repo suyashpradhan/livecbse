@@ -56,7 +56,7 @@
 
         <h1 class="wrapper__header">Previously Asked Questions</h1>
         <div class="card__wrapper">
-            <div class="download__card card__sub">
+            <div class="download__card card__sub" data-toggle="modal" data-target="#exampleModal">
                 <h1 class="question_head">What Is Design?</h1>
                 <span class="question_topic">Digital Design</span>
                 <div class="question_wrap">
@@ -86,6 +86,32 @@
                 <div class="question_wrap">
                     <span class="question_status">pending...</span>
                     <span class="question_date"> Asked on 2019-05-15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">What Is Design </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="response_wrap">
+                        <h1>Question Title <span>Asked on 2019-05-15</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rem libero itaque expedita
+                            numquam. Itaque, tempore ab quaerat voluptatum deleniti deserunt quia, expedita illo modi
+                            nisi fugiat facere dolorum debitis?</p>
+                        <h1>Question Title <span>Asked on 2019-05-15</span></h1>
+                    </div>
+                </div>
+                <div class="modal-footer response_wrap"
+                    style="display: flex;justify-content:flex-start;align-items: center;">
+                    <h2>Status: <span>Approved</span></h2>
                 </div>
             </div>
         </div>

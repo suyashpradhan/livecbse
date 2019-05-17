@@ -55,12 +55,15 @@
     </div>
   </section>
   <div class="wrapper">
-    <div class="sel sel--sub">
-      <select>
-        <option value="" disabled>Select Topic</option>
-        <option value="1">Light</option>
-        <option value="2">Gravity</option>
-        <option value="3">Aerodynamics</option>
+    <div class="select_wrap">
+      <select id="topics" onchange="change_topic()" class="select_topic">
+        <option value="" disabled="">Select Topic</option>
+        <option value="tp_25">Drawing Skills</option>
+        <option value="tp_26">Elements of Design</option>
+        <option value="tp_100">Introduction to Design Tools</option>
+        <option value="tp_101">Working with Colours</option>
+        <option value="tp_102">Application of Digital Design</option>
+        <option value="tp_97">Introduction to Graphic Design</option>
       </select>
     </div>
   </div>
@@ -87,7 +90,7 @@
               style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 100%;">
             </div>
             <div class="click"">
-              <span class=" far fa-heart"></span>
+              <span class=" far fa-heart" id="heart"></span>
             </div>
             <div class="inner_product">
               <h1 class="inner_productTitle">Article</h1>
@@ -523,8 +526,7 @@
         }
       });
     });
-  </script>
-  <script>
+
     $('.sel').each(function () {
       $(this).children('select').css('display', 'none');
 
@@ -569,38 +571,15 @@
       $currentSel.children('select').prop('selectedIndex', index + 1);
     });
   </script>
-
   <script>
-    $('.click').click(function () {
-      if ($('span').hasClass("far-heart")) {
-        $('.click').removeClass('active')
-        setTimeout(function () {
-          $('.click').removeClass('active-2')
-        }, 30)
-        $('.click').removeClass('active-3')
-        setTimeout(function () {
-          $('span').removeClass('far-heart')
-          $('span').addClass('far-heart-o')
-        }, 15)
-      } else {
-        $('.click').addClass('active')
-        $('.click').addClass('active-2')
-        setTimeout(function () {
-          $('span').addClass('far-heart')
-          $('span').removeClass('far-heart')
-        }, 150)
-        setTimeout(function () {
-          $('.click').addClass('active-3')
-        }, 150)
-        $('.info').addClass('info-tog')
-        setTimeout(function () {
-          $('.info').removeClass('info-tog')
-        }, 1000)
-      }
-    })
+    $(document).ready(function () {
+      $('#heart').click(function () {
+        $('#heart').toggle(function () {
+          $(this).css('background-color', '#990000');
+        });
+      });
+    });
   </script>
-
-
 </body>
 
 </html>
