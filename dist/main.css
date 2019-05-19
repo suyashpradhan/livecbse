@@ -4945,7 +4945,7 @@ nav ul li ul li a {
 /*Bottom Section*/
 
 .pageWrapper {
-    background-color: #990000;
+    background-color: #cc0033;
     border-top: 1px solid #fff;
 }
 
@@ -4981,11 +4981,109 @@ nav ul li ul li a {
 
 .header_four {
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     background-color: #181818;
     width: fit-content;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
     padding: 15px;
     font-weight: 900;
     border-radius: 8px;
+}
+
+.header_five {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.login_web {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    background-color: #ff9933;
+    padding: 15px 180px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.col_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70px 70px;
+    grid-gap: 5px;
+
+}
+
+.col_grid_inner h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: #181818;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.col_grid_inner h2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+}
+
+.col_last_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+    align-items: flex-end;
+}
+
+.col_last_grid_inner h1 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.col_last_grid_inner h2 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 900;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+.col_last_grid_inner img {
+    margin: 5px auto;
+    display: block;
+}
+
+.features__grid__wrap {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px auto;
+    max-width: 1140px;
+}
+
+.features___grid--inner img {
+    height: 80px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.features___grid--inner h1 {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
 }
