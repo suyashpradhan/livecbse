@@ -27,16 +27,13 @@
           </div>
           <ul class="nav-list">
             <li>
-              <a href="#!"> <i class="fas fa-home nav-listIcons"></i> Home</a>
+              <a href="index_d.php"> <i class="fas fa-home nav-listIcons"></i> Home</a>
             </li>
             <li>
-              <a href="#!"><i class="fas fa-download nav-listIcons"></i> Downloads</a>
+              <a href="downloads.php"><i class="fas fa-download nav-listIcons"></i> Downloads</a>
             </li>
             <li>
-              <a href="#!"><i class="fas fa-question nav-listIcons"></i> Ask Experts</a>
-            </li>
-            <li>
-              <a href="#!"> <i class="fas fa-heart nav-listIcons"></i> Favourites</a>
+              <a href="ask_experts.php"><i class="fas fa-question nav-listIcons"></i> Ask Experts</a>
             </li>
             <li>
               <a href="#!">Select Club</a>
@@ -49,11 +46,63 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <a href="#!"><i class="fas fa-user nav-listIcons"></i> Profile</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="favourite_d.php"> <i class="fas fa-heart nav-listIcons"></i> Favourites</a>
+                </li>
+                <li>
+                  <a href="#!" data-toggle="modal" data-target="#exampleModalCenter"> <i
+                      class="fas fa-chalkboard-teacher nav-listIcons"></i> Change Class</a>
+                </li>
+                <li>
+                  <a href="#!"> <i class="fas fa-sign-out-alt nav-listIcons"></i> Sign Out</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
     </div>
   </section>
+  <!-- Class Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Choose any of the following classes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="class_grid">
+            <div class="md-radio md-radio-inline">
+              <input id="ix" type="radio" name="g2" checked>
+              <label for="ix">Class IX</label>
+            </div>
+            <div class="md-radio md-radio-inline">
+              <input id="x" type="radio" name="g2">
+              <label for="x">Class X</label>
+            </div>
+            <div class="md-radio md-radio-inline">
+              <input id="xi" type="radio" name="g2">
+              <label for="xi">Class XI</label>
+            </div>
+            <div class="md-radio md-radio-inline">
+              <input id="xii" type="radio" name="g2">
+              <label for="xii">Class XII</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="change_class" data-dismiss="modal">Change Class</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="topic__wrapper">
       <h1 class="topic__header">Introduction To Graphic Design</h1>
@@ -222,7 +271,7 @@
             <div class="product_info">
               <h1>Digital Design Quiz</h1>
               <div class="div_start">
-                <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Start Quiz</a>
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="openPopup">Start Quiz</a>
               </div>
             </div>
           </div>
@@ -234,7 +283,7 @@
           <div class="product_info">
             <h1>Digital Design Quiz 2</h1>
             <div class="div_start">
-              <a href="#" data-toggle="modal" data-target="#exampleModalCenter_2">Start Quiz</a>
+              <a href="#" data-toggle="modal" data-target="#exampleModalCenter_2" class="openPopup">Start Quiz</a>
             </div>
           </div>
         </div>
@@ -246,7 +295,7 @@
       <div class="product_info">
         <h1>IOT Quiz</h1>
         <div class="div_start">
-          <a href="#">Start Quiz</a>
+          <a href="#" class="openPopup">Start Quiz</a>
         </div>
       </div>
     </div>
@@ -258,7 +307,7 @@
       <div class="product_info">
         <h1>AI Quiz</h1>
         <div class="div_start">
-          <a href="#">Start Quiz</a>
+          <a href="#" class="openPopup">Start Quiz</a>
         </div>
       </div>
     </div>
@@ -271,7 +320,7 @@
       <div class="product_info">
         <h1>Machine Learning Quiz</h1>
         <div class="div_start">
-          <a href="#">Start Quiz</a>
+          <a href="#" class="openPopup">Start Quiz</a>
         </div>
       </div>
     </div>
@@ -473,9 +522,6 @@
         margin: 10,
         dots: true,
         responsive: {
-          1600: {
-            items: 5,
-          },
           1200: {
             items: 8,
           },
@@ -483,10 +529,10 @@
             items: 6,
           },
           600: {
-            items: 4,
+            items: 3,
           },
           300: {
-            items: 2,
+            items: 3,
           }
         }
       });
