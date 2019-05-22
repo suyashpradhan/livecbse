@@ -1496,3 +1496,7 @@ input.input100 {
     color: #990000;
     font-size: 18px;
 }
+
+.pdfobject-container {
+    height: 300px;
+}
