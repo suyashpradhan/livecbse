@@ -922,7 +922,7 @@ footer {
 .footer_sub-list {
     display: grid;
     grid-template-columns: auto auto auto 1fr auto auto;
-    grid-gap: 20px;
+    gridfooter-gap: 20px;
     align-items: center;
     justify-items: center;
     padding: 15px 0;
