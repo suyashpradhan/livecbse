@@ -12,7 +12,7 @@
 
 <body>
     <section class="navigation">
-        <div class="wrapper">
+        <div class="container">
             <div class="brand">
                 <a href="#">
                     <img alt="" height="35px" src="../Student Dashboard/livecbse_logo.png">
@@ -100,19 +100,21 @@
         </div>
     </div>
     <div class="course_name_wrapper">
-        <div class="wrapper">
+        <div class="container">
             <h2>CBSE Chemistry XII</h2>
             <h1>Introduction To Organic Chemistry</h1>
         </div>
     </div>
-    <div class="wrapper">
+    <div class="container">
         <div class="row row-gap">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4  divider">
                 <h1 class="col_left_header">Course Summary</h1>
                 <ul class="course_list">
-                    <li><a href="#" id="article"> <i class="fas fa-newspaper col_icons"></i> Structure and bonding </a>
+                    <li><a href="#" target="article"> <i class="fas fa-newspaper col_icons"></i> Structure and
+                            bonding </a>
                     </li>
-                    <li><a href="#" id="video"> <i class="fas fa-play-circle col_icons"></i> Resonance and acid-base
+                    <li><a href="#" target="video"> <i class="fas fa-play-circle col_icons"></i> Resonance and
+                            acid-base
                             chemistry.</a>
                     </li>
                     <li><a href="#"> <i class="fas fa-newspaper col_icons"></i>Alkanes, cycloalkanes, and functional
@@ -133,7 +135,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 ">
                 <h1 class="col_left_header">Course Details</h1>
-                <div class="col_card col_card_effect" id="article_div">
+                <div class="col_card col_card_effect" id="article">
                     <h1 class="col_left_header"> <i class="fas fa-newspaper col_icons"></i> Structure and Bonding</h1>
                     <p class="col_para">The study of organic chemistry must at some point extend to the molecular level,
                         for the physical
@@ -141,13 +143,17 @@
                         bonding of molecules. This module introduces some basic facts and principles that are needed for
                         a discussion of organic molecules.</p>
                 </div>
-                <div class="col_card col_card_effect" id="video_div">
-                    <h1 class="col_left_header"> <i class="fas fa-play-circle col_icons"></i> Structure and Bonding</h1>
-                    <p class="col_para">The study of organic chemistry must at some point extend to the molecular level,
-                        for the physical
-                        and chemical properties of a substance are ultimately explained in terms of the structure and
-                        bonding of molecules. This module introduces some basic facts and principles that are needed for
-                        a discussion of organic molecules.</p>
+                <div class="col_card col_card_effect" id="video">
+                    <h1 class="col_left_header"> <i class="fas fa-play-circle col_icons"></i> Resonance and acid-base
+                        chemistry</h1>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+
+                        <iframe width="1349" height="480" class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/SgLjwzaAhTA" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,13 +209,14 @@
         })(jQuery);
     </script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
-            $('#article').click(function () {
-                $('#article_div').toggle().css('transition:.5s ease-in');
-            })
+            jQuery('li').click(function () {
+                jQuery('div').hide();
+                jQuery('#div' + $(this).attr('target')).show();
+            });
         })
-    </script>
+    </script> -->
 
 </body>
 
