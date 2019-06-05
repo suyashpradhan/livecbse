@@ -16,18 +16,23 @@
 .owl-theme .owl-nav [class*=owl-] {
     color: #FFF;
     font-size: 14px;
-    margin: 5px;
+    margin: 0 5px;
     padding: 4px 7px;
     background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
-    border-radius: 3px
+    border-radius: 3px;
+    height: 100%;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
+/* .owl-theme .owl-nav [class*=owl-]:hover {
     background: #869791;
     color: #FFF;
     text-decoration: none
+} */
+
+.owl-theme .owl-nav i:active {
+    outline: none;
 }
 
 .owl-theme .owl-nav .disabled {
