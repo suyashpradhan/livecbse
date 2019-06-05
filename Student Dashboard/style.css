@@ -499,9 +499,11 @@ option:focus {
 .tags__div {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(7, auto);
+    grid-auto-columns: auto;
     align-items: center;
+    grid-gap: 10px;
+    width: 100% !important;
 }
 
 .tags__divInner {
