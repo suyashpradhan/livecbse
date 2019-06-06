@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: Segoe UI semibold, Segoe UI, Tahoma, sans-serif;
 }
 
 html,
@@ -13,7 +11,7 @@ body {
   font-weight: 400 !important;
   line-height: 1.5 !important;
   background: #f1f1f1 !important;
-  font-family: "Open Sans", sans-serif;
+  font-family: Segoe UI semibold, Segoe UI, Tahoma, sans-serif;
   position: relative;
   min-height: 100vh;
   padding-bottom: 3rem;
@@ -276,7 +274,7 @@ select:hover {
   display: inline;
   margin: 0.5rem 0 0 0;
   padding: 0 0 0 10rem;
-  text-shadow: 0 2px 4px #00000033;
+  /* text-shadow: 0 2px 4px #00000033; */
   letter-spacing: 1px;
 }
 
@@ -285,7 +283,7 @@ select:hover {
   border: none;
   background: none;
   font-size: 18px;
-  color: #5c5b5b;
+  color: #363636;
   font-weight: 700;
 }
 
@@ -323,7 +321,7 @@ option:focus {
 .product-carousel {
   box-sizing: border-box;
   padding: 10px;
-  width: 200px;
+  width: 100%;
 }
 
 .product-carousel .product {
@@ -332,7 +330,7 @@ option:focus {
   background-image: linear-gradient(to bottom,
       rgba(255, 255, 255, 0) 0,
       #181818 100%);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .product-carousel .product_quiz {
@@ -348,9 +346,11 @@ option:focus {
 .inner_product {
   position: absolute;
   z-index: 999;
-  top: 55%;
-  display: grid;
-  grid-template-columns: 1fr;
+  top: 68%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  align-items: flex-start;
   padding: 0 10px;
 }
 
@@ -363,8 +363,7 @@ option:focus {
 }
 
 .inner_productTitle {
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 14px;
   background-color: #990000;
   text-shadow: 0 2px 4px #00000033;
   padding: 3px;
@@ -377,7 +376,7 @@ option:focus {
 }
 
 .inner_productTitleLink {
-  font-size: 18px;
+  font-size: 16px;
   background-color: #990000;
   padding: 5px;
   color: #f5f6f7;
@@ -401,12 +400,12 @@ option:focus {
 }
 
 .inner_productDescription {
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   text-align: left;
-  padding: 3px 0;
+  padding: 1px 0;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .product-image {
@@ -416,7 +415,8 @@ option:focus {
   cursor: pointer;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-  border-radius: 5px;
+  border-radius: 13px;
+  height: 210px !important;
 }
 
 .product-image:focus {
@@ -495,30 +495,33 @@ option:focus {
 }
 
 .tags__div {
-  text-align: center;
-  display: grid;
-  grid-template-columns: minmax(200px, 500px) 1fr !important;
+  display: flex;
   align-items: center;
-  grid-gap: 10px;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .tags__divInner {
-  background-color: #dddcdc;
-  border: 1px solid #dddcdc;
-  color: #555;
+  background-color: #f5f6c4;
+  border: 1px solid #f5f6c4;
+  color: #181818;
   margin-bottom: 16px;
-  padding: 8px 8px 0 8px;
+  padding: 0px 8px 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: default;
-  border-radius: 8px;
-  height: 55px;
+  border-radius: 10px;
+  height: 60px;
 }
 
 .tags__divInner h1 {
   font-size: 13px;
   font-weight: 700;
-  display: inline-block;
   margin: 0 auto;
   text-align: center;
+  padding: 0 0 0;
 }
 
 .close__icon {
@@ -1609,7 +1612,7 @@ input.input100 {
   position: absolute;
   top: -10px;
   left: 2px;
-  right: 2px;
+  right: 8px;
 }
 
 .main-content .owl-theme .custom-nav .owl-prev,
@@ -1625,7 +1628,7 @@ input.input100 {
 
 .main-content .owl-theme .custom-nav .owl-prev i,
 .main-content .owl-theme .custom-nav .owl-next i {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #f6f7f8;
 }
 
