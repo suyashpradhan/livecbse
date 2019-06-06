@@ -106,7 +106,7 @@
   <div class="topic__wrapper">
     <h1 class="topic__header">Introduction To Graphic Design</h1>
     <div class="select_wrap">
-      <select id="topics" onchange="change_topic()" class="select_topic resizeselect">
+      <select id="topics" onchange="change_topic()" class="select_topic to_be_resized">
         <option value="" disabled="">Select Topic</option>
         <option value="tp_25">Drawing Skills</option>
         <option value="tp_26">Elements of Design</option>
@@ -117,7 +117,6 @@
       </select>
     </div>
   </div>
-
 
   <div class="main-content">
     <div class="owl-carousel owl-theme" id="videoCarousel">
@@ -563,35 +562,7 @@
   </script>
 
   <script>
-    (function ($, window) {
-      var arrowWidth = 40;
 
-      $.fn.resizeselect = function (settings) {
-        return this.each(function () {
-
-          $(this).change(function () {
-            var $this = $(this);
-
-            // create test element
-            var text = $this.find("option:selected").text();
-
-            var $test = $("<span>").html(text).css({
-              "font-size": $this.css("font-size"),
-              "visibility": "hidden"
-            });
-
-            $test.appendTo($this.parent());
-            var width = $test.width();
-            $test.remove();
-
-            $this.width(width + arrowWidth);
-
-          }).change();
-
-        });
-      };
-      $("select.resizeselect").resizeselect();
-    })(jQuery, window);
   </script>
 </body>
 
