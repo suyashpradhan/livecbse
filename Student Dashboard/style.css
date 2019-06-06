@@ -497,11 +497,9 @@ option:focus {
 .tags__div {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(7, auto);
-  grid-auto-columns: auto;
+  grid-template-columns: minmax(200px, 500px) 1fr !important;
   align-items: center;
   grid-gap: 10px;
-  width: 100% !important;
 }
 
 .tags__divInner {
@@ -509,17 +507,17 @@ option:focus {
   border: 1px solid #dddcdc;
   color: #555;
   margin-bottom: 16px;
-  padding: 5px;
+  padding: 8px 8px 0 8px;
   cursor: default;
   border-radius: 8px;
+  height: 55px;
 }
 
 .tags__divInner h1 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   display: inline-block;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
