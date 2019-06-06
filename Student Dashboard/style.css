@@ -256,14 +256,15 @@ select:hover {
   grid-template-columns: 1fr auto;
   align-items: center;
   margin: 0 0 50px 0;
-  padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
+  background-color: #f5f6c4;
+  padding: 0 30px;
 }
 
 .select_wrap {
   width: 100%;
   text-align: center;
-  margin: 0.5rem 0 0 0;
+  margin: 2px 0;
 }
 
 .topic__header {
@@ -272,14 +273,14 @@ select:hover {
   color: #363636;
   text-align: center;
   display: inline;
-  margin: 0.5rem 0 0 0;
+  margin: 2px 0;
   padding: 0 0 0 10rem;
   /* text-shadow: 0 2px 4px #00000033; */
   letter-spacing: 1px;
 }
 
 .select_topic {
-  width: 300px;
+  width: auto;
   border: none;
   background: none;
   font-size: 18px;

@@ -27,13 +27,13 @@
           </div>
           <ul class="nav-list">
             <li>
-              <a href="index_d.php"> <i class="fas fa-home nav-listIcons"></i> Home</a>
+              <a href="index_d.php">Home</a>
             </li>
             <li>
-              <a href="downloads.php"><i class="fas fa-download nav-listIcons"></i> Downloads</a>
+              <a href="downloads.php">Downloads</a>
             </li>
             <li>
-              <a href="ask_experts.php"><i class="fas fa-question nav-listIcons"></i> Ask Experts</a>
+              <a href="ask_experts.php">Ask Experts</a>
             </li>
             <li>
               <a href="#!">Select Club</a>
@@ -47,7 +47,7 @@
               </ul>
             </li>
             <li>
-              <a href="#!"><i class="fas fa-user nav-listIcons"></i> Profile</a>
+              <a href="#!">Profile</a>
               <ul class="nav-dropdown">
                 <li>
                   <a href="favourite_d.php"> <i class="fas fa-heart nav-listIcons"></i> Favourites</a>
@@ -103,20 +103,18 @@
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="topic__wrapper">
-      <h1 class="topic__header">Introduction To Graphic Design</h1>
-      <div class="select_wrap">
-        <select id="topics" onchange="change_topic()" class="select_topic">
-          <option value="" disabled="">Select Topic</option>
-          <option value="tp_25">Drawing Skills</option>
-          <option value="tp_26">Elements of Design</option>
-          <option value="tp_100">Introduction to Design Tools</option>
-          <option value="tp_101">Working with Colours</option>
-          <option value="tp_102">Application of Digital Design</option>
-          <option value="tp_97">Introduction to Graphic Design</option>
-        </select>
-      </div>
+  <div class="topic__wrapper">
+    <h1 class="topic__header">Introduction To Graphic Design</h1>
+    <div class="select_wrap">
+      <select id="topics" onchange="change_topic()" class="select_topic resizeselect">
+        <option value="" disabled="">Select Topic</option>
+        <option value="tp_25">Drawing Skills</option>
+        <option value="tp_26">Elements of Design</option>
+        <option value="tp_100">Introduction to Design Tools</option>
+        <option value="tp_101">Working with Colours</option>
+        <option value="tp_102">Application of Digital Design</option>
+        <option value="tp_97">Introduction to Graphic Design and other stuff</option>
+      </select>
     </div>
   </div>
 
@@ -562,6 +560,38 @@
         });
       });
     });
+  </script>
+
+  <script>
+    (function ($, window) {
+      var arrowWidth = 40;
+
+      $.fn.resizeselect = function (settings) {
+        return this.each(function () {
+
+          $(this).change(function () {
+            var $this = $(this);
+
+            // create test element
+            var text = $this.find("option:selected").text();
+
+            var $test = $("<span>").html(text).css({
+              "font-size": $this.css("font-size"),
+              "visibility": "hidden"
+            });
+
+            $test.appendTo($this.parent());
+            var width = $test.width();
+            $test.remove();
+
+            $this.width(width + arrowWidth);
+
+          }).change();
+
+        });
+      };
+      $("select.resizeselect").resizeselect();
+    })(jQuery, window);
   </script>
 </body>
 
