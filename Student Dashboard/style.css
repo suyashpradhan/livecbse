@@ -14,7 +14,7 @@ body {
   font-family: Segoe UI semibold, Segoe UI, Tahoma, sans-serif;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 img {
@@ -543,7 +543,7 @@ option:focus {
   margin: 30px 0;
 }
 
-.card {
+/* .card {
   margin: 30px auto;
   width: 300px;
   height: 300px;
@@ -581,7 +581,7 @@ option:focus {
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
-
+ */
 .title-white {
   color: white;
 }
@@ -900,7 +900,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 #footer {
@@ -1639,4 +1639,118 @@ input.input100 {
 
 .main-content .owl-theme .custom-nav .owl-next {
   right: 0;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+}
+
+.blue-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+
+.blue-hover:hover {
+  transform: translateY(-5px);
+  border-bottom: 5px solid #17a2b8 !important;
+}
+
+.red-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+
+.red-hover:hover {
+  transform: translateY(-5px);
+  border-bottom: 5px solid #990000 !important;
+}
+
+.card__image {
+  height: 60px;
+  display: inline-block;
+}
+
+.card-title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5c5b5b;
+  padding: 0 0 0 5px;
+  vertical-align: bottom;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.go__link {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.card__icon {
+  padding: 0 0 0 5px;
+}
+
+.blue__link {
+  background-color: #17a2b8;
+  transform: all .5s ease;
+}
+
+.blue__link:hover {
+  text-decoration: none;
+  background-color: #1499ad;
+  color: #fff;
+}
+
+.red__link {
+  background-color: #990000;
+  transform: all .5s ease;
+}
+
+.red__link:hover {
+  text-decoration: none;
+  background-color: #860101;
+  color: #fff;
+}
+
+.card__box {
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  margin: 2rem auto;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.card__box p {
+  font-weight: 700;
+  color: #696969;
+  margin: 0;
+  padding: 0;
+}
+
+.card__box__effect {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card__container-contact100 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card__wrap-contact100 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
