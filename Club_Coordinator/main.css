@@ -5882,3 +5882,11 @@ ul.dropdown>li {
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+.upload__new__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
