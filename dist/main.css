@@ -21,6 +21,11 @@ body {
     position: relative;
 }
 
+#fullWrapper {
+    opacity: 0;
+    display: none;
+
+}
 
 @media only screen and (max-width: 500px) and (min-width: 100px) {
     .page-container {
@@ -51,8 +56,6 @@ body {
         margin-left: auto;
     }
 }
-
-
 
 .newnavigationBar {
     display: grid;
@@ -4951,9 +4954,10 @@ nav ul li ul li a {
 
 .middle__grid {
     display: grid;
-    grid-template-columns: 400px 210px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    padding: 40px;
 }
 
 .header_one {
@@ -4992,7 +4996,7 @@ nav ul li ul li a {
     background-color: #181818;
     width: 100%;
     padding: 15px;
-    margin: 30px auto 0 auto;
+    margin: 30px 0 0 0;
     font-weight: 900;
     text-align: center;
     border-radius: 8px;
@@ -5138,4 +5142,61 @@ nav ul li ul li a {
     font-weight: 900;
     color: #181818;
     text-align: center;
+}
+
+.box_main_header {
+    -moz-box-shadow: 0px 0px 3px #999;
+    -webkit-box-shadow: 0px 0px 3px #999;
+    box-shadow: 0px 0px 3px #999;
+    border: #FFFFFF 1px solid;
+    border-left: #CCCCCC 0px solid;
+    border-right: #CCCCCC 0px solid;
+    border-top: #CCCCCC 0px solid;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    behavior: url(PIE.htc);
+    behavior: url(ie-css3.htc);
+    background-color: #E9E9E9;
+}
+
+/* CSS for animated bouncing loader. */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Loader circles */
+.loader>span {
+    background: #990000;
+    border-radius: 50%;
+    margin: 5rem 0.5rem;
+    animation: bouncingLoader 0.6s infinite alternate;
+}
+
+.loader>span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader>span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Define the animation called bouncingLoader. */
+@keyframes bouncingLoader {
+    from {
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 1;
+        transform: translate3d(0);
+    }
+
+    to {
+        width: 1rem;
+        height: 1rem;
+        opacity: 0.1;
+        transform: translate3d(0, -1rem, 0);
+    }
 }

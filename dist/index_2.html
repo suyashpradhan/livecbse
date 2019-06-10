@@ -415,8 +415,8 @@
             </div>
         </div> -->
 
-        <div class="pageWrapper pd-sub">
-            <div class="page-container" style="width: 959px;">
+        <div class="pageWrapper pd-sub app__section">
+            <div class="page-container box_main_header" style="width: 959px;">
                 <div class="bottom_section_header">
                     <h1 class="header_one">INTERNET IS FOR FREE
                     </h1>
@@ -521,19 +521,44 @@
                 <a href="#" class="login_web">Login</a>
             </div>
         </div>
-    </div>
-    <div id="footer">
-        <div class="footer-main">
-            <ul class="footer-main-list" style="background-color:#000;">
-                <li><a href="about-us.php" style="color:#fff">About Us</a></li>
-                <li><a href="join-us.php" style="color:#fff">Join Us</a></li>
-                <li><a href="privacy-policy.php" style="color:#fff">Privacy Policy</a></li>
-                <li><a href="contact-us.php" style="color:#fff">Contact Us</a></li>
-                <li><a href="disclaimer.php" style="color:#fff">Disclaimer</a></li>
-                <li><a href="faq.php" style="color:#fff">FAQ</a></li>
-            </ul>
+        <div id="footer">
+            <div class="footer-main">
+                <ul class="footer-main-list" style="background-color:#000;">
+                    <li><a href="about-us.php" style="color:#fff">About Us</a></li>
+                    <li><a href="join-us.php" style="color:#fff">Join Us</a></li>
+                    <li><a href="privacy-policy.php" style="color:#fff">Privacy Policy</a></li>
+                    <li><a href="contact-us.php" style="color:#fff">Contact Us</a></li>
+                    <li><a href="disclaimer.php" style="color:#fff">Disclaimer</a></li>
+                    <li><a href="faq.php" style="color:#fff">FAQ</a></li>
+                </ul>
+            </div>
         </div>
+        <nav class="navbar fixed-bottom navbar-light bg-light"
+            style="height: 60px;padding: 0; box-shadow: 0 -2px 5px -2px #333;">
+            <div class="container">
+                <div class="sticky__nav">
+                    <h1 class="sticky__nav--header">Reach Us</h1>
+                    <div class="sticky__navInner">
+                        <a href="https://wa.me/919649964912" class="sticky__navInnerOne"><i
+                                class="fab fa-whatsapp sticky__icons"></i>
+                        </a>
+                    </div>
+                    <div class="sticky__navInner">
+                        <a href="mailto:contact@wingxp.com" class="sticky__navInnerTwo"><i
+                                class="fas fa-envelope sticky__icons"></i></a>
+                    </div>
+                    <div class="sticky__navInner">
+                        <a href="tel:+919649964912" class="sticky__navInnerThree"><i
+                                class="fas fa-phone sticky__icons"></i></a>
+
+                    </div>
+
+                    <h1 class="sticky__nav--headerSub"><a data-toggle="modal" data-target="#demo">See Demo</a></h1>
+                </div>
+            </div>
+        </nav>
     </div>
+
     <div class="modal fade" id="schedule_demo12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
@@ -621,30 +646,7 @@
 
     </div>
 
-    <nav class="navbar fixed-bottom navbar-light bg-light"
-        style="height: 60px;padding: 0; box-shadow: 0 -2px 5px -2px #333;">
-        <div class="container">
-            <div class="sticky__nav">
-                <h1 class="sticky__nav--header">Reach Us</h1>
-                <div class="sticky__navInner">
-                    <a href="https://wa.me/919649964912" class="sticky__navInnerOne"><i
-                            class="fab fa-whatsapp sticky__icons"></i>
-                    </a>
-                </div>
-                <div class="sticky__navInner">
-                    <a href="mailto:contact@wingxp.com" class="sticky__navInnerTwo"><i
-                            class="fas fa-envelope sticky__icons"></i></a>
-                </div>
-                <div class="sticky__navInner">
-                    <a href="tel:+919649964912" class="sticky__navInnerThree"><i
-                            class="fas fa-phone sticky__icons"></i></a>
 
-                </div>
-
-                <h1 class="sticky__nav--headerSub"><a data-toggle="modal" data-target="#demo">See Demo</a></h1>
-            </div>
-        </div>
-    </nav>
     <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -684,8 +686,28 @@
             </div>
         </div>
     </div>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script>
+        const loader = document.querySelector('.loader');
+        const main = document.querySelector('#fullWrapper');
+
+        function init() {
+            setTimeout(() => {
+                loader.style.opacity = 0;
+                loader.style.display = 'none';
+                main.style.opacity = 1;
+                main.style.display = 'block';
+            }, 4000);
+        }
+
+        init();
     </script>
 </body>
 
