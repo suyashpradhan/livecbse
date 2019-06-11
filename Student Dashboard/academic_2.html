@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="wrapper">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#">
+                        <img alt="" height="35px" src="livecbse_logo.png">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a href="#!" id="nav-toggle"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index_d.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Profile</a>
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="#!"> <i class="fas fa-sign-out-alt nav-listIcons"></i> Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper">
+        <div class="middle__image">
+            <div class="school__image__wrapper">
+                <h1>S</h1>
+            </div>
+        </div>
+        <a href="">1</a>
+    </div>
+
+    <footer>
+        <div id="footer_sub">
+            <ul class="footer_sub-list">
+                <li> <a href="">About Us </a> </li>
+                <li> <a href=""> Franchise </a></li>
+                <li> <a href=""> Join Us</a></li>
+                <li> <a href="">© 2015 All Rights Reserved with domain Edutech Pvt. Ltd.</a>
+                </li>
+                <li> <a href=""> Privacy Policy</a></li>
+                <li> <a href="">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        (function ($) {
+            $(function () {
+                $("nav ul li > a:not(:only-child)").click(function (e) {
+                    $(this)
+                        .siblings(".nav-dropdown")
+                        .toggle();
+                    $(".nav-dropdown")
+                        .not($(this).siblings())
+                        .hide();
+                    e.stopPropagation();
+                });
+                $("html").click(function () {
+                    $(".nav-dropdown").hide();
+                });
+            });
+            document
+                .querySelector("#nav-toggle")
+                .addEventListener("click", function () {
+                    this.classList.toggle("active");
+                });
+            $("#nav-toggle").click(function () {
+                $("nav ul").toggle();
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>
