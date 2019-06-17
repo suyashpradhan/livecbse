@@ -120,14 +120,41 @@
 
   <div class="main-content">
     <div class="owl-carousel owl-theme" id="videoCarousel">
-      <div><iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+      <div class="videoCarouselInner">
+        <div class="videoCarouselHeader">
+          <div>
+            <i class="far fa-comments"></i>
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter_1">Add a comment...</a>
+          </div>
+          <div>
+            <i class="far fa-heart"></i>
+            <span>Add to favourites!</span>
+          </div>
+        </div>
+        <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
         </iframe>
       </div>
-      <div>
+      <div class="videoCarouselIh1nner">
+        <div class="videoCarouselHeader">
+          <div>
+            <i class="far fa-comments"></i>
+          </div>
+          <div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
         <iframe src="https://www.youtube.com/embed/EFafSYg-PkI">
         </iframe>
       </div>
-      <div>
+      <div class="videoCarouselInner">
+        <div class="videoCarouselHeader">
+          <div>
+            <i class="far fa-comments"></i>
+          </div>
+          <div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
         <iframe src="https://www.youtube.com/embed/5WohQijapeU">
         </iframe>
       </div>
@@ -135,6 +162,31 @@
     <div class="owl-theme">
       <div class="owl-controls">
         <div class="custom-nav owl-nav"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Comment Modal-->
+  <div class="modal fade" id="exampleModalCenter_1" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Comment Section</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form__group">
+            <input type="email" id="email" class="form__field" placeholder="Add a coment">
+            <label for="email" class="form__label">Comment</label>
+          </div>
+          <a href="#" class="comment_btn">Submit</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
