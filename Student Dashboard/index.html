@@ -127,7 +127,7 @@
             <a href="#" data-toggle="modal" data-target="#exampleModalCenter_1">Add a comment...</a>
           </div>
           <div>
-            <i class="far fa-heart"></i>
+            <i class="fas fa-heart" id="heart"></i>
             <span>Add to favourites!</span>
           </div>
         </div>
@@ -603,17 +603,12 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
-      $('#heart').click(function () {
-        $('#heart').toggle(function () {
-          $(this).css('background-color', '#990000');
-        });
+    (function () {
+      const heart = document.getElementById('heart');
+      heart.addEventListener('click', function () {
+        heart.classList.toggle('red');
       });
-    });
-  </script>
-
-  <script>
-
+    })();
   </script>
 </body>
 

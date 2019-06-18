@@ -328,9 +328,11 @@ option:focus {
 .product-carousel .product {
   box-sizing: border-box;
   text-align: center;
-  background-image: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 0,
-      #181818 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    #181818 100%
+  );
   border-radius: 10px;
 }
 
@@ -500,7 +502,6 @@ option:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 .tags__divInner {
@@ -743,7 +744,6 @@ option:focus {
 }
 
 @keyframes show {
-
   0%,
   49.99% {
     opacity: 0;
@@ -1396,9 +1396,11 @@ input.input100 {
 }
 
 .favorite_wrapper .favourite_left {
-  background-image: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 0,
-      #181818 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    #181818 100%
+  );
   border-radius: 5px;
 }
 
@@ -1544,12 +1546,12 @@ input.input100 {
   display: none;
 }
 
-.md-radio input[type="radio"]:checked+label:before {
+.md-radio input[type="radio"]:checked + label:before {
   border-color: #990000;
   animation: ripple 0.2s linear forwards;
 }
 
-.md-radio input[type="radio"]:checked+label:after {
+.md-radio input[type="radio"]:checked + label:after {
   transform: scale(1);
 }
 
@@ -1626,14 +1628,12 @@ input.input100 {
   z-index: 100;
   width: 50px;
   margin: 0;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
-
 
 .main-content .owl-theme .custom-nav .owl-prev:hover,
 .main-content .owl-theme .custom-nav .owl-next:hover {
   background-color: #363636 !important;
-
 }
 
 .main-content .owl-theme .custom-nav .owl-prev i,
@@ -1641,7 +1641,6 @@ input.input100 {
   font-size: 3rem;
   color: #f6f7f8;
 }
-
 
 .main-content .owl-theme .custom-nav .owl-prev {
   left: 0;
@@ -1671,8 +1670,14 @@ input.input100 {
 }
 
 .videoCarouselHeader i {
-  color: #990000;
   padding: 0 3px;
+  color: #777;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+#heart.red {
+  color: #990000;
 }
 
 .form__group {
@@ -1681,7 +1686,6 @@ input.input100 {
 }
 
 .form__field {
-  font-family: inherit;
   width: 100%;
   border: 0;
   border-bottom: 1px solid #5c5b5b;
@@ -1709,14 +1713,14 @@ input.input100 {
   color: transparent;
 }
 
-.form__field:placeholder-shown~.form__label {
+.form__field:placeholder-shown ~ .form__label {
   font-size: 16px;
   cursor: text;
   top: 20px;
 }
 
 label,
-.form__field:focus~.form__label {
+.form__field:focus ~ .form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -1725,7 +1729,7 @@ label,
   color: #666;
 }
 
-.form__field:focus~.form__label {
+.form__field:focus ~ .form__label {
   color: #990000;
 }
 
@@ -1742,14 +1746,13 @@ label,
   color: #fff;
   text-align: center;
   border-radius: 8px;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .comment_btn:hover {
   text-decoration: none;
   color: #fff;
   background-color: #7e0101;
-
 }
 
 .card {
@@ -1807,7 +1810,7 @@ label,
 
 .blue__link {
   background-color: #17a2b8;
-  transform: all .5s ease;
+  transform: all 0.5s ease;
 }
 
 .blue__link:hover {
@@ -1818,7 +1821,7 @@ label,
 
 .red__link {
   background-color: #990000;
-  transform: all .5s ease;
+  transform: all 0.5s ease;
 }
 
 .red__link:hover {
@@ -1830,7 +1833,7 @@ label,
 .card__box {
   width: 100%;
   height: auto;
-  background: #FFF;
+  background: #fff;
   margin: 2rem auto;
   padding: 1rem 1rem 1rem 1rem;
 }
@@ -1872,7 +1875,7 @@ label,
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('vectorpaint.png');
+  background-image: url("vectorpaint.png");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1955,8 +1958,8 @@ label,
   outline: none;
 }
 
-.contact-form .input-text:focus+.label,
-.contact-form .input-text.not-empty+.label {
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
   -webkit-transform: translateY(-24px);
   transform: translateY(-24px);
 }
@@ -1970,9 +1973,9 @@ label,
   font-weight: 400;
   color: #888;
   cursor: text;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .contact-form .submit-btn {
