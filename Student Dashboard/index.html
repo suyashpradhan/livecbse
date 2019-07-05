@@ -39,10 +39,13 @@
               <a href="#!">Select Club</a>
               <ul class="nav-dropdown">
                 <li>
-                  <a href="#!">CBSE PHYSICS XII</a>
+                  <a href="#!" data-toggle="modal" data-target="#club_modal">English Expression</a>
                 </li>
                 <li>
-                  <a href="#!">CBSE PHYSICS XI</a>
+                  <a href="#!">Introduction To Wix</a>
+                </li>
+                <li>
+                  <a href="#!">Design Expression</a>
                 </li>
               </ul>
             </li>
@@ -66,6 +69,59 @@
       </div>
     </div>
   </section>
+
+  <!--Club Modal-->
+  <div class="modal fade" id="club_modal" tabindex="-1" role="dialog" aria-labelledby="club_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">English Expression</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="club_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facilis itaque
+            optio. Dolor at quos
+            rerum asperiores minima eos laborum et sequi quam. Iusto, eius laudantium mollitia beatae minus esse!</p>
+          <hr>
+          <h3 class="activites_header">Latest Activites</h3>
+          <div class="product-carousel owl-carousel owl-theme " id="latest_activities">
+            <div class='product' onclick="location.href='https://www.google.com'">
+              <div class='product-top'>
+                <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
+                <div class="product_info">
+                  <h1>General Activity</h1>
+                  <div class="div_start">
+                    <h2>Story Elements</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='product'>
+            <div class='product-top'>
+              <div class='product-image' style='background-color:#ffa323;height: 200px;width: auto' />
+              <div class="product_info">
+                <h1>General Activity</h1>
+                <div class="div_start">
+                  <h2>Story Elements</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="enter_club_link">Enter Club</a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
   <!-- Class Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
@@ -124,11 +180,10 @@
         <div class="videoCarouselHeader">
           <div>
             <i class="far fa-comments"></i>
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter_1">Add a comment...</a>
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter_1"></a>
           </div>
           <div>
             <i class="fas fa-heart" id="heart"></i>
-            <span>Add to favourites!</span>
           </div>
         </div>
         <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
@@ -195,13 +250,14 @@
     <section class="sections main-content">
       <h1 class="section__header">Web Ref</h1>
       <div class="product-carousel owl-carousel owl-theme" id="articleCarousel">
-        <div class="product">
+        <div class="product" onclick="location.href='https://www.google.com', target='_blank'">
           <div class="product-top">
             <div class="product-image"
               style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: contain;height: 200px;width: auto;background-repeat: no-repeat">
             </div>
-            <div class="click"">
-              <span class=" far fa-heart" id="heart"></span>
+            <div class="click">
+              <span class=" favorite-button-icon far fa-heart"></span><br>
+              <span class="far fa-comments"></span>
             </div>
             <div class="inner_product">
               <h1 class="inner_productTitle">Web Ref</h1>
@@ -215,7 +271,10 @@
               style="background-image: linear-gradient(to bottom, #ffffff00 0, #181818 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/051834am910.jpeg&quot;);background-size: contain;height: 200px;width: auto;background-repeat: no-repeat">
             </div>
             <div class="click">
-              <span class=" far fa-heart"></span>
+              <a class="favorite-button" href="#">
+                <span class=" favorite-button-icon far fa-heart"></span><br>
+              </a>
+              <span class="far fa-comments"></span>
             </div>
             <div class="inner_product">
               <h1 class="inner_productTitle">Web Ref</h1>
@@ -229,7 +288,10 @@
               style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/123938am83.jpg&quot;);background-size: contain;height: 200px;width: 100%;background-repeat: no-repeat">
             </div>
             <div class="click">
-              <span class="far fa-heart"></span>
+              <a class="favorite-button" href="#">
+                <span class=" favorite-button-icon far fa-heart"></span><br>
+              </a>
+              <span class="far fa-comments"></span>
             </div>
             <div class="inner_product">
               <h1 class="inner_productTitle">Web Ref</h1>
@@ -243,7 +305,10 @@
               style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/123255am04.jpeg&quot;);background-size: contain;height: 200px;width: 100%;background-repeat: no-repeat">
             </div>
             <div class="click">
-              <span class="far fa-heart"></span>
+              <a class="favorite-button" href="#">
+                <span class=" favorite-button-icon far fa-heart"></span><br>
+              </a>
+              <span class="far fa-comments"></span>
             </div>
             <div class="inner_product">
               <h1 class="inner_productTitle">Web Ref</h1>
@@ -326,7 +391,7 @@
       <div class="product-carousel owl-carousel owl-theme " id="quizCarousel">
         <div class='product'>
           <div class='product-top'>
-            <div class='product-image' style='background-color:#f7f5c4fa ;height: 200px;width: auto' />
+            <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
             <div class="product_info">
               <h1>Digital Design Quiz</h1>
               <div class="div_start">
@@ -337,13 +402,13 @@
           </div>
         </div>
       </div>
-      <div class='product'>
+      <div class='product' onclick="location.href='https://www.google.com'">
         <div class='product-top'>
-          <div class='product-image' style='background-color:#f7f5c4fa ;height: 200px;width: auto' />
+          <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
           <div class="product_info">
-            <h1>Digital Design Quiz 2</h1>
+            <h1>General Activity</h1>
             <div class="div_start">
-              <a href="#" data-toggle="modal" data-target="#exampleModalCenter_2" class="openPopup">Start Quiz</a>
+              <h2>Story Elements</h2>
             </div>
           </div>
         </div>
@@ -351,7 +416,7 @@
   </div>
   <div class='product'>
     <div class='product-top'>
-      <div class='product-image' style='background-color:#f7f5c4fa ;height: 200px;width: auto' />
+      <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
       <div class="product_info">
         <h1>IOT Quiz</h1>
         <div class="div_start">
@@ -363,7 +428,7 @@
   </div>
   <div class='product'>
     <div class='product-top'>
-      <div class='product-image' style='background-color:#f7f5c4fa ;height: 200px;width: auto' />
+      <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
       <div class="product_info">
         <h1>AI Quiz</h1>
         <div class="div_start">
@@ -375,7 +440,7 @@
   </div>
   <div class='product'>
     <div class='product-top'>
-      <div class='product-image' style='background-color:#f7f5c4fa ;height: 200px;width: auto' />
+      <div class='product-image' style='background-color:#ffa323 ;height: 200px;width: auto' />
       <div class="product_info">
         <h1>Machine Learning Quiz</h1>
         <div class="div_start">
@@ -551,6 +616,7 @@
       var two = $("#articleCarousel");
       var three = $("#quizCarousel");
       var four = $('#tags');
+      var five = $('#latest_activities');
 
       one.owlCarousel({
         center: true,
@@ -642,17 +708,50 @@
           }
         }
       });
+      five.owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: true,
+        center: true,
+        stagePadding: 30,
+        responsive: {
+          1200: {
+            items: 1,
+          },
+          800: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          300: {
+            items: 1,
+          }
+        }
+      });
     });
   </script>
-  <script>
+  <!-- <script>
     (function () {
       const heart = document.getElementById('heart');
       heart.addEventListener('click', function () {
         heart.classList.toggle('red');
       });
     })();
-  </script>
+  </script> -->
 
+
+  <script>
+    var button = document.querySelector('.favorite-button');
+
+    button.onclick = function (e) {
+      e.preventDefault();
+      var icon = this.children[0];
+      icon.classList.toggle('fa-heart');
+      icon.classList.toggle('fa-heart');
+      this.classList.toggle('favorite-button--on');
+    };
+  </script>
   <script>
     let closeModal = document.querySelector('#closeModal');
     closeModal.addEventListener('click', function (event) {
