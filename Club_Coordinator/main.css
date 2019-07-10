@@ -1724,11 +1724,12 @@ select {
 .section__wrapper table,
 th,
 td {
-    border: 2px solid #17a2b8;
+    /* border: 2px solid #17a2b8; */
     border-collapse: collapse;
     padding: 5px;
     background-color: white;
-    width: 70%;
+    /*  width: 70%; */
+    font-size: 20px;
 }
 
 .tableProperty {
@@ -5897,4 +5898,99 @@ ul.dropdown>li {
     align-items: center;
     justify-items: center;
     grid-gap: 30px;
+}
+
+.assign_header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    margin: 0 0 10px 0;
+}
+
+.assign_gap {
+    background-color: #ccc;
+    border: 0.4px solid #ccc;
+    height: 1px;
+}
+
+.col_one-of-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.md-checkbox {
+    position: relative;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.md-checkbox.md-checkbox-inline {
+    display: inline-block;
+}
+
+.md-checkbox label {
+    cursor: pointer;
+    display: inline;
+    line-height: 1.25em;
+    vertical-align: top;
+    clear: both;
+    padding-left: 1px;
+}
+
+.md-checkbox label:not(:empty) {
+    padding-left: 0.75em;
+}
+
+.md-checkbox label:before,
+.md-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.md-checkbox label:before {
+    width: 1.25em;
+    height: 1.25em;
+    background: #fff;
+    border: 2px solid #0000008a;
+    border-radius: 0.125em;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.md-checkbox input[type="checkbox"] {
+    outline: 0;
+    visibility: hidden;
+    width: 1.25em;
+    margin: 0;
+    display: block;
+    float: left;
+    font-size: inherit;
+}
+
+.md-checkbox input[type="checkbox"]:checked+label:before {
+    background: #17a2b8;
+    border: none;
+}
+
+.md-checkbox input[type="checkbox"]:checked+label:after {
+    transform: translate(0.25em, 0.3365384615em) rotate(-45deg);
+    width: 0.75em;
+    height: 0.375em;
+    border: 0.125em solid #fff;
+    border-top-style: none;
+    border-right-style: none;
+}
+
+.md-checkbox input[type="checkbox"]:disabled+label:before {
+    border-color: rgba(0, 0, 0, 0.26);
+}
+
+.md-checkbox input[type="checkbox"]:disabled:checked+label:before {
+    background: rgba(0, 0, 0, 0.26);
 }
