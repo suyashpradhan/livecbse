@@ -511,15 +511,15 @@ option:focus {
 }
 
 .tags__div {
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .tags__divInner {
-  background-color: #f5f6c4;
-  border: 1px solid #f5f6c4;
+  background-color: #ffa323;
+  border: 1px solid #ffa323;
   color: #181818;
   margin-bottom: 16px;
   padding: 0px 8px 0 8px;
