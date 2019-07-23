@@ -127,104 +127,130 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Assign Video</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Assign Video & Weblinks</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h1 class="assign_header">Video</h1>
-                    <div class="col_one-of-two">
-                        <div class="video_grid">
-                            <div class="video__grid--inner">
-                                <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
-                                </iframe>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Mysql Crash Course 1</label>
-                                </div>
-                            </div>
-                            <div class="video__grid--inner">
-                                <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
-                                </iframe>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Mysql Crash Course 1</label>
-                                </div>
-                            </div>
-                            <div class="video__grid--inner">
-                                <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
-                                </iframe>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Mysql Crash Course 1</label>
+                    <section id="tabs" class="project-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <nav>
+                                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                                href="#nav-home" role="tab" aria-controls="nav-home"
+                                                aria-selected="true">Videos</a>
+                                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                                href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Web Links</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                            aria-labelledby="nav-home-tab">
+                                            <div class="col_one-of-two">
+                                                <div class="video_grid">
+                                                    <div class="video__grid--inner">
+                                                        <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+                                                        </iframe>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Mysql Crash Course 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video__grid--inner">
+                                                        <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+                                                        </iframe>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Mysql Crash Course 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video__grid--inner">
+                                                        <iframe src="https://www.youtube.com/embed/9ylj9NR0Lcg">
+                                                        </iframe>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Mysql Crash Course 1</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                            aria-labelledby="nav-profile-tab">
+                                            <div class="col_one-of-two">
+                                                <div class="weblinks_grid">
+                                                    <div class="weblinks_grid--inner">
+                                                        <div class="product product-carousel"
+                                                            onclick="location.href='https://www.google.com', target='_blank'">
+                                                            <div class="product-top">
+                                                                <div class="product-image"
+                                                                    style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 100px;width: 347px;background-repeat: no-repeat">
+                                                                </div>
+                                                                <div class="inner_product">
+                                                                    <h1 class="inner_productTitle">Web Ref</h1>
+                                                                    <p class="inner_productDescription">"How to grab
+                                                                        attention with your
+                                                                        design?"</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Weblinks 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="weblinks_grid--inner">
+                                                        <div class="product product-carousel"
+                                                            onclick="location.href='https://www.google.com', target='_blank'">
+                                                            <div class="product-top">
+                                                                <div class="product-image"
+                                                                    style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 347px;background-repeat: no-repeat">
+                                                                </div>
+                                                                <div class="inner_product">
+                                                                    <h1 class="inner_productTitle">Web Ref</h1>
+                                                                    <p class="inner_productDescription">"How to grab
+                                                                        attention with your
+                                                                        design?"</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Weblinks 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="weblinks_grid--inner">
+                                                        <div class="product product-carousel"
+                                                            onclick="location.href='https://www.google.com', target='_blank'">
+                                                            <div class="product-top">
+                                                                <div class="product-image"
+                                                                    style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 347px;background-repeat: no-repeat">
+                                                                </div>
+                                                                <div class="inner_product">
+                                                                    <h1 class="inner_productTitle">Web Ref</h1>
+                                                                    <p class="inner_productDescription">"How to grab
+                                                                        attention with your
+                                                                        design?"</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="md-checkbox">
+                                                            <input id="1" type="checkbox" checked>
+                                                            <label for="1">Weblinks 1</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <hr class="assign_gap">
-                    <h1 class="assign_header">Weblinks</h1>
-                    <div class="col_one-of-two">
-                        <div class="weblinks_grid">
-                            <div class="weblinks_grid--inner">
-                                <div class="product product-carousel"
-                                    onclick="location.href='https://www.google.com', target='_blank'">
-                                    <div class="product-top">
-                                        <div class="product-image"
-                                            style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 347px;background-repeat: no-repeat">
-                                        </div>
-                                        <div class="inner_product">
-                                            <h1 class="inner_productTitle">Web Ref</h1>
-                                            <p class="inner_productDescription">"How to grab attention with your
-                                                design?"</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Weblinks 1</label>
-                                </div>
-                            </div>
-                            <div class="weblinks_grid--inner">
-                                <div class="product product-carousel"
-                                    onclick="location.href='https://www.google.com', target='_blank'">
-                                    <div class="product-top">
-                                        <div class="product-image"
-                                            style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 347px;background-repeat: no-repeat">
-                                        </div>
-                                        <div class="inner_product">
-                                            <h1 class="inner_productTitle">Web Ref</h1>
-                                            <p class="inner_productDescription">"How to grab attention with your
-                                                design?"</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Weblinks 1</label>
-                                </div>
-                            </div>
-                            <div class="weblinks_grid--inner">
-                                <div class="product product-carousel"
-                                    onclick="location.href='https://www.google.com', target='_blank'">
-                                    <div class="product-top">
-                                        <div class="product-image"
-                                            style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(&quot;https://www.livecbse.com/livecbse_site/cbse_360/assets/article/125834am07.jpg&quot;);background-size: cover;height: 200px;width: 347px;background-repeat: no-repeat">
-                                        </div>
-                                        <div class="inner_product">
-                                            <h1 class="inner_productTitle">Web Ref</h1>
-                                            <p class="inner_productDescription">"How to grab attention with your
-                                                design?"</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="md-checkbox">
-                                    <input id="1" type="checkbox" checked>
-                                    <label for="1">Weblinks 1</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                     <a href="#"
                         style="background-color: #17a2b8;text-decoration: none;padding: 10px;color:#fff;border-radius: 5px;width: 130px;display: block;margin: 10px auto;text-align: center;">Assign
                         Clubs</a>
