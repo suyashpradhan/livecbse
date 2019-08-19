@@ -19,7 +19,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="assets/styles/modal.css">
 
 </head>
 
@@ -691,6 +691,15 @@
         <span></span>
         <span></span>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"> <i class="fas fa-times-circle close-btn"></i>
+            </span>
+            <a href="https://play.google.com/store/apps/details?id=in.domaine.wingxp.newlivecbseapp2" target="_blank">
+                <img src="https://www.livecbse.com/images/livecbse_app.png" alt="" height="500px">
+            </a>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
 
@@ -708,6 +717,27 @@
         }
 
         init();
+    </script>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.addEventListener('load', (e) => {
+            modal.style.display = 'block';
+        });
     </script>
 </body>
 

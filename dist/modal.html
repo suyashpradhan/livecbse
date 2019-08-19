@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="assets/styles/modal.css">
 </head>
 
-<body>
+<body class="body">
     <button>Click For Modal</button>
 
     <div class="modal-overlay">
         <div class="modal">
             <a class="close-modal">
-                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-times-circle close-btn"></i>
             </a>
             <div class="modal-content">
-                <img src="https://www.livecbse.com/images/livecbse_app.png" alt="" height="500px">
-
+                <a href="https://play.google.com/store/apps/details?id=in.domaine.wingxp.newlivecbseapp2"
+                    target="_blank">
+                    <img src="https://www.livecbse.com/images/livecbse_app.png" alt="" height="500px">
+                </a>
             </div>
         </div>
     </div>
@@ -28,6 +30,7 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet" />
     <script>
         var elements = $('.modal-overlay, .modal');
+        var modal = document.querySelector('.modal-overlay')
         $('button').click(function () {
             elements.addClass('active');
         });
@@ -35,6 +38,12 @@
         $('.close-modal').click(function () {
             elements.removeClass('active');
         });
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                elements.removeClass('active');
+            }
+        }
     </script>
 </body>
 

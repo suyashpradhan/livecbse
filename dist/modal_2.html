@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .modal {
+            display: none;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .modal-content {
+            margin: auto;
+            padding: 10px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ce1f36;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a id="myBtn"></a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"> <i class="fas fa-times-circle close-btn"></i>
+            </span>
+            <a href="https://play.google.com/store/apps/details?id=in.domaine.wingxp.newlivecbseapp2" target="_blank">
+                <img src="https://www.livecbse.com/images/livecbse_app.png" alt="" height="500px">
+            </a>
+        </div>
+    </div>
+
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet" />
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.addEventListener('load', (e) => {
+            setTimeout(() => {
+                modal.style.display = 'block';
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
