@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            font-family: fantasy;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .button {
+            background: #1ce;
+            padding: 2em 2em;
+            color: #fff;
+            border: 0;
+        }
+
+        .button:hover {
+            background: #e439ef;
+            cursor: pointer;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            margin: 10px auto;
+            width: 300px;
+        }
+
+
+
+        .modal-header {
+
+            color: #fff;
+        }
+
+        .modal-body {
+            padding: 10px 20px;
+        }
+
+
+        .closeBtn {
+            font-size: 30px;
+            color: #fff;
+            float: right;
+        }
+
+        .closeBtn:hover,
+        .closeBtn:focus {
+            color: #e439ef;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="modalBtn" class="button">Click Me Dave</button>
+
+    <div id="simpleModal" class="modal-overlay">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <a href="https://play.google.com/store/apps/details?id=in.domaine.wingxp.newlivecbseapp2"
+                    target="_blank">
+                    <img src="https://www.livecbse.com/images/livecbse_app.png" alt="" height="400px">
+                </a>
+            </div>
+            <span class="close">
+                <i class="fas fa-times close-btn"></i>
+            </span>
+        </div>
+    </div>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet" />
+    <script>
+        // Get modal element
+        var modal = document.getElementById('simpleModal');
+        // Get open modal button
+        var modalBtn = document.getElementById('modalBtn');
+        // Get close button
+        var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+        // Listen for open click
+        modalBtn.addEventListener('click', openModal);
+        // Listen for close click
+        closeBtn.addEventListener('click', closeModal);
+        // Listen for outside click
+        window.addEventListener('click', outsideClick);
+
+        // Open modal
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        // Close modal
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Click outside and close
+        function outsideClick(e) {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
