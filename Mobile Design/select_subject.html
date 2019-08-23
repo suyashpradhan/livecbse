@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/dix6iek.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="menu_list">Button 1</a>
+        <a href="" class="menu_list">Button 2</a>
+        <a href="" class="menu_list">Button 3</a>
+        <a href="" class="menu-icon">Login</a>
+    </header>
+
+    <div id="banner">
+        <div class="pageWrapper">
+            <div class="banner__heading">
+                <h1 class="banner__heading--one">Select Subject</h1>
+            </div>
+            <div class="subject__wrapper">
+                <div class="subject__wrapper--inner">
+                    <img src="assets/images/subject.jpg" alt="">
+                </div>
+            </div>
+            <div class="button__wrapper">
+                <a href="#" class="button__wrapper--one">Schedule Demo</a>
+                <a href="#" class="button__wrapper--two">Call Expert</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <nav class="mobile-bottom-nav">
+        <header class="header__bottom">
+            <a href="" class="menu_list __bottom ">Live Courses</a>
+            <a href="" class="menu_list __bottom">Test Series </a>
+            <a href="" class="menu_list __bottom">Study Material</a>
+        </header>
+    </nav>
+
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var navItems = document.querySelectorAll(".mobile-bottom-nav__item");
+        navItems.forEach(function (e, i) {
+            e.addEventListener("click", function (e) {
+                navItems.forEach(function (e2, i2) {
+                    e2.classList.remove("mobile-bottom-nav__item--active");
+                })
+                this.classList.add("mobile-bottom-nav__item--active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
