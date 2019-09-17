@@ -7341,7 +7341,9 @@ button.close {
 
 .modal-title {
     margin: 0;
-    line-height: 1.42857143
+    line-height: 1.42857143;
+    color: #990000;
+    font-size: 2rem;
 }
 
 .modal-body {
