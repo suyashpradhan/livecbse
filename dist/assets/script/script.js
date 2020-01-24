@@ -8,3 +8,9 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+$('#main-slide').carousel({
+    pause: true,
+    interval: 100000,
+});

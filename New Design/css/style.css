@@ -33,14 +33,14 @@
   
 */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Typography
@@ -841,7 +841,7 @@ ul.navbar-nav>li>a {
     letter-spacing: -.2px;
     font-size: 14px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 20px;
     padding: 30px 0;
     -webkit-transition: 350ms;
@@ -853,6 +853,7 @@ ul.navbar-nav>li>a {
 ul.navbar-nav>li>a:hover,
 ul.navbar-nav>li>a:focus {
     background: none;
+    color:#ce1f36;
 }
 
 ul.navbar-nav>li>a i {
@@ -1160,8 +1161,8 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
     font-size: 20px;
     line-height: 30px;
     margin: 20px 0;
-    color: #fff;
-    font-weight: 900;
+    color: #f5f6f7;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -1201,6 +1202,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 .slider.btn {
     margin: 15px 5px 0;
     border: 2px solid transparent;
+    font-weight: 500;
 }
 
 .slider.border {
