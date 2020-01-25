@@ -21,11 +21,10 @@ body {
     position: relative;
 }
 
-#fullWrapper {
+/* #fullWrapper {
     opacity: 0;
     display: none;
-
-}
+} */
 
 @media only screen and (max-width: 500px) and (min-width: 100px) {
     .page-container {
@@ -4631,7 +4630,7 @@ td {
     height: 70px;
     margin: 0 0 1px 0;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  }
+}
 
 .brand {
     position: absolute;
