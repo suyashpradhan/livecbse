@@ -447,7 +447,29 @@
 		</div>
 	</section><!-- Feature are end -->
 
-	<section id="facts" class="facts-area dark-bg">
+
+	<section class="videos">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<h1 class="video-head">Recording Of Live Lectures</h1>
+					<div class="video">
+						<video src="https://www.domain-education.com/video_recording/Physics_2.mp4" width="530"
+							controls="" poster="image/livecbse_cover.png" class="__video"></video>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<h1 class="video-head">How System Works</h1>
+					<div class="video">
+						<video src="https://www.livecbse.com/video/live_cbse.mp4" width="530" controls=""
+							class="__video"></video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="facts" class="facts-area dark-bg" style="padding: 20px 0;">
 		<div class="container">
 			<div class="row">
 				<div class="facts-wrapper">
@@ -456,33 +478,36 @@
 						<div class="ts-facts-content">
 							<h1>Select Class</h1>
 						</div>
-					</div><!-- Col end -->
+					</div>
 
 					<div class="col-sm-4 ts-facts">
 
 						<div class="ts-facts-content">
-							<div class="radio">
-								<input id="radio-1" name="radio" type="radio" checked>
-								<label for="radio-1" class="radio-label">IX/X</label>
-							</div>
-						</div>
-					</div><!-- Col end -->
-
-					<div class="col-sm-4 ts-facts">
-
-						<div class="ts-facts-content">
-							<div class="radio">
-								<input id="radio-2" name="radio" type="radio" checked>
+							<div class="radio" style="margin-top: 15px;">
+								<input id="radio-2" name="section" type="radio" value="senior_secondary" checked=""
+									onclick="change_section()">
 								<label for="radio-2" class="radio-label">XI/XII</label>
 							</div>
 						</div>
-					</div><!-- Col end -->
-				</div> <!-- Facts end -->
+					</div>
+
+					<div class="col-sm-4 ts-facts">
+
+						<div class="ts-facts-content">
+							<div class="radio" style="margin-top: 15px;">
+								<input id="radio-1" name="section" type="radio" value="secondary"
+									onclick="change_section()">
+								<label for="radio-1" class="radio-label">IX/X</label>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!--/ Content row end -->
 		</div>
-		<!--/ Container end -->
-	</section><!-- Facts end -->
+	</section>
+
+
+
 
 	<section id="project-area" class="project-area solid-bg">
 		<div class="container">
@@ -521,30 +546,27 @@
 										<input type="checkbox"></span>
 								</p>
 							</div>
-							<div class="blockWrapperBody">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Physics / Chemistry / Biology
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Physics / Chemistry / Biology
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+										</span>
 									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Physics / Chemistry / Biology / General Science
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
+									<span><input type="checkbox"></span>
 								</div>
 							</div>
-
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Physics / Chemistry / Biology / General Science
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
 										X</span class="class-text">
@@ -552,30 +574,28 @@
 										<input type="checkbox"></span>
 								</p>
 							</div>
-							<div class="blockWrapperBody">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Physics / Chemistry / Biology / General Science
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Physics / Chemistry / Biology / General Science
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+										</span>
 									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Physics / Chemistry / Biology / General science
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
+									<span><input type="checkbox"></span>
 								</div>
 							</div>
-							<div class="section-1-of-3-footer" style="text-align:center">
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Physics / Chemistry / Biology / General science
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="section-1-of-3-footer-secondary" style="text-align:center">
 								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
 									style="text-transform: none;
 							
@@ -591,8 +611,6 @@
 							</div>
 						</div>
 					</div>
-
-
 					<div class="firstRow">
 						<div class="section-1-of-3">
 							<h1>CBSE Mathematics IX/X</h1>
@@ -605,29 +623,30 @@
 										<input type="checkbox"></span>
 								</p>
 							</div>
-							<div class="blockWrapperBody">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Number System / Algebra / Geometry / Co-ordinate
-											Geometry / Mensuration
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Number System / Algebra / Geometry / Co-ordinate
+										Geometry / Mensuration
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
 									</div>
+									<span><input type="checkbox"></span>
 								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Algebra / Geometry / Mensuration / Statistics and
-											Probability
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Algebra / Geometry / Mensuration / Statistics
+										and
+										Probability
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
 								</div>
 							</div>
 							<div class=" sectionInnerFirstListHead">
@@ -637,46 +656,47 @@
 										<input type="checkbox"></span>
 								</p>
 							</div>
-							<div class="blockWrapperBody">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Number Systems / Algebra / Geometry / Trigonometry /
-											Statistics
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Number Systems / Algebra / Geometry /
+										Trigonometry /
+										Statistics
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
 									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Algebra / Geometry / Trigonometry / Probability /
-											Coordinate
-											Geometry / Mensuration
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
+									<span><input type="checkbox"></span>
 								</div>
 							</div>
-							<div class="section-1-of-3-footer" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Algebra / Geometry / Trigonometry / Probability
+										/
+										Coordinate
+										Geometry / Mensuration
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer-secondary" style="text-align: center;">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
 							
 							 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
 							 
 							 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
 							 
 							 ">Terms &amp; Condition</a>
-							</div>
 						</div>
 					</div>
 
@@ -693,586 +713,12 @@
 										<input type="checkbox"></span>
 								</p>
 							</div>
-							<div class="blockWrapperBody">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Reading / Literature
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Writing / Grammar / Literature
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										X</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
-							<div class="blockWrapperBody">
-
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Writing / Literature
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Reading / Writing / Grammar / Literature / Long
-											Reading
-											Text
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
-							
-							 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
-							 
-							 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
-							 
-							 ">Terms &amp; Condition</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="tab-2" class="tab-content">
-				<div class="row-grid">
-					<div class="firstRow">
-						<div class="section-1-of-3">
-							<h1>CBSE Physics XI/XII</h1>
-						</div>
-						<div class="blockWrapper">
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Mechanics- I
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Mechanics- II
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection">Heat
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection">Waves
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class=" sectionInnerFirstListHead">
-									<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-											XII</span class="class-text">
-										<span style="float: right; margin-right:10px;">
-											<input type="checkbox"></span>
-									</p>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection"> Electrostatics
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection"> Electrodynamics
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection"> Optics
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection">Modern Physics
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer-secondary" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
-						
-						 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Terms &amp; Condition</a>
-							</div>
-						</div>
-					</div>
-					<div class="firstRow">
-						<div class="section-1-of-3">
-							<h1>CBSE Chemistry XI/XII
-							</h1>
-						</div>
-						<div class="blockWrapper">
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">General Chemistry
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Physical Chemistry I
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection">Inorganic Chemistry I
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection">Organic Chemistry I
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class=" sectionInnerFirstListHead">
-									<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-											XII</span class="class-text">
-										<span style="float: right; margin-right:10px;">
-											<input type="checkbox"></span>
-									</p>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Physical Chemistry II
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Inorganic Chemistry II
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection">Organic Chemistry II
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection">Applied Chemistry
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer-secondary" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
-						
-						 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Terms &amp; Condition</a>
-							</div>
-						</div>
-					</div>
-					<div class="firstRow">
-						<div class="section-1-of-3">
-							<h1>CBSE Mathematics XI</h1>
-						</div>
-						<div class="blockWrapper">
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Sets & Functions
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Algebra
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection">Coordinate Geometry
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection"> Miscellaneous
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class=" sectionInnerFirstListHead">
-									<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-											IX</span class="class-text">
-										<span style="float: right; margin-right:10px;">
-											<input type="checkbox"></span>
-									</p>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection">Calculus I
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Calculus II
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection">Analytical geometry,Vectors and ITF
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection"> Miscellaneous
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer-secondary" style=" text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
-						
-						 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Terms &amp; Condition</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="firstRow">
-						<div class="section-1-of-3">
-							<h1>CBSE Biology XI</h1>
-						</div>
-						<div class="blockWrapper">
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection"> Diversity in living World
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Structural Organisation
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection"> Plant Physiology
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection"> Human Physiology
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class=" sectionInnerFirstListHead">
-									<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-											XII</span class="class-text">
-										<span style="float: right; margin-right:10px;">
-											<input type="checkbox"></span>
-									</p>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection"> Reproduction
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Genetics and Evolution
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection"> Biotechnology
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection"> Ecology
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer-secondary" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
-						
-						 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
-						 
-						 ">Terms &amp; Condition</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="firstRow">
-						<div class="section-1-of-3">
-							<h1>CBSE English Core XI</h1>
-						</div>
-						<div class="blockWrapperBodySecondary">
-							<div class=" sectionInnerFirstListHead">
-								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
-									<span style="float: right; margin-right:10px;">
-										<input type="checkbox"></span>
-								</p>
-							</div>
 							<div class="sectionInnerFirstList">
 								<div class="innerSection">
 									<span class="mod">Mod 1</span>
-									<div class="tooltipSection"> Hornbill
-										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+									<div class="tooltipSection">Reading / Literature
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
 											consectetur adipisicing elit.
 										</span>
 									</div>
@@ -1282,8 +728,98 @@
 							<div class="sectionInnerFirstList">
 								<div class="innerSection">
 									<span class="mod">Mod 2</span>
-									<div class="tooltipSection">Snapshots
-										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+									<div class="tooltipSection">Writing / Grammar / Literature
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										X</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Writing / Literature
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Reading / Writing / Grammar / Literature / Long
+										Reading
+										Text
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer" style="text-align:center">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+							
+							 ">Fees Structure | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+							 
+							 ">Refund Policy | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+							 
+							 ">Terms &amp; Condition</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tab-2" class="tab-content">
+			<div class="row-grid">
+				<div class="firstRow">
+					<div class="section-1-of-3">
+						<h1>CBSE Physics XI/XII</h1>
+					</div>
+					<div class="blockWrapper">
+						<div class=" sectionInnerFirstListHead">
+							<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+									XI</span class="class-text">
+								<span style="float: right; margin-right:10px;">
+									<input type="checkbox"></span>
+							</p>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Mechanics- I
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Mechanics- II
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
 											consectetur adipisicing elit.
 										</span> </div>
 									<span><input type="checkbox"></span>
@@ -1292,8 +828,572 @@
 							<div class="sectionInnerFirstList">
 								<div class="innerSection">
 									<span class="mod">Mod 3</span>
-									<div class="tooltipSection"> Reading comprehension+Writing skills+Grammar
-										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+									<div class="tooltipSection">Heat
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection">Waves
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										XII</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection"> Electrostatics
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection"> Electrodynamics
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection"> Optics
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection">Modern Physics
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer-secondary" style="text-align:center">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+						
+						 ">Fees Structure | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Refund Policy | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Terms &amp; Condition</a>
+						</div>
+					</div>
+				</div>
+				<div class="firstRow">
+					<div class="section-1-of-3">
+						<h1>CBSE Chemistry XI/XII
+						</h1>
+					</div>
+					<div class="blockWrapper">
+						<div class=" sectionInnerFirstListHead">
+							<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+									XI</span class="class-text">
+								<span style="float: right; margin-right:10px;">
+									<input type="checkbox"></span>
+							</p>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">General Chemistry
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Physical Chemistry I
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection">Inorganic Chemistry I
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection">Organic Chemistry I
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										XII</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Physical Chemistry II
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Inorganic Chemistry II
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection">Organic Chemistry II
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection">Applied Chemistry
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer-secondary" style="text-align:center">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+						
+						 ">Fees Structure | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Refund Policy | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Terms &amp; Condition</a>
+						</div>
+					</div>
+				</div>
+				<div class="firstRow">
+					<div class="section-1-of-3">
+						<h1>CBSE Mathematics XI</h1>
+					</div>
+					<div class="blockWrapper">
+						<div class=" sectionInnerFirstListHead">
+							<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+									XI</span class="class-text">
+								<span style="float: right; margin-right:10px;">
+									<input type="checkbox"></span>
+							</p>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Sets & Functions
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Algebra
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection">Coordinate Geometry
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection"> Miscellaneous
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										IX</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection">Calculus I
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Calculus II
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection">Analytical geometry,Vectors and ITF
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection"> Miscellaneous
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer-secondary" style=" text-align:center">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+						
+						 ">Fees Structure | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Refund Policy | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Terms &amp; Condition</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="firstRow">
+					<div class="section-1-of-3">
+						<h1>CBSE Biology XI</h1>
+					</div>
+					<div class="blockWrapper">
+						<div class=" sectionInnerFirstListHead">
+							<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+									XI</span class="class-text">
+								<span style="float: right; margin-right:10px;">
+									<input type="checkbox"></span>
+							</p>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection"> Diversity in living World
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Structural Organisation
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection"> Plant Physiology
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection"> Human Physiology
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										XII</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection"> Reproduction
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Genetics and Evolution
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection"> Biotechnology
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 4 </span>
+									<div class="tooltipSection"> Ecology
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+						</div>
+						<div class="section-1-of-3-footer-secondary" style="text-align:center">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
+						
+						 ">Fees Structure | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Refund Policy | </a>
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+						 
+						 ">Terms &amp; Condition</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="firstRow">
+					<div class="section-1-of-3">
+						<h1>CBSE English Core XI</h1>
+					</div>
+					<div class="blockWrapperBodySecondary">
+						<div class=" sectionInnerFirstListHead">
+							<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+									XI</span class="class-text">
+								<span style="float: right; margin-right:10px;">
+									<input type="checkbox"></span>
+							</p>
+						</div>
+						<div class="sectionInnerFirstList">
+							<div class="innerSection">
+								<span class="mod">Mod 1</span>
+								<div class="tooltipSection"> Hornbill
+									<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+										consectetur adipisicing elit.
+									</span>
+								</div>
+								<span><input type="checkbox"></span>
+							</div>
+						</div>
+						<div class="sectionInnerFirstList">
+							<div class="innerSection">
+								<span class="mod">Mod 2</span>
+								<div class="tooltipSection">Snapshots
+									<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+										consectetur adipisicing elit.
+									</span> </div>
+								<span><input type="checkbox"></span>
+							</div>
+						</div>
+						<div class="sectionInnerFirstList">
+							<div class="innerSection">
+								<span class="mod">Mod 3</span>
+								<div class="tooltipSection"> Reading comprehension+Writing skills+Grammar
+									<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+										consectetur adipisicing elit.
+									</span> </div>
+								<span><input type="checkbox"></span>
+							</div>
+						</div>
+						<div class="sectionInnerFirstList">
+							<div class="innerSection">
+								<span class="mod">Mod 4 </span>
+								<div class="tooltipSection"> Novel
+									<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+										consectetur adipisicing elit.
+									</span> </div>
+								<span><input type="checkbox"></span>
+							</div>
+						</div>
+						<div class="blockWrapperBodySecondary">
+							<div class=" sectionInnerFirstListHead">
+								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
+										XII</span class="class-text">
+									<span style="float: right; margin-right:10px;">
+										<input type="checkbox"></span>
+								</p>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 1</span>
+									<div class="tooltipSection"> Flamingo
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span>
+									</div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 2</span>
+									<div class="tooltipSection">Vistas
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
+											consectetur adipisicing elit.
+										</span> </div>
+									<span><input type="checkbox"></span>
+								</div>
+							</div>
+							<div class="sectionInnerFirstList">
+								<div class="innerSection">
+									<span class="mod">Mod 3</span>
+									<div class="tooltipSection"> Reading comprehension + Writing Skills
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
 											consectetur adipisicing elit.
 										</span> </div>
 									<span><input type="checkbox"></span>
@@ -1303,80 +1403,31 @@
 								<div class="innerSection">
 									<span class="mod">Mod 4 </span>
 									<div class="tooltipSection"> Novel
-										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
+										<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit
+											amet
 											consectetur adipisicing elit.
 										</span> </div>
 									<span><input type="checkbox"></span>
 								</div>
 							</div>
-							<div class="blockWrapperBodySecondary">
-								<div class=" sectionInnerFirstListHead">
-									<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-											XII</span class="class-text">
-										<span style="float: right; margin-right:10px;">
-											<input type="checkbox"></span>
-									</p>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 1</span>
-										<div class="tooltipSection"> Flamingo
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span>
-										</div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 2</span>
-										<div class="tooltipSection">Vistas
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 3</span>
-										<div class="tooltipSection"> Reading comprehension + Writing Skills
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-								<div class="sectionInnerFirstList">
-									<div class="innerSection">
-										<span class="mod">Mod 4 </span>
-										<div class="tooltipSection"> Novel
-											<span class="tooltipSectionText tooltip-right">Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-											</span> </div>
-										<span><input type="checkbox"></span>
-									</div>
-								</div>
-							</div>
-							<div class="section-1-of-3-footer-secondary" style="text-align:center">
-								<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#"
-									style="text-transform: none;
+						</div>
+						<div class="section-1-of-3-footer-secondary">
+							<a class="footer-link" data-target="#fee_structure_12" data-toggle="modal" href="#" style="text-transform: none;
 						
 						 ">Fees Structure | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalR" data-toggle="modal" href="#" style="text-transform: none;
 						 
 						 ">Refund Policy | </a>
-								<a class="footer-link" data-backdrop="static" data-keyboard="false"
-									data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
+							<a class="footer-link" data-backdrop="static" data-keyboard="false"
+								data-target="#exampleModalT" data-toggle="modal" href="#" style="text-transform: none;
 						 
 						 ">Terms &amp; Condition</a>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 

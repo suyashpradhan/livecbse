@@ -5,630 +5,744 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <!-- CSS -->
+    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="../css/style.css" />
-    <!--  <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
 
 <body>
-    <div id="top-bar" class="top-bar">
+    <div class="top-form">
+        <div class="container">
+            <form action="" class="schedule-form">
+                <div class="form_group">
+                    <h1 class="form_groupHeader">Schedule Demo</h1>
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Student Name" name="" class="form_fields">
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Phone Number" name="" class="form_fields">
+                </div>
+                <div class="form_group">
+                    <div class="cntr">
+                        <div>
+                            <span class="class-head">Class: </span>
+                        </div>
+                        <label for="opt1" class="radio">
+                            <input type="radio" name="rdo" id="opt1" class="hidden" />
+                            <span class="label"></span>
+                            <span style="margin-left: 3px;"> IX</span>
+                        </label>
+                        <label for="opt2" class="radio">
+                            <input type="radio" name="rdo" id="opt2" class="hidden" />
+                            <span class="label"></span>
+                            <span style="margin-left: 5px;"> X</span>
+                        </label>
+                        <label for="opt3" class="radio">
+                            <input type="radio" name="rdo" id="opt3" class="hidden" />
+                            <span class="label"></span>
+                            <span style="margin-left: 3px;"> XI</span>
+                        </label>
+                        <label for="opt4" class="radio">
+                            <input type="radio" name="rdo" id="opt4" class="hidden" />
+                            <span class="label"></span>
+                            <span style="margin-left: 3px;"> XII</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <select name="" id="" class="class_select">
+                        <option value="">Subjects</option>
+                        <option value="">Select Class</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <a href="#" class="schedule_link">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="body-inner">
+        <!-- Header start -->
+        <header id="header" class="header-one">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-area">
+                        <div class="logo col-xs-12 col-md-3">
+                            <a href="index.html">
+                                <img src="https://www.livecbse.com/livecbse_constra/images/livecbse_logo.png " alt=""
+                                    style="width:207px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <ul class="top-info-box">
+                            <li>
+                                <div class="info-box">
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">Call Us</p>
+                                        <p class="info-box-subtitle">(+91) 9571010999</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-box">
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">Email Us</p>
+                                        <p class="info-box-subtitle">contact@livecbse.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <nav class="site-navigation navigation navdown">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                    <ul class="top-info">
-                        <li><i class="fa fa-map-marker">&nbsp;</i>
-                            <p class="info-text">472-A, Talwandi, Kota(Raj)-IN</p>
+                <div class="col-sm-12">
+                    <div class="site-nav-inner pull-left">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Coaching
+                                        <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="active"><a href="index.html">Class XI-XII</a></li>
+                                        <li><a href="index-2.html">Class IX-X</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Series <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="about.html">Test Series XII</a></li>
+                                        <li><a href="team.html">Test Series XI</a></li>
+                                        <li><a href="testimonials.html">Test Series X</a></li>
+                                        <li><a href="faq.html">Test Series IX</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Study Material <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="projects.html">Study Material XII</a></li>
+                                        <li><a href="projects-single.html">Study Material XI</a></li>
+                                        <li><a href="projects-single.html">Study Material X</a></li>
+                                        <li><a href="projects-single.html">Study Material IX</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doubt Removal <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="projects.html">Study Material XII</a></li>
+                                        <li><a href="projects-single.html">Study Material XI</a></li>
+                                        <li><a href="projects-single.html">Study Material X</a></li>
+                                        <li><a href="projects-single.html">Study Material IX</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Group Sites <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="projects.html">Study Material XII</a></li>
+                                        <li><a href="projects-single.html">Study Material XI</a></li>
+                                        <li><a href="projects-single.html">Study Material X</a></li>
+                                        <li><a href="projects-single.html">Study Material IX</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <i
+                                            class="fa fa-angle-down"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Student Login </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <span id="search"><i class="fa fa-search"></i></span>
+            </div>
+
+            <div class="search-block" style="display: none;">
+                <input type="text" class="form-control" placeholder="Type what you want and enter">
+                <span class="search-close">&times;</span>
+            </div>
+        </div>
+
+    </nav>
+
+
+    </header>
+
+    <div class="container">
+        <h1 class="tab__main--header">DoubtFire CBSE XI</h1>
+        <main class="tab__main">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Overview</label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Methodology</label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Getting Started</label>
+
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Requirements</label>
+
+            <input id="tab5" type="radio" name="tabs">
+            <label for="tab5">FAQ's</label>
+
+            <section id="content1">
+                <p class="content_description">
+                    The personal doubt removal process has the secondary status whereas many a times it is the real
+                    difference maker. The
+                    student may have just hit a block somewhere or the other. This takes away the fizz from the
+                    other
+                    hard work and
+                    motivation of the student. To facilitate the student with the same we have developed a system
+                    for
+                    the students where
+                    they get to clear their doubts then and there itself with best system and teachers dedicated for
+                    this sole purpose. The
+                    only requirement is a basic internet connection (that now most homes have). This would give you
+                    the
+                    wand that would make
+                    your doubts and confusion disappear in a 'jiffy'.
+                </p>
+
+                <h1 class="content_header">Getting your Doubts Removed is now very simple and effective.</h1>
+                <h1 class="content_header">The number of sessions a student gets to use for</h1>
+
+                <ul class="content_ul">
+                    <li>NCERT</li>
+                    <li>Conquer CBSE (Course Material)
+                    </li>
+                    <li>TestQ CBSE (Test Series)
+                    </li>
+                    <li>Full Tests</li>
+                    <li>Part Tests (based on the modules and chapters)
+                    </li>
+                </ul>
+                <h1 class="content_header">The student is given a fixed no. of doubt sessions typically assumed to
+                    be of
+                    30 minute.
+                </h1>
+            </section>
+
+            <section id="content2">
+                <div class="content__div">
+                    <ul class="content_ul">
+                        <li> As soon the student has a question to ask, he just has to login and click on DoubtFire.
+                        </li>
+                        <li> Write the doubt just the topic as well as subtopic or in a sentence format for E.g. I
+                            have
+                            doubt in Rotational Motion
+                            and in the specific topic rolling.
+                        </li>
+                        <li> The student selects its preferable timing on the teacher time table.</li>
+                        <li>This selection is then automatically intimated to the teacher.</li>
+                        <li>The teacher then confirms the time. The student is then sent a link for access to the
+                            discussion room for a particular
+                            time.
+                        </li>
+                        <li>The student just has to click the link and then he enters the room where the teacher is
+                            already waiting for him and then
+                            they freely discuss things.
+                        </li>
+                    </ul>
+                    <h1 class="content_header">The process is very simplified and organized.</h1>
+                    <h1 class="content_header">Note:</h1>
+                    <ul class="content_ul">
+                        <li> As soon as the session is scheduled the session is reduced from the remaining sessions
+                            of
+                            the student.</li>
+                        <li>The Doubts can be asked from both NCERT and Conquer CBSE Material.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="content3">
+                <div class="content__div">
+                    <h1 class="content_header">To start using DoubtFire, take these simple Steps.</h1>
+                    <h1 class="content_header">Your Move</h1>
+                    <ul class="content_ul">
+                        <li> Step 1 (Choose Package): Choose one of the package consisting of DoubtFire from the
+                            boxes
+                            given below.
+                        </li>
+                        <li> Step 2 (Subject Selection and Fees): Know your fees from the chosen box in case you
+                            want to
+                            give tests for all the four
+                            subjects (i.e Physics, Chemistry, Mathematics, Biology & English), otherwise click on
+                            "For
+                            Individual subjects" and
+                            select the combination of subjects from the pop-up.
+                        </li>
+                        <li> Step 3 (Make Payment): Click on "Pay Now" and proceed for making online payment. You
+                            may
+                            also contact us to make a
+                            payment by Direct Bank Deposit or through NEFT Transfer.
+                        </li>
+                    </ul>
+                    <div class="content__div">
+                        <h1 class="content_header">Live CBSE's Move
+                        </h1>
+                        <ul class="content_ul">
+                            <li> Step 1 (Courier Dispatch): As soon as the payment is realized on our end. We will
+                                be
+                                dispatching: "Conquer CBSE" Course Material (only in case your package consists of
+                                study
+                                material as well)
+                            </li>
+                            <li> Step 2 (Account Details): Your username and password would be sent to you within
+                                the
+                                next 24 hours.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content__div">
+                        <h1 class="content_header">Your Move
+                        </h1>
+                        <ul class="content_ul">
+                            <li> Step 1 (Getting Started): Once you get the username and password simply login and
+                                schedule your appointment with our teachers.
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section id="content4">
+                <div class="content__div">
+                    <ul class="content_ul">
+                        <li> An internet connection with minimum speed of 512 Kbps.
+
+                        </li>
+                        <li>A good Quality of webcam.
+                        </li>
+                        <li>A good quality of mic & headphone.
+                        </li>
+                        <li>A notepad & a pen for making notes.
+                        </li>
+                        <li>Download Skype from this link <a
+                                href="www.skype.com/en/download-skype/skype-for-computer/">www.skype.com/en/download-skype/skype-for-computer/</a>
                         </li>
                     </ul>
                 </div>
+            </section>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 top-social text-right">
-                    <ul class="unstyled">
-                        <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://github.com/"><i class="fab fa-github"></i></a>
+            <section id="content5">
+                <div class="content__div">
+                    <h1 class="content_header">Why do I need to take Conquer CBSE and/or TestQ CBSE along with
+                        DoubtFire?
+                        Can't I have a stand- alone DoubtFire sessions?
+                    </h1>
+                    <ul class="content_ul">
+                        <li>No, we don't have a stand-alone DoubtFire course.
                         </li>
                     </ul>
+                </div>
+                <div class="content__div">
+                    <h1 class="content_header">I am interested in DoubtFire. But I am confused between "Conquer CBSE
+                        +
+                        DoubtFire" and "TestQ CBSE + DoubtFire". Which one will be the best for me?
+
+                    </h1>
+                    <ul class="content_ul">
+                        <li>While "Conquer CBSE + DoubtFire" is meant for those students who wants to clarify their
+                            doubts from NCERT and our study material , but "TestQ CBSE + DoubtFire" is tailor made
+                            course for those who want to have good test practice and discuss their corrected
+                            answered
+                            sheets with the teachers.
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__div">
+                    <h1 class="content_header"> I don't have a scanner and sending individual answer sheets is very
+                        expensive. Are there any other alternatives?
+                    </h1>
+                    <ul class="content_ul">
+                        <li>Ideally scanning and mailing is the best option since its free and fastest. But in case
+                            you
+                            don't have or can't borrow a scanner, then you can send Answer sheets of 5 tests
+                            together
+                            rather than sending them separately, which will cut down your cost considerably.
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__div">
+                    <h1 class="content_header">What if the session time is not sufficient?</h1>
+                    <ul class="content_ul">
+                        <li>If the session time is extended then the teacher will be taking a call whether the
+                            session
+                            is getting extended because of getting into other topics or the discussion is extended
+                            within the focussed area. If the teacher says the session has not been sufficient the
+                            extension could be made.
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__div">
+                    <h1 class="content_header">What if the session breaks because of connectivity issues or
+                        something
+                        else?
+                    </h1>
+                    <ul class="content_ul">
+                        <li>If the session is being disconnected due to technical snag at the student's end then the
+                            session would be counted. If there is a technical snag at the teacher's end then the
+                            session
+                            will not be counted.
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-body--header">Conquer CBSE (Superior) XI
+                    </h1>
+                    <div class="card-bodyHeight">
+                        <p class="card-text--middle">Study Material | Doubt Removal
+                        </p>
+                        <h1 class="card-body--head">Course contents (Subject-wise) </h1>
+                        <ul class="card-body--list">
+                            <li>4 Booklets having
+                            </li>
+                            <li>Lessons</li>
+                            <li>Solved Examples
+                            </li>
+                            <li>Unsolved Problems
+                            </li>
+                            <li>4 Doubt Removal sessions for Study Material & NCERT</li>
+                        </ul>
+                        <h1 class="card-body--head">Subjects covered:</h1>
+                        <ul class="card-body--list">
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Mathematics/Biology</li>
+                            <li>English</li>
+                        </ul>
+                        <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
+                    </div>
+                    <div class="card-body--priceDiv">
+                        <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 7850</h1>
+                        <a href="#" class="card-body--priceLink" data-toggle="modal"
+                            data-target="#exampleModalCenter">PAY NOW</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">For individual subject<span><a href="#" data-toggle="modal"
+                                data-target="#modal_footer">Click Here</a></span></small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-body--header">TestQ CBSE (Superior) XI</h1>
+                    <div class="card-bodyHeight">
+                        <p class="card-text--middle">Mega Test Series | Doubt Removal
+                        </p>
+                        <h1 class="card-body--head">Course contents (Subject-wise) </h1>
+                        <ul class="card-body--list">
+                            <li>All Chapter Tests
+                            </li>
+                            <li>4 Module Tests
+                            </li>
+                            <li>5 Full Tests
+                            </li>
+                            <li>2 Doubt Removal sessions for Answer Sheet discussion
+                            </li>
+                        </ul>
+                        <h1 class="card-body--head">Subjects covered:</h1>
+                        <ul class="card-body--list">
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Mathematics/Biology</li>
+                            <li>English</li>
+                        </ul>
+                        <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
+                    </div>
+                    <div class="card-body--priceDiv">
+                        <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 11950</h1>
+                        <a href="#" class="card-body--priceLink">PAY NOW</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-body--header">Triumph CBSE XII
+                    </h1>
+                    <div class="card-bodyHeight">
+                        <p class="card-text--middle">Study Material | Test Series <br>
+                            Doubt Removal</p>
+                        <h1 class="card-body--head">Course Contents (Subject-wise)</h1>
+                        <ul class="card-body--list">
+                            <li>4 Booklets having
+                            </li>
+                            <li>Lessons</li>
+                            <li>Solved Examples</li>
+                            <li>Unsolved Problems</li>
+                            </li>
+                            <li>All Chapter Tests
+                            </li>
+                            <li>4 Module Tests
+                            </li>
+                            <li>5 Full Tests
+                            </li>
+                            <li>4 Doubt Removal sessions for Study Material & NCERT
+                            </li>
+                            <li>2 Doubt Removal sessions for Answer Sheet discussion
+                            </li>
+                        </ul>
+                        <h1 class="card-body--head">Subjects covered:</h1>
+                        <ul class="card-body--list">
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Mathematics/Biology</li>
+                            <li>English</li>
+                        </ul>
+                        <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
+                    </div>
+                    <div class="card-body--priceDiv">
+                        <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 14520</h1>
+                        <a href="#" class="card-body--priceLink">PAY NOW</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Single Subject-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="modal-body--header">Please select Mathematics or Biology</h1>
+                    <div class="modal-body--subjects">
+                        <div class="md-checkbox">
+                            <input id="phy_1" type="checkbox" checked>
+                            <label for="phy_1">Phy</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="chem_1" type="checkbox">
+                            <label for="chem_1">Chem</label>
+                        </div>
+                        <div class="md-checkbox">
+                            <input id="eng_1" type="checkbox" checked>
+                            <label for="eng_1">Eng</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="math_1" type="radio" name="g" checked>
+                            <label for="math_1">Mathematics</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="bio_1" type="radio" name="g">
+                            <label for="bio_1">Biology</label>
+                        </div>
+                    </div>
+                    <div class="price__wrapper">
+                        <h1 class="modal-body--header">Price Details</h1>
+                        <div class="inner_priceWrapper">
+                            <h1>Net Amount</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 2609</h1>
+                            <h1>GST</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 391</h1>
+                            <h1>Courier Charges</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 300</h1>
+                            <h1>Amount Payable</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 3300</h1>
+                        </div>
+                        <a href="#" class="price__wrapper--link">Pay</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <header id="header" class="header-one">
-        <div class="container">
-            <div class="row">
-                <div class="logo-area clearfix">
-                    <div class="logo col-xs-12 col-md-3">
-                        <a href="index.html">
-                            <img src="https://www.livecbse.com/livecbse_constra/images/livecbse_logo.png " alt=""
-                                style="width:207px">
-                        </a>
-                    </div>
+    <!--Modal All Subject-->
+    <div class="modal fade" id="modal_footer" tabindex="-1" role="dialog" aria-labelledby="modal_footer"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-xs-12 col-md-9 header-right">
-                    <ul class="top-info-box">
-                        <li>
-                            <div class="info-box">
-                                <div class="info-box-content">
-                                    <p class="info-box-title">Call Us</p>
-                                    <p class="info-box-subtitle">(+91) 9571010999</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info-box">
-                                <div class="info-box-content">
-                                    <p class="info-box-title">Email Us</p>
-                                    <p class="info-box-subtitle">contact@livecbse.com</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="header-get-a-quote">
-                            <a class="btn btn-primary" href="contact.html">Schedule Demo</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </header>
-
-
-    <body>
-
-        <div class="container">
-            <main class="tab__main">
-                <h1 class="tab__main--header">DoubtFire CBSE XI</h1>
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1">Overview</label>
-
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2">Methodology</label>
-
-                <input id="tab3" type="radio" name="tabs">
-                <label for="tab3">Getting Started</label>
-
-                <input id="tab4" type="radio" name="tabs">
-                <label for="tab4">Requirements</label>
-
-                <input id="tab5" type="radio" name="tabs">
-                <label for="tab5">FAQ's</label>
-
-                <section id="content1">
-                    <p class="content_description">
-                        The personal doubt removal process has the secondary status whereas many a times it is the real
-                        difference maker. The
-                        student may have just hit a block somewhere or the other. This takes away the fizz from the
-                        other
-                        hard work and
-                        motivation of the student. To facilitate the student with the same we have developed a system
-                        for
-                        the students where
-                        they get to clear their doubts then and there itself with best system and teachers dedicated for
-                        this sole purpose. The
-                        only requirement is a basic internet connection (that now most homes have). This would give you
-                        the
-                        wand that would make
-                        your doubts and confusion disappear in a 'jiffy'.
-                    </p>
-
-                    <h1 class="content_header">Getting your Doubts Removed is now very simple and effective.</h1>
-                    <h1 class="content_header">The number of sessions a student gets to use for</h1>
-
-                    <ul class="content_ul">
-                        <li>NCERT</li>
-                        <li>Conquer CBSE (Course Material)
-                        </li>
-                        <li>TestQ CBSE (Test Series)
-                        </li>
-                        <li>Full Tests</li>
-                        <li>Part Tests (based on the modules and chapters)
-                        </li>
-                    </ul>
-                    <h1 class="content_header">The student is given a fixed no. of doubt sessions typically assumed to
-                        be of
-                        30 minute.
+                <div class="modal-body">
+                    <h1 class="modal-body--header">Please select the subject for following course: TestQ CBSE
+                        (Prime)
                     </h1>
-                </section>
-
-                <section id="content2">
-                    <div class="content__div">
-                        <ul class="content_ul">
-                            <li> As soon the student has a question to ask, he just has to login and click on DoubtFire.
-                            </li>
-                            <li> Write the doubt just the topic as well as subtopic or in a sentence format for E.g. I
-                                have
-                                doubt in Rotational Motion
-                                and in the specific topic rolling.
-                            </li>
-                            <li> The student selects its preferable timing on the teacher time table.</li>
-                            <li>This selection is then automatically intimated to the teacher.</li>
-                            <li>The teacher then confirms the time. The student is then sent a link for access to the
-                                discussion room for a particular
-                                time.
-                            </li>
-                            <li>The student just has to click the link and then he enters the room where the teacher is
-                                already waiting for him and then
-                                they freely discuss things.
-                            </li>
-                        </ul>
-                        <h1 class="content_header">The process is very simplified and organized.</h1>
-                        <h1 class="content_header">Note:</h1>
-                        <ul class="content_ul">
-                            <li> As soon as the session is scheduled the session is reduced from the remaining sessions
-                                of
-                                the student.</li>
-                            <li>The Doubts can be asked from both NCERT and Conquer CBSE Material.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section id="content3">
-                    <div class="content__div">
-                        <h1 class="content_header">To start using DoubtFire, take these simple Steps.</h1>
-                        <h1 class="content_header">Your Move</h1>
-                        <ul class="content_ul">
-                            <li> Step 1 (Choose Package): Choose one of the package consisting of DoubtFire from the
-                                boxes
-                                given below.
-                            </li>
-                            <li> Step 2 (Subject Selection and Fees): Know your fees from the chosen box in case you
-                                want to
-                                give tests for all the four
-                                subjects (i.e Physics, Chemistry, Mathematics, Biology & English), otherwise click on
-                                "For
-                                Individual subjects" and
-                                select the combination of subjects from the pop-up.
-                            </li>
-                            <li> Step 3 (Make Payment): Click on "Pay Now" and proceed for making online payment. You
-                                may
-                                also contact us to make a
-                                payment by Direct Bank Deposit or through NEFT Transfer.
-                            </li>
-                        </ul>
-                        <div class="content__div">
-                            <h1 class="content_header">Live CBSE's Move
-                            </h1>
-                            <ul class="content_ul">
-                                <li> Step 1 (Courier Dispatch): As soon as the payment is realized on our end. We will
-                                    be
-                                    dispatching: "Conquer CBSE" Course Material (only in case your package consists of
-                                    study
-                                    material as well)
-                                </li>
-                                <li> Step 2 (Account Details): Your username and password would be sent to you within
-                                    the
-                                    next 24 hours.
-                                </li>
-                            </ul>
+                    <div class="modal-body--subjects">
+                        <div class="md-checkbox">
+                            <input id="phy" type="checkbox" checked>
+                            <label for="phy">Phy</label>
                         </div>
-                        <div class="content__div">
-                            <h1 class="content_header">Your Move
-                            </h1>
-                            <ul class="content_ul">
-                                <li> Step 1 (Getting Started): Once you get the username and password simply login and
-                                    schedule your appointment with our teachers.
-                                </li>
-                            </ul>
+                        <div class="md-checkbox">
+                            <input id="chem" type="checkbox" checked>
+                            <label for="chem">Chem</label>
                         </div>
-                </section>
-
-                <section id="content4">
-                    <div class="content__div">
-                        <ul class="content_ul">
-                            <li> An internet connection with minimum speed of 512 Kbps.
-
-                            </li>
-                            <li>A good Quality of webcam.
-                            </li>
-                            <li>A good quality of mic & headphone.
-                            </li>
-                            <li>A notepad & a pen for making notes.
-                            </li>
-                            <li>Download Skype from this link <a
-                                    href="www.skype.com/en/download-skype/skype-for-computer/">www.skype.com/en/download-skype/skype-for-computer/</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section id="content5">
-                    <div class="content__div">
-                        <h1 class="content_header">Why do I need to take Conquer CBSE and/or TestQ CBSE along with
-                            DoubtFire?
-                            Can't I have a stand- alone DoubtFire sessions?
-                        </h1>
-                        <ul class="content_ul">
-                            <li>No, we don't have a stand-alone DoubtFire course.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content__div">
-                        <h1 class="content_header">I am interested in DoubtFire. But I am confused between "Conquer CBSE
-                            +
-                            DoubtFire" and "TestQ CBSE + DoubtFire". Which one will be the best for me?
-
-                        </h1>
-                        <ul class="content_ul">
-                            <li>While "Conquer CBSE + DoubtFire" is meant for those students who wants to clarify their
-                                doubts from NCERT and our study material , but "TestQ CBSE + DoubtFire" is tailor made
-                                course for those who want to have good test practice and discuss their corrected
-                                answered
-                                sheets with the teachers.
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content__div">
-                        <h1 class="content_header"> I don't have a scanner and sending individual answer sheets is very
-                            expensive. Are there any other alternatives?
-                        </h1>
-                        <ul class="content_ul">
-                            <li>Ideally scanning and mailing is the best option since its free and fastest. But in case
-                                you
-                                don't have or can't borrow a scanner, then you can send Answer sheets of 5 tests
-                                together
-                                rather than sending them separately, which will cut down your cost considerably.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content__div">
-                        <h1 class="content_header">What if the session time is not sufficient?</h1>
-                        <ul class="content_ul">
-                            <li>If the session time is extended then the teacher will be taking a call whether the
-                                session
-                                is getting extended because of getting into other topics or the discussion is extended
-                                within the focussed area. If the teacher says the session has not been sufficient the
-                                extension could be made.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content__div">
-                        <h1 class="content_header">What if the session breaks because of connectivity issues or
-                            something
-                            else?
-                        </h1>
-                        <ul class="content_ul">
-                            <li>If the session is being disconnected due to technical snag at the student's end then the
-                                session would be counted. If there is a technical snag at the teacher's end then the
-                                session
-                                will not be counted.
-
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </main>
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-body--header">Conquer CBSE (Superior) XI
-                        </h1>
-                        <div class="card-bodyHeight">
-                            <p class="card-text--middle">Study Material | Doubt Removal
-                            </p>
-                            <h1 class="card-body--head">Course contents (Subject-wise) </h1>
-                            <ul class="card-body--list">
-                                <li>4 Booklets having
-                                </li>
-                                <li>Lessons</li>
-                                <li>Solved Examples
-                                </li>
-                                <li>Unsolved Problems
-                                </li>
-                                <li>4 Doubt Removal sessions for Study Material & NCERT</li>
-                            </ul>
-                            <h1 class="card-body--head">Subjects covered:</h1>
-                            <ul class="card-body--list">
-                                <li>Physics</li>
-                                <li>Chemistry</li>
-                                <li>Mathematics/Biology</li>
-                                <li>English</li>
-                            </ul>
-                            <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
+                        <div class="md-checkbox">
+                            <input id="eng" type="checkbox" checked>
+                            <label for="eng">Eng</label>
                         </div>
-                        <div class="card-body--priceDiv">
-                            <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 7850</h1>
-                            <a href="#" class="card-body--priceLink" data-toggle="modal"
-                                data-target="#exampleModalCenter">PAY NOW</a>
+                        <div class="md-radio">
+                            <input id="math" type="radio" name="g" checked>
+                            <label for="math">Mathematics</label>
+                        </div>
+                        <div class="md-radio">
+                            <input id="bio" type="radio" name="g">
+                            <label for="bio">Biology</label>
                         </div>
                     </div>
-                    <div class="card-footer">
-                        <small class="text-muted">For individual subject<span><a href="#" data-toggle="modal"
-                                    data-target="#modal_footer">Click Here</a></span></small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-body--header">TestQ CBSE (Superior) XI</h1>
-                        <div class="card-bodyHeight">
-                            <p class="card-text--middle">Mega Test Series | Doubt Removal
-                            </p>
-                            <h1 class="card-body--head">Course contents (Subject-wise) </h1>
-                            <ul class="card-body--list">
-                                <li>All Chapter Tests
-                                </li>
-                                <li>4 Module Tests
-                                </li>
-                                <li>5 Full Tests
-                                </li>
-                                <li>2 Doubt Removal sessions for Answer Sheet discussion
-                                </li>
-                            </ul>
-                            <h1 class="card-body--head">Subjects covered:</h1>
-                            <ul class="card-body--list">
-                                <li>Physics</li>
-                                <li>Chemistry</li>
-                                <li>Mathematics/Biology</li>
-                                <li>English</li>
-                            </ul>
-                            <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
+                    <div class="price__wrapper">
+                        <h1 class="modal-body--header">Price Details</h1>
+                        <div class="inner_priceWrapper">
+                            <h1>Net Amount</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
+                            <h1>GST</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 620</h1>
+                            <h1>Amount Payable</h1>
+                            <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
                         </div>
-                        <div class="card-body--priceDiv">
-                            <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 11950</h1>
-                            <a href="#" class="card-body--priceLink">PAY NOW</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-body--header">Triumph CBSE XII
-                        </h1>
-                        <div class="card-bodyHeight">
-                            <p class="card-text--middle">Study Material | Test Series <br>
-                                Doubt Removal</p>
-                            <h1 class="card-body--head">Course Contents (Subject-wise)</h1>
-                            <ul class="card-body--list">
-                                <li>4 Booklets having
-                                </li>
-                                <li>Lessons</li>
-                                <li>Solved Examples</li>
-                                <li>Unsolved Problems</li>
-                                </li>
-                                <li>All Chapter Tests
-                                </li>
-                                <li>4 Module Tests
-                                </li>
-                                <li>5 Full Tests
-                                </li>
-                                <li>4 Doubt Removal sessions for Study Material & NCERT
-                                </li>
-                                <li>2 Doubt Removal sessions for Answer Sheet discussion
-                                </li>
-                            </ul>
-                            <h1 class="card-body--head">Subjects covered:</h1>
-                            <ul class="card-body--list">
-                                <li>Physics</li>
-                                <li>Chemistry</li>
-                                <li>Mathematics/Biology</li>
-                                <li>English</li>
-                            </ul>
-                            <span class="card-body--span">* Fees Exclusive Of Courier Charges</span>
-                        </div>
-                        <div class="card-body--priceDiv">
-                            <h1 class="card-body--price"><i class="fas fa-rupee-sign"></i> 14520</h1>
-                            <a href="#" class="card-body--priceLink">PAY NOW</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
+                        <a href="#" class="price__wrapper--link">Pay</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Modal Single Subject-->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h1 class="modal-body--header">Please select Mathematics or Biology</h1>
-                        <div class="modal-body--subjects">
-                            <div class="md-checkbox">
-                                <input id="phy_1" type="checkbox" checked>
-                                <label for="phy_1">Phy</label>
-                            </div>
-                            <div class="md-checkbox">
-                                <input id="chem_1" type="checkbox">
-                                <label for="chem_1">Chem</label>
-                            </div>
-                            <div class="md-checkbox">
-                                <input id="eng_1" type="checkbox" checked>
-                                <label for="eng_1">Eng</label>
-                            </div>
-                            <div class="md-radio">
-                                <input id="math_1" type="radio" name="g" checked>
-                                <label for="math_1">Mathematics</label>
-                            </div>
-                            <div class="md-radio">
-                                <input id="bio_1" type="radio" name="g">
-                                <label for="bio_1">Biology</label>
-                            </div>
-                        </div>
-                        <div class="price__wrapper">
-                            <h1 class="modal-body--header">Price Details</h1>
-                            <div class="inner_priceWrapper">
-                                <h1>Net Amount</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 2609</h1>
-                                <h1>GST</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 391</h1>
-                                <h1>Courier Charges</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 300</h1>
-                                <h1>Amount Payable</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 3300</h1>
-                            </div>
-                            <a href="#" class="price__wrapper--link">Pay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Modal All Subject-->
-        <div class="modal fade" id="modal_footer" tabindex="-1" role="dialog" aria-labelledby="modal_footer"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h1 class="modal-body--header">Please select the subject for following course: TestQ CBSE
-                            (Prime)
-                        </h1>
-                        <div class="modal-body--subjects">
-                            <div class="md-checkbox">
-                                <input id="phy" type="checkbox" checked>
-                                <label for="phy">Phy</label>
-                            </div>
-                            <div class="md-checkbox">
-                                <input id="chem" type="checkbox" checked>
-                                <label for="chem">Chem</label>
-                            </div>
-                            <div class="md-checkbox">
-                                <input id="eng" type="checkbox" checked>
-                                <label for="eng">Eng</label>
-                            </div>
-                            <div class="md-radio">
-                                <input id="math" type="radio" name="g" checked>
-                                <label for="math">Mathematics</label>
-                            </div>
-                            <div class="md-radio">
-                                <input id="bio" type="radio" name="g">
-                                <label for="bio">Biology</label>
-                            </div>
-                        </div>
-                        <div class="price__wrapper">
-                            <h1 class="modal-body--header">Price Details</h1>
-                            <div class="inner_priceWrapper">
-                                <h1>Net Amount</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
-                                <h1>GST</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 620</h1>
-                                <h1>Amount Payable</h1>
-                                <h1><i class="fas fa-rupee-sign"></i> 4130</h1>
-                            </div>
-                            <a href="#" class="price__wrapper--link">Pay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer id="footer" class="footer bg-overlay">
-            <div class="footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 footer-widget footer-about">
-                            <h3 class="widget-title">About Us</h3>
-                            <p>domain E is a premier coaching institute providing high quality education and guidance
-                                for
-                                CBSE with its office in Kota, Rajasthan.domain E has now introduced 'Live CBSE' a
-                                platform
-                                of LIVE online classes and remedial doubt sessions to provide same high quality
-                                education to
-                                students at their homes</p>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
-                                </ul>
-                            </div><!-- Footer social end -->
-                        </div><!-- Col end -->
-
-                        <div class="col-md-4 col-sm-12 footer-widget">
-                            <h3 class="widget-title">Working Hours</h3>
-                            <div class="working-hours">
-                                We work 7 days a week, every day excluding major holidays. Contact us if you have an
-                                emergency, with our
-                                Hotline and Contact form.
-                                <br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
-                                <br> Saturday: <span class="text-right">12:00 - 15:00</span>
-                                <br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
-                            </div>
-                        </div><!-- Col end -->
-
-                        <div class="col-md-4 col-sm-12 footer-widget">
-                            <h3 class="widget-title">Our Courses</h3>
-                            <ul class="list-arrow">
-                                <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Physics XI/XII</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Chemistry XI/XII</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Mathematics XI/XII</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Biology XI/XII</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i> CBSE English XI/XII</a></li>
+    </div>
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footer-widget footer-about">
+                        <h3 class="widget-title">About Us</h3>
+                        <p>domain E is a premier coaching institute providing high quality education and guidance
+                            for
+                            CBSE with its office in Kota, Rajasthan.domain E has now introduced 'Live CBSE' a
+                            platform
+                            of LIVE online classes and remedial doubt sessions to provide same high quality
+                            education to
+                            students at their homes</p>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
                             </ul>
-                        </div><!-- Col end -->
+                        </div><!-- Footer social end -->
+                    </div><!-- Col end -->
 
-
-                    </div><!-- Row end -->
-                </div><!-- Container end -->
-            </div><!-- Footer main end -->
-
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="copyright-info">
-                                <span>2015 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
-                            </div>
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Working Hours</h3>
+                        <div class="working-hours">
+                            We work 7 days a week, every day excluding major holidays. Contact us if you have an
+                            emergency, with our
+                            Hotline and Contact form.
+                            <br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
+                            <br> Saturday: <span class="text-right">12:00 - 15:00</span>
+                            <br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
                         </div>
+                    </div><!-- Col end -->
 
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="footer-menu">
-                                <ul class="nav unstyled">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="team.html">Join us</a></li>
-                                    <li><a href="faq.html">Franchise</a></li>
-                                    <li><a href="news-left-sidebar.html">Privacy Policy</a></li>
-                                    <li><a href="pricing.html">Contact us</a></li>
-                                    <li><a href="pricing.html">Disclaimer</a></li>
-                                </ul>
-                            </div>
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Our Courses</h3>
+                        <ul class="list-arrow">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Physics XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Chemistry XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Mathematics XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Biology XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE English XI/XII</a></li>
+                        </ul>
+                    </div><!-- Col end -->
+
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Footer main end -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="copyright-info">
+                            <span>2015 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
                         </div>
-                    </div><!-- Row end -->
-
-                    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
-                        <button class="btn btn-primary" title="Back to Top">
-                            <i class="fa fa-angle-double-up"></i>
-                        </button>
                     </div>
 
-                </div><!-- Container end -->
-            </div><!-- Copyright end -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-menu">
+                            <ul class="nav unstyled">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="team.html">Join us</a></li>
+                                <li><a href="faq.html">Franchise</a></li>
+                                <li><a href="news-left-sidebar.html">Privacy Policy</a></li>
+                                <li><a href="pricing.html">Contact us</a></li>
+                                <li><a href="pricing.html">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Row end -->
 
-        </footer>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
-        <script src="assets/script/script.js"></script>
-    </body>
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </button>
+                </div>
+
+            </div><!-- Container end -->
+        </div><!-- Copyright end -->
+
+    </footer>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="assets/script/script.js"></script>
+</body>
 
 </html>
