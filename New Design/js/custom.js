@@ -84,11 +84,11 @@ jQuery(function ($) {
 	/*  Main slideshow
 	/* ----------------------------------------------------------- */
 
-	$('#main-slide').carousel({
+	/* $('#main-slide').carousel({
 		pause: true,
 		interval: 100000,
 	});
-
+ */
 
 
 

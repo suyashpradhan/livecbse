@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -106,77 +107,88 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="site-nav-inner pull-left">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                        <div class="collapse navbar-collapse navbar-responsive-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Coaching
-                                        <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class="active"><a href="index.html">Class XI-XII</a></li>
-                                        <li><a href="index-2.html">Class IX-X</a></li>
-                                    </ul>
-                                </li>
+                            <div class="collapse navbar-collapse navbar-responsive-collapse" id="main-nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown active">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Coaching <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="active"><a href="index.html">Class XI-XII</a></li>
+                                            <li><a href="index-2.html">Class IX-X</a></li>
+                                        </ul>
+                                    </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Series <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.html">Test Series XII</a></li>
-                                        <li><a href="team.html">Test Series XI</a></li>
-                                        <li><a href="testimonials.html">Test Series X</a></li>
-                                        <li><a href="faq.html">Test Series IX</a></li>
-                                    </ul>
-                                </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Series <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xii.php">Test
+                                                    Series XII</a></li>
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xi.php">Test
+                                                    Series XI</a></li>
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/test_series/test_series_x.php">Test
+                                                    Series X</a></li>
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/test_series/test_series_ix.php">Test
+                                                    Series IX</a></li>
+                                        </ul>
+                                    </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Study Material <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doubt Removal <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Group Sites <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <i
-                                            class="fa fa-angle-down"></i></a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Student Login </a>
-                                </li>
-                            </ul>
-                        </div>
-
-
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Study Material <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xii.php">Study
+                                                    Material XII</a></li>
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xi.php">Study
+                                                    Material XI</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doubt Removal <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xii.php">Doubt
+                                                    Removal XII</a></li>
+                                            <li><a
+                                                    href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xi.php">Doubt
+                                                    Removal XI</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Group Sites <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="https://www.domain-education.com">www.domain-education.com</a>
+                                            </li>
+                                            <li><a href="https://www.livejee.com">www.livejee.com</a></li>
+                                            <li><a href="https://www.wingxp.com">www.wingxp.com</a></li>
+                                            <li><a href="https://www.detpl.com">www.deptl.com</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <i
+                                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Student Login </a>
+                                    </li>
+                                </ul>
+                                <!--/ Nav ul end -->
+                            </div>
                     </div>
 
                 </div>
@@ -193,6 +205,7 @@
         </div>
 
     </nav>
+
 
 
     </header>
@@ -480,11 +493,14 @@
                     </div>
                     <div class="card-body--priceDiv">
                         <h1 class="card-body--price">Rs. 4750</h1>
-                        <a href="#" class="card-body--priceLink">PAY NOW</a>
+                        <a class="card-body--priceLink" data-toggle="modal" data-target="#pay-now-modal">PAY
+                            NOW</a>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">For individual subject<span><a href="#">Click Here</a></span></small>
+                    <small class="text-muted">For individual subject<span><a href="#" data-toggle="modal"
+                                data-target="#individual-modal">Click
+                                Here</a></span></small>
                 </div>
             </div>
             <div class="card">
@@ -515,6 +531,50 @@
             </div>
             <div class="card" style="border: none;">
 
+            </div>
+        </div>
+    </div>
+
+    <!--Pay Now Modal-->
+    <div class="modal fade" id="pay-now-modal" tabindex="-1" role="dialog" aria-labelledby="pay-now-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">CheckOut</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Individual Subject Modal-->
+    <div class="modal fade" id="individual-subject-modal" tabindex="-1" role="dialog"
+        aria-labelledby="individual-subject-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Select Any Course</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="trxue">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
