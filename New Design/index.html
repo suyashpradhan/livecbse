@@ -120,7 +120,7 @@
 
 
 
-	<nav class="site-navigation navigation navdown">
+	<!-- <nav class="site-navigation navigation navdown">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -205,7 +205,6 @@
 										<a href="#">Student Login </a>
 									</li>
 								</ul>
-								<!--/ Nav ul end -->
 							</div>
 					</div>
 
@@ -222,7 +221,100 @@
 			</div>
 		</div>
 
-	</nav>
+	</nav> -->
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#181818;">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav" style="color:#fff;">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Online Coaching <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="">Class XI-XII</a>
+                            <a href="">Class IX-X</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Test Series <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xii.php">Test
+                                Series XII</a>
+                            <a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xi.php">Test
+                                Series XI</a>
+                            <a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_x.php">Test
+                                Series X</a>
+                            <a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_ix.php">Test
+                                Series IX</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xii.php">Study
+                                Material XII</a>
+                            <a href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xi.php">Study
+                                Material XI</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Doubt Removal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                        <div class="dropdown-content">
+                            <a href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xii.php">Doubt
+                                Removal XII</a>
+                            <a href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xi.php">Doubt
+                                Removal XI</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Group Sites <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                        <div class="dropdown-content">
+                            <a href="https://www.domain-education.com">www.domain-education.com</a>
+                            <a href="https://www.livejee.com">www.livejee.com</a>
+                            <a href="https://www.wingxp.com">www.wingxp.com</a>
+                            <a href="https://www.detpl.com">www.deptl.com</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">FAQs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">Student Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 	</header>
 	<!--/ Header end -->
@@ -318,25 +410,23 @@
 							<div>
 								<span class="class-head-new">Class: </span>
 							</div>
-							<!-- <div class="md-radio">
+							<div class="md-radio">
+								<input id="classix" type="radio" name="class_select" onclick="change_subjects()">
+								<label for="classix" class="md-radio-text">IX</label>
+							</div>
+							<div class="md-radio">
+								<input id="classx" type="radio" name="class_select" onclick="change_subjects()">
+								<label for="classx" class="md-radio-text">IX</label>
+							</div>
+							<div class="md-radio">
 								<input id="class_ix" type="radio" name="class_select" onclick="change_subjects()">
 								<label for="class_ix" class="md-radio-text">IX</label>
 							</div>
 
 							<div class="md-radio">
-								<input id="class_x" type="radio" name="class_select" onclick="change_subjects()">
-								<label for="class_x">X</label>
+								<input id="class_ix" type="radio" name="class_select" onclick="change_subjects()">
+								<label for="class_ix" class="md-radio-text">IX</label>
 							</div>
-
-							<div class="md-radio">
-								<input id="class_xi" type="radio" name="class_select" onclick="change_subjects()">
-								<label for="class_xi" class="md-radio-text">XI</label>
-							</div>
-
-							<div class="md-radio">
-								<input id="class_xii" type="radio" name="class_select" onclick="change_subjects()">
-								<label for="class_xii" class="md-radio-text">XII</label>
-							</div> -->
 						</div>
 					</div>
 					<div class="form_group">
@@ -395,31 +485,93 @@
 						<h1>Select Class</h1>
 					</div>
 				</div>
-
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ts-facts">
-
-					<div class="ts-facts-content">
-						<div class="radio" style="margin-top: 15px;">
+					<div class="ts-facts-content" style="margin-top: 15px;">
+						<div class="md-radio-class">
 							<input id="radio-2" name="section" type="radio" value="senior_secondary" checked=""
 								onclick="change_section()">
-							<label for="radio-2" class="radio-label">XI/XII</label>
+							<label for="radio-2" class="radio-label-class">XI-XII <a href="#" class="brochure-link">(
+									Download Brochure)</a>
+							</label>
 						</div>
 					</div>
 				</div>
-
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ts-facts">
-
-					<div class="ts-facts-content">
-						<div class="radio" style="margin-top: 15px;">
+					<div class="ts-facts-content" style="margin-top: 15px;">
+						<div class="md-radio-class">
 							<input id="radio-1" name="section" type="radio" value="secondary"
 								onclick="change_section()">
-							<label for="radio-1" class="radio-label">IX/X</label>
+							<label for="radio-1" class="radio-label-class">IX-X <a href="#" class="brochure-link">(
+									Download
+									Brochure)</a></label>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+	<div class="container">
+		<section class="live-area">
+
+			<div class="row">
+				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
+					<h1 class="live-head">LIVECBSE</h1>
+					<h1 class="live-info">The most dependable CBSE tuitions</h1>
+					<div class="live-wrap">
+						<div class=row>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border-Right">
+								<h1 class="iclubs__header">Curations From</h1>
+								<div class="iclubs__div">
+									<div class="__inner iclubs__div--one">
+										<img src="images/khan.jpg" alt="" class="iclubs__image">
+										<h1 class="iclubs__div--header">Khan Academy</h1>
+									</div>
+									<div class="__inner _iclubs_div--two">
+										<img src="images/youtube.png" alt="" style="height: 70px" class="iclubs__image">
+									</div>
+									<div class="__inner _iclubs_div--three">
+										<img src="images/wikipedia.png" style="height: 90px" class="iclubs__image">
+									</div>
+									<div class="__inner _iclubs_div--four">
+										<img src="images/mit" class="iclubs__image">
+									</div>
+									<div class="__inner _iclubs_div--five">
+										<img src="images/discovery" style="height: 40px" class="iclubs__image">
+									</div>
+									<div class="__inner _iclubs_div--six">
+										<img src="images/history.png" style="height: 70px" class="iclubs__image">
+									</div>
+								</div>
+								<span class="iclubs__info">And 100's of other sites</span>
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
+								<div class="other-info-wrap">
+									<div>
+										<img src="images/video.png" alt="" class="other__img">
+										<h1 class="other__text">Get Free Curated /Created Videos</h1>
+									</div>
+									<div>
+										<img src="images/web.png" alt="" class="other__img">
+										<h1 class="other__text">Curated /Created Web Content</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img src="images/mobile.png" alt="" class="mobile-img">
+				</div>
+			</div>
+
+		</section>
+	</div>
 
 
 	<section id="project-area" class="project-area solid-bg">
@@ -5429,637 +5581,773 @@
 		</div>
 	</section>
 
-
-	<footer id="footer" class="footer bg-overlay">
-		<div class="footer-main">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-12 footer-widget footer-about">
-						<h3 class="widget-title">About Us</h3>
-						<p>domain E is a premier coaching institute providing high quality education and guidance for
-							CBSE with its office in Kota, Rajasthan.domain E has now introduced 'Live CBSE' a platform
-							of LIVE online classes and remedial doubt sessions to provide same high quality education to
-							students at their homes</p>
-						<div class="footer-social">
-							<ul>
-								<li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
-							</ul>
-						</div><!-- Footer social end -->
-					</div><!-- Col end -->
-
-					<div class="col-md-4 col-sm-12 footer-widget">
-						<h3 class="widget-title">Working Hours</h3>
-						<div class="working-hours">
-							We work 7 days a week, every day excluding major holidays. Contact us if you have an
-							emergency, with our
-							Hotline and Contact form.
-							<br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
-							<br> Saturday: <span class="text-right">12:00 - 15:00</span>
-							<br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
-						</div>
-					</div><!-- Col end -->
-
-					<div class="col-md-4 col-sm-12 footer-widget">
-						<h3 class="widget-title">Our Courses</h3>
-						<ul class="list-arrow">
-							<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Physics XI/XII</a></li>
-							<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Chemistry XI/XII</a></li>
-							<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Mathematics XI/XII</a></li>
-							<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Biology XI/XII</a></li>
-							<li><a href="#"><i class="fas fa-angle-right"></i> CBSE English XI/XII</a></li>
-						</ul>
-					</div><!-- Col end -->
+	<a href="#" data-toggle="modal" data-target="#exampleModal">Modal</a>
 
 
-				</div><!-- Row end -->
-			</div><!-- Container end -->
-		</div><!-- Footer main end -->
-
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">
-						<div class="copyright-info">
-							<span>2015 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6">
-						<div class="footer-menu">
-							<ul class="nav unstyled">
-								<li><a href="about.html">About</a></li>
-								<li><a href="team.html">Join us</a></li>
-								<li><a href="faq.html">Franchise</a></li>
-								<li><a href="news-left-sidebar.html">Privacy Policy</a></li>
-								<li><a href="pricing.html">Contact us</a></li>
-								<li><a href="pricing.html">Disclaimer</a></li>
-							</ul>
-						</div>
-					</div>
-				</div><!-- Row end -->
-
-				<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
-					<button class="btn btn-primary" title="Back to Top">
-						<i class="fa fa-angle-double-up"></i>
-					</button>
-				</div>
-
-			</div><!-- Container end -->
-		</div><!-- Copyright end -->
-
-	</footer><!-- Footer end -->
-
-
-
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-		Launch demo modal
-	</button>
-
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLongTitle">Register Now !!!</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+			<div class="modal-body" style="width: 100%">
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-12 col-mg-8 col-lg-8 col-xl-8">
+						<form action="" class="registration-form" id="profile_detail" method="post">
+							<div class="first-half-Header">
+								<h1>Personal Details</h1>
+							</div>
+
+							<div class="first-form-wrapper">
+								<label>Name:</label>
+								<input type="text" placeholder="First Name" class="first_Name" name="student_name1"
+									id="student_name1" onkeyup="display_student_first_name()"
+									onblur="display_student_first_name()" required>
+								<input type="text" placeholder="Last Name" name="last_name"" class=" last_Name"
+									id="last_name" onkeyUp="display_student_last_name()" required>
+							</div>
+							<br>
+							<div class="first-form-wrapper">
+								<label>Phone No:</label>
+								<input type="text" placeholder="Mobile Number" name="contact_number"
+									class="phone_number_one" id="contact_number"
+									onkeyUp="display_student_mobile_number1()" onBlur="display_student_mobile_number1()"
+									required>
+								<input type="text" placeholder="Mobile Number" name="second_contact"
+									class="phone_number_two" id="second_contact"
+									onkeyUp="display_student_mobile_number2()"
+									onBlur="display_student_mobile_number2()">
+							</div>
+							<br>
+							<div class="first-form-wrapper-email">
+								<label>Email:</label>
+								<input type="email" placeholder="Email Address" name="student_email1"
+									class="email_address" id="student_email1" onkeyUp="display_student_email_id()"
+									onBlur="display_student_email_id()" required>
+							</div>
+							<br>
+							<div class="first-form-wrapper-country">
+								<label>Country:</label>
+								<input type="radio" name="country" id="country" value="India" checked="checked"
+									onchange="check_country();">India
+								<input type="radio" name="country" id="country2" value="Other"
+									onchange="check_country();">Other
+								<input type="text" name="other_country" class="phone_number_two" id="other_country"
+									style="display:none; height:30px; width:200px" onkeypress="display_country()"
+									onblur="display_country()" placeholder="Enter Country" />
+
+							</div>
+							<br>
+							<div class="first-form-wrapper-state" id="india_section">
+								<div id="selection">
+									<select id="listBox" name="state_name"
+										onchange='selct_district(this.value)'></select>
+									<select id='secondlist' name="city_name" onchange="check_city()"
+										style="width:150px;"></select><input type="text" name="city" id="city"
+										style="display:none" placeholder="Enter City Name" />
+								</div>
+							</div>
+							<br>
+							<div class="first-form-wrapper-address">
+								<label>Address:</label>
+								<input type="text" placeholder="Address" name="address" class="address" id="address"
+									onKeyUp="display_student_address()" onBlur="display_student_email_id()" required>
+							</div>
+							<div class="first-form-wrapper-button">
+								<input type="submit" class="btnPayNow" name="step_1_next" id="step_1_next"
+									style="background-color: #231F20;border: 1px solid #231F20;font-size: 16px;border-radius: 5px;width: 100px;color: #fff;cursor: pointer;padding:3px 0; display:block;"
+									value="Pay Now" />
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-mg-4 col-lg-4 col-xl-4">
+						<div class="second-half-Header">
+							<h1>Invoice</h1>
+						</div>
+						<div class="form-input-Wrapper">
+							<label>First Name: <span id="display_student_name"></span>
+							</label><br>
+							<label>Mobile Number 1: <span id="display_mobile_number1"></span></label><br>
+							<label>Mobile Number 2: <span id="display_mobile_number2"></span></label><br>
+							<label>Email Address: <span id="display_email_id"></span></label><br>
+							<label>Country: <span id="display_country"></span></label><br>
+							<label>Address: <span id="display_address"></span></label><br>
+						</div>
+						<table class="table_course" style="width: 100%; text-align: center">
+							<tr>
+								<th>Module Selected</th>
+								<th>Cost</th>
+							</tr>
+							<tr>
+								<td><?php
+							foreach($_SESSION['module'] as $sess)
+							{
+							echo $sess.'/';
+							}
+							?></td>
+								<td>Rs <label id="net_fees"><?php echo $fees_total;?><input type="hidden"
+											id="net_fees_input" name="net_fees_input"
+											value="<?php echo $fees_total; ?>"></label></td>
+							</tr>
+						</table><br>
+
+					</div>
+
 				</div>
 			</div>
-		</div>
-	</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+
+
+			<footer id="footer" class="footer bg-overlay">
+				<div class="footer-main">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-12 footer-widget footer-about">
+								<h3 class="widget-title">About Us</h3>
+								<p>domain E is a premier coaching institute providing high quality education and
+									guidance for
+									CBSE with its office in Kota, Rajasthan.domain E has now introduced 'Live CBSE'
+									a platform
+									of LIVE online classes and remedial doubt sessions to provide same high quality
+									education to
+									students at their homes</p>
+								<div class="footer-social">
+									<ul>
+										<li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+										</li>
+										<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+										</li>
+										<li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+									</ul>
+								</div><!-- Footer social end -->
+							</div><!-- Col end -->
+
+							<div class="col-md-4 col-sm-12 footer-widget">
+								<h3 class="widget-title">Working Hours</h3>
+								<div class="working-hours">
+									We work 7 days a week, every day excluding major holidays. Contact us if you
+									have an
+									emergency, with our
+									Hotline and Contact form.
+									<br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
+									<br> Saturday: <span class="text-right">12:00 - 15:00</span>
+									<br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
+								</div>
+							</div><!-- Col end -->
+
+							<div class="col-md-4 col-sm-12 footer-widget">
+								<h3 class="widget-title">Our Courses</h3>
+								<ul class="list-arrow">
+									<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Physics XI/XII</a></li>
+									<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Chemistry XI/XII</a>
+									</li>
+									<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Mathematics XI/XII</a>
+									</li>
+									<li><a href="#"><i class="fas fa-angle-right"></i> CBSE Biology XI/XII</a></li>
+									<li><a href="#"><i class="fas fa-angle-right"></i> CBSE English XI/XII</a></li>
+								</ul>
+							</div><!-- Col end -->
+
+
+						</div><!-- Row end -->
+					</div><!-- Container end -->
+				</div><!-- Footer main end -->
+
+				<div class="copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<div class="copyright-info">
+									<span>2015 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-6">
+								<div class="footer-menu">
+									<ul class="nav unstyled">
+										<li><a href="about.html">About</a></li>
+										<li><a href="team.html">Join us</a></li>
+										<li><a href="faq.html">Franchise</a></li>
+										<li><a href="news-left-sidebar.html">Privacy Policy</a></li>
+										<li><a href="pricing.html">Contact us</a></li>
+										<li><a href="pricing.html">Disclaimer</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- Row end -->
+
+						<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+							<button class="btn btn-primary" title="Back to Top">
+								<i class="fa fa-angle-double-up"></i>
+							</button>
+						</div>
+
+					</div><!-- Container end -->
+				</div><!-- Copyright end -->
+
+			</footer><!-- Footer end -->
 
 
 
-	<!--Javascript Files-->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-		</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-		</script>
-	<!-- Owl Carousel -->
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<!-- Color box -->
-	<script type="text/javascript" src="js/jquery.colorbox.js"></script>
-	<!-- Isotope -->
-	<script type="text/javascript" src="js/isotope.js"></script>
-	<script type="text/javascript" src="js/ini.isotope.js"></script>
-	<!-- Template custom -->
-	<script type="text/javascript" src="js/custom.js"></script>
-	<script src="https://kit.fontawesome.com/7fdc918442.js"></script>
-	<!-- Google Map API Key-->
-	<script type="text/javascript"
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places">
-		</script>
-	<!-- Google Map Plugin-->
-	<script type="text/javascript" src="js/gmap3.js"></script>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+				Launch demo modal
+			</button>
 
-	<script>
-		//You may use vanilla JS, I just chose jquery
-
-		$('.openmodale').click(function (e) {
-			e.preventDefault();
-			$('.modale').addClass('opened');
-		});
-		$('.closemodale').click(function (e) {
-			e.preventDefault();
-			$('.modale').removeClass('opened');
-		});
-	</script>
-	<div class="modal fade text-center" id="thankyou">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					Thank you for scheduling a demo with livecbse.com. Our representative will contact you soon.
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="modal fade text-center" id="contactus">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					Thank you for contacting with livecbse.com. Our representative will contact you soon.
+
+
+			<!--Javascript Files-->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+				integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+				integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+				crossorigin="anonymous">
+			</script>
+			<!-- Owl Carousel -->
+			<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+			<!-- Color box -->
+			<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+			<!-- Isotope -->
+			<script type="text/javascript" src="js/isotope.js"></script>
+			<script type="text/javascript" src="js/ini.isotope.js"></script>
+			<!-- Template custom -->
+			<script type="text/javascript" src="js/custom.js"></script>
+			<script src="https://kit.fontawesome.com/7fdc918442.js"></script>
+			<!-- Google Map API Key-->
+			<script type="text/javascript"
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places">
+			</script>
+			<!-- Google Map Plugin-->
+			<script type="text/javascript" src="js/gmap3.js"></script>
+
+			<script>
+				//You may use vanilla JS, I just chose jquery
+
+				$('.openmodale').click(function (e) {
+					e.preventDefault();
+					$('.modale').addClass('opened');
+				});
+				$('.closemodale').click(function (e) {
+					e.preventDefault();
+					$('.modale').removeClass('opened');
+				});
+			</script>
+			<div class="modal fade text-center" id="thankyou">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							Thank you for scheduling a demo with livecbse.com. Our representative will contact you
+							soon.
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="modal fade " id="my_course">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body" id="myselection">
+			<div class="modal fade text-center" id="contactus">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							Thank you for contacting with livecbse.com. Our representative will contact you soon.
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="modal fade " id="registration_form">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content" id="register12">
-
+			<div class="modal fade " id="my_course">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body" id="myselection">
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
 
-	<script language='javascript'>
-		function change_section() {
-			var section = $("input[name='section']:checked").val();
-			if (section == 'secondary') {
-				$('#tab-1').show();
-				$('#tab-2').hide();
-			} else {
-				$('#tab-1').hide();
-				$('#tab-2').show();
-			}
-		}
-		change_section();
-	</script>
+			<div class="modal fade " id="registration_form">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content" id="register12">
 
+					</div>
+				</div>
+			</div>
 
-	<script>
-		$(document).ready(function () {
-			$('ul.tabs li').click(function () {
-				var tab_id = $(this).attr('data-tab');
-
-				$('ul.tabs li').removeClass('current');
-				$('.tab-content').removeClass('current');
-
-				$(this).addClass('current');
-				$("#" + tab_id).addClass('current');
-			})
-		})
-
-
-		function chem_course(p) {
-			if ($('#cm' + p).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createbatchsession.php?id=' + p + '&code=c',
-					data: '',
-					beforeSend: function () { },
-					onComplete: function (response) { },
-					success: function (response) {
-						$('#myselection').html(response);
-						$("#my_course").modal('show');
-					},
-					error: function () {
-						chem_course(p);
-					},
-				});
-			} else {
-				del_mod(p, 'c');
-			}
-		}
-
-		function phy_course(p) {
-			if ($('#pm' + p).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createbatchsession.php?id=' + p + '&code=p',
-					data: '',
-					beforeSend: function () { },
-					onComplete: function (response) { },
-					success: function (response) {
-						$('#myselection').html(response);
-						$("#my_course").modal('show');
-					},
-					error: function () {
-						phy_course(p);
-					},
-				});
-			} else {
-				del_mod(p, 'p');
-			}
-		}
-
-		function mat_course(p) {
-			if ($('#mm' + p).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createbatchsession.php?id=' + p + '&code=m',
-					data: '',
-					beforeSend: function () { },
-					onComplete: function (response) { },
-					success: function (response) {
-						$('#myselection').html(response);
-						$("#my_course").modal('show');
-					},
-					error: function () {
-						mat_course(p);
-					},
-				});
-			} else {
-				del_mod(p, 'm');
-			}
-		}
-
-		function mat_course_9_10(p) {
-			if ($('#mmm' + p).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createbatchsession.php?id=' + p + '&code=mm',
-					data: '',
-					beforeSend: function () { },
-					onComplete: function (response) {
-						setTimeout(function () {
-							$.fancybox.close();
-						}, 1000);
-					},
-					success: function (response) {
-						$('#myselection').html(response);
-						$("#my_course").modal('show');
-					},
-					error: function () {
-						eng_course_9_10(p);
-					},
-				});
-				$("#my_course").modal('show');
-			} else {
-				del_mod_9_10(p, 'mm');
-			}
-		}
-
-		function sci_course(p) {
-			if ($('#ssm' + p).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createbatchsession.php?id=' + p + '&code=ss',
-					data: '',
-					beforeSend: function () { },
-					onComplete: function (response) {
-						setTimeout(function () {
-							$.fancybox.close();
-						}, 1000);
-					},
-					success: function (response) {
-						$('#myselection').html(response);
-						$("#my_course").modal('show');
-					},
-					error: function () {
-						sci_course(p);
-					},
-				});
-				$("#my_course").modal('show');
-			} else {
-				del_mod_9_10(p, 'mm');
-			}
-		}
-
-		function delete_mod(p, q) {
-			$.ajax({
-				type: 'POST',
-				url: 'deletephysicssession.php?id=' + p + '&code=' + q,
-				data: '',
-				timeout: 3000,
-				beforeSend: function () { },
-				success: function (response) {
-					$('#' + q + 'm' + p).attr('checked', false);
-					if (p == '11') {
-						for (var i = 1; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
+			<script language='javascript'>
+				function change_section() {
+					var section = $("input[name='section']:checked").val();
+					if (section == 'secondary') {
+						$('#tab-1').show();
+						$('#tab-2').hide();
+					} else {
+						$('#tab-1').hide();
+						$('#tab-2').show();
 					}
-					if (p == '12') {
-						for (var i = 5; i <= 8; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
+				}
+				change_section();
+			</script>
+
+
+			<script>
+				$(document).ready(function () {
+					$('ul.tabs li').click(function () {
+						var tab_id = $(this).attr('data-tab');
+
+						$('ul.tabs li').removeClass('current');
+						$('.tab-content').removeClass('current');
+
+						$(this).addClass('current');
+						$("#" + tab_id).addClass('current');
+					})
+				})
+
+
+				function chem_course(p) {
+					if ($('#cm' + p).is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createbatchsession.php?id=' + p + '&code=c',
+							data: '',
+							beforeSend: function () {},
+							onComplete: function (response) {},
+							success: function (response) {
+								$('#myselection').html(response);
+								$("#my_course").modal('show');
+							},
+							error: function () {
+								chem_course(p);
+							},
+						});
+					} else {
+						del_mod(p, 'c');
 					}
+				}
+
+				function phy_course(p) {
+					if ($('#pm' + p).is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createbatchsession.php?id=' + p + '&code=p',
+							data: '',
+							beforeSend: function () {},
+							onComplete: function (response) {},
+							success: function (response) {
+								$('#myselection').html(response);
+								$("#my_course").modal('show');
+							},
+							error: function () {
+								phy_course(p);
+							},
+						});
+					} else {
+						del_mod(p, 'p');
+					}
+				}
+
+				function mat_course(p) {
+					if ($('#mm' + p).is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createbatchsession.php?id=' + p + '&code=m',
+							data: '',
+							beforeSend: function () {},
+							onComplete: function (response) {},
+							success: function (response) {
+								$('#myselection').html(response);
+								$("#my_course").modal('show');
+							},
+							error: function () {
+								mat_course(p);
+							},
+						});
+					} else {
+						del_mod(p, 'm');
+					}
+				}
+
+				function mat_course_9_10(p) {
+					if ($('#mmm' + p).is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createbatchsession.php?id=' + p + '&code=mm',
+							data: '',
+							beforeSend: function () {},
+							onComplete: function (response) {
+								setTimeout(function () {
+									$.fancybox.close();
+								}, 1000);
+							},
+							success: function (response) {
+								$('#myselection').html(response);
+								$("#my_course").modal('show');
+							},
+							error: function () {
+								eng_course_9_10(p);
+							},
+						});
+						$("#my_course").modal('show');
+					} else {
+						del_mod_9_10(p, 'mm');
+					}
+				}
+
+				function sci_course(p) {
+					if ($('#ssm' + p).is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createbatchsession.php?id=' + p + '&code=ss',
+							data: '',
+							beforeSend: function () {},
+							onComplete: function (response) {
+								setTimeout(function () {
+									$.fancybox.close();
+								}, 1000);
+							},
+							success: function (response) {
+								$('#myselection').html(response);
+								$("#my_course").modal('show');
+							},
+							error: function () {
+								sci_course(p);
+							},
+						});
+						$("#my_course").modal('show');
+					} else {
+						del_mod_9_10(p, 'mm');
+					}
+				}
+
+				function delete_mod(p, q) {
 					$.ajax({
 						type: 'POST',
-						url: 'createbatchsession.php',
+						url: 'deletephysicssession.php?id=' + p + '&code=' + q,
 						data: '',
-						beforeSend: function () { },
+						timeout: 3000,
+						beforeSend: function () {},
 						success: function (response) {
+							$('#' + q + 'm' + p).attr('checked', false);
+							if (p == '11') {
+								for (var i = 1; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '12') {
+								for (var i = 5; i <= 8; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							$.ajax({
+								type: 'POST',
+								url: 'createbatchsession.php',
+								data: '',
+								beforeSend: function () {},
+								success: function (response) {
+									$('#myselection').html(response);
+									$("#my_course").modal('show');
+								},
+								error: function () {
+									delete_mod(p, q);
+								},
+							});
 							$('#myselection').html(response);
 							$("#my_course").modal('show');
 						},
 						error: function () {
 							delete_mod(p, q);
-						},
+						}
 					});
-					$('#myselection').html(response);
 					$("#my_course").modal('show');
-				},
-				error: function () {
-					delete_mod(p, q);
 				}
-			});
-			$("#my_course").modal('show');
-		}
 
 
-		function del_mod(p, q) {
-			$.ajax({
-				type: 'POST',
-				url: 'deletephysicssession.php?id=' + p + '&code=' + q,
-				data: '',
-				timeout: 3000,
-				beforeSend: function () { },
-				success: function (response) {
-					$('#' + q + 'm' + p).attr('checked', false);
-					if (p == '11') {
-						for (var i = 1; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '12') {
-						for (var i = 5; i <= 8; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
+				function del_mod(p, q) {
 					$.ajax({
 						type: 'POST',
-						url: 'createbatchsession.php',
+						url: 'deletephysicssession.php?id=' + p + '&code=' + q,
 						data: '',
-						beforeSend: function () { },
+						timeout: 3000,
+						beforeSend: function () {},
 						success: function (response) {
+							$('#' + q + 'm' + p).attr('checked', false);
+							if (p == '11') {
+								for (var i = 1; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '12') {
+								for (var i = 5; i <= 8; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							$.ajax({
+								type: 'POST',
+								url: 'createbatchsession.php',
+								data: '',
+								beforeSend: function () {},
+								success: function (response) {
+									$('#myselection').html(response);
+									$("#my_course").modal('show');
+								},
+								error: function () {
+									del_mod(p, q);
+								},
+							});
 							$('#myselection').html(response);
 							$("#my_course").modal('show');
 						},
 						error: function () {
 							del_mod(p, q);
-						},
+						}
 					});
-					$('#myselection').html(response);
-					$("#my_course").modal('show');
-				},
-				error: function () {
-					del_mod(p, q);
 				}
-			});
-		}
 
 
-		function delete_mod_9_10(p, q) {
-			$.ajax({
-				type: 'POST',
-				url: 'deletephysicssession.php?id=' + p + '&code=' + q,
-				data: '',
-				timeout: 3000,
-				beforeSend: function () { },
-				success: function (response) {
-					$('#' + q + 'm' + p).attr('checked', false);
-					if (p == '9') {
-						$('#' + q + 'm11').attr('checked', false);
-						for (var i = 1; i <= 2; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '10') {
-						$('#' + q + 'm12').attr('checked', false);
-						for (var i = 3; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '11') {
-						for (var i = 1; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '12') {
-						for (var i = 5; i <= 8; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
+				function delete_mod_9_10(p, q) {
 					$.ajax({
 						type: 'POST',
-						url: 'createbatchsession.php',
+						url: 'deletephysicssession.php?id=' + p + '&code=' + q,
 						data: '',
-						beforeSend: function () { },
+						timeout: 3000,
+						beforeSend: function () {},
 						success: function (response) {
-							$('#myselection').html(response);
-							$("#my_course").modal('show');
+							$('#' + q + 'm' + p).attr('checked', false);
+							if (p == '9') {
+								$('#' + q + 'm11').attr('checked', false);
+								for (var i = 1; i <= 2; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '10') {
+								$('#' + q + 'm12').attr('checked', false);
+								for (var i = 3; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '11') {
+								for (var i = 1; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '12') {
+								for (var i = 5; i <= 8; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							$.ajax({
+								type: 'POST',
+								url: 'createbatchsession.php',
+								data: '',
+								beforeSend: function () {},
+								success: function (response) {
+									$('#myselection').html(response);
+									$("#my_course").modal('show');
+								},
+								error: function () {
+
+									delete_mod(p, q);
+								},
+							});
+							$('#myselection1').click();
 						},
 						error: function () {
 
 							delete_mod(p, q);
-						},
+						}
 					});
-					$('#myselection1').click();
-				},
-				error: function () {
-
-					delete_mod(p, q);
+					$("#my_course").modal('show');
 				}
-			});
-			$("#my_course").modal('show');
-		}
 
-		function del_mod_9_10(p, q) {
-			$.ajax({
-				type: 'POST',
-				url: 'deletephysicssession.php?id=' + p + '&code=' + q,
-				data: '',
-				timeout: 3000,
-				beforeSend: function () { },
-				success: function (response) {
-					$('#' + q + 'm' + p).attr('checked', false);
-					if (p == '11') {
-						for (var i = 1; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '9') {
-						$('#' + q + 'm11').attr('checked', false);
-						for (var i = 1; i <= 4; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '10') {
-						$('#' + q + 'm12').attr('checked', false);
-						for (var i = 5; i <= 8; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
-					if (p == '12') {
-						for (var i = 5; i <= 8; i++) {
-							$('#' + q + 'm' + i).attr('checked', false);
-							$('#' + q + 'm' + i).attr('disabled', false);
-						}
-					}
+				function del_mod_9_10(p, q) {
 					$.ajax({
 						type: 'POST',
-						url: 'createbatchsession.php',
+						url: 'deletephysicssession.php?id=' + p + '&code=' + q,
 						data: '',
-						beforeSend: function () { },
+						timeout: 3000,
+						beforeSend: function () {},
 						success: function (response) {
-							$('#myselection').html(response);
+							$('#' + q + 'm' + p).attr('checked', false);
+							if (p == '11') {
+								for (var i = 1; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '9') {
+								$('#' + q + 'm11').attr('checked', false);
+								for (var i = 1; i <= 4; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '10') {
+								$('#' + q + 'm12').attr('checked', false);
+								for (var i = 5; i <= 8; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							if (p == '12') {
+								for (var i = 5; i <= 8; i++) {
+									$('#' + q + 'm' + i).attr('checked', false);
+									$('#' + q + 'm' + i).attr('disabled', false);
+								}
+							}
+							$.ajax({
+								type: 'POST',
+								url: 'createbatchsession.php',
+								data: '',
+								beforeSend: function () {},
+								success: function (response) {
+									$('#myselection').html(response);
+									$("#my_course").modal('show');
+								},
+								error: function () {
+									del_mod(p, q);
+								},
+							});
 							$("#my_course").modal('show');
 						},
 						error: function () {
 							del_mod(p, q);
-						},
+						}
 					});
 					$("#my_course").modal('show');
-				},
-				error: function () {
-					del_mod(p, q);
-				}
-			});
-			$("#my_course").modal('show');
-		}
-
-
-		function fullcourse21(p, q, r) {
-			if ($('#' + r + q).is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createmultiplesession.php?class=' + q + '&subject=' + p,
-					data: 'class=11&subject=c',
-					beforeSend: function () { },
-					success: function (response) {
-						$.ajax({
-							type: 'POST',
-							url: 'createbatchsession.php',
-							data: '',
-							beforeSend: function () { },
-							success: function (response) {
-								$('#myselection').html(response);
-								$("#my_course").modal('show');
-							}
-						});
-					}
-				});
-				if (q == '11') {
-					$('#' + r + '1').prop('checked', true);
-					$('#' + r + '2').prop('checked', true);
-					$('#' + r + '3').prop('checked', true);
-					$('#' + r + '4').prop('checked', true);
-					$('#' + r + '1').attr('disabled', true);
-					$('#' + r + '2').attr('disabled', true);
-					$('#' + r + '3').attr('disabled', true);
-					$('#' + r + '4').attr('disabled', true);
-				} else {
-					$('#' + r + '5').prop('checked', true);
-					$('#' + r + '6').prop('checked', true);
-					$('#' + r + '7').prop('checked', true);
-					$('#' + r + '8').prop('checked', true);
-					$('#' + r + '5').attr('disabled', true);
-					$('#' + r + '6').attr('disabled', true);
-					$('#' + r + '7').attr('disabled', true);
-					$('#' + r + '8').attr('disabled', true);
 				}
 
-			} else {
-				del_mod(q, p);
-			}
-		}
 
-		function fullcourse22() {
-			if ($('#cm12').is(':checked')) {
-				$.ajax({
-					type: 'POST',
-					url: 'createmultiplesession.php',
-					data: 'class=12&subject=c',
-					beforeSend: function () { },
-					success: function (response) {
+				function fullcourse21(p, q, r) {
+					if ($('#' + r + q).is(':checked')) {
 						$.ajax({
 							type: 'POST',
-							url: 'createbatchsession.php',
-							data: '',
-							beforeSend: function () { },
+							url: 'createmultiplesession.php?class=' + q + '&subject=' + p,
+							data: 'class=11&subject=c',
+							beforeSend: function () {},
 							success: function (response) {
-								$('#myselection').html(response);
-								$("#my_course").modal('show');
+								$.ajax({
+									type: 'POST',
+									url: 'createbatchsession.php',
+									data: '',
+									beforeSend: function () {},
+									success: function (response) {
+										$('#myselection').html(response);
+										$("#my_course").modal('show');
+									}
+								});
 							}
 						});
+						if (q == '11') {
+							$('#' + r + '1').prop('checked', true);
+							$('#' + r + '2').prop('checked', true);
+							$('#' + r + '3').prop('checked', true);
+							$('#' + r + '4').prop('checked', true);
+							$('#' + r + '1').attr('disabled', true);
+							$('#' + r + '2').attr('disabled', true);
+							$('#' + r + '3').attr('disabled', true);
+							$('#' + r + '4').attr('disabled', true);
+						} else {
+							$('#' + r + '5').prop('checked', true);
+							$('#' + r + '6').prop('checked', true);
+							$('#' + r + '7').prop('checked', true);
+							$('#' + r + '8').prop('checked', true);
+							$('#' + r + '5').attr('disabled', true);
+							$('#' + r + '6').attr('disabled', true);
+							$('#' + r + '7').attr('disabled', true);
+							$('#' + r + '8').attr('disabled', true);
+						}
+
+					} else {
+						del_mod(q, p);
 					}
+				}
+
+				function fullcourse22() {
+					if ($('#cm12').is(':checked')) {
+						$.ajax({
+							type: 'POST',
+							url: 'createmultiplesession.php',
+							data: 'class=12&subject=c',
+							beforeSend: function () {},
+							success: function (response) {
+								$.ajax({
+									type: 'POST',
+									url: 'createbatchsession.php',
+									data: '',
+									beforeSend: function () {},
+									success: function (response) {
+										$('#myselection').html(response);
+										$("#my_course").modal('show');
+									}
+								});
+							}
+						});
+						$('#cm5').prop('checked', true);
+						$('#cm6').prop('checked', true);
+						$('#cm7').prop('checked', true);
+						$('#cm8').prop('checked', true);
+						$('#cm5').attr('disabled', true);
+						$('#cm6').attr('disabled', true);
+						$('#cm7').attr('disabled', true);
+						$('#cm8').attr('disabled', true);
+					} else {
+						del_mod('12', 'c');
+					}
+				}
+
+				function call_me() {
+					$('#call_me_request').click();
+				}
+
+
+
+				$(document).ready(function () {
+					$('[data-toggle="popover"]').popover({
+						html: true
+					});
 				});
-				$('#cm5').prop('checked', true);
-				$('#cm6').prop('checked', true);
-				$('#cm7').prop('checked', true);
-				$('#cm8').prop('checked', true);
-				$('#cm5').attr('disabled', true);
-				$('#cm6').attr('disabled', true);
-				$('#cm7').attr('disabled', true);
-				$('#cm8').attr('disabled', true);
-			} else {
-				del_mod('12', 'c');
-			}
-		}
-
-		function call_me() {
-			$('#call_me_request').click();
-		}
-
-
-
-		$(document).ready(function () {
-			$('[data-toggle="popover"]').popover({
-				html: true
-			});
-		});
-	</script>
-	</div><!-- Body inner end -->
+			</script>
+		</div><!-- Body inner end -->
 
 </body>
 
