@@ -102,7 +102,7 @@
 					
 					
 					
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 						
 						 <div class="modal fade" id="exampleModalR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelR" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -217,139 +217,137 @@
                             </div>
                         </div>
 						
-			 <div class="modal fade" id="exampleModalT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelT" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title terms-title" id="exampleModalLabelT">Terms & Condition</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                          <ul class="modal-body-list">
-                                                <li>The students enrolling for the course must first ensure that they possess
-                                                    all the minimum requirements of PC, headphones and internet connection
-                                                    for successful conduction of Classes.
-                                                </li>
-                                                <li>If there occurs any technical snag/error from the student's end, he/she is
-                                                    unable to attend the lecture, in that case student can only view the
-                                                    recorded lecture.</li>
-                                                <li>The student must opt for timing most suitable to them from the teacher time
-                                                    table because if they fails to attend the same, the session will still
-                                                    be conducted and any request for rescheduling will not be entertained.
-                                                </li>
-                                            </ul>
-                                      </div>
-
-                                </div>
+			        <div class="modal fade" id="exampleModalT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelT" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title terms-title" id="exampleModalLabelT">Terms & Condition</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <ul class="modal-body-list">
+                                        <li>The students enrolling for the course must first ensure that they possess
+                                            all the minimum requirements of PC, headphones and internet connection
+                                            for successful conduction of Classes.
+                                        </li>
+                                        <li>If there occurs any technical snag/error from the student's end, he/she is
+                                            unable to attend the lecture, in that case student can only view the
+                                            recorded lecture.</li>
+                                        <li>The student must opt for timing most suitable to them from the teacher time
+                                            table because if they fails to attend the same, the session will still
+                                            be conducted and any request for rescheduling will not be entertained.
+                                        </li>
+                                    </ul>
                             </div>
                         </div>
-</div>
+                    </div>
+                </div>
 
-<div class="modal fade" id="fee_structure_12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title fees-structure-title" id="exampleModalLabel">Fees Structure XI-XII</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <h1 class="modal-body-header-sub">Fee Structure for Modules of Individual Subject (SM)* : -</h1>
-                                                                <div style="overflow-x:auto;overflow-y:auto">
-                                                                    <table class="table table-sm fees-table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" class="table-sm-header" colspan="10">Module-wise Fees Structure</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="col" class="table-sm-header-sub">No.Of Modules</th>
-                                                                                <th scope="col" class="table-sm-header-sub">Fees</th>
-                                                                                <th scope="col" class="table-sm-header-sub">GST</th>
-                                                                                <th scope="col" class="table-sm-header-sub">Total</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">One Module</th>
-                                                                                <td class="table-sm-first-col">Rs 9194.91</td>
-                                                                                <td class="table-sm-first-col">Rs 1655.08
-                                                                                </td>
-                                                                                <td class="table-sm-first-col">Rs 10850</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">
-                                                                                    Two Modules
-                                                                                </th>
-                                                                                <td class="table-sm-first-col">Rs 18389.83</td>
-                                                                                <td class="table-sm-first-col">Rs 3310.16
-                                                                                </td>
-                                                                                <td class="table-sm-first-col">Rs 21700</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">Three Modules</th>
-                                                                                <td class="table-sm-first-col">Rs 27542.37</td>
-                                                                                <td class="table-sm-first-col">Rs 4957.62</td>
-                                                                                <td class="table-sm-first-col">Rs 32500</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">Full Course for IX/X</th>
-                                                                                <td class="table-sm-first-col">Rs 36737.28</td>
-                                                                                <td class="table-sm-first-col">Rs 6612.71</td>
-                                                                                <td class="table-sm-first-col">Rs 43350</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <h1 class="modal-body-header-second">Fee Structure Subject Wise : -</h1>
-                                                                <div style="overflow-x:auto;overflow-y:auto">
-                                                                    <table class="table table-sm fees-table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" class="table-sm-header" colspan="10">Full Course - Fees Structure</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="col" class="table-sm-header-sub">No. of Subjects</th>
-                                                                                <th scope="col" class="table-sm-header-sub">Fees</th>
-                                                                                <th scope="col" class="table-sm-header-sub">GST</th>
-                                                                                <th scope="col" class="table-sm-header-sub">Total</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">Single Subjects</th>
-                                                                                <td class="table-sm-first-col">Rs 36737.28</td>
-                                                                                <td class="table-sm-first-col">Rs 6612.71</td>
-                                                                                <td class="table-sm-first-col">Rs 43350
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">
-                                                                                    Two Subjects
-                                                                                </th>
-                                                                                <td class="table-sm-first-col">Rs 73474.57</td>
-                                                                                <td class="table-sm-first-col">Rs 13225.42
-                                                                                </td>
-                                                                                <td class="table-sm-first-col">Rs 86700
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row" class="table-sm-first-col">
-                                                                                    Combination Of Any Three Subjects
-                                                                                </th>
-                                                                                <td class="table-sm-first-col">Rs 110169.49</td>
-                                                                                <td class="table-sm-first-col">Rs 19830.50
+                    <div class="modal fade" id="fee_structure_12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fees-structure-title" id="exampleModalLabel">Fees Structure XI-XII</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1 class="modal-body-header-sub">Fee Structure for Modules of Individual Subject (SM)* : -</h1>
+                                            <div style="overflow-x:auto;overflow-y:auto">
+                                                <table class="table table-sm fees-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="table-sm-header" colspan="10">Module-wise Fees Structure</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="table-sm-header-sub">No.Of Modules</th>
+                                                            <th scope="col" class="table-sm-header-sub">Fees</th>
+                                                            <th scope="col" class="table-sm-header-sub">GST</th>
+                                                            <th scope="col" class="table-sm-header-sub">Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">One Module</th>
+                                                            <td class="table-sm-first-col">Rs 9194.91</td>
+                                                            <td class="table-sm-first-col">Rs 1655.08
+                                                            </td>
+                                                            <td class="table-sm-first-col">Rs 10850</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">
+                                                                Two Modules
+                                                            </th>
+                                                            <td class="table-sm-first-col">Rs 18389.83</td>
+                                                            <td class="table-sm-first-col">Rs 3310.16
+                                                            </td>
+                                                            <td class="table-sm-first-col">Rs 21700</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">Three Modules</th>
+                                                            <td class="table-sm-first-col">Rs 27542.37</td>
+                                                            <td class="table-sm-first-col">Rs 4957.62</td>
+                                                            <td class="table-sm-first-col">Rs 32500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">Full Course for XI/XII</th>
+                                                            <td class="table-sm-first-col">Rs 36737.28</td>
+                                                            <td class="table-sm-first-col">Rs 6612.71</td>
+                                                            <td class="table-sm-first-col">Rs 43350</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h1 class="modal-body-header-second">Fee Structure Subject Wise : -</h1>
+                                            <div style="overflow-x:auto;overflow-y:auto">
+                                                <table class="table table-sm fees-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="table-sm-header" colspan="10">Full Course - Fees Structure</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="table-sm-header-sub">No. of Subjects</th>
+                                                            <th scope="col" class="table-sm-header-sub">Fees</th>
+                                                            <th scope="col" class="table-sm-header-sub">GST</th>
+                                                            <th scope="col" class="table-sm-header-sub">Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">Single Subjects</th>
+                                                            <td class="table-sm-first-col">Rs 36737.28</td>
+                                                            <td class="table-sm-first-col">Rs 6612.71</td>
+                                                            <td class="table-sm-first-col">Rs 43350
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">
+                                                                Two Subjects
+                                                            </th>
+                                                            <td class="table-sm-first-col">Rs 73474.57</td>
+                                                            <td class="table-sm-first-col">Rs 13225.42
+                                                            </td>
+                                                            <td class="table-sm-first-col">Rs 86700
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" class="table-sm-first-col">
+                                                                Combination Of Any Three Subjects
+                                                            </th>
+                                                            <td class="table-sm-first-col">Rs 110169.49</td>
+                                                            <td class="table-sm-first-col">Rs 19830.50
 
-                                                                                </td>
-                                                                                <td class="table-sm-first-col">Rs 130000
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                            </td>
+                                                            <td class="table-sm-first-col">Rs 130000
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>

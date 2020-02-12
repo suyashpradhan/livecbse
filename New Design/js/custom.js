@@ -24,29 +24,29 @@ jQuery(function ($) {
 	/*  Fixed header
 	/* ----------------------------------------------------------- */
 
-	$(window).on('scroll', function () {
+	/* $(window).on('scroll', function () {
 		if ($(window).scrollTop() > 70) {
 			$('.navdown, .header-two').addClass('navbar-fixed');
 		} else {
 			$('.navdown, .header-two').removeClass('navbar-fixed');
 		}
-	});
+	}); */
 
 	/* ----------------------------------------------------------- */
 	/*  Mobile Menu
 	/* ----------------------------------------------------------- */
-
-	jQuery(".nav.navbar-nav li a").on("click", function () {
-		jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
-		jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
-	});
+	/* 
+		jQuery(".nav.navbar-nav li a").on("click", function () {
+			jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
+			jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+		}); */
 
 
 	/* ----------------------------------------------------------- */
 	/*  Contact Map 
 	/* -----------------------------------------------------------*/
 
-	if ($('#map').length > 0) {
+	/* if ($('#map').length > 0) {
 
 		var contactmap = {
 			lat: 40.742964,
@@ -77,7 +77,7 @@ jQuery(function ($) {
 					infowindow.open(map, marker);
 				});
 			});
-	}
+	} */
 
 
 	/* ----------------------------------------------------------- */
@@ -96,13 +96,13 @@ jQuery(function ($) {
 	/*  Site search
 	/* ----------------------------------------------------------- */
 
-	$('.nav-search').on('click', function () {
+	/* $('.nav-search').on('click', function () {
 		$('.search-block').fadeIn(350);
 	});
 
 	$('.search-close').on('click', function () {
 		$('.search-block').fadeOut(350);
-	});
+	}); */
 
 
 
@@ -113,7 +113,7 @@ jQuery(function ($) {
 
 	//Project slide
 
-	$("#project-slide").owlCarousel({
+	/* $("#project-slide").owlCarousel({
 
 		loop: true,
 		animateOut: 'fadeOut',
@@ -134,7 +134,7 @@ jQuery(function ($) {
 			}
 		}
 
-	});
+	}); */
 
 
 	//Testimonial slide
@@ -163,7 +163,7 @@ jQuery(function ($) {
 
 	//Partners slide
 
-	$("#partners-carousel").owlCarousel({
+	/* $("#partners-carousel").owlCarousel({
 
 		loop: true,
 		margin: 20,
@@ -181,11 +181,11 @@ jQuery(function ($) {
 			}
 		}
 
-	});
+	}); */
 
 	//Page slide
 
-	$(".page-slider").owlCarousel({
+	/* $(".page-slider").owlCarousel({
 
 		loop: true,
 		animateOut: 'fadeOut',
@@ -208,12 +208,12 @@ jQuery(function ($) {
 			}
 		}
 
-	});
+	}); */
 
 
 	//Team slide
 
-	$("#team-slide").owlCarousel({
+	/* $("#team-slide").owlCarousel({
 
 		loop: false,
 		animateOut: 'fadeOut',
@@ -238,13 +238,13 @@ jQuery(function ($) {
 			}
 		}
 
-	});
+	}); */
 
 
 	/* ----------------------------------------------------------- */
 	/*  Video popup
 	/* ----------------------------------------------------------- */
-	$(document).ready(function () {
+	/* $(document).ready(function () {
 
 		$(".gallery-popup").colorbox({
 			rel: 'gallery-popup',
@@ -258,13 +258,13 @@ jQuery(function ($) {
 			innerHeight: 400
 		});
 
-	});
+	}); */
 
 
 	// -----------------------------
 	//  Count Up
 	// -----------------------------
-	function counter() {
+	/* function counter() {
 		var oTop;
 		if ($('.counterUp').length !== 0) {
 			oTop = $('.counterUp').offset().top - window.innerHeight;
@@ -293,14 +293,14 @@ jQuery(function ($) {
 	$(window).on('scroll', function () {
 		counter();
 	});
-
+ */
 
 
 	/* ----------------------------------------------------------- */
 	/*  Contact form
 	/* ----------------------------------------------------------- */
 
-	$('#contact-form').submit(function () {
+	/* $('#contact-form').submit(function () {
 
 		var $form = $(this),
 			$error = $form.find('.error-container'),
@@ -337,7 +337,7 @@ jQuery(function ($) {
 
 		return false;
 
-	});
+	}); */
 
 
 
