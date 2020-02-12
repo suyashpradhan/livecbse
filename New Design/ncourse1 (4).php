@@ -89,22 +89,21 @@
                <?php } ?> 	
 	  <?php } ?>
 	  
-      <div class="section-1-of-3-footer-secondary" style="text-align:center">
-                <a href="#" data-toggle="modal" data-target="#fee_structure_12" class="fees-link" style="text-transform: none;
-                text-decoration: none;
-                color: #fff;
-                padding-right: 5px;">Fees Structure | </a>
-                    <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
-                text-decoration: none;
-                color: #fff;
-                padding-right: 5px;" class="refund-link">Refund Policy | </a>
-                <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
-                text-decoration: none;
-                color: #fff;
-                padding-right: 5px;">Terms & Condition</a>
-            </div>
-					
-					
-						 
-						
-			
+	  
+    <div class="section-1-of-3-footer-secondary" style="text-align:center">
+        <a href="#" data-toggle="modal" data-target="#fee_structure_12" class="fees-link" style="text-transform: none;
+        text-decoration: none;
+        color: #fff;
+        padding-right: 5px;">Fees Structure | </a>
+            <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
+        text-decoration: none;
+        color: #fff;
+        padding-right: 5px;" class="refund-link">Refund Policy | </a>
+        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
+        text-decoration: none;
+        color: #fff;
+        padding-right: 5px;">Terms & Condition</a>
+    </div>
+    </div>
+
+				</div>

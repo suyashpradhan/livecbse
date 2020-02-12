@@ -1,37 +1,3 @@
-/*
-   Template Name: Cornike - Business HTML5 Template
-   Author: Tripples
-   Author URI: https://themeforest.net/user/tripples
-   Description: Cornike - Business HTML5 Template
-   Version: 1.0
-*/
-
-
-/* Table of Content
-==================================================
-1.    Typography
-2.    Global Styles
-3.    Top Bar
-4.    Header area
-5.    Slider
-6.    Call to action
-7.    Features
-8.    Facts
-9.    Services
-10.   Project area
-11.   Content area
-12.   Testimonial
-13.   Subscribe area
-14.   News section
-15.   Footer
-16.   Sub Pages
-17.   Contact Us
-18.   News Listing
-19.   News Single
-20.   Sidebar
-21.   Error page
-  
-*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -6258,6 +6224,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 0.3rem;
     padding: 1rem;
+    margin-bottom: 20px !important;
 }
 
 .col-img {
