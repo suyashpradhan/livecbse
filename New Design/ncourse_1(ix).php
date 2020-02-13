@@ -1,7 +1,7 @@
   <?php
   // echo "<td colspan='5'>";
    include("connection.php");
-   $r=mysqli_query($con,"select * from module_detail where subject='Physics' order by module_no");
+   $r=mysqli_query($conn,"select * from module_detail_9_10 where subject='Science' order by module_no");
     $i=0;
 	$sno_e='';
 	$sno_t='';
@@ -17,7 +17,7 @@
                   }  
                  else{}
 	 }	
-	 $r=mysqli_query($con,"select * from module_detail where subject='Physics' order by module_no");
+	 $r=mysqli_query($conn,"select * from module_detail_9_10 where subject='Science' order by module_no");
 	 while($r1=mysqli_fetch_array($r))
 	 {
                 $i++;		   
@@ -30,13 +30,13 @@
                        <div class="blockWrapper"> 
                        <div class=" sectionInnerFirstListHead">
                        <p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span class="class-text">
+										IX</span class="class-text">
 									<span style="float: right; margin-right:10px;">
-                                        <input type="checkbox" name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span>
+                                        <input type="checkbox" name='ssm11' id='ssm11' onclick="fullcourse21('ss','11','ssm');"></span>
                         </p>	
-						</div>
+            </div>
 			<?php  } 
-			     if($i == 5 && isset($sno_t))
+			     if($i == 3 && isset($sno_t))
 				 { ?>
 				          <!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
                                <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
@@ -44,29 +44,29 @@
                               </div> -->
                               <div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span class="class-text">
+										X</span class="class-text">
 									<span style="float: right; margin-right:10px;">
-										<input type="checkbox" name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');"></span>
+										<input type="checkbox" name='ssm12' id='ssm12' onclick="fullcourse21('ss','12','ssm');"></span>
 								</p>
 						    </div>		
 			<?php } 
-			    if($i>4)
+			    if($i>2)
 				  { 
-				      $cls='XII';
+				      $cls='X';
 				  }
 				  else
 				  {
-				     $cls='XI';
+				     $cls='IX';
 				  }
-                       if($i > 8)
+                       if($i > 4)
                         {
                              continue;
                         }
                         
-             if($i == 1 || $i == 5)
+             if($i == 1 || $i == 3)
 				 {
 			?>			
-             <div class="blockWrapperBodySecondary">
+             <div class="blockWrapperBodyPrimary">
                <?php } ?>
 				<div class="sectionInnerFirstList">
 					<div class="innerSection">
@@ -79,10 +79,10 @@
                {      
                   echo $r1[3]; 
                }               ?></a></span> <span
-                        style="float: right; margin-right:10px;"><input type="checkbox" name='pm<?php echo $r1[2]; ?>' id='pm<?php echo $r1[2]; ?>' onclick="phy_course('<?php echo $r1[2]; ?>');"></span>
+                        style="float: right; margin-right:10px;"><input type="checkbox" name='ssm<?php echo $r1[2]; ?>' id='ssm<?php echo $r1[2]; ?>' onclick="sci_course('<?php echo $r1[2]; ?>');"></span>
                         </div>
 				</div>
-			<?php if($i == 4 || $i == 8)
+			<?php if($i == 2 || $i == 4)
 				 {
 			?>			
              </div>
@@ -90,20 +90,19 @@
 	  <?php } ?>
 	  
 	  
-    <div class="section-1-of-3-footer-secondary" style="text-align:center">
-        <a href="#" data-toggle="modal" data-target="#fee_structure_12" class="fees-link" style="text-transform: none;
-        text-decoration: none;
-        color: #fff;
-        padding-right: 5px;">Fees Structure | </a>
-            <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
-        text-decoration: none;
-        color: #fff;
-        padding-right: 5px;" class="refund-link">Refund Policy | </a>
-        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
-        text-decoration: none;
-        color: #fff;
-        padding-right: 5px;">Terms & Condition</a>
+                    <div class="section-1-of-3-footer-primary" style="text-align:center">
+                        <a href="#" data-toggle="modal" data-target="#fee_structure_12" class="fees-link" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Fee Structure | </a>
+                         <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;" class="refund-link">Refund Policy | </a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Terms & Condition</a>
+					          </div>
     </div>
-    </div>
-
-				</div>
+</div>
