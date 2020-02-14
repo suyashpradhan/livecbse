@@ -32,66 +32,130 @@
 
 	<div class="top-form">
 		<div class="container">
+			<a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
+				data-toggle="modal">Schedule Demo</a>
 			<form action="" class="schedule-form">
 				<div class="form_group">
 					<h1 class="form_groupHeader">Schedule Demo</h1>
 				</div>
 				<div class="form_group">
-					<input type="text" placeholder="Student Name" name="" class="form_fields">
+					<input type="text" placeholder="Student Name" name="student_name" id="student_name"
+						class="form_fields">
 				</div>
 				<div class="form_group">
-					<input type="text" placeholder="Phone Number" name="" class="form_fields">
+					<input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+						class="form_fields">
 				</div>
 				<div class="form_group">
 					<div class="cntr">
 						<div>
 							<span class="class-head">Class: </span>
 						</div>
-						<div class="md-radio">
-							<input id="class_ix" type="radio" name="class_select" onclick="change_subjects()">
+						<div class="md-radio" style="margin: 6px 8px;">
+							<input id="class_ix" type="radio" name="class_select" value="ix"
+								onclick="change_subjects()">
 							<label for="class_ix" class="md-radio-text">IX</label>
 						</div>
 
-						<div class="md-radio">
-							<input id="class_x" type="radio" name="class_select" onclick="change_subjects()">
+						<div class="md-radio" style="margin: 6px 8px;">
+							<input id="class_x" type="radio" name="class_select" value="x" onclick="change_subjects()">
 							<label for="class_x">X</label>
 						</div>
 
-						<div class="md-radio">
-							<input id="class_xi" type="radio" name="class_select" onclick="change_subjects()">
+						<div class="md-radio" style="margin: 6px 8px;">
+							<input id="class_xi" type="radio" name="class_select" value="xi"
+								onclick="change_subjects()">
 							<label for="class_xi" class="md-radio-text">XI</label>
 						</div>
 
-						<div class="md-radio">
-							<input id="class_xii" type="radio" name="class_select" onclick="change_subjects()">
+						<div class="md-radio" style="margin: 6px 8px;">
+							<input id="class_xii" type="radio" name="class_select" value="xii"
+								onclick="change_subjects()">
 							<label for="class_xii" class="md-radio-text">XII</label>
 						</div>
 					</div>
 				</div>
 				<div class="form_group">
-					<select name="" id="" class="class_select">
+					<select id="contact_subject" name="contact_subject" class="class_select">
 						<option value="">Subjects</option>
-						<option value="">Select Class</option>
+
 					</select>
 				</div>
 				<div class="form_group">
-					<a href="#" class="schedule_link">Submit</a>
+					<a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
 				</div>
 			</form>
 		</div>
 	</div>
-	<div class="body-inner">
-		<header id="header" class="header-one">
+	<div class="modal fade" id="schedule-form-modal" tabindex="-1" role="dialog" aria-labelledby="schedule-form-modal"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Schedule Demo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" class="schedule-form-modal">
+						<div class="form_group">
+							<input type="text" placeholder="Student Name" name="student_name" id="student_name"
+								class="form_fields">
+						</div>
+						<div class="form_group">
+							<input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+								class="form_fields">
+						</div>
+						<div class="form_group">
+							<div class="cntr">
+								<div>
+									<span class="class-head-modal">Class: </span>
+								</div>
+								<div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+									<input id="class_ix-modal" type="radio" name="class_select" value="ix"
+										onclick="change_subjects()">
+									<label for="class_ix-modal" class="md-radio-text" style="color: #777;">IX</label>
+								</div>
+
+								<div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+									<input id="class_x-modal" type="radio" name="class_select" value="x"
+										onclick="change_subjects()">
+									<label for="class_x-modal">X</label>
+								</div>
+
+								<div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+									<input id="class_xi-modal" type="radio" name="class_select" value="xi"
+										onclick="change_subjects()">
+									<label for="class_xi-modal" class="md-radio-text">XI</label>
+								</div>
+
+								<div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+									<input id="class_xii-modal" type="radio" name="class_select" value="xii"
+										onclick="change_subjects()">
+									<label for="class_xii-modal" class="md-radio-text">XII</label>
+								</div>
+							</div>
+						</div>
+						<div class="form_group">
+							<select id="contact_subject" name="contact_subject" class="class_select">
+								<option value="">Subjects</option>
+
+							</select>
+						</div>
+						<div class="form_group">
+							<a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
-
-
-
-
 
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#181818;">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img src="images/livecbse_logo.png" alt="" class="logo-img">
+				<img src="images_new/livecbse_logo.png" alt="" class="logo-img logo-mobile-show">
 			</a>
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -111,13 +175,13 @@
                             font-size: 18px;
                             font-weight: 400;">Test Series <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 							<div class="dropdown-content">
-								<a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xii.php">Test
+								<a href="https://www.livecbse.com/test_series_xii.php">Test
 									Series XII</a>
-								<a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_xi.php">Test
+								<a href="https://www.livecbse.com/test_series_xi.php">Test
 									Series XI</a>
-								<a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_x.php">Test
+								<a href="https://www.livecbse.com/test_series_x.php">Test
 									Series X</a>
-								<a href="https://www.livecbse.com/livecbse_constra/test_series/test_series_ix.php">Test
+								<a href="https://www.livecbse.com/test_series_ix.php">Test
 									Series IX</a>
 							</div>
 						</div>
@@ -128,11 +192,9 @@
                             font-size: 18px;
                             font-weight: 400;">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 							<div class="dropdown-content">
-								<a
-									href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xii.php">Study
+								<a href="https://www.livecbse.com/study_material_xii.php">Study
 									Material XII</a>
-								<a
-									href="https://www.livecbse.com/livecbse_constra/study_material/study_material_xi.php">Study
+								<a href="https://www.livecbse.com/study_material_xi.php">Study
 									Material XI</a>
 							</div>
 						</div>
@@ -144,9 +206,9 @@
                             font-weight: 400;">Doubt Removal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 
 							<div class="dropdown-content">
-								<a href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xii.php">Doubt
+								<a href="https://www.livecbse.com/doubt_removal_xii.php">Doubt
 									Removal XII</a>
-								<a href="https://www.livecbse.com/livecbse_constra/doubt_removal/doubt_removal_xi.php">Doubt
+								<a href="https://www.livecbse.com/doubt_removal_xi.php">Doubt
 									Removal XI</a>
 							</div>
 						</div>
@@ -640,8 +702,8 @@
 						<div class="blockWrapperBodyPrimary">
 							<div class="sectionInnerFirstList">
 								<div class="innerSection">
-									<span class="mod">Mod 1</span> <span class="topic"><a
-											href="javascript:void(0);">Mechanics- ...</a></span> <span
+									<span class="mod">Mod 1</span> <span class="topic"><a href="javascript:void(0);"
+											style="color: #006666;">Mechanics- ...</a></span> <span
 										style="float: right; margin-right:10px;"><input type="checkbox" name="pm1"
 											id="pm1" onclick="phy_course('1');"></span>
 								</div>
@@ -649,8 +711,8 @@
 
 							<div class="sectionInnerFirstList">
 								<div class="innerSection">
-									<span class="mod">Mod 2</span> <span class="topic"><a
-											href="javascript:void(0);">Mechanics- ...</a></span> <span
+									<span class="mod">Mod 2</span> <span class="topic"><a href="javascript:void(0);"
+											style="color: #006666;">Mechanics- ...</a></span> <span
 										style=" float: right; margin-right:10px;"><input type="checkbox" name="pm2"
 											id="pm2" onclick="phy_course('2');"></span>
 								</div>
@@ -1007,7 +1069,7 @@
 	</section>
 
 
-	<section id="ts-service-area " class="ts-service-area solid-bg">
+	<!-- <section id="ts-service-area " class="ts-service-area solid-bg">
 		<div class="container">
 			<h2 class="section-title">We Are Specialists In</h2>
 			<h3 class="section-sub-title">What We Do</h3>
@@ -1027,7 +1089,7 @@
 							<p>A real-time, live and interactive online tuitions with 2 way
 								communication</p>
 						</div>
-					</div><!-- Service 1 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1041,7 +1103,7 @@
 							<p>The tests are conducted to check the Topic Understanding and rankings.
 							</p>
 						</div>
-					</div><!-- Service 2 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1054,7 +1116,7 @@
 							<h3 class="service-box-title"><a href="#">Doubt solving</a></h3>
 							<p>Student can ask their doubts just like they do in physical classroom.</p>
 						</div>
-					</div><!-- Service 3 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1069,11 +1131,11 @@
 							<p>The maximum teacher to student ratio would be 1:20.</p>
 						</div>
 					</div>
-				</div><!-- Col end -->
+				</div>
 
 				<div class="col-md-4 text-center">
 					<img class="service-center-img img-responsive" src="images/livecbse_app.png" alt="">
-				</div><!-- Col end -->
+				</div>
 
 				<div class="col-md-4">
 					<div class="ts-service-box">
@@ -1087,7 +1149,7 @@
 							<h3 class="service-box-title"><a href="#">Monitoring and Feedback</a></h3>
 							<p>Parents can monitor their child's study ways at home itself.</p>
 						</div>
-					</div><!-- Service 4 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1102,7 +1164,7 @@
 							<p>Saves lot of traveling time, city migration, and mental strain of
 								students.</p>
 						</div>
-					</div><!-- Service 5 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1115,7 +1177,7 @@
 							<h3 class="service-box-title"><a href="#">Recorded Lectures</a></h3>
 							<p>Student can access recording of lectures in case of missed lectures.</p>
 						</div>
-					</div><!-- Service 6 end -->
+					</div>
 
 					<div class="ts-service-box">
 						<div class="ts-service-box-img pull-left">
@@ -1132,9 +1194,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="info">
+	<!-- <section class="info">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-12">
@@ -1162,12 +1224,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="app">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 mb-4">
 					<div class="first-half">
 						<h1 class="one-text">Internet Time Saved</h1>
 						<h1 class="two-text">CBSE INFINITE</h1>
@@ -1176,7 +1238,7 @@
 						<h1 class="five-text">from other Free Platforms</h1>
 					</div>
 				</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-3">
 					<div class="second-half">
 						<div class="second-half-info">
 							<h1 class="second-half-text">We Are Not Enough</h1>
@@ -1187,44 +1249,44 @@
 						</div>
 						<div class="circle-div">
 							<h1 class="circle-div-text">CBSE</h1>
-							<img src="images/endless.svg" alt="" class="circle-img">
+							<img src="images_new/endless.svg" alt="" class="circle-img">
 						</div>
 					</div>
 				</div>
 			</div>
 			<hr class="div-gap">
 			<div class="row">
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-xs-4 mb-2">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-4 col-xs-4 mb-2">
 					<h1 class="iclubs__header">Curations From</h1>
 					<div class="iclubs__div">
 						<div class="__inner iclubs__div--one">
-							<img src="images/khan.jpg" alt="" class="iclubs__image">
+							<img src="images_new/khan.jpg" alt="" class="iclubs__image">
 							<h1 class="iclubs__div--header">Khan Academy</h1>
 						</div>
 						<div class="__inner _iclubs_div--two">
-							<img src="images/youtube.png" alt="" style="height: 70px" class="iclubs__image">
+							<img src="images_new/youtube.png" alt="" style="height: 70px" class="iclubs__image">
 						</div>
 						<div class="__inner _iclubs_div--three">
-							<img src="images/wikipedia.png" style="height: 90px" class="iclubs__image">
+							<img src="images_new/wikipedia.png" style="height: 90px" class="iclubs__image">
 						</div>
 						<div class="__inner _iclubs_div--four">
-							<img src="images/mit" class="iclubs__image">
+							<img src="images_new/mit" class="iclubs__image">
 						</div>
 						<div class="__inner _iclubs_div--five">
-							<img src="images/discovery" style="height: 40px" class="iclubs__image">
+							<img src="images_new/discovery" style="height: 40px" class="iclubs__image">
 						</div>
 						<div class="__inner _iclubs_div--six">
-							<img src="images/history.png" style="height: 70px" class="iclubs__image">
+							<img src="images_new/history.png" style="height: 70px" class="iclubs__image">
 						</div>
 					</div>
 					<span class="iclubs__info">And 100's of other sites</span>
 				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-xs-4 mb-2">
-					<img src="images/desktop.png" alt="" class="_img desktop-image">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-2">
+					<img src="images_new/desktop.png" alt="" class="_img desktop-image">
 					<a href="#" class="link-btn">Desktop Version</a>
 				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-xs-4 mb-2">
-					<img src="images/mobile-1.png" alt="" class="_img mobile-image">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-2">
+					<img src="images_new/mobile-1.png" alt="" class="_img mobile-image">
 					<a href="" class="link-btn">Download App</a>
 				</div>
 			</div>
