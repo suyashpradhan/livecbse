@@ -11,10 +11,225 @@
 </head>
 
 <body>
+    <div class="top-form">
+        <div class="container">
+            <a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
+                data-toggle="modal">Schedule
+                Demo</a>
+            <form action="" class="schedule-form">
+                <div class="form_group">
+                    <h1 class="form_groupHeader">Schedule Demo</h1>
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Student Name" name="student_name" id="student_name"
+                        class="form_fields">
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+                        class="form_fields">
+                </div>
+                <div class="form_group">
+                    <div class="cntr">
+                        <div>
+                            <span class="class-head">Class: </span>
+                        </div>
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_ix" type="radio" name="class_select" value="ix"
+                                onclick="change_subjects()">
+                            <label for="class_ix" class="md-radio-text">IX</label>
+                        </div>
 
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_x" type="radio" name="class_select" value="x" onclick="change_subjects()">
+                            <label for="class_x">X</label>
+                        </div>
+
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_xi" type="radio" name="class_select" value="xi"
+                                onclick="change_subjects()">
+                            <label for="class_xi" class="md-radio-text">XI</label>
+                        </div>
+
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_xii" type="radio" name="class_select" value="xii"
+                                onclick="change_subjects()">
+                            <label for="class_xii" class="md-radio-text">XII</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <select id="contact_subject" name="contact_subject" class="class_select">
+                        <option value="">Subjects</option>
+
+                    </select>
+                </div>
+                <div class="form_group">
+                    <a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" id="schedule-form-modal" tabindex="-1" role="dialog" aria-labelledby="schedule-form-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Schedule Demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="schedule-form-modal">
+                        <div class="form_group">
+                            <input type="text" placeholder="Student Name" name="student_name" id="student_name"
+                                class="form_fields">
+                        </div>
+                        <div class="form_group">
+                            <input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+                                class="form_fields">
+                        </div>
+                        <div class="form_group">
+                            <div class="cntr">
+                                <div>
+                                    <span class="class-head-modal">Class: </span>
+                                </div>
+                                <div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+                                    <input id="class_ix-modal" type="radio" name="class_select" value="ix"
+                                        onclick="change_subjects()">
+                                    <label for="class_ix-modal" class="md-radio-text" style="color: #777;">IX</label>
+                                </div>
+
+                                <div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+                                    <input id="class_x-modal" type="radio" name="class_select" value="x"
+                                        onclick="change_subjects()">
+                                    <label for="class_x-modal">X</label>
+                                </div>
+
+                                <div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+                                    <input id="class_xi-modal" type="radio" name="class_select" value="xi"
+                                        onclick="change_subjects()">
+                                    <label for="class_xi-modal" class="md-radio-text">XI</label>
+                                </div>
+
+                                <div class="md-radio md-radio-modal" style="margin: 6px 8px;">
+                                    <input id="class_xii-modal" type="radio" name="class_select" value="xii"
+                                        onclick="change_subjects()">
+                                    <label for="class_xii-modal" class="md-radio-text">XII</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <select id="contact_subject" name="contact_subject" class="class_select">
+                                <option value="">Subjects</option>
+
+                            </select>
+                        </div>
+                        <div class="form_group">
+                            <a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#181818;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images_new/livecbse_logo.png" alt="" class="logo-img logo-mobile-show">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" style="color:#fff;">
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">Online Coaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Test Series <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.livecbse.com/test_series_xii.php">Test
+                                    Series XII</a>
+                                <a href="https://www.livecbse.com/test_series_xi.php">Test
+                                    Series XI</a>
+                                <a href="https://www.livecbse.com/test_series_x.php">Test
+                                    Series X</a>
+                                <a href="https://www.livecbse.com/test_series_ix.php">Test
+                                    Series IX</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.livecbse.com/study_material_xii.php">Study
+                                    Material XII</a>
+                                <a href="https://www.livecbse.com/study_material_xi.php">Study
+                                    Material XI</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Doubt Removal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                            <div class="dropdown-content">
+                                <a href="https://www.livecbse.com/doubt_removal_xii.php">Doubt
+                                    Removal XII</a>
+                                <a href="https://www.livecbse.com/doubt_removal_xi.php">Doubt
+                                    Removal XI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Group Sites <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                            <div class="dropdown-content">
+                                <a href="https://www.domain-education.com">www.domain-education.com</a>
+                                <a href="https://www.livejee.com">www.livejee.com</a>
+                                <a href="https://www.wingxp.com">www.wingxp.com</a>
+                                <a href="https://www.detpl.com">www.deptl.com</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">FAQs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;" data-toggle="modal" data-target="#modalLogin">Student Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
-        <section>
+        <h1 class="tab__main--header" style="margin-bottom: 0 !important;">Exclusive Benefits Of Online Coaching</h1>
+        <section style="padding: 40px 0;">
             <div class="row ">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                     <img src="images_new/monitor.svg" alt="" style=" display: block;
@@ -138,6 +353,98 @@
             </div>
         </section>
     </div>
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footer-widget footer-about">
+                        <h3 class="widget-title">About Us</h3>
+                        <p>domain E is a premier coaching institute providing high quality education
+                            and
+                            guidance for
+                            CBSE with its office in Kota, Rajasthan.domain E has now introduced
+                            'Live CBSE'
+                            a platform
+                            of LIVE online classes and remedial doubt sessions to provide same high
+                            quality
+                            education to
+                            students at their homes</p>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="https://github.com/"><i class="fab fa-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Working Hours</h3>
+                        <div class="working-hours">
+                            We work 7 days a week, every day excluding major holidays. Contact us if
+                            you
+                            have an
+                            emergency, with our
+                            Hotline and Contact form.
+                            <br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
+                            <br> Saturday: <span class="text-right">12:00 - 15:00</span>
+                            <br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Our Courses</h3>
+                        <ul class="list-arrow">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Physics
+                                    XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Chemistry
+                                    XI/XII</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Mathematics
+                                    XI/XII</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE Biology
+                                    XI/XII</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> CBSE English
+                                    XI/XII</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="copyright-info">
+                            <span>2015 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-menu">
+                            <ul class="nav unstyled">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="team.html">Join us</a></li>
+                                <li><a href="faq.html">Franchise</a></li>
+                                <li><a href="news-left-sidebar.html">Privacy Policy</a></li>
+                                <li><a href="pricing.html">Contact us</a></li>
+                                <li><a href="pricing.html">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
