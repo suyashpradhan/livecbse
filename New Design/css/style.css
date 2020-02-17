@@ -223,6 +223,40 @@ img.pull-right {
 /* Title Border */
 
 /* Section title */
+.service-section-title {
+  font-size: 52px;
+  line-height: 28px;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4d4d4d;
+  display: block !important;
+  text-align: center !important;
+}
+
+.service-center-img {
+  height: 400px;
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+.service-box-title-new {
+  font-size: 20px;
+  text-align: center;
+  color: #4d4d4d;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+  display: block;
+}
+
+.ts-service-box-info p {
+  color: #4d4d4d;
+  text-align: center;
+  display: block;
+  font-size: 15px !important;
+  margin: 0 !important;
+}
+
 .section-title {
   font-size: 18px;
   line-height: 28px;
@@ -1057,12 +1091,13 @@ ul.top-info li p.info-text {
 /* Action style box */
 
 .call-to-action-box {
-  margin-top: -50px;
+  margin-top: -65px;
 }
 
 .call-to-action-box .action-style-box {
   background: #4d4d4d;
   padding: 10px 5px;
+  border-radius: 5px;
 }
 
 .top-form {
@@ -1091,9 +1126,9 @@ ul.top-info li p.info-text {
 }
 
 .form_groupHeader {
-  font-size: 17px;
+  font-size: 20px;
   color: #ffff;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   padding: 0;
   font-weight: 500;
 }
@@ -2457,11 +2492,11 @@ img.testimonial-thumb {
 }
 
 .footer .widget-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   position: relative;
   margin: 0 0 30px;
-  padding-left: 15px;
+  padding-left: 10px;
   text-transform: uppercase;
   color: #fff;
   border-left: 3px solid #990000;
@@ -2483,6 +2518,24 @@ img.testimonial-thumb {
   margin-top: 15px;
 }
 
+.footer-social-img {
+  height: 35px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.footer-social-span {
+  color: #990000;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 10px 0 0 0;
+}
+
+.footer-social a:hover {
+  text-decoration: none !important;
+  color: #c5c5c5;
+}
+
 .footer-social .widget-title {
   font-size: 14px;
   margin-bottom: 10px;
@@ -2497,13 +2550,19 @@ img.testimonial-thumb {
 .footer-social ul li {
   margin: 0 10px 0 0;
   display: inline-block;
+  background: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
 }
 
 .footer-social ul li a i {
   display: block;
+  border-radius: 3px;
   font-size: 18px;
-  color: #999;
-  background: none;
+  color: #990000;
+  padding: 3px 5px;
+  background: #fff;
+  text-decoration: none;
   -webkit-transition: 400ms;
   -moz-transition: 400ms;
   -o-transition: 400ms;
@@ -3618,17 +3677,17 @@ label {
   }
 
   .first-half {
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     display: block;
     text-align: center;
   }
 
   .one-text {
-    font-size: 45px !important;
+    font-size: 30px !important;
   }
 
   .two-text {
-    font-size: 60px !important;
+    font-size: 40px !important;
   }
 
   .three-text {
@@ -3640,11 +3699,15 @@ label {
   }
 
   .four-text {
-    font-size: 40px !important;
+    font-size: 25px !important;
   }
 
   .five-text {
-    font-size: 35px !important;
+    font-size: 22px !important;
+  }
+
+  .circle-div {
+    display: none !important
   }
 
   .footer-list li {
@@ -3762,6 +3825,16 @@ label {
   .page__header span:before {
     width: 195px !important;
   }
+
+  .first-half {
+    margin: 0 auto 40px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .circle-div {
+    display: none !important
+  }
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
@@ -3810,6 +3883,16 @@ label {
     width: auto;
     margin: 140px auto !important;
     display: block;
+  }
+
+  .first-half {
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+
+  .circle-div {
+    display: none !important
   }
 }
 
@@ -4790,6 +4873,8 @@ label {
 
 .blockWrapper {
   background-color: #fff !important;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .blockWrapperBodySecondary {
@@ -5023,7 +5108,7 @@ label {
 .class-head-new {
   color: #fff;
   font-size: 20px;
-  margin: 0;
+  margin: 5px 0 0 0;
   display: block;
 }
 
@@ -5877,7 +5962,7 @@ label {
   margin: 0 0 10px 0;
   font-weight: 600;
   text-transform: uppercase;
-  color: #181818;
+  color: #444;
   padding: 0;
 }
 
@@ -5914,7 +5999,7 @@ label {
 }
 
 .iclubs__info {
-  color: #181818;
+  color: #444;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -6021,10 +6106,10 @@ label {
 }
 
 .card-img {
-  height: 405px !important;
+  height: 373px !important;
   object-fit: cover;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
+  border-radius: 10px !important;
+  border: 1px solid #ccc;
 }
 
 .card {
