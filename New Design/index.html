@@ -48,7 +48,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#181818;">
-		<div class="container">
+		<div class="container-fluid">
 			<a class="navbar-brand" href="index.php">
 				<img src="images_new/livecbse_logo.png" alt="LiveCBSE Logo" class="logo-img logo-mobile-show">
 			</a>
@@ -58,7 +58,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="navbar-collapse collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto" style="color:#fff;">
+				<ul class="navbar-nav ml-auto mr-auto" style="color:#fff;">
 					<li class="nav-item">
 						<a href="" class="nav-link" style="color: #fff;
                     font-size: 18px;
@@ -139,102 +139,6 @@
 			</div>
 		</div>
 	</nav>
-
-
-	<div class="top-form">
-		<div class="container">
-			<a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
-				data-toggle="modal">Schedule Demo</a>
-			<form action="" class="schedule-form">
-				<div class="form_group">
-					<h1 class="form_groupHeader">Schedule Demo</h1>
-				</div>
-				<div class="form_group">
-					<input type="text" placeholder="Student Name" name="student_name" id="student_name"
-						class="form_fields">
-				</div>
-				<div class="form_group">
-					<input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
-						class="form_fields">
-				</div>
-				<div class="form_group">
-					<div class="cntr">
-						<div>
-							<span class="class-head">Class: </span>
-						</div>
-						<div class="md-radio" style="margin: 6px 8px;">
-							<input id="class_ix" type="radio" name="class_select" value="ix"
-								onclick="change_subjects()">
-							<label for="class_ix" class="md-radio-text">IX</label>
-						</div>
-
-						<div class="md-radio" style="margin: 6px 8px;">
-							<input id="class_x" type="radio" name="class_select" value="x" onclick="change_subjects()">
-							<label for="class_x">X</label>
-						</div>
-
-						<div class="md-radio" style="margin: 6px 8px;">
-							<input id="class_xi" type="radio" name="class_select" value="xi"
-								onclick="change_subjects()">
-							<label for="class_xi" class="md-radio-text">XI</label>
-						</div>
-
-						<div class="md-radio" style="margin: 6px 8px;">
-							<input id="class_xii" type="radio" name="class_select" value="xii"
-								onclick="change_subjects()">
-							<label for="class_xii" class="md-radio-text">XII</label>
-						</div>
-					</div>
-				</div>
-				<div class="form_group">
-					<select id="contact_subject" name="contact_subject" class="class_select">
-						<option value="">Subjects</option>
-
-					</select>
-				</div>
-				<div class="form_group">
-					<a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="body-inner">
-		<!-- Header start -->
-		<header id="header" class="header-one">
-			<!-- 
-			<div class="container">
-				<div class="row">
-					<div class="logo-area">
-						<div class="logo col-xs-12 col-md-3">
-							<a href="https://www.livecbse.com/livecbse_constra">
-								<img src="https://www.livecbse.com/livecbse_constra/images/livecbse_logo.png " alt=""
-									style="width:207px">
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-9">
-						<ul class="top-info-box">
-							<li>
-								<div class="info-box">
-									<div class="info-box-content">
-										<p class="info-box-title">Call Us</p>
-										<p class="info-box-subtitle">(+91) 9571010999</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="info-box">
-									<div class="info-box-content">
-										<p class="info-box-title">Email Us</p>
-										<p class="info-box-subtitle">contact@livecbse.com</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
-	</div>
 	</header>
 	<!--/ Header end -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -327,71 +231,64 @@
 		</div>
 	</div>
 
-	<!-- <section class="call-to-action-box no-padding">
+	<section class="call-to-action-box no-padding schedule-action">
 		<div class="container">
 			<div class="action-style-box">
-				<h1 class="form_groupHeaderNew">Interested In</h1>
-				<form action="" class="interested-in-form">
+				<a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
+					data-toggle="modal">Schedule Demo</a>
+				<h1 class="form_groupHeaderNew form_groupHeaderNewMobile-hide">Schedule Demo</h1>
+				<form action="" class="schedule-form">
+					<div class="form_group">
+						<input type="text" placeholder="Student Name" name="student_name" id="student_name"
+							class="form_fields">
+					</div>
+					<div class="form_group">
+						<input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+							class="form_fields">
+					</div>
 					<div class="form_group">
 						<div class="cntr">
 							<div>
-								<span class="class-head-new">Class: </span>
+								<span class="class-head">Class: </span>
 							</div>
-							<div class="md-radio">
-								<input id="class_ixx" type="radio" name="in_class_select" value='ix'
-									onclick="change_subject_contact()">
-								<label for="class_ixx" class="md-radio-text">IX</label>
-							</div>
-
-							<div class="md-radio">
-								<input id="class_xx" type="radio" name="in_class_select" value='x'
-									onclick="change_subject_contact()">
-								<label for="class_xx">X</label>
+							<div class="md-radio" style="margin: 6px 8px;">
+								<input id="class_ix" type="radio" name="class_select" value="ix"
+									onclick="change_subjects()">
+								<label for="class_ix" class="md-radio-text">IX</label>
 							</div>
 
-							<div class="md-radio">
-								<input id="class_xix" type="radio" name="in_class_select" value='xi'
-									onclick="change_subject_contact()">
-								<label for="class_xix" class="md-radio-text">XI</label>
+							<div class="md-radio" style="margin: 6px 8px;">
+								<input id="class_x" type="radio" name="class_select" value="x"
+									onclick="change_subjects()">
+								<label for="class_x">X</label>
 							</div>
 
-							<div class="md-radio">
-								<input id="class_xiix" type="radio" name="in_class_select" value='xii'
-									onclick="change_subject_contact()">
-								<label for="class_xiix" class="md-radio-text">XII</label>
+							<div class="md-radio" style="margin: 6px 8px;">
+								<input id="class_xi" type="radio" name="class_select" value="xi"
+									onclick="change_subjects()">
+								<label for="class_xi" class="md-radio-text">XI</label>
+							</div>
+
+							<div class="md-radio" style="margin: 6px 8px;">
+								<input id="class_xii" type="radio" name="class_select" value="xii"
+									onclick="change_subjects()">
+								<label for="class_xii" class="md-radio-text">XII</label>
 							</div>
 						</div>
 					</div>
 					<div class="form_group">
-						<select name="contact_course" id="contact_course" class="class_select">
-							<option selected="selected" disabled="disabled" value="0">Course</option>
-							<option>Live Coaching</option>
-							<option>Study Material</option>
-							<option>Doubt Removal</option>
-							<option>Test Series</option>
-						</select>
-					</div>
-					<div class="form_group">
-						<select name="contact_subjects" id="contact_subjects" class="class_select">
-							<option selected="selected" disabled="disabled" value="0">Subjects</option>
+						<select id="contact_subject" name="contact_subject" class="class_select">
+							<option value="">Subjects</option>
 
 						</select>
 					</div>
 					<div class="form_group">
-						<input type="text" placeholder="Student Name" name="contact_name" id="contact_name"
-							class="form_fields">
-					</div>
-					<div class="form_group">
-						<input type="text" placeholder="Phone Number" name="contact_phone_number"
-							id="contact_phone_number" class="form_fields">
-					</div>
-					<div class="form_group">
-						<a class="interested_link" id="contact_submit" onclick="contact_form_submit()">Submit</a>
+						<a class="schedule_link" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
 					</div>
 				</form>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
 	<section class="videos">
 		<div class="container">
@@ -2318,6 +2215,44 @@
 					</div>
 				</div>
 			</div>
+
+
+		</div>
+
+		<div class="container">
+			<div class="row-grid">
+				<div class="firstRow">
+					<div class="card-new">
+						<h1 class="setup-text"><img src="images_new/mark.png" alt=""
+								style="vertical-align: middle;height:20px;margin-right: 5px;"> Simple Setup</h1>
+						<div class="row-grid-new" style="padding: 0 10px;">
+							<div class="row-grid-new-col mb-1">
+								<img src="images_new/pc.png" alt="" class="setup-img">
+								<h1 class="setup-title">A Basic Pc</h1>
+								<h1 class="setup-subtitle">(Windows/Mac)</h1>
+							</div>
+							<div class="row-grid-new-col mb-1">
+								<img src="images_new/internet.png" alt="" class="setup-img">
+								<h1 class="setup-title">Internet Connection</h1>
+								<h1 class="setup-subtitle">(>256kbps)</h1>
+							</div>
+							<div class="row-grid-new-col mb-1">
+								<img src="images_new/headphones.png" alt="" class="setup-img">
+								<h1 class="setup-title">Headphones with<br> mic</h1>
+							</div>
+							<div class="row-grid-new-col mb-1">
+								<img src="images_new/webcam.png" alt="" class="setup-img">
+								<h1 class="setup-title">Webcam</h1>
+								<h1 class="setup-subtitle">(Any Resolution)</h1>
+							</div>
+						</div>
+						<ul class="setup-list">
+							<li class="red">A Technical Assistance Team would help the student with the setup process
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -2542,9 +2477,9 @@
 	</section>
 
 	<section class="call-to-action-box no-padding">
-		<div class="container">
-			<div class="action-style-box">
-				<h1 class="form_groupHeaderNew">Interested In</h1>
+		<div class="action-style-box">
+			<h1 class="form_groupHeaderNew">Interested In</h1>
+			<div class="container">
 				<form action="" class="interested-in-form">
 					<div class="form_group">
 						<div class="cntr">
@@ -3187,7 +3122,8 @@
 
 	<!-- Javascript Files
 		<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<!-- Bootstrap jQuery -->
 	<!--	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<!-- Owl Carousel -->

@@ -5,197 +5,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#181818;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">
+                <img src="../images_new/livecbse_logo.png" alt="LiveCBSE Logo" class="logo-img logo-mobile-show">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto mr-auto" style="color:#fff;">
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">Live Coaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Test Series <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="test_series_xii.php">Test
+                                    Series XII</a>
+                                <a href="test_series_xi.php">Test
+                                    Series XI</a>
+                                <a href="test_series_x.php">Test
+                                    Series X</a>
+                                <a href="test_series_ix.php">Test
+                                    Series IX</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="study_material_xii.php">Study
+                                    Material XII</a>
+                                <a href="study_material_xi.php">Study
+                                    Material XI</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Doubt Removal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                            <div class="dropdown-content">
+                                <a href="doubt_removal_xii.php">Doubt
+                                    Removal XII</a>
+                                <a href="doubt_removal_xi.php">Doubt
+                                    Removal XI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#" style="color: #fff;
+                            font-size: 18px;
+                            font-weight: 400;">Group Sites <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                            <div class="dropdown-content">
+                                <a href="https://www.domain-education.com">www.domain-education.com</a>
+                                <a href="https://www.livejee.com">www.livejee.com</a>
+                                <a href="https://www.wingxp.com">www.wingxp.com</a>
+                                <a href="https://www.detpl.com">www.deptl.com</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;">FAQs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link" style="color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;" data-toggle="modal" data-target="#modalLogin">Student Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="top-form">
         <div class="container">
-            <form action="" class="schedule-form">
+            <a href="#" class="schedule-link-mobile-show link-gray" data-target="#schedule-form-modal"
+                data-toggle="modal">Schedule Demo</a>
+            <form action="" class="schedule-form form-inner">
                 <div class="form_group">
                     <h1 class="form_groupHeader">Schedule Demo</h1>
                 </div>
                 <div class="form_group">
-                    <input type="text" placeholder="Student Name" name="" class="form_fields">
+                    <input type="text" placeholder="Student Name" name="student_name" id="student_name"
+                        class="form_fields">
                 </div>
                 <div class="form_group">
-                    <input type="text" placeholder="Phone Number" name="" class="form_fields">
+                    <input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+                        class="form_fields">
                 </div>
                 <div class="form_group">
                     <div class="cntr">
                         <div>
                             <span class="class-head">Class: </span>
                         </div>
-                        <label for="opt1" class="radio">
-                            <input type="radio" name="rdo" id="opt1" class="hidden" />
-                            <span class="label"></span>
-                            <span style="margin-left: 3px;"> IX</span>
-                        </label>
-                        <label for="opt2" class="radio">
-                            <input type="radio" name="rdo" id="opt2" class="hidden" />
-                            <span class="label"></span>
-                            <span style="margin-left: 5px;"> X</span>
-                        </label>
-                        <label for="opt3" class="radio">
-                            <input type="radio" name="rdo" id="opt3" class="hidden" />
-                            <span class="label"></span>
-                            <span style="margin-left: 3px;"> XI</span>
-                        </label>
-                        <label for="opt4" class="radio">
-                            <input type="radio" name="rdo" id="opt4" class="hidden" />
-                            <span class="label"></span>
-                            <span style="margin-left: 3px;"> XII</span>
-                        </label>
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_ix" type="radio" name="class_select" value="ix"
+                                onclick="change_subjects()">
+                            <label for="class_ix" class="md-radio-text">IX</label>
+                        </div>
+
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_x" type="radio" name="class_select" value="x" onclick="change_subjects()">
+                            <label for="class_x">X</label>
+                        </div>
+
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_xi" type="radio" name="class_select" value="xi"
+                                onclick="change_subjects()">
+                            <label for="class_xi" class="md-radio-text">XI</label>
+                        </div>
+
+                        <div class="md-radio" style="margin: 6px 8px;">
+                            <input id="class_xii" type="radio" name="class_select" value="xii"
+                                onclick="change_subjects()">
+                            <label for="class_xii" class="md-radio-text">XII</label>
+                        </div>
                     </div>
                 </div>
                 <div class="form_group">
-                    <select name="" id="" class="class_select">
+                    <select id="contact_subject" name="contact_subject" class="class_select">
                         <option value="">Subjects</option>
-                        <option value="">Select Class</option>
+
                     </select>
                 </div>
                 <div class="form_group">
-                    <a href="#" class="schedule_link">Submit</a>
+                    <a class="schedule_link link-gray" onclick="schedule_demo_new1()" style="cursor:pointer">Submit</a>
                 </div>
             </form>
         </div>
     </div>
-    <div class="body-inner">
-        <!-- Header start -->
-        <header id="header" class="header-one">
-            <div class="container">
-                <div class="row">
-                    <div class="logo-area">
-                        <div class="logo col-xs-12 col-md-3">
-                            <a href="index.html">
-                                <img src="https://www.livecbse.com/livecbse_constra/images/livecbse_logo.png " alt=""
-                                    style="width:207px">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-9">
-                        <ul class="top-info-box">
-                            <li>
-                                <div class="info-box">
-                                    <div class="info-box-content">
-                                        <p class="info-box-title">Call Us</p>
-                                        <p class="info-box-subtitle">(+91) 9571010999</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="info-box">
-                                    <div class="info-box-content">
-                                        <p class="info-box-title">Email Us</p>
-                                        <p class="info-box-subtitle">contact@livecbse.com</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    <nav class="site-navigation navigation navdown">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="site-nav-inner pull-left">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse navbar-responsive-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Coaching
-                                        <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li class="active"><a href="index.html">Class XI-XII</a></li>
-                                        <li><a href="index-2.html">Class IX-X</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Series <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.html">Test Series XII</a></li>
-                                        <li><a href="team.html">Test Series XI</a></li>
-                                        <li><a href="testimonials.html">Test Series X</a></li>
-                                        <li><a href="faq.html">Test Series IX</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Study Material <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doubt Removal <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Group Sites <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Study Material XII</a></li>
-                                        <li><a href="projects-single.html">Study Material XI</a></li>
-                                        <li><a href="projects-single.html">Study Material X</a></li>
-                                        <li><a href="projects-single.html">Study Material IX</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <i
-                                            class="fa fa-angle-down"></i></a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Student Login </a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-search">
-                <span id="search"><i class="fa fa-search"></i></span>
-            </div>
-
-            <div class="search-block" style="display: none;">
-                <input type="text" class="form-control" placeholder="Type what you want and enter">
-                <span class="search-close">&times;</span>
-            </div>
-        </div>
-
-    </nav>
-
-
-    </header>
     <div class="container">
         <h1 class="tab__main--header">TestQ CBSE XI</h1>
         <main class="tab__main">
