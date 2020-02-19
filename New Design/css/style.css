@@ -223,6 +223,15 @@ img.pull-right {
 /* Title Border */
 
 /* Section title */
+
+.ts-service-box-img img {
+  display: block;
+  margin: 0 auto;
+  height: 70px;
+  padding: 0;
+}
+
+
 .service-section-title {
   font-size: 52px;
   line-height: 28px;
@@ -235,9 +244,9 @@ img.pull-right {
 }
 
 .service-center-img {
-  height: 400px;
+  height: 500px;
   max-width: 100%;
-  margin: 30px auto;
+  margin: 10px auto 0 auto;
 }
 
 .service-box-title-new {
@@ -248,6 +257,7 @@ img.pull-right {
   margin: 10px 0 5px 0;
   display: block;
 }
+
 
 .ts-service-box-info p {
   color: #4d4d4d;
@@ -660,6 +670,14 @@ ul.top-info li p.info-text {
   padding: 20px 0 10px;
 }
 
+.slide-title-red {
+  font-size: 40px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #990000 !important;
+  padding: 20px 0 10px;
+}
+
 .slide-sub-title {
   font-style: normal;
   font-size: 20px;
@@ -707,6 +725,7 @@ ul.top-info li p.info-text {
   margin: 15px 5px 0;
   font-weight: 500;
   font-size: 16px;
+  border: none !important;
 }
 
 .slider.btn:focus {
@@ -728,6 +747,27 @@ ul.top-info li p.info-text {
 }
 
 /* Carousel control */
+
+
+.carousel-one {
+  background-image: url(../images_new/livecbse_class.png);
+}
+
+.carousel-two {
+  background-image: url(../images_new/slider5.jpg);
+}
+
+.carousel-three {
+  background-image: url(../images_new/slider3.jpg);
+}
+
+.carousel-four {
+  background-image: url(../images_new/slider1.jpg);
+}
+
+.carousel-five {
+  background-image: url(../images_new/livecbse_evolve.png);
+}
 
 .carousel-indicators {
   position: absolute;
@@ -1095,8 +1135,14 @@ ul.top-info li p.info-text {
 }
 
 .call-to-action-box .action-style-box {
-  background: #4d4d4d;
+  background: #900;
   padding: 10px 15px;
+}
+
+.action-style-box-2 {
+  background: #414141;
+  padding: 10px 15px;
+  margin-top: -75px
 }
 
 .top-form {
@@ -1215,8 +1261,12 @@ input[type="radio"]:checked+.label:after {
   outline: none;
 }
 
+.md-radio-schedule {
+  margin: 6px 10px !important;
+}
+
 .schedule_link {
-  background-color: #990000;
+  background-color: #333;
   width: 100%;
   color: #fff !important;
   padding: 6px 20px;
@@ -1710,6 +1760,14 @@ input[type="radio"]:checked+.label:after {
 
 /* Facts
 ================================================== */
+
+#facts {
+  padding: 20px 0 !important;
+}
+
+.ts-facts-content {
+  margin-top
+}
 
 .facts-wrapper {
   text-align: center;
@@ -2604,6 +2662,7 @@ img.testimonial-thumb {
   background: none;
   color: #fff;
   padding: 0;
+  font-size: 18px;
 }
 
 .footer-menu ul li a:hover {
@@ -3694,6 +3753,17 @@ label {
   .footer-list li {
     margin: 10px 0 0 0;
   }
+
+  .footer-menu {
+    float: none !important;
+  }
+
+  .footer-list {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 527px) {
@@ -3704,11 +3774,6 @@ label {
   .schedule-action .action-style-box {
     background: none !important;
   }
-
-
-  /* .radio {
-        margin: 15px 5px !important;
-    } */
 
   .schedule-form {
     display: none !important;
@@ -3825,6 +3890,21 @@ label {
 
   .circle-div {
     display: none !important
+  }
+
+  .footer-list li {
+    margin: 10px 0 0 0;
+  }
+
+  .footer-menu {
+    float: none !important;
+  }
+
+  .footer-list {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
   }
 }
 
@@ -4873,6 +4953,18 @@ label {
   border-radius: 0px 0px 10px 10px;
 }
 
+.fees-link{
+  text-transform: none ;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.all-select-checkbox {
+  float: right;
+  margin-right: 10px;
+}
+
 .blockWrapperBodySecondary {
   height: 120px;
 }
@@ -4969,10 +5061,14 @@ label {
   margin: 6px 5px 0 0;
 }
 
-.topic {
+.topic a {
   font-size: 16px;
   padding-left: 10px;
-  color: #990000 !important;
+  color: #006666 !important;
+}
+
+.topic a:hover {
+  color: #4d4d4d !important;
 }
 
 .sectionInnerFirstList p {
@@ -5109,7 +5205,7 @@ label {
 }
 
 .interested_link {
-  background-color: #333;
+  background-color: #900;
   width: 100%;
   color: #fff !important;
   padding: 6px 20px;
@@ -5982,6 +6078,21 @@ label {
   margin: 0 auto 2px auto;
 }
 
+.iclubs__image-70 {
+  height: 70px !important;
+  max-width: 100%;
+}
+
+.iclubs__image-90 {
+  height: 90px !important;
+  max-width: 100%;
+}
+
+.iclubs__image-40 {
+  height: 40px !important;
+  max-width: 100%;
+}
+
 .iclubs__div--header {
   color: #181818;
   margin: 0;
@@ -6088,6 +6199,13 @@ label {
 .nav-link {
   display: block;
   padding: 8px 18px;
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar-light {
+  background-color: #181818 !important;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -6625,6 +6743,7 @@ a.active:after {
   display: block;
   width: fit-content;
   margin: 20px auto;
+  border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
   transition: all .5s ease-in;
@@ -6645,7 +6764,7 @@ a.active:after {
 }
 
 .md-radio-modal {
-  margin: 6px 20px;
+  margin: 6px 8px;
 }
 
 .md-radio-modal input[type="radio"] {
@@ -6882,9 +7001,8 @@ a.active:after {
 }
 
 .redirect-link a {
-  background-color: #f5f6f7;
   padding: 2px 5px;
-  color: #181818 !important;
+  color: #d1d1d1 !important;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -6917,6 +7035,7 @@ a.active:after {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 30px 0;
+  padding: 0 10px;
 }
 
 .setup-text {
@@ -6930,6 +7049,12 @@ a.active:after {
   border-top-right-radius: 5px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.setup-text img {
+  vertical-align: middle;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .setup-img {
@@ -6972,4 +7097,51 @@ a.active:after {
 .red {
   color: #990000 !important;
   font-weight: 600;
+}
+
+.about-info {
+  font-size: 28px;
+  color: #990000;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.about-span {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-span-red {
+  color: #990000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-list {
+  margin: 0 0 30px 30px;
+}
+
+.about-list li {
+  list-style: none !important;
+  padding: 5px 0 0 0;
+  margin: 0;
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-info-head {
+  color: #990000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.about-info-head-black {
+  color: #363636;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
 }
