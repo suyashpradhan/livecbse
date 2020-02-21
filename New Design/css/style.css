@@ -5400,6 +5400,7 @@ label {
   padding: 20px;
 }
 
+
 .color {
   height: 50px;
   width: 120px;
@@ -7200,7 +7201,7 @@ a.active:after {
   color: #990000;
 }
 
-.buy-now-btn {
+.submit-btn {
   text-align: center;
   font-weight: 500;
   background-color: #990000;
@@ -7208,10 +7209,26 @@ a.active:after {
   color: #Fff;
   display: block;
   width: 100%;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
-.buy-now-btn:hover {
+.submit-btn:hover {
+  background-color: #800202;
+  color: #fff;
+}
+
+.otp-btn {
+  text-align: center;
+  font-weight: 500;
+  background-color: #990000;
+  padding: 8px 20px;
+  color: #Fff;
+  display: block;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.otp-btn:hover {
   background-color: #800202;
   color: #fff;
 }
