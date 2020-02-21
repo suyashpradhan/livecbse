@@ -55,7 +55,7 @@ a.read-more:hover {
 
 section,
 .section-padding {
-  padding: 70px 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -220,8 +220,6 @@ img.pull-right {
   margin-bottom: 20px;
 }
 
-/* Title Border */
-
 /* Section title */
 
 .ts-service-box-img img {
@@ -231,11 +229,10 @@ img.pull-right {
   padding: 0;
 }
 
-
 .service-section-title {
   font-size: 52px;
-  line-height: 28px;
-  margin: 0 0 40px 0;
+  /* line-height: 28px; */
+  margin: 5px 0 40px 0;
   text-transform: uppercase;
   font-weight: 600;
   color: #4d4d4d;
@@ -1142,7 +1139,7 @@ ul.top-info li p.info-text {
 .action-style-box-2 {
   background: #414141;
   padding: 10px 15px;
-  margin-top: -75px
+  margin-top: -5px
 }
 
 .top-form {
@@ -4953,11 +4950,11 @@ label {
   border-radius: 0px 0px 10px 10px;
 }
 
-.fees-link{
-  text-transform: none ;
-    text-decoration: none;
-    color: #fff;
-    padding-right: 5px;
+.fees-link {
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 5px;
 }
 
 .all-select-checkbox {
@@ -5042,7 +5039,7 @@ label {
 }
 
 .firstRow {
-  margin: 0 0 40px 0;
+  margin: 30px 0 0 0;
   padding-left: 0 !important;
 }
 
@@ -5141,12 +5138,16 @@ label {
   }
 }
 
+.videos {
+  padding: 30px 0 0 0;
+}
+
 .video-head {
   font-size: 32px;
   color: #696969;
   font-weight: 600;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .__video {
@@ -6625,6 +6626,10 @@ a.active:after {
   font-weight: 600;
   color: #2c2c2c;
   text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.app {
+  padding: 30px 0;
 }
 
 .one-text {

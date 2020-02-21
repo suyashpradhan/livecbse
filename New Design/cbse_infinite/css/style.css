@@ -3590,7 +3590,7 @@ input:checked+section.box .box-title:before {
 }
 
 .wrap-login100-cbse .col-head {
-    margin: 50px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .wrap-login100-cbse .col-head h1 {
@@ -3610,49 +3610,71 @@ input:checked+section.box .box-title:before {
 }
 
 .wrap-login100-cbse .login-diff-forms {
-    margin: 60px 0 0 30px;
+    margin: 10px 0 0 10px;
 }
 
 .wrap-login100-cbse .login-select {
     width: 100%;
     padding: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #4d4d4d;
     background-color: #fff;
     border: 1px solid #fff;
     font-weight: 500;
     outline: none;
+    height: 44px;
 }
 
 .wrap-login100-cbse .diff-fields {
     width: 100%;
     padding: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     outline: none;
     color: #4d4d4d;
 }
 
 .wrap-login100-cbse .diff-button {
-    background-color: #333;
+    background-color: #66cc33;
     border: none !important;
-    color: #fff !important;
+    color: #181818 !important;
     font-size: 18px;
     display: block;
-    margin: 0 auto 10px auto;
-    width: fit-content;
+    margin: 0 auto 15px auto;
+    width: 100%;
     padding: 5px 30px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
+    height: 44px;
     letter-spacing: 1px;
     cursor: pointer;
-    border-radius: 3px;
     transition: all .2s ease-in;
 }
 
-.wrap-login100-cbse .diff-button:hover {
-    background-color: #770202 !important;
-    color: #ffff !important;
+.blue-btn {
+    color: #181818 !important;
+    background-color: #17a2b8;
+    margin: 0 auto 15px auto;
+    width: 100%;
+    padding: 8px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 44px;
+    text-align: center;
+    transition: all .2s ease-in;
+    border: 1px solid #17a2b8;
 }
+
+.blue-btn:hover {
+    text-decoration: none;
+}
+
+.wrap-login100-cbse .diff-button:hover {
+    background-color: #66cc33;
+    color: #181818 !important;
+}
+
 
 .wrap-login100-cbse .sign-up-link-cbse {
     color: #fff !important;
