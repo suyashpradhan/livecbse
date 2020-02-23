@@ -1232,6 +1232,7 @@ input[type="radio"]:checked+.label:after {
   border: 1px solid #ddd;
   padding: 8px 10px;
   width: 100%;
+  display: block;
   border-radius: 3px;
   height: 37px !important;
   font-size: 14px;
@@ -7188,6 +7189,8 @@ a.active:after {
   margin: 0 0 10px 0;
   padding: 0;
   font-weight: 600;
+  display: block;
+
 }
 
 .price {
@@ -7231,4 +7234,54 @@ a.active:after {
 .otp-btn:hover {
   background-color: #800202;
   color: #fff;
+}
+
+.card-test {
+  padding: 20px !important;
+  margin: 40px 0;
+}
+
+.buy-now-btn {
+  text-align: center;
+  font-weight: 500;
+  background-color: #990000;
+  padding: 8px 20px;
+  color: #Fff;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.buy-now-btn:hover {
+  background-color: #800202;
+  color: #fff;
+}
+
+.subjects-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.subject-card-inner {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.subject-head {
+  font-size: 28px;
+  display: inline-block;
+  color: #181818;
+  margin: 0;
+}
+
+.subject-img {
+  height: 70px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
