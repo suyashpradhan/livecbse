@@ -745,9 +745,8 @@ ul.top-info li p.info-text {
 
 /* Carousel control */
 
-
 .carousel-one {
-  background-image: url(../images_new/livecbse_class.png);
+  background-image: url(../images_new/livecbse_class.jpg);
 }
 
 .carousel-two {
@@ -3762,6 +3761,14 @@ label {
     align-items: center;
     flex-flow: column wrap;
   }
+
+  .cntr_subjects {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .subjective-test-row {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 527px) {
@@ -3904,6 +3911,14 @@ label {
     align-items: center;
     flex-flow: column wrap;
   }
+
+  .cntr_subjects {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .subjective-test-row {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
@@ -3968,6 +3983,14 @@ label {
   .circle-div {
     display: none !important
   }
+
+  .cntr_subjects {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  .subjective-test-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 
 @media screen and (max-width: 10000000000px) and (min-width: 901px) {
@@ -4001,7 +4024,7 @@ label {
   padding: 15px;
   border-left: 3px solid #990000;
   background-color: #f5f6f7;
-  margin: 50px 0 30px 0 !important;
+  margin: 50px 0 30px 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -6768,6 +6791,7 @@ a.active:after {
   font-size: 18px;
   margin: 8px 0 0 0;
   display: block;
+  font-weight: 600;
 }
 
 .md-radio-modal {
@@ -7213,6 +7237,8 @@ a.active:after {
   display: block;
   width: 100%;
   margin: 20px 0 0 0;
+  border: 1px solid #990000;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -7257,11 +7283,11 @@ a.active:after {
   color: #fff;
 }
 
-.subjects-card {
+/* .subjects-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-}
+} */
 
 .subject-card-inner {
   border-radius: 2px;
@@ -7271,6 +7297,7 @@ a.active:after {
   margin: 15px 0;
 }
 
+
 .subject-head {
   font-size: 28px;
   display: inline-block;
@@ -7278,10 +7305,127 @@ a.active:after {
   margin: 0;
 }
 
-.subject-img {
-  height: 70px;
-  display: inline-block;
-  margin: 0 auto;
+.subjective-test-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+.div-one {
+  margin: 30px 0;
+}
+
+.div-head {
+  font-size: 24px;
+  background-color: #990000;
+  color: #fff;
+  margin: 0 0 5px 0;
+  padding: 10px;
+}
+
+.div-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f3f2;
+  height: 100%;
+  width: 100%;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.37);
+  padding: 0 0 15px 0;
+}
+
+.inner-text {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  vertical-align: middle;
+}
+
+.coming-text {
+  font-size: 18px;
+  padding: 0;
+  margin: 40px 25px 0 25px;
+  display: block;
+  font-weight: 500;
+  color: #5c5b5b;
+  text-align: center;
+}
+
+.primary-text {
+  background-color: #c5c5c5;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2px 7px;
+  color: #181818;
+}
+
+.secondary-main {
+  color: #181818;
+  padding: 5px 0 25px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.tertiary-text {
+  color: #181818;
+  text-align: center;
+}
+
+.start-btn {
+  background-color: #019444;
+  color: #fff;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.start-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.div-bottom {
+  background-color: #999999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0 15px 0;
+}
+
+.subject-select {
+  margin: 5px;
+}
+
+.select_field {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  height: 45px !important;
+  font-size: 18px;
+}
+
+.select_field:active,
+.select_field:focus {
+  border: 1px solid #990000;
+  outline: none;
+}
+
+
+.class-div {
+  padding: 10px 0 2px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.subjects-div {
+  padding: 10px 0 2px 0;
+}
+
+.cntr_subjects {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: flex-start;
 }
