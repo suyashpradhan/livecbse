@@ -17,6 +17,10 @@ body {
   font-weight: 300;
 }
 
+.bg {
+  background-color: #f5f6f7;
+}
+
 /* Global styles
 ================================================== */
 
@@ -4034,7 +4038,7 @@ label {
   overflow: auto;
   display: none;
   padding: 10px;
-  border-top: 2px solid #990000;
+  border-top: 2px solid #4d4d4d;
 }
 
 .tab__main input {
@@ -4044,11 +4048,12 @@ label {
 .tab__main label {
   display: inline-block;
   margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
+  padding: 10px 15px;
+  font-weight: 500;
   text-align: center;
   color: #181818 !important;
-  font-size: 20px;
+  font-size: 18px;
+  border-radius: 3px;
   border: 1px solid transparent;
 }
 
@@ -4066,8 +4071,8 @@ label {
 .tab__main input:checked+label {
   color: #fff !important;
   font-weight: 500;
-  border-bottom: 2px solid #990000;
-  background-color: #990000;
+  border-bottom: 2px solid #696969;
+  background-color: #696969;
 }
 
 .tab__main #tab1:checked~#content1,
@@ -4079,18 +4084,18 @@ label {
 }
 
 .tab__main #content1 .content_description {
-  font-size: 18px !important;
+  font-size: 16px !important;
   line-height: 1.7 !important;
-  font-weight: 700;
+  font-weight: 500;
   margin: 1rem 2rem;
   color: #585858;
 }
 
 .tab__main #content1 .content_header {
-  font-size: 22px !important;
+  font-size: 19px !important;
   font-weight: 700;
-  color: #a80000;
-  margin: 15px 20px;
+  color: #363636;
+  margin: 5px 20px;
   line-height: 30px !important;
 }
 
@@ -4099,11 +4104,11 @@ label {
 }
 
 .tab__main #content1 .content_ul li {
-  font-size: 20px;
+  font-size: 17px;
   color: #585858;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tab__main #content2 .content__div {
@@ -4111,19 +4116,19 @@ label {
 }
 
 .tab__main #content2 .content_description {
-  font-size: 18px !important;
+  font-size: 16px !important;
   line-height: 1.7 !important;
-  font-weight: 700;
+  font-weight: 500;
   margin: 1rem 2rem;
   color: #585858;
 }
 
 .tab__main #content2 .content_header {
-  font-size: 22px !important;
+  font-size: 19px !important;
   font-weight: 700;
-  color: #a80000;
+  color: #363636;
+  margin: 5px 20px;
   line-height: 30px !important;
-  margin: 1rem 2rem;
 }
 
 .tab__main #content2 .content_ul {
@@ -4131,11 +4136,11 @@ label {
 }
 
 .tab__main #content2 .content_ul li {
-  font-size: 20px;
+  font-size: 16px;
   color: #585858;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tab__main #content3 .content__div {
@@ -4143,10 +4148,10 @@ label {
 }
 
 .tab__main #content3 .content_header {
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-weight: 700;
-  color: #a80000;
-  margin: 1rem 2rem;
+  color: #363636;
+  margin: 5px 20px;
   line-height: 30px !important;
 }
 
@@ -4155,11 +4160,11 @@ label {
 }
 
 .tab__main #content3 .content_ul li {
-  font-size: 1.5rem;
+  font-size: 16px;
   color: #585858;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tab__main #content4 .content__div {
@@ -4167,18 +4172,18 @@ label {
 }
 
 .tab__main #content4 .content_description {
-  font-size: 20px !important;
+  font-size: 18px !important;
   line-height: 1.7 !important;
-  font-weight: 700;
+  font-weight: 500;
   margin: 1rem 2rem;
   color: #585858;
 }
 
 .tab__main #content4 .content_header {
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-weight: 700;
-  color: #a80000;
-  margin: 1rem 2rem;
+  color: #363636;
+  margin: 5px 20px;
   line-height: 30px !important;
 }
 
@@ -4187,11 +4192,11 @@ label {
 }
 
 .tab__main #content4 .content_ul li {
-  font-size: 20px;
+  font-size: 16px;
   color: #585858;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tab__main #content5 .content__div {
@@ -4199,10 +4204,10 @@ label {
 }
 
 .tab__main #content5 .content_header {
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-weight: 700;
-  color: #a80000;
-  margin: 10px 20px;
+  color: #363636;
+  margin: 5px 20px;
   line-height: 30px !important;
 }
 
@@ -4211,11 +4216,11 @@ label {
 }
 
 .tab__main #content5 .content_ul li {
-  font-size: 1.5rem;
+  font-size: 16px;
   color: #585858;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .card {
@@ -4514,7 +4519,7 @@ label {
 }
 
 .card-deck .card-body--head {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   padding: 5px 0;
   color: #a80000;
@@ -4527,7 +4532,7 @@ label {
   padding: 0;
   color: #4d4d4d;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .card-deck .card-body--span {
@@ -4914,7 +4919,7 @@ label {
 }
 
 .content_ul li {
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: #585858;
   margin: 0;
   padding: 0;
@@ -5770,7 +5775,7 @@ label {
 .md-radio label {
   display: block;
   position: relative;
-  padding: 0 0 0 25px;
+  padding: 2px 0 0 25px;
   margin-bottom: 0;
   cursor: pointer;
   color: #fff;
@@ -7536,6 +7541,41 @@ a.active:after {
   display: block;
 }
 
+/* .center-loading {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  width: fit-content;
+  border-radius: 3px;
+  position: relative;
+}
+ */
+/* .center-loading:after {
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.24);
+} */
+
+/* .center-loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+ */
+
 .loader1 {
   display: block;
   font-size: 0px;
@@ -7548,6 +7588,7 @@ a.active:after {
   font-size: 24px;
   color: #181818;
   font-weight: 600;
+  text-align: center;
 }
 
 .loader1 span {
@@ -7614,4 +7655,45 @@ a.active:after {
   to {
     -webkit-transform: scale(1, 1);
   }
+}
+
+.diff-button {
+  background-color: #66cc33;
+  border: none !important;
+  color: #181818 !important;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 100%;
+  padding: 8px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s ease-in;
+}
+
+.blue-btn {
+  color: #181818 !important;
+  background-color: #17a2b8;
+  margin: 0 auto 15px auto;
+  width: 100%;
+  padding: 8px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s ease-in;
+  border: 1px solid #17a2b8;
+}
+
+.blue-btn:hover {
+  text-decoration: none;
+}
+
+.diff-button:hover {
+  background-color: #66cc33;
+  color: #181818 !important;
 }
