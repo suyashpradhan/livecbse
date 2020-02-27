@@ -343,15 +343,53 @@
 		</div>
 	</div>
 
+	<section id="facts" class="facts-area dark-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ts-facts">
+
+					<div class="ts-facts-content">
+						<h1>Select Class</h1>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ts-facts">
+					<div class="ts-facts-content">
+						<div class="md-radio-class">
+							<input id="radio-2" name="section" type="radio" value="senior_secondary" checked=""
+								onclick="change_section()">
+							<label for="radio-2" class="radio-label-class">11-12 <a
+									href="https://www.livecbse.com/download.php" class="brochure-link">(Download
+									Brochure)</a>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ts-facts">
+					<div class="ts-facts-content">
+						<div class="md-radio-class">
+							<input id="radio-1" name="section" type="radio" value="secondary"
+								onclick="change_section()">
+							<label for="radio-1" class="radio-label-class">09-10 <a
+									href="https://www.livecbse.com/download.php" class="brochure-link">(Download
+									Brochure)</a></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section id="project-area" class="project-area">
 		<div class="container">
-			<div id="tab-1" class="tab-content current">
+			<div id="tab-1" class="tab-content current" style="display: none;">
 				<div class="row-grid">
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Science IX/X</h1>
+							<h1>CBSE Science 09-10</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class="sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
@@ -400,8 +438,9 @@
 		</ul>
 	</div>
 </div>
-" data-trigger="hover" data-original-title="Physics / Chemistry / Biology">Physics / C...</a></span> <span><input
-												type="checkbox" name="ssm1" id="ssm1" onclick="sci_course('1');"></span>
+" data-trigger="hover" data-original-title="Physics / Chemistry / Biology">Physics / Chemistry / Biology</a></span>
+										<span class="all-select-checkbox"><input type="checkbox" name="ssm1" id="ssm1"
+												onclick="sci_course('1');"></span>
 									</div>
 								</div>
 
@@ -440,15 +479,18 @@
 	<li>
 		Natural Resources</li>
 </ul>
-" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General Science">Physics / C...</a></span>
-										<span><input type="checkbox" name="ssm2" id="ssm2"
-												onclick="sci_course('2');"></span>
+" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General Science">Physics / Chemistry /
+												Biology / Gen...</a></span> <span class="all-select-checkbox"><input
+												type="checkbox" name="ssm2" id="ssm2" onclick="sci_course('2');"></span>
 									</div>
 								</div>
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
 										X</span>
@@ -496,9 +538,9 @@
 	<li>
 		Sources of energy</li>
 </ul>
-" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General Science">Physics / C...</a></span>
-										<span><input type="checkbox" name="ssm3" id="ssm3"
-												onclick="sci_course('3');"></span>
+" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General Science">Physics / Chemistry /
+												Biology / Gen...</a></span> <span class="all-select-checkbox"><input
+												type="checkbox" name="ssm3" id="ssm3" onclick="sci_course('3');"></span>
 									</div>
 								</div>
 
@@ -537,13 +579,30 @@
 	<li>
 		Management of natural resources</li>
 </ul>
-" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General science ">Physics / C...</a></span>
-										<span><input type="checkbox" name="ssm4" id="ssm4"
-												onclick="sci_course('4');"></span>
+" data-trigger="hover" data-original-title="Physics / Chemistry / Biology / General science ">Physics / Chemistry /
+												Biology / Gen...</a></span> <span class="all-select-checkbox"><input
+												type="checkbox" name="ssm4" id="ssm4" onclick="sci_course('4');"></span>
 									</div>
 								</div>
 
 							</div>
+
+
+
+							<!-- <div class="section-1-of-3-footer-secondary" style="text-align:center">
+                        <a href="#" data-toggle="modal" data-target="#fee_structure_10" class="fees-link" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Fee Structure | </a>
+                         <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;" class="refund-link">Refund Policy | </a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Terms & Condition</a>
+					</div> -->
 						</div>
 
 					</div>
@@ -551,9 +610,12 @@
 
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Mathematics IX/X</h1>
+							<h1>CBSE Mathematics 09-10</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
@@ -585,8 +647,8 @@
 		Heron's Formula&nbsp;</li>
 </ul>
 " data-trigger="hover" data-original-title="Number System / Algebra / Geometry / Co-ordinate Geometry / Mensuration">Number
-												Syst...</a></span> <span class="all-select-checkbox"><input
-												type="checkbox" name="mmm1" id="mmm1"
+												System / Algebra / Geometry ...</a></span> <span
+											class="all-select-checkbox"><input type="checkbox" name="mmm1" id="mmm1"
 												onclick="mat_course_9_10('1');"></span>
 									</div>
 								</div>
@@ -613,14 +675,18 @@
 		Probability</li>
 </ul>
 " data-trigger="hover" data-original-title="Algebra / Geometry / Mensuration / Statistics and Probability">Algebra /
-												G...</a></span> <span class="all-select-checkbox"><input type="checkbox"
-												name="mmm2" id="mmm2" onclick="mat_course_9_10('2');"></span>
+												Geometry / Mensuration / ...</a></span> <span
+											class="all-select-checkbox"><input type="checkbox" name="mmm2" id="mmm2"
+												onclick="mat_course_9_10('2');"></span>
 									</div>
 								</div>
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
 										X</span>
@@ -649,8 +715,8 @@
 		Statistics</li>
 </ul>
 " data-trigger="hover" data-original-title="Number Systems / Algebra / Geometry / Trigonometry / Statistics">Number
-												Syst...</a></span> <span class="all-select-checkbox"><input
-												type="checkbox" name="mmm3" id="mmm3"
+												Systems / Algebra / Geometry...</a></span> <span
+											class="all-select-checkbox"><input type="checkbox" name="mmm3" id="mmm3"
 												onclick="mat_course_9_10('3');"></span>
 									</div>
 								</div>
@@ -679,8 +745,8 @@
 		Surface Areas and Volumes</li>
 </ul>
 " data-trigger="hover" data-original-title="Algebra / Geometry / Trigonometry / Probability / Coordinate Geometry / Mensuration">Algebra
-												/ G...</a></span> <span class="all-select-checkbox"><input
-												type="checkbox" name="mmm4" id="mmm4"
+												/ Geometry / Trigonometry /...</a></span> <span
+											class="all-select-checkbox"><input type="checkbox" name="mmm4" id="mmm4"
 												onclick="mat_course_9_10('4');"></span>
 									</div>
 								</div>
@@ -689,16 +755,32 @@
 
 
 
-
+							<!-- <div class="section-1-of-3-footer-secondary" style="text-align:center">
+                        <a href="#" data-toggle="modal" data-target="#fee_structure_10" class="fees-link" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Fee Structure | </a>
+                         <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;" class="refund-link">Refund Policy | </a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Terms & Condition</a>
+					</div> -->
 						</div>
 					</div>
 
 
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE English IX/X</h1>
+							<h1>CBSE English 09-10</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
@@ -788,12 +870,11 @@
 		</li>
 	</ul>
 </div>
-" data-trigger="hover" data-original-title="Reading / Literature">Reading / L...</a></span> <span
+" data-trigger="hover" data-original-title="Reading / Literature">Reading / Literature</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm1" id="eem1"
 												onclick="eng_course_9_10('1');"></span>
 									</div>
 								</div>
-
 								<div class="sectionInnerFirstList">
 									<div class="innerSection">
 										<span class="mod">Mod 2</span> <span class="topic"><a href="javascript:void(0);"
@@ -878,15 +959,17 @@
 	</div>
 <p>
 	&nbsp;</p>
-" data-trigger="hover" data-original-title="Writing / Grammar / Literature ">Writing / G...</a></span> <span
-											class="all-select-checkbox"><input type="checkbox" name="pm2" id="eem2"
+" data-trigger="hover" data-original-title="Writing / Grammar / Literature ">Writing / Grammar / Literature </a></span>
+										<span class="all-select-checkbox"><input type="checkbox" name="pm2" id="eem2"
 												onclick="eng_course_9_10('2');"></span>
 									</div>
 								</div>
 
 							</div>
-
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
 										X</span>
@@ -970,12 +1053,11 @@
 	<li>
 		Story Writing</li>
 </ul>
-" data-trigger="hover" data-original-title="Writing / Literature">Writing / L...</a></span> <span
+" data-trigger="hover" data-original-title="Writing / Literature">Writing / Literature</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm3" id="eem3"
 												onclick="eng_course_9_10('3');"></span>
 									</div>
 								</div>
-
 								<div class="sectionInnerFirstList">
 									<div class="innerSection">
 										<span class="mod">Mod 4</span> <span class="topic"><a href="javascript:void(0);"
@@ -1028,13 +1110,29 @@
 		The Story of My Life by Helen Keller Chapter 1 to 23</li>
 </ul>
 " data-trigger="hover" data-original-title="Reading / Writing / Grammar / Literature / Long Reading Text">Reading /
-												W...</a></span> <span class="all-select-checkbox"><input type="checkbox"
-												name="pm4" id="eem4" onclick="eng_course_9_10('4');"></span>
+												Writing / Grammar / Liter...</a></span> <span
+											class="all-select-checkbox"><input type="checkbox" name="pm4" id="eem4"
+												onclick="eng_course_9_10('4');"></span>
 									</div>
 								</div>
 
 							</div>
 
+
+							<!-- <div class="section-1-of-3-footer-secondary" style="text-align:center">
+                        <a href="#" data-toggle="modal" data-target="#fee_structure_10" class="fees-link" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Fee Structure | </a>
+                         <a href="#" data-toggle="modal" data-target="#exampleModalR" data-backdrop="static" data-keyboard="false"  style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;" class="refund-link">Refund Policy | </a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModalT" data-backdrop="static" data-keyboard="false" style="text-transform: none;
+                        text-decoration: none;
+                        color: #fff;
+                        padding-right: 5px;">Terms & Condition</a>
+					</div> -->
 						</div>
 					</div>
 				</div>
@@ -1043,12 +1141,16 @@
 				<div class="row-grid">
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Physics XI/XII</h1>
+							<h1>CBSE Physics 11-12</h1>
 						</div>
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span>
+										11</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="pm11" id="pm11"
 											onclick="fullcourse21('p','11','pm');"></span>
@@ -1071,7 +1173,7 @@
 	<li>
 		Laws Of Motion</li>
 </ul>
-" data-trigger="hover" data-original-title="Mechanics- I">Mechanics- ...</a></span> <span
+" data-trigger="hover" data-original-title="Mechanics- I">Mechanics- I</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm1" id="pm1"
 												onclick="phy_course('1');"></span>
 									</div>
@@ -1088,7 +1190,7 @@
 	<li>
 		Gravitation</li>
 </ul>
-" data-trigger="hover" data-original-title="Mechanics- II">Mechanics- ...</a></span> <span
+" data-trigger="hover" data-original-title="Mechanics- II">Mechanics- II</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm2" id="pm2"
 												onclick="phy_course('2');"></span>
 									</div>
@@ -1130,9 +1232,13 @@
 
 							</div>
 
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span>
+										12</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="pm12" id="pm12"
 											onclick="fullcourse21('p','12','pm');"></span>
@@ -1151,7 +1257,7 @@
 	<li>
 		Current Electricity</li>
 </ul>
-" data-trigger="hover" data-original-title="Electrostatics">Electrostat...</a></span> <span
+" data-trigger="hover" data-original-title="Electrostatics">Electrostatics</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm5" id="pm5"
 												onclick="phy_course('5');"></span>
 									</div>
@@ -1170,7 +1276,7 @@
 	<li>
 		Alternating Current</li>
 </ul>
-" data-trigger="hover" data-original-title="Electrodynamics">Electrodyna...</a></span> <span
+" data-trigger="hover" data-original-title="Electrodynamics">Electrodynamics</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm6" id="pm6"
 												onclick="phy_course('6');"></span>
 									</div>
@@ -1207,7 +1313,7 @@
 	<li>
 		Communication Systems</li>
 </ul>
-" data-trigger="hover" data-original-title="Modern Physics">Modern Phys...</a></span> <span
+" data-trigger="hover" data-original-title="Modern Physics">Modern Physics</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="pm8" id="pm8"
 												onclick="phy_course('8');"></span>
 									</div>
@@ -1220,13 +1326,17 @@
 					</div>
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Chemistry XI/XII
+							<h1>CBSE Chemistry 11-12
 							</h1>
 						</div>
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span>
+										11</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="cm11" id="cm11"
 											onclick="fullcourse21('c','11','cm');"></span>
@@ -1247,7 +1357,7 @@
 	<li>
 		Chemical Bonding and Molecular Structure</li>
 </ul>
-" data-trigger="hover" data-original-title="General Chemistry">General Che...</a></span> <span
+" data-trigger="hover" data-original-title="General Chemistry">General Chemistry</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm1" id="cm1"
 												onclick="chem_course('1');"></span>
 									</div>
@@ -1266,7 +1376,7 @@
 	<li>
 		Redox Reactions</li>
 </ul>
-" data-trigger="hover" data-original-title="Physical Chemistry I">Physical Ch...</a></span> <span
+" data-trigger="hover" data-original-title="Physical Chemistry I">Physical Chemistry I</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm2" id="cm2"
 												onclick="chem_course('2');"></span>
 									</div>
@@ -1283,7 +1393,7 @@
 	<li>
 		The p-Block Elements</li>
 </ul>
-" data-trigger="hover" data-original-title="Inorganic Chemistry I">Inorganic C...</a></span> <span
+" data-trigger="hover" data-original-title="Inorganic Chemistry I">Inorganic Chemistry I</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm3" id="cm3"
 												onclick="chem_course('3');"></span>
 									</div>
@@ -1300,7 +1410,7 @@
 	<li>
 		Environmental Chemistry</li>
 </ul>
-" data-trigger="hover" data-original-title="Organic Chemistry I">Organic Che...</a></span> <span
+" data-trigger="hover" data-original-title="Organic Chemistry I">Organic Chemistry I</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm4" id="cm4"
 												onclick="chem_course('4');"></span>
 									</div>
@@ -1308,10 +1418,13 @@
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span>
+										12</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="cm12" id="cm12"
 											onclick="fullcourse21('c','12','cm');"></span>
@@ -1334,7 +1447,7 @@
 	<li>
 		Surface Chemistry</li>
 </ul>
-" data-trigger="hover" data-original-title="Physical Chemistry II">Physical Ch...</a></span> <span
+" data-trigger="hover" data-original-title="Physical Chemistry II">Physical Chemistry II</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm5" id="cm5"
 												onclick="chem_course('5');"></span>
 									</div>
@@ -1353,7 +1466,7 @@
 	<li>
 		Coordination compounds</li>
 </ul>
-" data-trigger="hover" data-original-title="Inorganic Chemistry II">Inorganic C...</a></span> <span
+" data-trigger="hover" data-original-title="Inorganic Chemistry II">Inorganic Chemistry II</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm6" id="cm6"
 												onclick="chem_course('6');"></span>
 									</div>
@@ -1372,7 +1485,7 @@
 	<li>
 		Organic compounds containing nitrogen</li>
 </ul>
-" data-trigger="hover" data-original-title="Organic Chemistry II">Organic Che...</a></span> <span
+" data-trigger="hover" data-original-title="Organic Chemistry II">Organic Chemistry II</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm7" id="cm7"
 												onclick="chem_course('7');"></span>
 									</div>
@@ -1389,7 +1502,7 @@
 	<li>
 		Chemistry in Everyday Life</li>
 </ul>
-" data-trigger="hover" data-original-title="Applied Chemistry">Applied Che...</a></span> <span
+" data-trigger="hover" data-original-title="Applied Chemistry">Applied Chemistry</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="cm8" id="cm8"
 												onclick="chem_course('8');"></span>
 									</div>
@@ -1402,13 +1515,16 @@
 					</div>
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Mathematics XI/XII</h1>
+							<h1>CBSE Mathematics 11-12</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span>
+										11</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="mm11" id="mm11"
 											onclick="fullcourse21('m','11','mm');"></span>
@@ -1429,7 +1545,7 @@
 	<li>
 		Linear Inequalities</li>
 </ul>
-" data-trigger="hover" data-original-title="Sets &amp; Functions">Sets &amp; Func...</a></span> <span
+" data-trigger="hover" data-original-title="Sets &amp; Functions">Sets &amp; Functions</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="mm1" id="mm1"
 												onclick="mat_course('1');"></span>
 									</div>
@@ -1464,7 +1580,7 @@
         <li>
 		Introduction to Three-dimensional Geometry</li>
 </ul>
-" data-trigger="hover" data-original-title="Coordinate Geometry">Coordinate ...</a></span> <span
+" data-trigger="hover" data-original-title="Coordinate Geometry">Coordinate Geometry</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="mm3" id="mm3"
 												onclick="mat_course('3');"></span>
 									</div>
@@ -1483,7 +1599,7 @@
 <li>
 		Probability</li>
 </ul>
-" data-trigger="hover" data-original-title="Miscellaneous">Miscellaneo...</a></span> <span
+" data-trigger="hover" data-original-title="Miscellaneous">Miscellaneous</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="mm4" id="mm4"
 												onclick="mat_course('4');"></span>
 									</div>
@@ -1491,10 +1607,13 @@
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span>
+										12</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="mm12" id="mm12"
 											onclick="fullcourse21('m','12','mm');"></span>
@@ -1548,9 +1667,9 @@
 	<li>
 		Inverse Trigonometry Functions</li>
 </ul>
-" data-trigger="hover" data-original-title="Analytical geometry,Vectors and ITF">Analytical ...</a></span> <span
-											class="all-select-checkbox"><input type="checkbox" name="mm7" id="mm7"
-												onclick="mat_course('7');"></span>
+" data-trigger="hover" data-original-title="Analytical geometry,Vectors and ITF">Analytical geometry,Vectors and
+												ITF</a></span> <span class="all-select-checkbox"><input type="checkbox"
+												name="mm7" id="mm7" onclick="mat_course('7');"></span>
 									</div>
 								</div>
 
@@ -1567,7 +1686,7 @@
 	<li>
 		Probability</li>
 </ul>
-" data-trigger="hover" data-original-title="Miscellaneous">Miscellaneo...</a></span> <span
+" data-trigger="hover" data-original-title="Miscellaneous">Miscellaneous</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="mm8" id="mm8"
 												onclick="mat_course('8');"></span>
 									</div>
@@ -1581,13 +1700,16 @@
 
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE Biology XI/XII</h1>
+							<h1>CBSE Biology 11-12</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span>
+										11</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="bm11" id="bm11"
 											onclick="fullcourse21('b','11','bm');"></span>
@@ -1608,7 +1730,7 @@
 	<li>
 		Animal Kingdom</li>
 </ul>
-" data-trigger="hover" data-original-title="Diversity in living World">Diversity i...</a></span> <span
+" data-trigger="hover" data-original-title="Diversity in living World">Diversity in living World</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm1" id="bm1"
 												onclick="bio_course('1');"></span>
 									</div>
@@ -1631,7 +1753,7 @@
 	<li>
 		Cell Cycle and Cell Division</li>
 </ul>
-" data-trigger="hover" data-original-title="Structural Organisation ">Structural ...</a></span> <span
+" data-trigger="hover" data-original-title="Structural Organisation ">Structural Organisation </a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm2" id="bm2"
 												onclick="bio_course('2');"></span>
 									</div>
@@ -1652,7 +1774,7 @@
 	<li>
 		Plant Growth and Development</li>
 </ul>
-" data-trigger="hover" data-original-title="Plant Physiology">Plant Physi...</a></span> <span
+" data-trigger="hover" data-original-title="Plant Physiology">Plant Physiology</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm3" id="bm3"
 												onclick="bio_course('3');"></span>
 									</div>
@@ -1677,7 +1799,7 @@
 	<li>
 		Chemical Coordination and Integration</li>
 </ul>
-" data-trigger="hover" data-original-title="Human Physiology">Human Physi...</a></span> <span
+" data-trigger="hover" data-original-title="Human Physiology">Human Physiology</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm4" id="bm4"
 												onclick="bio_course('4');"></span>
 									</div>
@@ -1685,10 +1807,13 @@
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span>
+										12</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="bm12" id="bm12"
 											onclick="fullcourse21('b','12','bm');"></span>
@@ -1709,7 +1834,7 @@
 	<li>
 		Reproductive Health</li>
 </ul>
-" data-trigger="hover" data-original-title="Reproduction">Reproductio...</a></span> <span
+" data-trigger="hover" data-original-title="Reproduction">Reproduction</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm5" id="bm5"
 												onclick="bio_course('5');"></span>
 									</div>
@@ -1726,7 +1851,7 @@
 	<li>
 		Evolution</li>
 </ul>
-" data-trigger="hover" data-original-title="Genetics and Evolution">Genetics an...</a></span> <span
+" data-trigger="hover" data-original-title="Genetics and Evolution">Genetics and Evolution</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm6" id="bm6"
 												onclick="bio_course('6');"></span>
 									</div>
@@ -1747,7 +1872,7 @@
 	<li>
 		Biotechnology and Its Applications</li>
 </ul>
-" data-trigger="hover" data-original-title="Biotechnology">Biotechnolo...</a></span> <span
+" data-trigger="hover" data-original-title="Biotechnology">Biotechnology</a></span> <span
 											class="all-select-checkbox"><input type="checkbox" name="bm7" id="bm7"
 												onclick="bio_course('7');"></span>
 									</div>
@@ -1792,7 +1917,7 @@
 									<h1 class="setup-subtitle">(&gt;256kbps)</h1>
 								</div>
 								<div class="row-grid-new-col mb-1">
-									<img src="images_new/headphone.png" alt="Headphones" class="setup-img">
+									<img src="images_new/headphones.png" alt="Headphones" class="setup-img">
 									<h1 class="setup-title">Headphones with<br> mic</h1>
 								</div>
 								<div class="row-grid-new-col mb-1">
@@ -1825,13 +1950,16 @@
 
 					<div class="firstRow">
 						<div class="section-1-of-3">
-							<h1>CBSE English Core XI/XII</h1>
+							<h1>CBSE English Core 11-12</h1>
 						</div>
-
+						<!-- <div class="blockWrapper"> <div class="sectionInnerFirstList" style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                      <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XI</span> <span style="float: right; margin-right:10px;">
+					       <input  type="checkbox"   name='pm11' id='pm11' onclick="fullcourse21('p','11','pm');"></span></p>
+                       </div> -->
 						<div class="blockWrapper">
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XI</span>
+										11</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="em11" id="em11"
 											onclick="fullcourse21('e','11','em');"></span>
@@ -1843,7 +1971,8 @@
 									<div class="innerSection">
 										<span class="mod">Mod 1</span> <span class="topic"><a href="javascript:void(0);"
 												data-toggle="popover" title="" data-content="<div>
-	<strong>Poetry</strong></div>
+	<strong>Poetry</strong>
+</div>
 <ul>
 	<li>
 		The Voice of Rain</li>
@@ -1936,9 +2065,9 @@
 	<li>
 		Advertisement</li>
 </ul>
-" data-trigger="hover" data-original-title="Reading comprehension+Writing skills+Grammar">Reading com...</a></span>
-										<span class="all-select-checkbox"><input type="checkbox" name="em3" id="em3"
-												onclick="eng_course('3');"></span>
+" data-trigger="hover" data-original-title="Reading comprehension+Writing skills+Grammar">Reading comprehension+Writing
+												skills</a></span> <span class="all-select-checkbox"><input
+												type="checkbox" name="em3" id="em3" onclick="eng_course('3');"></span>
 									</div>
 								</div>
 
@@ -1962,10 +2091,13 @@
 
 							</div>
 
-
+							<!-- <div class="sectionInnerFirstList"  style="background-color:#f5f6c4;padding:2px 5px !important;height: 28px;">
+                               <p><a href="#" style="background-color:#000000; color:#fdbc64; text-decoration:none; cursor:pointer; padding:0 2px">Full Course</a> <span style="padding-left: 15px">Class XII</span> <span style="float: right; margin-right:10px;">
+                                         <input type="checkbox"   name='pm12' id='pm12' onclick="fullcourse21('p','12','pm');" ></span></p>
+                              </div> -->
 							<div class=" sectionInnerFirstListHead">
 								<p><a href="#" class="full-course">Full Course</a> <span class="class-text">Class
-										XII</span>
+										12</span>
 									<span class="all-select-checkbox">
 										<input type="checkbox" name="em12" id="em12"
 											onclick="fullcourse21('e','12','em');"></span>
@@ -1976,8 +2108,7 @@
 								<div class="sectionInnerFirstList">
 									<div class="innerSection">
 										<span class="mod">Mod 1</span> <span class="topic"><a href="javascript:void(0);"
-												data-toggle="popover" title="" data-content="<p>
-	PROSE -</p>
+												data-toggle="popover" title="" data-content="<p>PROSE</p>
 <ul>
 	<li>
 		The Last Lesson</li>
@@ -2074,9 +2205,9 @@
 	<li>
 		Letter Writing&nbsp;</li>
 </ul>
-" data-trigger="hover" data-original-title="Reading comprehension + Writing Skills">Reading com...</a></span> <span
-											class="all-select-checkbox"><input type="checkbox" name="em7" id="em7"
-												onclick="eng_course('7');"></span>
+" data-trigger="hover" data-original-title="Reading comprehension + Writing Skills">Reading comprehension + Writing
+												Skills</a></span> <span class="all-select-checkbox"><input
+												type="checkbox" name="em7" id="em7" onclick="eng_course('7');"></span>
 									</div>
 								</div>
 
@@ -2106,7 +2237,6 @@
 			</div>
 		</div>
 	</section>
-
 
 
 	<section class="content">
