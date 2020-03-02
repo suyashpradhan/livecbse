@@ -23,6 +23,28 @@ jQuery(function ($) {
 
 	});
 
+	$(".performers-slide").owlCarousel({
+
+		loop: false,
+		margin: 10,
+		nav: false,
+		dots: true,
+		items: 3,
+		responsive: {
+			0: {
+				items: 2
+			},
+
+			600: {
+				items: 2
+			},
+
+			900: {
+				items: 3
+			}
+		}
+
+	});
 
 	var btn = $('#back-to-top-btn');
 

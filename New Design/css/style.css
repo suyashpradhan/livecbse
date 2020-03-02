@@ -2228,7 +2228,7 @@ h4.panel-title a.collapsed:before {
 .page__header {
   text-align: center;
   overflow: hidden;
-  margin: -20px 0 20px 0 !important;
+  margin: -20px 0 0 0 !important;
   padding: 0 !important;
 }
 
@@ -2269,9 +2269,9 @@ h4.panel-title a.collapsed:before {
 
 .students-logo img {
   height: 130px;
-  margin: 10px auto;
+  margin: 0 15px 10px 15px;
   display: block;
-  width: 130px;
+  width: 130px !important;
   border-radius: 100px;
   border: 2px solid #990000;
   object-fit: fill;
@@ -2279,35 +2279,48 @@ h4.panel-title a.collapsed:before {
 
 .student-year {
   background-color: #990000;
-  padding: 6px 35px;
+  padding: 8px 35px;
   margin: 0 auto;
   display: block;
   font-weight: 500;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   color: #fff;
-  width: fit-content;
+  width: 160px !important;
   line-height: 10px;
 }
 
 .student-header {
   margin: 10px 0 2px 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  font-weight: 700;
-  color: #181818;
+  font-weight: 600;
+  color: #363636;
   line-height: 20px;
+  width: 160px;
 }
 
 .student-marks {
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  color: #363636;
+  color: #4d4d4d;
+  width: 160px;
 }
+
+.student-info {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #4d4d4d;
+  width: 160px;
+}
+
 
 /* Testimonial
 ================================================== */
@@ -3773,6 +3786,10 @@ label {
   .subjective-test-row {
     grid-template-columns: 1fr !important;
   }
+
+  .footer .widget-title {
+    margin: 30px 0 10px 0 !important;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 527px) {
@@ -3806,6 +3823,10 @@ label {
 
   .class-head {
     font-size: 22px;
+  }
+
+  .video-head {
+    font-size: 28px !important;
   }
 
   .slide-title {
@@ -6026,7 +6047,7 @@ label {
 .md-radio-class label {
   display: block;
   position: relative;
-  padding: 2px 0 0 30px;
+  padding: 5px 0 0 30px;
   cursor: pointer;
   color: #fff;
   font-size: 24px;
