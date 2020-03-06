@@ -144,7 +144,7 @@ img.pull-right {
 }
 
 .dark-bg {
-  background: #252525;
+  background: #181818;
   color: #fff;
 }
 
@@ -772,7 +772,7 @@ ul.top-info li p.info-text {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 50px !important;
+  bottom: 70px !important;
   left: 0;
   z-index: 15;
   display: -ms-flexbox;
@@ -1135,14 +1135,27 @@ ul.top-info li p.info-text {
 }
 
 .call-to-action-box .action-style-box {
-  background: #900;
-  padding: 10px 15px;
+  /* background: #900; */
+  padding: 10px 15px 0 15px;
 }
 
 .action-style-box-2 {
-  background: #414141;
+  /* background: #414141; */
+  background: rgba(0, 0, 0, 0.9);
   padding: 10px 15px;
   margin-top: -5px
+}
+
+.action-style-box-2 .form_groupHeaderNew {
+  font-size: 30px;
+  color: #181818;
+  margin: 0 auto 10px auto;
+  padding: 3px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #b2b2b2;
+  width: fit-content;
+  border-radius:3px;
 }
 
 .top-form {
@@ -1155,8 +1168,14 @@ ul.top-info li p.info-text {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
-  height: 40px;
   align-items: flex-start;
+  /* background-color: #990000; */
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+.schedule-form .form_group {
+  margin: 10px 0 0 0;
 }
 
 .form-inner {
@@ -1190,19 +1209,23 @@ ul.top-info li p.info-text {
 .cntr {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 50px;
+  height: 37px;
+  padding:3px;
+  border-radius:3px;
   align-items: flex-start;
+   background-color: #fff;
 }
 
 .class-head {
-  color: #ffff;
+  color: #181818;
   font-size: 18px;
-  margin: 8px 0 0 0;
+  margin: 2px 0 0 0;
   display: block;
 }
 
 .schedule-link-mobile-show {
-  background-color: #990000;
+  background-color: #f56600;
+  font-size: 18px;
   padding: 5px 10px;
   margin: 5px auto;
   text-align: center;
@@ -1217,7 +1240,8 @@ ul.top-info li p.info-text {
 .schedule-link-mobile-show:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #770202;
+  background-color: #ff7c1e;
+
 }
 
 
@@ -1263,11 +1287,11 @@ input[type="radio"]:checked+.label:after {
 }
 
 .md-radio-schedule {
-  margin: 6px 10px !important;
+  margin: 1px 10px !important;
 }
 
 .schedule_link {
-  background-color: #333;
+  background-color: #f56600;
   width: 100%;
   color: #fff !important;
   padding: 6px 20px;
@@ -1282,7 +1306,7 @@ input[type="radio"]:checked+.label:after {
 }
 
 .schedule_link:hover {
-  background-color: #770202;
+  background-color: #ff7c1e;
   color: #ffff !important;
 }
 
@@ -5253,24 +5277,25 @@ label {
 }
 
 .form_groupHeaderNew {
-  font-size: 32px;
-  text-transform: uppercase;
-  color: #fff;
-  margin: 0 0 10px 0;
-  padding: 0;
+  font-size: 30px;
+  color: #181818;
+  margin: -25px auto 0px auto;
+  padding: 3px;
   font-weight: 500;
   text-align: center;
+  background-color: #b2b2b2;
+  width: fit-content;
 }
 
 .class-head-new {
-  color: #fff;
+  color: #4d4d4d;
   font-size: 20px;
-  margin: 5px 0 0 0;
+  margin: 0;
   display: block;
 }
 
 .interested_link {
-  background-color: #900;
+  background-color: #f56600;
   width: 100%;
   color: #fff !important;
   padding: 6px 20px;
@@ -5283,7 +5308,7 @@ label {
 }
 
 .interested_link:hover {
-  background-color: #770202;
+  background-color: #ff7c1e;
   color: #fff !important;
 }
 
@@ -5791,7 +5816,7 @@ label {
 }
 
 .md-radio {
-  margin: 6px 10px;
+  margin: 0 10px;
 }
 
 .md-radio input[type="radio"] {
@@ -5799,7 +5824,7 @@ label {
 }
 
 .md-radio input[type="radio"]:checked+label:before {
-  border-color: #fff;
+  border-color: #4d4d4d;
   animation: ripple 0.2s linear forwards;
 }
 
@@ -5813,7 +5838,7 @@ label {
   padding: 2px 0 0 25px;
   margin-bottom: 0;
   cursor: pointer;
-  color: #fff;
+  color: #4d4d4d;
   font-size: 18px;
 }
 
@@ -5831,7 +5856,7 @@ label {
   top: 5px;
   width: 20px;
   height: 20px;
-  border: 2px solid #fff;
+  border: 2px solid #4d4d4d;
 }
 
 .md-radio label:after {
@@ -5840,7 +5865,7 @@ label {
   width: 10px;
   height: 10px;
   transform: scale(0);
-  background: #fff;
+  background: #4d4d4d;
 }
 
 @keyframes ripple {
@@ -6083,8 +6108,31 @@ label {
 }
 
 .brochure-link {
-  color: #b2b2b2 !important;
+  color: #f5f6f7 !important;
+  text-align: center;
+  background: linear-gradient(to right, #696969 10%,#696969 20% ,#fff 0%);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 2s linear infinite;
+  animation: shine 2s linear infinite;
+  font-size:18px;
 }
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 .brochure-link:hover {
   color: #fff !important;
@@ -7468,6 +7516,7 @@ a.active:after {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: flex-start;
+
 }
 
 .timer-card {
@@ -7731,4 +7780,16 @@ a.active:after {
 .diff-button:hover {
   background-color: #66cc33;
   color: #181818 !important;
+}
+
+.pdf {
+  height: 80vh;
+  background: #fefff9;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 3px 0;
+  border-radius: 4px;
+  margin: 0 0 50px 0;
+}
+
+.iti__flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/img/flags.png") !important;
 }

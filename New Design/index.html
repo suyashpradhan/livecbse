@@ -13,6 +13,7 @@
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<!-- Owl Carousel -->
@@ -227,8 +228,9 @@
 							class="form_fields">
 					</div>
 					<div class="form_group">
-						<input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
-							class="form_fields">
+						<!-- <input type="text" placeholder="Phone Number" name="phone_number" id="phone_number"
+							class="form_fields"> -->
+						<input type="tel" id="phone" class="form_fields" placeholder="Phone Number">
 					</div>
 					<div class="form_group">
 						<div class="cntr">
@@ -2482,8 +2484,11 @@
 							class="form_fields">
 					</div>
 					<div class="form_group">
-						<input type="text" placeholder="Phone Number" name="contact_phone_number"
+						<!-- <input type="text" placeholder="Phone Number" name="contact_phone_number"
 							id="contact_phone_number" class="form_fields">
+ -->
+						<input type="tel" id="phone-interested-in" class="form_fields" placeholder="Phone Number">
+
 					</div>
 					<div class="form_group">
 						<a class="interested_link" id="contact_submit" onclick="contact_form_submit()">Submit</a>
@@ -3231,20 +3236,25 @@
 		});
 	</script>
 
-
-
-
-
-
-
-
-
 	<script id="makerobos_v1" type="text/javascript" data-token="GXEA5RZADQ4B7G2PGH98N9O7IGHATEJT"
 		src="https://link.makerobos.com/C8I6YI7S">
 	</script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/js/intlTelInput-jquery.js"></script>
+
+	<script>
+		$("#phone").intlTelInput({
+			initialCountry: "IN",
+		});
+
+		$("#phone-interested-in").intlTelInput({
+			initialCountry: "IN",
+		});
+	</script>
+
 	<script language='javascript'>
 		function change_section() {
+			0
 			var section = $("input[name='section']:checked").val();
 			if (section == 'secondary') {
 				$('#tab-1').show();
@@ -3749,6 +3759,8 @@
 			});
 		});
 	</script>
+
+
 	</div><!-- Body inner end -->
 </body>
 
