@@ -1155,7 +1155,7 @@ ul.top-info li p.info-text {
   text-align: center;
   background-color: #b2b2b2;
   width: fit-content;
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 .top-form {
@@ -1182,8 +1182,10 @@ ul.top-info li p.info-text {
   display: grid !important;
   grid-template-columns: repeat(6, 1fr) !important;
   grid-gap: 1rem;
-  height: 40px;
+  height: 60px;
   align-items: flex-start;
+  padding: 2px 10px 5px 10px !important;
+  background: none !important;
 }
 
 
@@ -1210,10 +1212,10 @@ ul.top-info li p.info-text {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   height: 37px;
-  padding:3px;
-  border-radius:3px;
+  padding: 3px;
+  border-radius: 3px;
   align-items: flex-start;
-   background-color: #fff;
+  background-color: #fff;
 }
 
 .class-head {
@@ -6110,7 +6112,7 @@ label {
 .brochure-link {
   color: #f5f6f7 !important;
   text-align: center;
-  background: linear-gradient(to right, #696969 10%,#696969 20% ,#fff 0%);
+  background: linear-gradient(to right, #696969 10%, #696969 20%, #fff 0%);
   background-size: 200% auto;
   background-clip: text;
   text-fill-color: transparent;
@@ -6118,7 +6120,7 @@ label {
   -webkit-text-fill-color: transparent;
   -webkit-animation: shine 2s linear infinite;
   animation: shine 2s linear infinite;
-  font-size:18px;
+  font-size: 18px;
 }
 
 @-webkit-keyframes shine {
