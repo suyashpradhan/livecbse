@@ -1,71 +1,86 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Infinity Login - Live CBSE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-top">
         <div class="container-fluid">
-            <a class="navbar-brand logo-text" href="index.php">
-                ncertmitra
+            <a class="navbar-brand" href="../index.php">
+                <img src="assets/images/ncertmitra.png" alt="NCERT Mitra Logo" class="logo-img logo-mobile-show">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.php" class="nav-link">Home</a>
+                    </li>
 
+                </ul>
+            </div>
         </div>
     </nav>
+
     <div class="limiter">
-        <div class="container-col">
-            <div class="wrap-col">
-                <div class="col-one">
-                    <h1 class="welcome-text">Good To See you again!</h1>
-                    <h1 class="info-text">By Logging into ncertmitra, you agree to our <a href="#">Terms of use</a> and
-                        <a href="#">Privacy
-                            Policy</a></h1>
+        <div class="container-login100">
+            <div class="wrap-login100-cbse pb-2 p-t-55">
+                <div class="form-new">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="col-head">
+                                <h1>
+                                    <img src="assets/images/ncertmitra.png" alt="NCERT Mitra Logo" height="130px" />
+                                </h1>
+                            </div>
+                            <div class="col-description">
+                                <p>In our 15 years of cbse coaching we have always strived to give the best to the
+                                    students. At the same time we believe there are other experts helping the students
+                                    in there own ways. We have curated other free web content to benefit the students
+                                    further.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <form action="student_login_detail.php" method="post" class="login-diff-forms">
+                                <select name="login_type" id="login_type" class="login-select" onchange="hide_field()">
+                                    <option value="student_login">Student Login</option>
+                                </select>
+                                <input type="text" name="username" id="username" placeholder="Username"
+                                    class="diff-fields" required="">
+                                <input type="password" name="password" id="password" placeholder="Password"
+                                    class="diff-fields" required="">
+
+                                <button class="diff-button" id="login" name="login">Submit</button>
+                                <a href="signup.php" class="blue-btn btn-block">Create An Account</a>
+
+                                <!-- <button class="diff-button" id="login" name="login">Submit</button>
+                                    <a href="#" class="forgot-link">Forgot Password?</a>
+                                    <a href="signup.php" class="sign-up-link-cbse">Don't Have An Account? Sign up Here</a> -->
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
-
-                <form class="col-two">
-                    <div class="form-group">
-                        <label for="">Email or Username</label>
-                        <input type="text" name="" id="" class="fields-main">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="text" name="" id="" class="fields-main">
-                    </div>
-
-                    <div class="form-group">
-                        <a href="#" class="btn-submit">Log in</a>
-                    </div>
-                    <a href="#" class="forget-link">Forgot Password?</a>
-
-                    <div class="other">
-                        <a href="#" class="other-link">Create An Account</a>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://kit.fontawesome.com/7fdc918442.js"></script>
 </body>
 

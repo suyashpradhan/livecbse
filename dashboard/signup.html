@@ -4,96 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Create New Account - CBSE Infinity</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css">
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand logo-text" href="index.php">
-                ncertmitra
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-        </div>
-    </nav>
     <div class="limiter">
-        <div class="container-col">
-            <div class="wrap-col">
-                <div class="col-one">
-                    <h1 class="welcome-text">First, create your account.</h1>
-                    <h1 class="info-text">By signing up for ncertmitra, you agree to our <a href="#">Terms of use</a>
-                        and
-                        <a href="#">Privacy
-                            Policy</a></h1>
-                </div>
-
-                <form class="col-two col-two-pd">
-                    <div class="form-group">
-                        <label for="">Email or Username</label>
-                        <input type="text" name="" id="" class="fields-main">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Phone Number</label>
-                        <input type="text" name="" id="" class="fields-main">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="text" name="" id="" class="fields-main">
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="">Select Class</label>
-                                <select name="" id="" class="fields-main">
-                                    <option value="">IX</option>
-                                    <option value="">X</option>
-                                    <option value="">XI</option>
-                                    <option value="">XII</option>
+        <div class="container-login100">
+            <div class="wrap-login100-cbse pb-2 p-t-55">
+                <form class="sign-up-form" id="sign-up">
+                    <div class="form-title">Create An Account</div>
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="name" id="name" class="diff-fields" placeholder="Name">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" maxlength="10" name="phone" id="phone" class="diff-fields"
+                                    placeholder="Phone Number">
+                            </div>
+                            <div class="col-4">
+                                <input type="password" name="password" id="password" class="diff-fields"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <select name="class" id="class" class="form-select">
+                                    <option value="IX">Class IX</option>
+                                    <option value="X">Class X</option>
+                                    <option value="XI">Class XI</option>
+                                    <option value="XII">Class XII</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <select name="country" id="country" class="form-select">
+                                    <option value="India" selected="">India</option>
+                                    <option value="Other">Other </option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="">Select Country</label>
-                                <select name="" id="" class="fields-main">
-                                    <option value="">India</option>
-                                </select>
-                            </div>
-                        </div>
+                        <a class="diff-button" onclick="get_otp()">Submit</a>
                     </div>
-
-                    <div class="form-group">
-                        <a href="#" class="btn-submit">Sign up</a>
-                    </div>
-
-                    <div class="other">
-                        <a href="#" class="other-link">Already have an account?</a>
+                    <div class="rule"></div>
+                    <div class="form-footer">
+                        <a href="index.php" class="have-acc">Aleady Have An Account? Sign in</a>
                     </div>
                 </form>
+            </div>
+
+            <div class="modal fade" id="otp-modal" tabindex="-1" role="dialog" aria-labelledby="otp-modal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Verification</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#">
+                                <input type="text" name="mob_otp" id="mob_otp" required class="form-control mt-1"
+                                    placeholder="Enter Otp Recieved On Phone">
+                                <a class="btn btn-primary mt-2" onclick="verify()">Verify OTP</a>
+                                <input type="hidden" id="status" value="0">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-    <script src="https://kit.fontawesome.com/7fdc918442.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
+
+<script>
+    function login() {
+        event.preventDefault();
+        var form = $('#log-in')[0];
+        var data = new FormData(form);
+        data.append("login", "user");
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "auth.php",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                console.log(data);
+                if (data == 'success') {
+                    location.replace('login_intro.html');
+                } else if (data == 'error') {
+                    alert('Invalid Credentials');
+
+                } else {
+                    window.scrollTo(0, 0);
+                    $('#system').show();
+                }
+            },
+            error: function (e) {
+                window.scrollTo(0, 0);
+                $('#system').show();
+                console.log(e);
+            }
+        });
+    }
+
+    function verify() {
+        var otp = $('#mob_otp').val();
+        event.preventDefault();
+        var form = $('#sign-up')[0];
+        var data = new FormData(form);
+        data.append("action", "verify");
+        data.append("mob_otp", otp);
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "auth.php",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                console.log(data);
+                if (data == 'verified') {
+                    alert('Account Created');
+                    location.replace('index.php');
+                } else if (data == 'notverified') {
+                    window.scrollTo(0, 0);
+                    $('#system').show();
+
+                } else {
+                    window.scrollTfo(0, 0);
+                    $('#system').show();
+                }
+            },
+            error: function (e) {
+                window.scrollTo(0, 0);
+                $('#system').show();
+                console.log(e);
+            }
+        });
+    }
+
+    function get_otp() {
+        var name = $('#name').val();
+        var phone = $('#phone').val();
+        var class_sel = $('#class').val();
+        var country = $('#country').val();
+        var password = $('#password').val();
+        if (name == '' || phone == '' || class_sel == '' || country == '' || password == '') {
+            alert('Fill all fields');
+            window.scrollTo(0, 0);
+            //$('#verification').show();
+            event.preventDefault();
+        } else {
+            event.preventDefault();
+            var form = $('#sign-up')[0];
+            var data = new FormData(form);
+            data.append("action", "get_otp");
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "auth.php",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    console.log(data);
+                    if (data == 'success') {
+                        open();
+                    } else if (data == 'present') {
+                        alert('User already Present');
+                    } else {}
+                },
+                error: function (e) {
+                    window.scrollTo(0, 0);
+                    $('#system').show();
+                    console.log(e);
+                }
+            });
+        }
+    }
+
+    function open() {
+        $(document).ready(function () {
+            $('#otp-modal').modal('show');
+        });
+    }
+</script>
