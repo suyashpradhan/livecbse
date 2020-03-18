@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../New Design/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+
+        <a class="navbar-brand" href="#"><img src="../New Design/images_new/cbselogo-log-new.png" alt="logo"
+                class="student-login-logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper mb-4">
+        <div class="container">
+            <h1 class="page-head">Fill up the enquiry form</h1>
+
+            <div class="card">
+                <form action="" name="enquiry_form" method="post" class="enquiry-form">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Instance No">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="date" name="" id="" class="form-control" placeholder="Date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="form-text-title">Enquiry Details</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <select name="" id="" class="form-control">
+                                    <option value="">Mode Of Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Phone No">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <div class="cntr">
+                                    <div>
+                                        <span class="class-head-modal">Class: </span>
+                                    </div>
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_ix-modal" type="radio" name="class_select_12" value="ix"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_ix-modal" class="md-radio-text">IX</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_x-modal" type="radio" name="class_select_12" value="x"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_x-modal">X</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_xi-modal" type="radio" name="class_select_12" value="xi"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_xi-modal" class="md-radio-text">XI</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_xii-modal" type="radio" name="class_select_12" value="xii"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_xii-modal" class="md-radio-text">XII</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <select name="" id="" class="form-control">
+                                    <option value="">Course Required For</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Subject">
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Board">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Enquiry Handled By">
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <select name="" id="" class="form-control">
+                                <option value="">Call Response</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <textarea name="" id="" class="form-control" placeholder="Enquiry Note"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <textarea name="" id="" class="form-control" placeholder="Conclusion"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div class="form-group">
+                                <div class="cntr cntr-student">
+                                    <div>
+                                        <span class="class-head-modal">Interested for Demo: </span>
+                                    </div>
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_ix-modal" type="radio" name="class_select_12" value="ix"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_ix-modal" class="md-radio-text">Yes</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-modal">
+                                        <input id="class_x-modal" type="radio" name="class_select_12" value="x"
+                                            onclick="change_subjects_12()">
+                                        <label for="class_x-modal">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-xl-6">
+                            <div id="next_div" style="display: block;">
+                                <input type="text" class="enqb form-control" name="next_call" id="next_call"
+                                    placeholder="Timing for Next Demo Confirmation">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-primary btn-submit-student">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

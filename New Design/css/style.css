@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rubik',
+  font-family: 'Open Sans',
     sans-serif;
+
 }
 
 /* Typography
@@ -338,7 +339,7 @@ img.pull-right {
   background: none;
   color: #959595;
   font-size: 14px;
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 
 .form-control:focus {
@@ -1119,6 +1120,10 @@ ul.top-info li p.info-text {
   padding: 30px;
 }
 
+.schedule-action {
+  margin: -65px 0 0 0;
+}
+
 .call-to-action-title {
   color: #fff;
   margin: 0;
@@ -1130,9 +1135,9 @@ ul.top-info li p.info-text {
 
 /* Action style box */
 
-.call-to-action-box {
-  margin-top: -65px;
-}
+/* .call-to-action-box {
+  margin-top: -40px;
+} */
 
 .call-to-action-box .action-style-box {
   /* background: #900; */
@@ -1143,7 +1148,8 @@ ul.top-info li p.info-text {
   /* background: #414141; */
   background: rgba(0, 0, 0, 0.9);
   padding: 10px 15px;
-  margin-top: -5px
+  margin-top: -45px;
+
 }
 
 .action-style-box-2 .form_groupHeaderNew {
@@ -4084,7 +4090,7 @@ label {
   height: 300px;
   overflow: auto;
   display: none;
-  padding: 10px;
+  /*  padding: 10px; */
   border-top: 2px solid #4d4d4d;
 }
 
@@ -4126,9 +4132,21 @@ label {
 .tab__main #tab2:checked~#content2,
 .tab__main #tab3:checked~#content3,
 .tab__main #tab4:checked~#content4,
-.tab__main #tab5:checked~#content5 {
+.tab__main #tab5:checked~#content5,
+.tab__main #tab6:checked~#content6,
+.tab__main #tab7:checked~#content7,
+.tab__main #tab8:checked~#content8,
+.tab__main #tab9:checked~#content9,
+.tab__main #tab10:checked~#content10,
+.tab__main #tab11:checked~#content11,
+.tab__main #tab12:checked~#content12,
+.tab__main #tab13:checked~#content13,
+.tab__main #tab14:checked~#content14,
+.tab__main #tab15:checked~#content15,
+.tab__main #tab16:checked~#content16 {
   display: block;
 }
+
 
 .tab__main #content1 .content_description {
   font-size: 16px !important;
@@ -5273,9 +5291,9 @@ label {
 .interested-in-form {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 10px;
   align-items: flex-start;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .form_groupHeaderNew {
@@ -6321,7 +6339,7 @@ label {
 }
 
 .navbar-light {
-  background-color: #181818 !important;
+  background-color: #181818;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -6345,8 +6363,7 @@ label {
  */
 .card {
   border: 1px solid #ccc;
-  border-radius: 10px !important;
-  padding: 10px !important;
+  padding: 0 10px !important;
 }
 
 .video-play-button {
@@ -6837,8 +6854,8 @@ a.active:after {
 }
 
 .circle-img {
-  height: 60px;
-  margin: 0 auto;
+  height: 100px;
+  margin: -5px auto 0 auto;
   display: block;
 }
 
@@ -7794,4 +7811,115 @@ a.active:after {
 
 .iti__flag {
   background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/img/flags.png") !important;
+}
+
+dropdown input,
+.iti--allow-dropdown input[type="tel"],
+.iti--allow-dropdown input[type="text"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="tel"],
+.iti--separate-dial-code input[type="text"] {
+  padding-right: 6px;
+  padding-left: 45px !important;
+  margin-left: 0;
+}
+
+/*Student Login*/
+
+.student-login-logo {
+  height: 40px;
+  max-width: 100%;
+}
+
+.page-wrapper {
+  /* background-color: #f3f5f7; */
+  height: 100vh;
+}
+
+
+.page-head {
+  font-size: 40px;
+  color: #4d4d4d;
+  padding: 40px 0;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card-link {
+  font-size: 24px;
+  font-weight: 600;
+  color: #990000;
+  margin: 0;
+}
+
+.card-left {
+  margin-right: 10px;
+}
+
+.enquiry-form {
+  padding: 20px 0;
+}
+
+.enquiry-form .form-control {
+  padding: 5px 10px;
+}
+
+.form-text-title {
+  font-size: 22px;
+  color: #181818;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  padding: 10px 0 4px 0;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.cntr-student {
+  grid-template-columns: 1fr 150px 150px !important;
+}
+
+.btn-submit-student {
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+}
+
+.btn-print {
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  background-color: #4d4d4d !important;
+  border: 1px solid #4d4d4d !important;
+}
+
+.enquiry-info-text {
+  font-size: 22px;
+  color: #181818;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.enquiry-info-text span {
+  color: #990000;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.enquiries-text {
+  color: #181818;
+  font-weight: 600;
+  margin: 80px 0 0 0;
+  padding: 0 0 5px 0;
+  font-size: 24px;
+}
+
+#popupModal .modal-body {
+  padding: 0;
+}
+
+.popup-img {
+  max-width: 100%;
+  width: 100%;
 }
