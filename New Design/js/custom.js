@@ -64,3 +64,19 @@ jQuery(function ($) {
 	});
 
 });
+
+$('#play').on('click', function (e) {
+	e.preventDefault();
+	$("#player")[0].src += "?autoplay=1";
+	$('#player').show();
+	$('#video-cover').hide();
+	$('#play').hide();
+})
+
+$('#play-1').on('click', function (e) {
+	e.preventDefault();
+	$("#player-1")[0].src += "?autoplay=1";
+	$('#player-1').show();
+	$('#video-cover-1').hide();
+	$('#play-1').hide();
+})

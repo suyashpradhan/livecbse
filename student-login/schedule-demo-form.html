@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../New Design/css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#update-schedule-demo-modal">
+        Launch demo modal
+    </button>
+
+    <div class="modal fade" id="schedule-demo-modal" tabindex="-1" role="dialog" aria-labelledby="schedule-demo-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="schedule-demo-modal">Schedule New Demo</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="danger-text">No Demo Scheduled</h1>
+                    <a class="info-text" href="#" onclick="schedule_demo()">To Schedule a demo click here!!!</a>
+                    <div id="schedule_form" style="display: none;">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="subject">Subjects</label>
+                                <select name="subject" id="subject" class="form-control">
+                                    <option>Physics</option>
+                                    <option>Chemistry</option>
+                                    <option>Maths</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="datepicker1">Demo Timing</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" name="demo_date" id="datepicker1" placeholder="Date"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" name="demo_time" id="demo_time" placeholder="Timings: HH:MM"
+                                            class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" class="form-control"
+                                        placeholder="We have successfully booked slot of your ...... Demo Lecture for ..... i.e. ..... at ..... Please be ready with the necessary equipments (i.e. Headphones with Microphone, Computer with working internet >512kbps)."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="sub" id="sub" value="Schedule" class="schedule-button-new">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal">Update Schedule Demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-hover table-striped schedule-demo-table">
+                        <thead class="thead thead-dark">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Demo Timing</td>
+                                <td>Next SMS Timing</td>
+                                <td>Status</td>
+                                <td>Last SMS Timing</td>
+                                <td>Status</td>
+                                <td>Demo Status</td>
+                                <td>Feedback</td>
+                                <td>Update</td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>Today at 7:00 PM</td>
+                                <td>0000-00-00 00:00:00</td>
+                                <td></td>
+                                <td>0000-00-00 00:00:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="update_schedule_demo.php?id=1" data-toggle="modal"
+                                        data-target="#schedule-demo-modal">Click
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="update-schedule-demo-modal" tabindex="-1" role="dialog"
+        aria-labelledby="update-schedule-demo-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="update-schedule-demo-modal">Update Demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="schedule_form">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="subject">Subjects</label>
+                                <select name="subject" id="subject" class="form-control">
+                                    Chemistry <option>Physics</option>
+                                    <option>Chemistry</option>
+                                    <option>Maths</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="datepicker1">Demo Timing</label>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" name="demo_date" id="datepicker1" readonly=""
+                                            value="Today at 7:00 PM" required="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="datepicker1">Next SMS Timing</label>
+                                        <input type="text" name="demo_date" id="datepicker1" readonly=""
+                                            value="0000-00-00 00:00:00" required="" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="next_sms_status">Next SMS Status </label>
+                                        <select name="next_sms_status" id="next_sms_status" class="form-control">
+                                            <option></option>
+                                            <option>Abort</option>
+                                            <option value="execute">Execute</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="datepicker1">Last SMS Timing </label>
+                                        <input type="text" name="demo_date" id="datepicker1" readonly=""
+                                            value="0000-00-00 00:00:00" required="" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="next_sms_status">Last SMS Status </label>
+                                        <select name="last_sms_status" id="next_sms_status" class="form-control">
+                                            <option></option>
+                                            <option>Abort</option>
+                                            <option value="execute">Execute</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="demo_status"> Demo Status</label>
+                                <select name="demo_status" id="demo_status" class="form-control">
+                                    <option></option>
+                                    <option>Attended</option>
+                                    <option>Not Attended</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="feedback">Feedback</label>
+                                    <textarea name="feedback" id="feedback" class="form-control"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" name="sub" id="sub" value="Update" class="schedule-button-new">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7fdc918442.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script language='javascript'>
+        function schedule_demo() {
+            $('#schedule_form').show();
+        }
+        $(function () {
+            $("#datepicker1").datepicker({
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
