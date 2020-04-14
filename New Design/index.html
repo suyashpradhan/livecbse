@@ -2607,7 +2607,7 @@
 		</div>
 	</section>
 
-	<div class="modal fade text-center" id="thankyou">
+	<!-- <div class="modal fade text-center" id="popupModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -2616,7 +2616,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="modal fade text-center" id="contactus">
 		<div class="modal-dialog">
@@ -2638,10 +2638,128 @@
 		</div>
 	</div>
 
-	<div class="modal fade " id="registration_form">
+	<div class="modal fade " id="popupModal">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content" id="register12">
+				<div class="modal-body" style="width: 100%">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-mg-7 col-lg-7 col-xl-7">
+							<form action="" class="registration-form" id="profile_detail" method="post">
+								<div class="half-Header">
+									<h1>Personal Details</h1>
+								</div>
 
+								<div class="first-form-wrapper">
+									<label>Name:</label>
+									<input type="text" placeholder="First Name" class="form-control"
+										name="student_name1" id="student_name1" onkeyup="display_student_first_name()"
+										onblur="display_student_first_name()" required="">
+									<input type="text" placeholder="Last Name" name="last_name" "="" class="
+										form-control" id="last_name" onkeyup="display_student_last_name()" required="">
+								</div>
+								<div class="first-form-wrapper">
+									<label>Phone No:</label>
+									<input type="text" placeholder="Mobile Number 1" name="contact_number"
+										class="form-control" id="contact_number"
+										onkeyup="display_student_mobile_number1()"
+										onblur="display_student_mobile_number1()" required="">
+									<input type="text" placeholder="Mobile Number 2" name="second_contact"
+										class="form-control" id="second_contact"
+										onkeyup="display_student_mobile_number2()"
+										onblur="display_student_mobile_number2()">
+								</div>
+								<div class="first-form-wrapper-email">
+									<label>Email:</label>
+									<input type="email" placeholder="Email Address" name="student_email1"
+										class="form-control" id="student_email1" onkeyup="display_student_email_id()"
+										onblur="display_student_email_id()" required="">
+								</div>
+								<div class="first-form-wrapper-country">
+									<label>Country:</label>
+									<div>
+										<div class="md-radio md-radio-schedule">
+											<input type="radio" name="country" id="country" value="India"
+												checked="checked" onchange="check_country();">
+											<label for="country" style="margin-right: 10px;">India</label>
+										</div>
+										<!-- <input type="radio" name="country" id="country" value="India" checked="checked"
+											onchange="check_country();">
+										<label for="country" style="margin-right: 10px;">India</label> -->
+									</div>
+									<div>
+										<div class="md-radio md-radio-schedule">
+											<input type="radio" name="country" id="country2" value="Other"
+												onchange="check_country();">
+											<label for="country2" style="margin-right: 10px;">Other</label>
+										</div>
+										<!-- <input type="radio" name="country" id="country2" value="Other"
+											onchange="check_country();">
+										<label for="country" style="margin-right: 10px;">Other</label> -->
+									</div>
+									<div>
+										<input type="text" name="other_country" class="form-control" id="other_country"
+											style="display: none;" onkeypress=" display_country()"
+											onblur="display_country()" placeholder="Enter Country">
+									</div>
+								</div>
+								<div class="first-form-wrapper-selection" id="india_section">
+									<input type="text" id="listBox" name="state_name" placeholder="State"
+										class="form-control">
+									<input type="text" id="secondlist" name="city_name" class="form-control"
+										placeholder="City"><input type="text" name="city" id="city" style="display:none"
+										placeholder="Enter City Name" class="form-control">
+								</div>
+								<div class="first-form-wrapper-address">
+									<label>Address:</label>
+									<!-- <input type="text" placeholder="Address" name="address" class="form-control textarea"
+                                    id="address" onKeyUp="display_student_address()" onBlur="display_student_email_id()"
+                                    required> -->
+
+									<textarea placeholder="Address" name="address" class="form-control" id="address"
+										onkeyup="display_student_address()" onblur="display_student_email_id()"
+										required="">                                </textarea>
+								</div>
+								<div class="first-form-wrapper-button">
+									<input type="submit" class="btnPayNow" name="step_1_next" id="step_1_next"
+										value="Pay Now">
+								</div>
+							</form>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-mg-5 col-lg-5 col-xl-5">
+							<div class="half-Header">
+								<h1>Invoice</h1>
+							</div>
+							<div class="form-input-Wrapper">
+								<label>First Name: <span id="display_student_name">Suyash Pradhan</span></label>
+								<label>Mobile Number 1: <span id="display_mobile_number1">9167988239</span></label>
+								<label>Mobile Number 2: <span id="display_mobile_number2"></span></label>
+								<label>Email Address: <span id="display_email_id"></span></label>
+								<label>Country: <span id="display_country">India</span></label>
+								<label>Address: <span id="display_address"></span></label>
+							</div>
+							<div class="border-div m-0 p-0" style="border:none">
+								<table class="table table-sm table-bordered table-hover table-striped "
+									style="width: 100%; text-align: center">
+									<thead class="thead thead-dark">
+										<tr>
+											<th>Module Selected</th>
+											<th>Cost</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>p-11/p-12/</td>
+											<td>Rs <label id="net_fees">22715<input type="hidden" id="net_fees_input"
+														name="net_fees_input" value="22715"></label></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -3141,9 +3259,9 @@
 		</div>
 	</div>
  -->
-	<div class="modal fade text-center" id="thankyou">
-		<div class="modal-dialog">
-			<div class="modal-content">
+	<div class="modal fade" id="thankyou">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
 				<div class="modal-header">
 					<h5 class="modal-title"></h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -3151,14 +3269,140 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					Thank you for scheduling a demo with livecbse.com. Our counsellor will contact you soon.
+					<h3 class="thankyou-text">Thank you for scheduling a demo with livecbse.com. Our counsellor will
+						contact
+						you soon.</h3>
 
 					<h1 class="info-newsletter">If you want to get updates via email address, then please provide your
 						email address below</h1>
 					<form action="">
-						<input type="text" placeholder="Email Address" class="form-control">
-						<input type="submit" value="Submit" class="btn btn-success mt-2">
+						<div class="row">
+							<div class="col-6">
+								<div class="form-group">
+									<label for="" class="m-0">Select Language</label>
+									<select name="" id="" class="form-control">
+										<option value="">English</option>
+										<option value="">Hindi</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="" class="m-0">Email Address</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Select Subjects</label>
+							<div class="checkboxes-div">
+								<div class="md-checkbox">
+									<input id="phy" type="checkbox" checked>
+									<label for="phy">Physics</label>
+								</div>
+								<div class="md-checkbox">
+									<input id="chem" type="checkbox" checked>
+									<label for="chem">Chemistry</label>
+								</div>
+								<div class="md-checkbox">
+									<input id="math" type="checkbox" checked>
+									<label for="math">Mathematics</label>
+								</div>
+								<div class="md-checkbox">
+									<input id="bio" type="checkbox" checked>
+									<label for="bio">Biology</label>
+								</div>
+								<div class="md-checkbox">
+									<input id="eng" type="checkbox" checked>
+									<label for="eng">English</label>
+								</div>
+							</div>
+						</div>
+						<input type="submit" value="Submit" class="submit-textarea-btn">
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="my_course">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Checkout</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="border-div" style="padding: 0;border: none;">
+						<table class="table table-bordered table-striped table-hover table-sm">
+							<thead class="thead thead-dark">
+								<th>Course Code</th>
+								<th>Subject</th>
+								<th>Topic</th>
+								<th>Amount</th>
+								<th>Delete</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>p-3</td>
+									<td>Physics</td>
+									<td>Topic</td>
+									<td>Amount</td>
+									<td><img src="images_new/cancel.svg" class="table-img"></td>
+								</tr>
+								<tr>
+									<td>P-6</td>
+									<td>Physics</td>
+									<td>Hydrodynamics</td>
+									<td>3750</td>
+									<td><img src="images_new/cancel.svg" class="table-img"></td>
+								</tr>
+								<tr>
+									<td>B-2</td>
+									<td>Biology</td>
+									<td>Structural Organisation</td>
+									<td>3750</td>
+									<td><img src="images_new/cancel.svg" class="table-img"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h1 class="fees-text">Fees Details</h1>
+					<table class="table table-sm table-bordered table-striped table-hover">
+						<thead>
+							<th>Info</th>
+							<th>Amount</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Total Amount</td>
+								<td>25000</td>
+							</tr>
+							<tr>
+								<td>Discount</td>
+								<td>3750</td>
+							</tr>
+							<tr>
+								<td>Multiple Product Discount</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td>Service Tax</td>
+								<td>3465</td>
+							</tr>
+							<tr>
+								<td>Net Amount</td>
+								<td>22715</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="info-fees-text">* Fees exclusive of Courier charges for the international students</h3>
+					<div class="payment-div">
+						<input type="button" value="Select More Batches" class="select-more-btn">
+						<a href="#" class="pay-now-btn">Pay Now</a>
+					</div>
 				</div>
 			</div>
 		</div>

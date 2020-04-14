@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../New Design/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+
+        <a class="navbar-brand" href="#"><img src="../New Design/images_new/cbselogo-log-new.png" alt="logo"
+                class="student-login-logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper mb-4">
+        <div class="container">
+            <h1 class="page-head">Custom Enquiry Process of Live CBSE</h1>
+            <form action="" class="custom-enquiry-form">
+                <div class="row justify-content-center ml-1">
+                    <div class="offset-2 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+
+                        <label for="">From</label>
+                        <input type="text" name="" id="" class="form-control width-auto">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <label for="">To</label>
+                        <input type="text" name="" id="" class="form-control width-auto">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <input type="submit" value="Custom Search" class="submit-enquiry-btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-large">
+            <h1 class="enquiries-text">View Sorted Enquiries </h1>
+            <hr>
+            <section id="content1" style="height:100%">
+                <input type="button" value="All" id="today_11" class="buttons"
+                    onclick="get_enquiry('today','All','11')">
+                <input type="button" value="Pending" id="today_1" class="buttons buttons-active"
+                    onclick="get_enquiry('today','Pending','1')">
+                <input type="button" value="Scheduled" id="today_10" class="buttons"
+                    onclick="get_enquiry('today','Scheduled','10')">
+                <input type="button" value="Interested In" id="today_2" class="buttons"
+                    onclick="get_enquiry('today','Interested','2')">
+                <input type="button" value="Not Interested In" id="today_3" class="buttons"
+                    onclick="get_enquiry('today','Not Interested','3')">
+                <input type="button" value="No Response" id="today_4" class="buttons"
+                    onclick="get_enquiry('today','No Response','4')">
+                <input type="button" value="Unreachable" id="today_5" class="buttons"
+                    onclick="get_enquiry('today','Unreachable','5')">
+                <input type="button" value="Call Disconnected" id="today_6" class="buttons"
+                    onclick="get_enquiry('today','Call Disconnected','6')">
+                <input type="button" value="Not Enquired" id="today_7" class="buttons"
+                    onclick="get_enquiry('today','Not Enquired','7')">
+                <input type="button" value="On Hold" id="today_8" class="buttons"
+                    onclick="get_enquiry('today','On Hold','8')">
+                <input type="button" value="Duplicate" id="today_9" class="buttons"
+                    onclick="get_enquiry('today','Duplicate','9')">
+            </section>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7fdc918442.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#datatable').DataTable();
+        });
+    </script>
+</body>
+
+</html>
