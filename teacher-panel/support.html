@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Teacher Dashboard - LiveCBSE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../New Design/css/style.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="../../images_new/livecbse_logo.png" alt=""> </div>
+            <div class="list-group list-group-flush">
+                <h1 class="list-divider-text">Add / Send Details</h1>
+                <a href="lecturesupplement.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-book fa-fw"></i>
+                    <span>Send Lecture Supplement</span></a>
+                <a href="add_tutorial.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-book-open fa-fw"></i>
+                    <span>Send Tutorial Sheet</span></a>
+                <a href="add_student_video_recording.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-video fa-fw"></i>
+                    <span>Add Class Video Recording</span></a>
+                <a href="general_support.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-question-circle fa-fw"></i>
+                    <span>Support/Help/Enquiry</span></a>
+
+                <div class="divider-gap"></div>
+                <h1 class="list-divider-text">View Uploaded Data</h1>
+                <a href="view_lecturesupplement.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-table fa-fw"></i>
+                    <span>View Lecture Supplement</span></a>
+                <a href="view_tutorial.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-eye fa-fw"></i>
+                    <span>View Tutorial Sheet</span></a>
+                <a href="view_video_recording.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-user-clock"></i>
+                    <span>View Class Video Recording</span></a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg mobile-nav border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"> </i></button>
+                <h1 class="welcome-text">Welcome Shikha</h1>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link navitem-secondary-link-active" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-secondary-link" href="?q=logout">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-wrapper-secondary">
+                <div class="container">
+                    <div class="page-card">
+                        <h1 class="page-card-head">Message
+                        </h1>
+                        <form action="" method="post" enctype="multipart/form-data">
+
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <h1 class="form-span">Subject</h1>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                    <input type="text" name="subject" id="subject" required="" class="form_fields">
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <h1 class="form-span">Message</h1>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                    <textarea name="message" id="message" required="" col="475" rows="5" required
+                                        class="form_fields_textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <input type="submit" name="sub" value="Submit" class="submit-textarea-btn">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7fdc918442.js" crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>

@@ -130,28 +130,25 @@
 	<!--/ Header end -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
 		</ol>
 		<div class="carousel-inner">
-			<div class="carousel-item carousel-one active">
+			<div class="carousel-item carousel-one">
 				<div class="col-md-12 text-middle-align text-right">
 					<div class="container">
-
 					</div>
 				</div>
 			</div>
-			<div class="carousel-item carousel-two">
+			<div class="carousel-item carousel-two active">
 				<div class="container">
 					<div class="col-md-12 text-middle-align text-right">
-						<h2 class="slide-title animated slideInRight">A Team Of Specialists
-							For Board Exams
+						<h2 class="slide-title animated slideInRight">A Team Of Specialists For Board Exams
 						</h2>
-						<h3 class="slide-sub-title animated slideInRight">Our material has been
-							crafted
-							Exclusively for CBSE XII Board</h3>
+						<h3 class="slide-sub-title animated slideInRight">Our material has been crafted Exclusively for
+							CBSE XII Board</h3>
 						<p>
 							<a href="team.php" class="slider btn btn-primary border animated slideInRight">Know More</a>
 						</p>
@@ -175,11 +172,12 @@
 			<div class="carousel-item carousel-four">
 				<div class="col-md-12 text-middle-align text-left">
 					<div class="container">
-						<h2 class="slide-title slide-title-red animated slideInLeft">Home Assignments</h2>
-						<h2 class="slide-title slide-title-red animated slideInLeft">Lecture
-							Supplements</h2>
-						<h2 class="slide-title slide-title-red animated slideInLeft">Study
-							Material </h2>
+						<h2 class="slide-title slide-title-red animated slideInLeft slide-title-red">Home Assignments
+						</h2>
+						<h2 class="slide-title slide-title-red animated slideInLeft slide-title-red">Lecture Supplements
+						</h2>
+						<h2 class="slide-title slide-title-red animated slideInLeft slide-title-red">Study Material
+						</h2>
 						<p>
 							<a href="teaching_methodology.php"
 								class="slider btn btn-primary border animated slideInLeft">Know More</a>
@@ -190,14 +188,9 @@
 			<div class="carousel-item carousel-five">
 				<div class="container">
 					<div class="col-md-12 text-middle-align text-right">
-						<h2 class="slide-title animated slideInRight">It has evolved from a
-							system with
-							trust</h2>
-						<h2 class="slide-title animated slideInRight">of more
-							than 17500
-							students </h2>
-						<h2 class="slide-title animated slideInRight">of Class
-							XII alone...</h2>
+						<h2 class="slide-title animated slideInRight">It has evolved from a system with trust</h2>
+						<h2 class="slide-title animated slideInRight">of more than 17500 students </h2>
+						<h2 class="slide-title animated slideInRight">of Class XII alone...</h2>
 						<p>
 							<a href="about.php" class="slider btn btn-primary border animated slideInRight">Know
 								More</a>
@@ -207,20 +200,22 @@
 			</div>
 			<a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button"
 				data-slide="prev">
-				<i class="fas fa-angle-left"></i>
+				<i class="fas fa-angle-left" aria-hidden="true"></i>
 			</a>
 			<a class="left carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button"
 				data-slide="next">
-				<i class="fas fa-angle-right"></i>
+				<i class="fas fa-angle-right" aria-hidden="true"></i>
 			</a>
 		</div>
 	</div>
 
 	<section class="call-to-action-box no-padding schedule-action">
+		<a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal" data-toggle="modal">Schedule
+			Demo</a>
 		<div class="container">
 			<div class="action-style-box">
-				<a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
-					data-toggle="modal">Schedule Demo</a>
+				<!-- <a href="#" class="schedule-link-mobile-show" data-target="#schedule-form-modal"
+					data-toggle="modal">Schedule Demo</a> -->
 				<h1 class="form_groupHeaderNew form_groupHeaderNewMobile-hide">Schedule Demo</h1>
 				<form action="" class="schedule-form">
 					<div class="form_group">
@@ -270,6 +265,8 @@
 					<div class="form_group">
 						<a class="schedule_link" onclick="schedule_demo_new1()">Submit</a>
 					</div>
+
+
 				</form>
 			</div>
 		</div>
@@ -2420,7 +2417,7 @@
 				</div>
 
 				<div class="col-md-4 text-center">
-					<img class="service-center-img" src="images_new/Boy image.png" alt="">
+					<img class="service-center-img" src="images_new/help_360_livecbse.png" alt="">
 				</div>
 
 				<div class="col-md-4">
@@ -2638,7 +2635,7 @@
 		</div>
 	</div>
 
-	<div class="modal fade " id="popupModal">
+	<!-- <div class="modal fade " id="popupModal">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content" id="register12">
 				<div class="modal-body" style="width: 100%">
@@ -2682,9 +2679,7 @@
 												checked="checked" onchange="check_country();">
 											<label for="country" style="margin-right: 10px;">India</label>
 										</div>
-										<!-- <input type="radio" name="country" id="country" value="India" checked="checked"
-											onchange="check_country();">
-										<label for="country" style="margin-right: 10px;">India</label> -->
+
 									</div>
 									<div>
 										<div class="md-radio md-radio-schedule">
@@ -2692,9 +2687,7 @@
 												onchange="check_country();">
 											<label for="country2" style="margin-right: 10px;">Other</label>
 										</div>
-										<!-- <input type="radio" name="country" id="country2" value="Other"
-											onchange="check_country();">
-										<label for="country" style="margin-right: 10px;">Other</label> -->
+
 									</div>
 									<div>
 										<input type="text" name="other_country" class="form-control" id="other_country"
@@ -2711,9 +2704,7 @@
 								</div>
 								<div class="first-form-wrapper-address">
 									<label>Address:</label>
-									<!-- <input type="text" placeholder="Address" name="address" class="form-control textarea"
-                                    id="address" onKeyUp="display_student_address()" onBlur="display_student_email_id()"
-                                    required> -->
+
 
 									<textarea placeholder="Address" name="address" class="form-control" id="address"
 										onkeyup="display_student_address()" onblur="display_student_email_id()"
@@ -2762,7 +2753,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="footer" class="footer bg-overlay">
 		<div class="footer-main">
@@ -2770,13 +2761,10 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12 footer-widget footer-about">
 						<h3 class="widget-title">About Us</h3>
-						<p>LiveCBSE is an Online Live and Interactive Learning Platform by Domain E. The
-							Team
+						<p>LiveCBSE is an Online Live and Interactive Learning Platform by Domain E. The Team
 							specializes in
-							coaching for CBSE Board Exam Preparation. LiveCBSE was originally conceived
-							to give the same
-							standard of coaching to students who could not come to Kota centre for
-							various reasons.
+							coaching for CBSE Board Exam Preparation. LiveCBSE was originally conceived to give the same
+							standard of coaching to students who could not come to Kota centre for various reasons.
 							Taking the model online has added advantages as <span class="redirect-link"><a
 									href="livecbse_benefits.php">shown
 									here.</a></span>
@@ -2786,60 +2774,65 @@
 								<li>
 									<a href="https://facebook.com/domainekota" target="_blank"><img
 											src="images_new/facebook.svg" alt="facebook" class="footer-social-img"><span
-											class="footer-social-span">|
-											LiveCBSE</span></a>
+											class="footer-social-span">| LiveCBSE</span></a>
 								</li>
+								<!--<li><a href="https://facebook.com/domainekota" target="_blank"><i
+											class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+									<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://github.com/"><i class="fab fa-github"></i></a></li> -->
 							</ul>
-						</div>
-					</div>
+						</div><!-- Footer social end -->
+					</div><!-- Col end -->
 
 					<div class="col-md-3 col-sm-12 mb-2 footer-widget">
 						<h3 class="widget-title">CBSE Flashback with Solutions</h3>
 						<ul class="list-arrow">
-							<li><a href="https://www.domain-education.com/solutions/physics_flashback_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Physics Class
-									XII</a></li>
-							<li><a href="https://www.domain-education.com/solutions/chemistry_flashback_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Chemistry
-									Class XII</a></li>
-							<li><a href="https://www.domain-education.com/solutions/maths_flashback_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Maths Class
-									XII</a></li>
-							<li><a href="https://www.domain-education.com/solutions/english_flashback_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> English Class
-									XII</a></li>
-
+							<li><a href="physics-cbse-flashback-solutions"><i class="fas fa-angle-right"
+										aria-hidden="true"></i> CBSE Physics Class 12</a></li>
+							<li><a href="chemistry-cbse-flashback-solutions"><i class="fas fa-angle-right"
+										aria-hidden="true"></i> CBSE Chemistry Class 12</a></li>
+							<li><a href="maths-cbse-flashback-solutions"><i class="fas fa-angle-right"
+										aria-hidden="true"></i>CBSE Maths Class 12</a></li>
+							<li><a href="english-cbse-flashback-solutions"><i class="fas fa-angle-right"
+										aria-hidden="true"></i>CBSE English Class 12</a></li>
+							<li><a href="biology-cbse-flashback-solutions"><i class="fas fa-angle-right"
+										aria-hidden="true"></i>CBSE Biology Class 12</a></li>
 						</ul>
-					</div>
+					</div><!-- Col end -->
 
 
 					<div class="col-md-3 col-sm-12 mb-2 footer-widget">
 						<h3 class="widget-title">Sample Content</h3>
 						<ul class="list-arrow">
-							<li><a href="sample_content_xii.php"><i class="fas fa-angle-right" aria-hidden="true"></i>
-									Sample Content Class XII</a></li>
+							<li><a href="sample-content-12"><i class="fas fa-angle-right" aria-hidden="true"></i> CBSE
+									Sample Content Class 12</a></li>
+							<li><a href="sample-test-12"><i class="fas fa-angle-right" aria-hidden="true"></i> CBSE
+									Sample
+									Test Paper Class 12</a></li>
+							<!--	<li><a href="board_sample_paper_class_xii.php"><i class="fas fa-angle-right" aria-hidden="true"></i> Board Sample Paper  Class XII</a></li>
+							<li><a href="board_sample_paper_class_x.php"><i class="fas fa-angle-right" aria-hidden="true"></i>  Board Sample Paper Class X</a></li> -->
 						</ul>
-					</div>
+					</div><!-- Col end -->
 
 					<div class="col-md-2 col-sm-12 mb-2 footer-widget">
 						<h3 class="widget-title">NCERT Solutions Class XII </h3>
 						<ul class="list-arrow">
 							<li><a href="https://www.domain-education.com/solutions/physics_ncert_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Physics Class
-									XII</a></li>
+										class="fas fa-angle-right" aria-hidden="true"></i> NCERT Physics Class 12</a>
+							</li>
 							<li><a href="https://www.domain-education.com/solutions/chemistry_ncert_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Chemistry
-									Class XII</a></li>
+										class="fas fa-angle-right" aria-hidden="true"></i>NCERT Chemistry Class 12</a>
+							</li>
 							<li><a href="https://www.domain-education.com/solutions/maths_ncert_solution.php"><i
-										class="fas fa-angle-right" aria-hidden="true"></i> Maths Class
-									XII</a></li>
+										class="fas fa-angle-right" aria-hidden="true"></i> NCERT Maths Class 12</a></li>
 						</ul>
-					</div>
+					</div><!-- Col end -->
 
 
-				</div>
-			</div>
-		</div>
+				</div><!-- Row end -->
+			</div><!-- Container end -->
+		</div><!-- Footer main end -->
 
 		<div class="copyright">
 			<div class="container">
@@ -2853,15 +2846,16 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 						<div class="footer-menu">
 							<ul class="nav unstyled footer-list">
-								<li><a href="aboutus.php">About Us</a></li>
-								<li><a href="join_us.php">Join Us</a></li>
-								<li><a href="privacy_policy.php">Privacy Policy</a></li>
-								<li><a href="contactus.php">Contact Us</a></li>
-								<li><a href="disclaimer.php">Disclaimer</a></li>
+								<li><a href="about-us">About Us</a></li>
+								<li><a href="join-us">Join Us</a></li>
+								<!-- <li><a href="#">Franchise</a></li> -->
+								<li><a href="privacy-policy">Privacy Policy</a></li>
+								<li><a href="contact-us">Contact Us</a></li>
+								<li><a href="disclaimer">Disclaimer</a></li>
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div><!-- Row end -->
 
 				<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
 					<button class="btn btn-primary" title="Back to Top">
@@ -2869,10 +2863,10 @@
 					</button>
 				</div>
 
-			</div>
-		</div>
-	</footer>
+			</div><!-- Container end -->
+		</div><!-- Copyright end -->
 
+	</footer>
 
 	<div class="modal fade" id="schedule-form-modal" tabindex="-1" role="dialog" aria-labelledby="schedule-form-modal"
 		aria-hidden="true">
@@ -3243,11 +3237,13 @@
 
 
 
-	<!-- <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModal" aria-hidden="true">
+	<div class="modal fade" id="#" tabindex="-1" role="dialog" aria-labelledby="popupModal" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title"></h5>
+					<h5 class="modal-title">
+						<img src="images_new/c.jpg" alt="" class="modal-logo">
+					</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">×</span>
 					</button>
@@ -3258,9 +3254,9 @@
 			</div>
 		</div>
 	</div>
- -->
-	<div class="modal fade" id="thankyou">
-		<div class="modal-dialog modal-lg">
+
+	<div class="modal fade" id="popupModal">
+		<div class=" modal-dialog modal-lg">
 			<div class="modal-content ">
 				<div class="modal-header">
 					<h5 class="modal-title"></h5>
@@ -3275,51 +3271,57 @@
 
 					<h1 class="info-newsletter">If you want to get updates via email address, then please provide your
 						email address below</h1>
-					<form action="">
-						<div class="row">
-							<div class="col-6">
-								<div class="form-group">
-									<label for="" class="m-0">Select Language</label>
-									<select name="" id="" class="form-control">
-										<option value="">English</option>
-										<option value="">Hindi</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-group">
-									<label for="" class="m-0">Email Address</label>
-									<input type="text" class="form-control">
-								</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="form-group">
+								<label for="" class="m-0">Medium of Class</label>
+								<select name="medium_language" id="medium_language" class="form-control">
+									<option value="English">English</option>
+									<option value="Hindi">Hindi</option>
+									<option value="Hindi">Mixed</option>
+									<option value="Hindi">Other</option>
+								</select>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="">Select Subjects</label>
-							<div class="checkboxes-div">
-								<div class="md-checkbox">
-									<input id="phy" type="checkbox" checked>
-									<label for="phy">Physics</label>
-								</div>
-								<div class="md-checkbox">
-									<input id="chem" type="checkbox" checked>
-									<label for="chem">Chemistry</label>
-								</div>
-								<div class="md-checkbox">
-									<input id="math" type="checkbox" checked>
-									<label for="math">Mathematics</label>
-								</div>
-								<div class="md-checkbox">
-									<input id="bio" type="checkbox" checked>
-									<label for="bio">Biology</label>
-								</div>
-								<div class="md-checkbox">
-									<input id="eng" type="checkbox" checked>
-									<label for="eng">English</label>
-								</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="" class="m-0">Email Address</label>
+								<input type="text" id="schedule_email" name="schedule_email" class="form-control">
 							</div>
 						</div>
-						<input type="submit" value="Submit" class="submit-textarea-btn">
-					</form>
+					</div>
+					<div class="form-group">
+						<label for="">Select Subjects</label>
+						<div class="checkboxes-div">
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_Physics" value="Physics" type="checkbox">
+								<label for="schedule_Physics">Physics</label>
+							</div>
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_Chemistry" value="Chemistry"
+									type="checkbox">
+								<label for="schedule_Chemistry">Chemistry</label>
+							</div>
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_Mathematics" value="Mathematics"
+									type="checkbox">
+								<label for="schedule_Mathematics">Mathematics</label>
+							</div>
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_English" value="English" type="checkbox">
+								<label for="schedule_English">English</label>
+							</div>
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_Biology" value="Biology" type="checkbox">
+								<label for="schedule_Biology">Biology</label>
+							</div>
+							<div class="md-checkbox">
+								<input name="schedule_subject[]" id="schedule_Science" value="Science" type="checkbox">
+								<label for="schedule_Science">Science</label>
+							</div>
+						</div>
+					</div>
+					<input type="button" value="Submit" class="submit-textarea-btn" onclick="update_email()">
 				</div>
 			</div>
 		</div>

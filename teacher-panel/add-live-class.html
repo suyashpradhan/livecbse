@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Teacher Dashboard - LiveCBSE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../New Design/css/style.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="../../images_new/livecbse_logo.png" alt=""> </div>
+            <div class="list-group list-group-flush">
+                <h1 class="list-divider-text">Add / Send Details</h1>
+                <a href="check_lecturesupplement.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-book fa-fw"></i>
+                    <span>Check Lecture Supplement</span></a>
+                <a href="lecturesupplement.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-book fa-fw"></i>
+                    <span>Send Lecture Supplement</span></a>
+                <a href="add_tutorial.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-book-open fa-fw"></i>
+                    <span>Send Tutorial Sheet</span></a>
+                <a href="add_student_video_recording.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-video fa-fw"></i>
+                    <span>Add Class Video Recording</span></a>
+                <a href="start_class.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-video fa-fw"></i>
+                    <span>Start Live Class</span></a>
+                <a href="general_support.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-question-circle fa-fw"></i>
+                    <span>Support/Help/Enquiry</span></a>
+
+                <div class="divider-gap"></div>
+                <h1 class="list-divider-text">View Uploaded Data</h1>
+                <a href="view_lecturesupplement.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-table fa-fw"></i>
+                    <span>View Lecture Supplement</span></a>
+                <a href="view_tutorial.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-eye fa-fw"></i>
+                    <span>View Tutorial Sheet</span></a>
+                <a href="view_video_recording.php" class="list-group-item list-group-item-action"><i
+                        class="fas fa-user-clock"></i>
+                    <span>View Class Video Recording</span></a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg mobile-nav border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"> </i></button>
+                <h1 class="welcome-text">Welcome Shikha</h1>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link navitem-secondary-link-active" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-secondary-link" href="?q=logout">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-wrapper-secondary">
+                <div class="container-fluid">
+                    <div class="page-card">
+                        <h1 class="page-card-head">Select Batch for Class</h1>
+                        <div class="inner-div border-div" style="border: none;padding: 0;">
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Batch Name</h1>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c09m-09-01" type="radio" name="batch_name"
+                                                value="Global-03c09m-09-01" onclick="start('Global-03c09m-09-01')">
+                                            <label for="Global-03c09m-09-01" class="md-radio-text">Class 09:A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c10m-10-01" type="radio" name="batch_name"
+                                                value="Global-03c10m-10-01" onclick="start('Global-03c10m-10-01')">
+                                            <label for="Global-03c10m-10-01" class="md-radio-text">Class 10:A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c13m-11-01" type="radio" name="batch_name"
+                                                value="Global-03c13m-11-01" onclick="start('Global-03c13m-11-01')">
+                                            <label for="Global-03c13m-11-01" class="md-radio-text">Class 11:A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c13m-12-01" type="radio" name="batch_name"
+                                                value="Global-03c13m-12-01" onclick="start('Global-03c13m-12-01')">
+                                            <label for="Global-03c13m-12-01" class="md-radio-text">Class 12:A</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-form-div">
+                                <div class="row" id="count_down">
+                                    <!-- <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Select Instrument </h1>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <input type="text" name="instrument" id="instrument" value=""
+                                            class="form_fields">
+                                    </div> -->
+
+                                    <div class="lecture">
+                                        <div class="lecture-head-div">
+                                            <h1 class="lecture-head">Lecture Friday - 1</h1>
+                                        </div>
+                                        <div class="timer-card-new">
+                                            <div id="clockdivTime">
+                                                <h1 class="smalltextTime">2 <span>Days</span></h1>
+                                                <h1 class="smalltextTime">5 <span>Hours</span></h1>
+                                                <h1 class="smalltextTime">12 <span>Minutes</span></h1>
+                                                <h1 class="smalltextTime">45 <span>Seconds</span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="enter-session-teacher-panel">
+                                        <ul>
+                                            <li class="meetings _main">Meeting ID : <span>12345678</span></li>
+                                            <li class="meetings _subs">Meeting Password :
+                                                <span>12345678</span></li>
+                                            <li class="meetings _subs">Meeting Link :
+                                                <span><a href="https://web.skype.com/"
+                                                        target="_blank">https://web.skype.com/</a></span></li>
+                                        </ul>
+                                        <input type="button" value="Enter Meeting" class="submit-textarea-btn-left">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7fdc918442.js" crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
+
+<script language='javascript'>
+    var myVar;
+
+    function start(p) {
+        clearTimeout(myVar);
+        countdown(p);
+    }
+
+    function countdown(p) {
+        myVar = setTimeout(function () {
+            $.post('countdown_class.php?batch=' + p, function (data) {
+                console.log(data);
+                $('#count_down').html(data);
+            });
+            countdown(p);
+        }, 5000);
+    }
+</script>

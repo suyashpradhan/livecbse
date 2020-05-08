@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LiveCBSE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../New Design/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="../New Design/images_new/livecbse_logo_new.png" alt=""> </div>
+            <div class="list-group list-group-flush">
+                <h1 class="list-divider-text">Add / Send Details</h1>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw"></i>
+                    <span>Send Lecture Supplement</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-book-open fa-fw"></i>
+                    <span>Send Tutorial Sheet</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-video fa-fw"></i>
+                    <span>Add Class Video Recording</span></a>
+
+                <div class="divider-gap"></div>
+                <h1 class="list-divider-text">View Uploaded Data</h1>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-table fa-fw"></i>
+                    <span>View Lecture Supplement</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-eye fa-fw"></i>
+                    <span>View Tutorial Sheet</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-clock"></i>
+                    <span>View Class Video Recording</span></a>
+            </div>
+
+        </div>
+
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg  border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <h1 class="welcome-text">Welcome Teacher Name</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link navitem-secondary-link-active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-secondary-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="page-wrapper-secondary">
+                <div class="container">
+                    <div class="page-card">
+                        <h1 class="page-card-head">Add Batch Lecture Recording Link
+                        </h1>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Batch Name</h1>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c09m-09-01" type="radio" name="batch_name"
+                                                value="Global-03c09m-09-01">
+                                            <label for="Global-03c09m-09-01" class="md-radio-text">Class 09-A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c10m-10-01" type="radio" name="batch_name"
+                                                value="Global-03c10m-10-01">
+                                            <label for="Global-03c10m-10-01" class="md-radio-text">Class 10:A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-03c13m-11-01" type="radio" name="batch_name"
+                                                value="Global-03c13m-11-01">
+                                            <label for="Global-03c13m-11-01" class="md-radio-text">Class 11:A</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <div class="md-radio">
+                                            <input id="Global-01t12m-12-01" type="radio" name="batch_name"
+                                                value="Global-01t12m-12-01">
+                                            <label for="Global-01t12m-12-01" class="md-radio-text">Class 12:A</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Topic Name</h1>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                        <input type="text" name="topic" id="topic" required="" class="form_fields">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Date</h1>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <select name="day" id="day" class="class_select">
+                                            <option disabled="disabled" selected="selected">Day
+                                            </option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                            <option>28</option>
+                                            <option>29</option>
+                                            <option>30</option>
+                                            <option>31</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <select name="month" id="month" class="class_select">
+                                            <option disabled="disabled" selected="selected">Month</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <select name="year" id="year" class="class_select">
+                                            <option disabled="disabled" selected="selected">Year</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Lecture Recording Link </h1>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <input type="text" name="link" id="link" class="form_fields">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Password for Recording View </h1>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <input type="text" name="password" id="password" class="form_fields">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-form-div">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <h1 class="form-span">Status </h1>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <select name="status" id="status" class="class_select">
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit" name="sub" value="Submit" class="submit-textarea-btn">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/7fdc918442.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Live CBSE Coaching Classes | CBSE Online Coaching Classes | domain E | India</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background: #E0E0E0;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">
+                <img src="images_new/livecbse_logo.png" alt="LiveCBSE Logo" class="logo-img logo-mobile-show">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto container mr-auto">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">Live Coaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#">Test Series <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="test-series-12">Test
+                                    Series 12</a>
+                                <a href="test-series-11">Test
+                                    Series 11</a>
+                                <a href="test-series-10">Test
+                                    Series 10</a>
+                                <a href="test-series-09">Test
+                                    Series 09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#">Study Material <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="study-material-12">Study
+                                    Material 12</a>
+                                <a href="study-material-11">Study
+                                    Material 11</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="#">Doubt Removal <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+
+                            <div class="dropdown-content">
+                                <a href="doubt-removal-12">Doubt
+                                    Removal 12</a>
+                                <a href="doubt-removal-11">Doubt
+                                    Removal 11</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="faqs" class="nav-link">FAQs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#modalLogin">Student Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-t-55 p-b-55">
+                    <h1 class="inner-head" style="margin-top: 0;">EMI Option</h1>
+                    <form action="#" method="POST" class="w-100">
+                        <div class="fields_row">
+                            <div class="fields_col">
+                                <div class="form-group">
+                                    <input type="text" class="form_fields" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="fields_col">
+                                <div class="form-group">
+                                    <input type="text" class="form_fields" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="fields_col">
+                                <div class="form-group">
+                                    <input type="text" class="form_fields" placeholder="Phone Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields_row">
+                            <div class="form_group">
+                                <div class="cntr">
+                                    <div>
+                                        <span class="class-head">Class: </span>
+                                    </div>
+                                    <div class="md-radio md-radio-schedule">
+                                        <input id="class_ix" type="radio" name="class_select" value="ix"
+                                            onclick="change_subjects()">
+                                        <label for="class_ix" class="md-radio-text">9</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-schedule">
+                                        <input id="class_x" type="radio" name="class_select" value="x"
+                                            onclick="change_subjects()">
+                                        <label for="class_x">10</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-schedule">
+                                        <input id="class_xi" type="radio" name="class_select" value="xi"
+                                            onclick="change_subjects()">
+                                        <label for="class_xi" class="md-radio-text">11</label>
+                                    </div>
+
+                                    <div class="md-radio md-radio-schedule">
+                                        <input id="class_xii" type="radio" name="class_select" value="xii"
+                                            onclick="change_subjects()">
+                                        <label for="class_xii" class="md-radio-text">12</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <select id="contact_subject" name="contact_subject" class="class_select">
+                                    <option value="">Subjects</option>
+                                    <option value="">Physics</option>
+                                </select>
+                            </div>
+
+                            <div class="form_group">
+                                <select id="contact_subject" name="contact_subject" class="class_select">
+                                    <option value="">Select Mod</option>
+                                    <option value="">Mod 1</option>
+                                    <option value="">Mod 2</option>
+                                    <option value="">Both</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fields_row_3">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form_fields" placeholder="Amount">
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" class="mt-4 submit-textarea-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footer-widget footer-about">
+                        <h3 class="widget-title">About Us</h3>
+                        <p>LiveCBSE is an Online Live and Interactive Learning Platform by Domain E. The Team
+                            specializes in
+                            coaching for CBSE Board Exam Preparation. LiveCBSE was originally conceived to give the same
+                            standard of coaching to students who could not come to Kota centre for various reasons.
+                            Taking the model online has added advantages as <span class="redirect-link"><a
+                                    href="livecbse_benefits.php">shown
+                                    here.</a></span>
+                        </p>
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="https://facebook.com/domainekota" target="_blank"><img
+                                            src="images_new/facebook.svg" alt="facebook" class="footer-social-img"><span
+                                            class="footer-social-span">|
+                                            LiveCBSE</span></a>
+                                </li>
+                                <!-- <li><a href="https://facebook.com/domainekota" target="_blank"><i
+											class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+								<!--	<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://github.com/"><i class="fab fa-github"></i></a></li> -->
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div><!-- Col end -->
+
+                    <div class="col-md-3 col-sm-12 mb-2 footer-widget">
+                        <h3 class="widget-title">CBSE Flashback with Solutions</h3>
+                        <ul class="list-arrow">
+                            <li><a href="physics-cbse-flashback-solutions"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i> CBSE Physics Class 12</a></li>
+                            <li><a href="chemistry-cbse-flashback-solutions"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i> CBSE Chemistry Class 12</a></li>
+                            <li><a href="maths-cbse-flashback-solutions"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i>CBSE Maths Class 12</a></li>
+                            <li><a href="english-cbse-flashback-solutions"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i>CBSE English Class 12</a></li>
+                            <li><a href="biology-cbse-flashback-solutions"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i>CBSE Biology Class 12</a></li>
+                        </ul>
+                    </div><!-- Col end -->
+
+
+                    <div class="col-md-3 col-sm-12 mb-2 footer-widget">
+                        <h3 class="widget-title">Sample Content</h3>
+                        <ul class="list-arrow">
+                            <li><a href="sample-content-12"><i class="fas fa-angle-right" aria-hidden="true"></i> CBSE
+                                    Sample Content Class 12</a></li>
+                            <li><a href="sample-test-12"><i class="fas fa-angle-right" aria-hidden="true"></i> CBSE
+                                    Sample Test Paper Class 12</a></li>
+                            <!-- <li><a href="board_sample_paper_class_xii.php"><i class="fas fa-angle-right" aria-hidden="true"></i> Board Sample Paper  Class XII</a></li>
+							<li><a href="board_sample_paper_class_x.php"><i class="fas fa-angle-right" aria-hidden="true"></i>  Board Sample Paper Class X</a></li> -->
+                        </ul>
+                    </div><!-- Col end -->
+
+                    <div class="col-md-2 col-sm-12 mb-2 footer-widget">
+                        <h3 class="widget-title">NCERT Solutions Class XII </h3>
+                        <ul class="list-arrow">
+                            <li><a href="https://www.domain-education.com/solutions/physics_ncert_solution.php"><i
+                                        class="fas fa-angle-right" aria-hidden="true"></i> NCERT Physics Class 12</a>
+                            </li>
+                            <li><a href="https://www.domain-education.com/solutions/chemistry_ncert_solution.php"><i
+                                        class="fas fa-angle-right" aria-hidden="true"></i> NCERT Chemistry Class 12</a>
+                            </li>
+                            <li><a href="https://www.domain-education.com/solutions/maths_ncert_solution.php"><i
+                                        class="fas fa-angle-right" aria-hidden="true"></i> NCERT Maths Class 12</a></li>
+                        </ul>
+                    </div><!-- Col end -->
+
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Footer main end -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="copyright-info">
+                            <span>2012 All Rights Reserved with domain Edutech Pvt. Ltd.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="footer-menu">
+                            <ul class="nav unstyled footer-list">
+                                <li><a href="about-us">About Us</a></li>
+                                <li><a href="join-us">Join Us</a></li>
+                                <!-- <li><a href="#">Franchise</a></li> -->
+                                <li><a href="privacy-policy">Privacy Policy</a></li>
+                                <li><a href="contact-us">Contact Us</a></li>
+                                <li><a href="disclaimer">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Row end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </div><!-- Container end -->
+        </div><!-- Copyright end -->
+
+    </footer>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7fdc918442.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    </body>
+
+</html>
