@@ -378,6 +378,9 @@ select::-ms-expand {
 }
 
 /*Dashboard*/
+#dashboard {
+    margin-top: 50px;
+}
 
 .dashboard-logo-brand {
     color: #f90064 !important;
@@ -610,9 +613,10 @@ select::-ms-expand {
     grid-gap: 10px;
     background-color: #eaeaea;
     border: 1px solid #cfcfcf;
-    padding: 10px;
+    padding: 0 10px;
     border-radius: 8px;
-    height: 100%;
+    height: 165px;
+    align-items: flex-start;
 }
 
 .main-section-left {
@@ -630,8 +634,9 @@ select::-ms-expand {
 }
 
 .title {
-    font-size: 13px;
+    font-size: 15px;
     margin: 10px 0 0 0;
+    height: auto;
     padding: 3px 0 3px 0;
     font-weight: 600;
     color: #4d4d4d;
@@ -652,7 +657,7 @@ select::-ms-expand {
 }
 
 .action-link {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: #666666;
 }
@@ -1116,21 +1121,30 @@ select::-ms-expand {
 
 .col-grid-main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 60px;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     margin: 50px 15px;
     align-items: center;
 }
 
 .col-grid {
-    height: 100%;
+    margin: 0 0 50px 0;
 }
 
+
+.slick-slide {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+
+
 .info-grid {
-    background-color: #cccccc;
-    padding: 10px;
+    background-color: #fff;
+    border-right: 2px solid #696969;
+    padding: 5px 20px;
     height: 100%;
-    border-radius: 5px;
+    height: 165px;
 }
 
 .info-grid-header {
@@ -1164,6 +1178,7 @@ select::-ms-expand {
 .info-grid-description {
     margin: 5px 0 0 0;
     font-size: 15px;
+    line-height: 1.7;
     text-align: justify;
     color: #5c5b5b;
 }
@@ -1173,7 +1188,7 @@ select::-ms-expand {
     color: #f93c88;
     font-weight: 600;
     display: block;
-    margin: 0;
+    margin: 10px 0 0px 0;
     padding: 0;
 }
 
@@ -1191,4 +1206,49 @@ select::-ms-expand {
     font-weight: 600;
     display: block;
     text-align: center;
+}
+
+#dashboard.slick-slider {
+    position: relative;
+}
+
+.arrow_prev {
+    position: absolute;
+    top: 43%;
+    left: 8px;
+    font-size: 32px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.arrow_next {
+    position: absolute;
+    top: 43%;
+    right: 1px;
+    font-size: 32px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.arrow_prev_2 {
+    position: absolute;
+    top: 30%;
+    left: -5px;
+    font-size: 32px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.arrow_next_2 {
+    position: absolute;
+    top: 30%;
+    right: -10px;
+    font-size: 32px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.right-div {
+    display: flex !important;
+    justify-content: center;
 }
