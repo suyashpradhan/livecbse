@@ -897,7 +897,7 @@ select::-ms-expand {
 }
 
 .container-sm {
-    max-width: 650px;
+    max-width: 800px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -905,16 +905,24 @@ select::-ms-expand {
 }
 
 .form-wrapper {
-    margin: 40px 0 40px 0;
+    margin: 80px 0 10px 0;
+    background-color: #9d0b0b;
+    border-radius: 100px;
+}
+
+.form-wrapper form {
+    padding: 20px 40px 0 40px;
 }
 
 .extra-links {
-    color: #181818;
+    color: #ffa011;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 20px 80px 0px;
     display: block;
     font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .form-new-fields {
@@ -922,7 +930,9 @@ select::-ms-expand {
     padding: 3px 10px;
     border: 1px solid #b1b1b1;
     color: #696969;
-    height: 35px;
+    height: 45px;
+    text-transform: uppercase;
+
 }
 
 
@@ -934,7 +944,7 @@ select::-ms-expand {
 
 .form-new-fields-top {
     padding: 3px 10px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     color: #696969;
     height: 30px;
 }
@@ -942,7 +952,7 @@ select::-ms-expand {
 .form-new-fields-top:active,
 .form-new-fields-top:focus {
     outline: none;
-    border: 1px solid #9d0b0b;
+    border: 1px solid #ccc;
 }
 
 .form-new-fields-btn {
@@ -951,26 +961,32 @@ select::-ms-expand {
 }
 
 .login-button {
-    background-color: #9d0b0b;
-    color: #fff;
+    background-color: #f6da63;
+    color: #696969;
     padding: 3px 20px;
-    height: 35px;
-    border: 1px solid #9d0b0b;
+    height: 45px;
+    border: 1px solid #f6da63;
     width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .other {
-    margin: 0 auto 20px auto;
+    margin: 0 0 20px 20px;
     display: block;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     font-size: 30px;
+    color: #696969;
+    text-transform: lowercase;
 }
 
 .outer-div {
-    border: 1px solid #666666;
+    border: 1px solid #f6da63;
     padding: 25px 20px 0 20px;
     margin: 0 5px;
+    border-radius: 15px;
+    background-color: #f6da63;
 }
 
 .cntr {
@@ -980,7 +996,6 @@ select::-ms-expand {
     padding: 3px;
     border-radius: 3px;
     align-items: flex-start;
-    background-color: #fff;
 }
 
 .md-radio {
@@ -1054,6 +1069,7 @@ select::-ms-expand {
 .outer-div-head {
     font-size: 28px;
     margin: 0;
+    font-weight: 600;
     text-transform: uppercase;
     color: #8d8d8d;
 }
@@ -1251,4 +1267,33 @@ select::-ms-expand {
 .right-div {
     display: flex !important;
     justify-content: center;
+}
+
+.info-header-main {
+    padding: 30px 20px;
+    background-color: #f6da63;
+}
+
+.info-header-main-img {
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+}
+
+.info-header-main-head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #696969;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-header-main-para {
+    text-align: justify;
+    padding: 0 20px;
+    margin: 0;
+    color: #5c5b5b;
+    font-size: 15px;
+    font-weight: 600;
 }
